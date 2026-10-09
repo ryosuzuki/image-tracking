@@ -33,7 +33,7 @@ Unity -batchmode -nographics -quit -projectPath "$PWD" \
 
 `Prepare` compiles scripts and generates the independent scene and shader-referenced material. `Android` creates `Builds/paperlab-vuforia.apk`; package ID `org.openclaw.paperlabvuforia` does not replace the existing marker app. Install with `adb install -r`. The native plugin and SDK are generated/installed dependencies, not public source assets.
 
-Privately provision `vuforia-license.txt` into this development app's persistent-data directory using a secure local 1Password workflow and ADB `run-as`. Never put a key in a shell argument, committed Unity config, StreamingAssets, screenshot or log. Missing keys cause explicit initialization failure without silently using an upstream developer's key.
+Privately provision `vuforia-license.txt` into this development app's Unity Android persistent-data directory (`/sdcard/Android/data/org.openclaw.paperlabvuforia/files`) using a secure local 1Password workflow. An ADB `run-as` file in the internal `files` directory alone is **not** Unity's `Application.persistentDataPath`. Transfer concealed bytes to the actual destination and verify equality without printing them. Never put a key in a shell argument, committed Unity config, StreamingAssets, screenshot or log. Missing keys cause explicit initialization failure without silently using an upstream developer's key.
 
 ## What to open
 
@@ -42,6 +42,11 @@ The development APK has been built and installed on the test Quest. To perform t
 The intended first augmentation is one cyan cube, not the full educational catalog. Passing this smoke test is required before porting the lessons.
 
 ## Acceptance gates
+
+See [physical acceptance and driver repair](DEVICE-ACCEPTANCE.md) for the
+continuation checkpoint and remaining timing/registration checks. Run
+`bash Tools/test-native-timestamps.sh` for the SDK-independent native frame gate
+test; this test does not prove physical tracking.
 
 1. Native driver build and Unity script/scene preparation.
 2. APK build, private license initialization, real camera start/frame delivery.
@@ -58,5 +63,12 @@ Native driver and bridge derived from [Quforia](https://github.com/danieloquelis
 ## Current device checkpoint
 
 Native build, Unity scene preparation, APK build and safe device install/update passed on 2026-10-09. A private runtime license file was provisioned and retained across the update. The manifest supports optional hands/controllers, and developer-agent settings are disabled for the player and excluded from public source.
+
+The continuation repaired duplicate native frame delivery and the advertised
+camera-rate mismatch. The rebuilt native-only APK update passed signature,
+package, archive-entry and installed-digest checks; the private license was
+verified at Unity's actual Android persistent-data destination. See
+[DEVICE-ACCEPTANCE.md](DEVICE-ACCEPTANCE.md). No Vuforia initialization or target
+tracking acceptance is implied by these repairs.
 
 The headset is currently asleep. Launch requests stop in the Quest system controller-required dialog before an app process starts; Vuforia initialization and camera/target ingestion are therefore not verified. Wake/wear the headset and make a controller or configured hand navigation available, then perform the acceptance gates above. Do not interpret installation as a working tracker.

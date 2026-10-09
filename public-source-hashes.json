@@ -3570,6 +3570,10 @@
       "sha256": "cbead459adbfe7bd3f9655d02ae3ded057f3890ac67036f2114da5753bb02865"
     },
     {
+      "path": "image/quest-unity-vuforia/DEVICE-ACCEPTANCE.md",
+      "sha256": "561ccd9449b1c086d0d78c9cb773f6448e710d5828ddb1fba9471f1dcc0819dd"
+    },
+    {
       "path": "image/quest-unity-vuforia/LICENSE.upstream",
       "sha256": "744a32188f73b945e8c9fc49daef9fe92bbe924b6af25a21e4a973c951b5b8a5"
     },
@@ -3579,7 +3583,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/Native/src/external_camera.cpp",
-      "sha256": "b83bc00235d5c637a97e0360cc9aead406a0529aae12646168e0d5ef439b9d8a"
+      "sha256": "a5c48658fc81a6d1130e965883f0c21ea4c8d81284a0e3b3e0ae0fbed2f3bcc6"
     },
     {
       "path": "image/quest-unity-vuforia/Native/src/external_camera.h",
@@ -3594,6 +3598,10 @@
       "sha256": "d2d225f53459a319f79737b96f7a0719e9e7131f22cbdd26430350d0e7325ab0"
     },
     {
+      "path": "image/quest-unity-vuforia/Native/src/frame_timestamp_gate.h",
+      "sha256": "298b9e9d0de7108b289dc9cd2115c1eb60010c360bc55bce95995c17a7b995d4"
+    },
+    {
       "path": "image/quest-unity-vuforia/Native/src/quforia_jni.cpp",
       "sha256": "9f6cdeae4a31ceda69c95369cdcb1c3267e6b86d4b54f00fd656e4196d38d3be"
     },
@@ -3604,6 +3612,10 @@
     {
       "path": "image/quest-unity-vuforia/Native/src/vuforia_driver.h",
       "sha256": "8bcee5684b75d093d23961602e51eca0a006ed774fd62b267560746a39c86886"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Native/tests/frame_timestamp_gate_test.cpp",
+      "sha256": "51e293fba6f49763c378490f1832f11327b9f56953df32cd2520574473ed5595"
     },
     {
       "path": "image/quest-unity-vuforia/Packages/manifest.json",
@@ -3715,7 +3727,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/README.md",
-      "sha256": "707ecb1a5d494f11fd9add1331889b18233739f48132ecb54948677c206ed89f"
+      "sha256": "9e74be4501f1d9a89f2b0a117c9fe83088b0b969e03439204731da53617bf0df"
     },
     {
       "path": "image/quest-unity-vuforia/Tools/build-native.sh",
@@ -3724,6 +3736,14 @@
     {
       "path": "image/quest-unity-vuforia/Tools/make-target.py",
       "sha256": "a633ac95c12f77c01509746c2487d17a6a9540778ca4dc5c7bd45e34ed9e93de"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Tools/test-native-timestamps.sh",
+      "sha256": "01ad90d68c4dd375cd471587945c9f4407d39001c910e7616f487f4c9adadb94"
+    },
+    {
+      "path": "image/quest-unity-vuforia/repair-checkpoint.json",
+      "sha256": "b7cc22504bdb48d2ccfddd0de3089d9b444e116aed53e8ff6f27be577ee785a1"
     },
     {
       "path": "markers/arkit-swift/.gitignore",

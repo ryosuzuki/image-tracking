@@ -1,5 +1,6 @@
 #include "external_camera.h"
 #include "vuforia_driver.h"
+#include "frame_timestamp_gate.h"
 #include <android/log.h>
 #include <chrono>
 #include <thread>
@@ -22,10 +23,10 @@ QuestExternalCamera::QuestExternalCamera(QuestVuforiaDriver* driver)
 {
     LOGI("QuestExternalCamera constructor");
 
-    // Camera mode: 1280x1280 @ 60fps RGB888.
+    // Matches the Meta PCA adapter's 1280x960 @ 30fps RGB888 stream.
     currentMode_.width = 1280;
     currentMode_.height = 960;
-    currentMode_.fps = 60;
+    currentMode_.fps = 30;
     currentMode_.format = VuforiaDriver::PixelFormat::RGB888;
 }
 
@@ -169,7 +170,7 @@ bool QuestExternalCamera::getSupportedCameraMode(uint32_t index,
     // Return the single supported mode
     cameraMode->width = 1280;
     cameraMode->height = 960;
-    cameraMode->fps = 60;
+    cameraMode->fps = 30;
     cameraMode->format = VuforiaDriver::PixelFormat::RGB888;
     return true;
 }
@@ -285,6 +286,7 @@ void QuestExternalCamera::frameDeliveryThread() {
     const auto frameDuration = std::chrono::milliseconds(1000 / targetFPS);
 
     int frameCount = 0;
+    FrameTimestampGate timestamps;
 
     while (isRunning_) {
         auto frameStartTime = std::chrono::steady_clock::now();
@@ -292,7 +294,7 @@ void QuestExternalCamera::frameDeliveryThread() {
         // Acquire latest frame from driver
         auto frameData = driver_->acquireLatestFrame();
 
-        if (frameData && callback_) {
+        if (frameData && callback_ && timestamps.accept(frameData->timestamp)) {
             // Prepare Vuforia frame structure
             VuforiaDriver::CameraFrame vuforiaFrame;
             memset(&vuforiaFrame, 0, sizeof(vuforiaFrame));
