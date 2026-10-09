@@ -19,7 +19,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "11e0d66d51969927d0e0b1ae0dc9c264233ab729d85dd998b5505d753861b82d"
+      "sha256": "077a976e95ecf3b35d969e7dab1eae8463c82ea37f794edd36fb7b69eec0b7ea"
     },
     {
       "path": "TRACKING-IMAGES.md",
@@ -32,6 +32,106 @@
     {
       "path": "assets-required.json",
       "sha256": "79cf748390367071effdff2519604f5b377a9893475e7c47fa701acaa92c00da"
+    },
+    {
+      "path": "design/recognition-patterns/01-color-dot-corners.svg",
+      "sha256": "55e17a48e097de59a9c1b3c2543e4ded91839b3113e9196a38cb6366bdbbe355"
+    },
+    {
+      "path": "design/recognition-patterns/02-asymmetric-black-dots.svg",
+      "sha256": "88de41f102b76905bbf9ba890f41f8fae485d38ab74c069cdb2316639cf5cf9e"
+    },
+    {
+      "path": "design/recognition-patterns/03-square-fiducial.svg",
+      "sha256": "32390c3ac4cbc93cfc57e4df275292039fece1ece716d89aa22afe2d7b0f06db"
+    },
+    {
+      "path": "design/recognition-patterns/04-four-independent-corner-tags.svg",
+      "sha256": "9fa0776f0b1ef282ba1327335e0b14a8eb887f9f58f747ac160fb28ed4f1b1af"
+    },
+    {
+      "path": "design/recognition-patterns/05-hybrid-tag-illustration.svg",
+      "sha256": "7f614a266ad3ba4450da128af80361fda31fa54b687e1a623d34f5cca254fec3"
+    },
+    {
+      "path": "design/recognition-patterns/06-coded-border.svg",
+      "sha256": "b831bcc8c8b029fb525165525195faedb989693c2f19bcc82f4134278756c19f"
+    },
+    {
+      "path": "design/recognition-patterns/07-detachable-id-tab.svg",
+      "sha256": "598b479d73ec3297f668f8003619c588c7adf829276e88de8e2a1dd0d764f6d8"
+    },
+    {
+      "path": "design/recognition-patterns/08-redundant-tag-strip.svg",
+      "sha256": "e0cb3c05eb8be61c965d37795d2bd862f90f29e60127ffbca8e128f063c7ce56"
+    },
+    {
+      "path": "design/recognition-patterns/09-concentric-ring-code.svg",
+      "sha256": "af9ae1ecb6ad0fd01a5264b60c625eeec959593700574b3909d9e3a47433bb7d"
+    },
+    {
+      "path": "design/recognition-patterns/10-radial-petal-code.svg",
+      "sha256": "af47f27cb53ea8e9184bc467c9672a7d39894e16e537667df3b8fd41ed89a9d2"
+    },
+    {
+      "path": "design/recognition-patterns/11-asymmetric-constellation.svg",
+      "sha256": "23dee8f096672167b8a08bb5266a046841d9cb25d640fe222ef067ef16815ec6"
+    },
+    {
+      "path": "design/recognition-patterns/12-letterform-mosaic.svg",
+      "sha256": "df1224ec129223eabbec232c8e7588a5b71ebb44900e34d14253071c138a9cec"
+    },
+    {
+      "path": "design/recognition-patterns/13-nonrepeating-texture-frame.svg",
+      "sha256": "bd6c358c590075e0407f259acce5047658371c937e2168e253e14c0195002693"
+    },
+    {
+      "path": "design/recognition-patterns/14-illustrated-feature-map.svg",
+      "sha256": "20da0998baa5e6fc0052b503b9c0c3e2047e43c2459a78ff3dcea636050d3648"
+    },
+    {
+      "path": "design/recognition-patterns/15-multi-scale-target.svg",
+      "sha256": "67e6b32d92991167ed9508738cf2b0f9d14477c836093ae70fcef2944eb7b997"
+    },
+    {
+      "path": "design/recognition-patterns/16-split-id-pose-card.svg",
+      "sha256": "4b53af394e6ae11519cd025c21ba81cb9f24fbe5b404668d15835e7dd2bb67b4"
+    },
+    {
+      "path": "design/recognition-patterns/17-shared-tabletop-reference.svg",
+      "sha256": "10c37560b9166baf3423984ab2605b0e762c8c3b1ea0a8510963e137ee57a0d5"
+    },
+    {
+      "path": "design/recognition-patterns/18-folded-multi-face-target.svg",
+      "sha256": "d879e63ca5e5f0fb0c387ddbef869baed0752a81e604f58be6750948b85c65e7"
+    },
+    {
+      "path": "design/recognition-patterns/19-temporal-screen-code.svg",
+      "sha256": "3008f447257ec1f6401fd5c5fb3c163ad2f57c3ada3d78ae8b5523f5149a056e"
+    },
+    {
+      "path": "design/recognition-patterns/20-ir-spectral-pattern.svg",
+      "sha256": "40c83f2cc0066c9eb375ea5ba6f712e1c2cc0391edfbe9542d2a6f553c8a197f"
+    },
+    {
+      "path": "design/recognition-patterns/DISPLAY-CONTENT.md",
+      "sha256": "2353ce07e33d5b0ba9b176e497c1e7217da1ddb3ee67bd3c04ddf43ea39e3fdb"
+    },
+    {
+      "path": "design/recognition-patterns/README.md",
+      "sha256": "1283171fcf7ec12c86a79892ee219799e0b91c31d6e5919d0677f66db3edc922"
+    },
+    {
+      "path": "design/recognition-patterns/generate.py",
+      "sha256": "75d50a8fec37333786b4badb2443abfc52b7feb022e4aa73e0ca4675e4f49b45"
+    },
+    {
+      "path": "design/recognition-patterns/recognition-patterns-20.png",
+      "sha256": "e2691c3a4a8cdbfd8c9684f7d09ba2dc814dd98ee909c5259703e71c84627943"
+    },
+    {
+      "path": "design/recognition-patterns/recognition-patterns-20.svg",
+      "sha256": "abeecf66133d98905794363078a3cf739edd2f07f822dff746365d243b28b038"
     },
     {
       "path": "image/8thwall-web/.gitignore",

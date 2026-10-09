@@ -12,6 +12,10 @@ Image and marker tracking implementations, organized by target type, engine and 
 
 The installed APK10 detected colored-dot ID8 and estimated its pose. Binocular alignment and interaction are **not yet accepted**; invalid headset tracking gates spatial content. The published Unity snapshot is older than that installed repair; see PROGRESS.md.
 
+## Design exploration
+
+**[20 recognition-pattern concepts and dynamic-system recommendation](design/recognition-patterns/README.md)** · **[20 AR content ideas](design/recognition-patterns/DISPLAY-CONTENT.md)**. Includes an illustrated contact sheet, editable SVGs, tradeoffs and a proposed multi-sheet acceptance experiment. These are design proposals, not validated tracking targets or implemented demos.
+
 ## Implementation map
 
 | Folder | Target | Engine | Platform |
