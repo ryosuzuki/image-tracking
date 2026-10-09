@@ -39,8 +39,9 @@ public sealed class MarkerInteraction : MonoBehaviour
     }
     Material Surface(Color color)
     {
-        var shader = Shader.Find("MarkerLab/Surface");
-        if (!shader) shader = Shader.Find("Unlit/Color");
+        var shader = Resources.Load<Shader>("MarkerQuestSurface");
+        if (!shader) shader = Shader.Find("MarkerLab/Surface");
+        if (!shader || !shader.isSupported) throw new InvalidOperationException("Paper 3D surface shader is missing or unsupported");
         var material = new Material(shader); material.color = color; materials.Add(material); return material;
     }
     Transform Shape(PrimitiveType type, string name, Color color, Vector3 position, Vector3 size, Transform parent = null)
@@ -76,7 +77,7 @@ public sealed class MarkerInteraction : MonoBehaviour
                 sun = Shape(PrimitiveType.Sphere, "Sun", new Color(1, .72f, .15f), new Vector3(0, 0, -.024f), Vector3.one * .022f);
                 planet = Shape(PrimitiveType.Sphere, "Orbiting planet", new Color(.15f, .6f, 1), Vector3.zero, Vector3.one * .012f);
                 orbit = Line("Orbital path", new Color(.45f, .72f, .84f), 97);
-                cube = Shape(PrimitiveType.Cube, "Depth and rotation reference", new Color(.82f, .29f, 1), new Vector3(-.035f, -.04f, -.016f), Vector3.one * .013f);
+                cube = Shape(PrimitiveType.Cube, "Depth and rotation reference", new Color(.2f, .85f, .6f), new Vector3(-.035f, -.04f, -.016f), Vector3.one * .013f);
                 break;
             case PaperApplication.Geometry:
                 // Six separately hinged, genuinely planar 3D mesh faces; flat net spans 90 x 120 mm.

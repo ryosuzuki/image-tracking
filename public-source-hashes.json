@@ -4531,7 +4531,7 @@
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Editor/MarkerBuild.cs",
-      "sha256": "3772d30156635f511a19429e48f2ba2f2324231e40c0c3545ae56cc0481e77ce"
+      "sha256": "195a1cf11bca8920d1d2d5aaf29ada5740f35f94fd74678ea0e48ca07e93b966"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Editor/MarkerBuild.cs.meta",
@@ -4579,7 +4579,7 @@
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/MarkerInteraction.cs",
-      "sha256": "6173b97637e4a7ffdad1da6cb4e2817b71111d34da7dcf24b9f7150980447908"
+      "sha256": "2da567e3b581a0ba1ae5b40b3232a1055cbce520c091f1a22275aa05bf598188"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/MarkerInteraction.cs.meta",
@@ -4635,7 +4635,7 @@
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/QuestMarkerTracker.cs",
-      "sha256": "48630d67029eecd271ca24b342e4cb3300510b939f7fddc9e07e5e945a7aa48f"
+      "sha256": "445c79c92b69fb7d511a8552bb163866385303423886338294b7f0d1b63ffd02"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/QuestMarkerTracker.cs.meta",
@@ -4644,6 +4644,14 @@
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Resources.meta",
       "sha256": "1070b6795167364849f680a6437bbc60b6aa66cdeda14355a6733d91159b7310"
+    },
+    {
+      "path": "markers/unity-quest-ios/Assets/MarkerLab/Resources/MarkerQuestSurface.shader",
+      "sha256": "e5189cfaceca7090512e7b1b26cae5994717e8b26f4d7e8fcef6e254c56cf86d"
+    },
+    {
+      "path": "markers/unity-quest-ios/Assets/MarkerLab/Resources/MarkerQuestSurface.shader.meta",
+      "sha256": "f47a6164d3365be7a664c7d44bf94f2a54cf34a96c6a5a25c4674b85dd10b16c"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Resources/marker-board.json",
@@ -5970,6 +5978,10 @@
       "sha256": "364e8225eee999dfd9dbd601fac3f1779ca0fd530d50d02b8cf5696abab27d5c"
     },
     {
+      "path": "markers/unity-quest-ios/DEMO-STATUS.md",
+      "sha256": "ada659b4ded9983a53e1fbe6a38e573cca16c894e76abfdd31d9726043e331bd"
+    },
+    {
       "path": "markers/unity-quest-ios/LICENSE",
       "sha256": "28537309aecf1d10931232c7b45c0b0a333552ef35ed699c978ed8434a67fe5b"
     },
@@ -6103,7 +6115,7 @@
     },
     {
       "path": "markers/unity-quest-ios/README.md",
-      "sha256": "67ac10721ac2da2f403261bdd23c6dd40a0daf85a6060dd6d602804627738b82"
+      "sha256": "0f6ccdd76acfd7dfd6d0f4fb39b9d732d233fe543f577acd7719254589c4cf3a"
     },
     {
       "path": "markers/unity-quest-ios/SOURCE-LICENSE.md",

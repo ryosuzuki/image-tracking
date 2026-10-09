@@ -1,6 +1,6 @@
 # Colored dots + ArUco — Unity Quest + separate iOS project
 
-For the installed device test, start with the [Quest quick start](../../QUEST-QUICKSTART.md) and [target image index](../../TRACKING-IMAGES.md). Use the native app, not the Quest browser. The installed APK10 repair is not yet in this source snapshot.
+For the installed device test, start with the [Quest quick start](../../QUEST-QUICKSTART.md) and [target image index](../../TRACKING-IMAGES.md). Use the native app, not the Quest browser. The Android source now uses GPU readback and a resource-retained URP stereo surface shader. See [demo repair and device acceptance](DEMO-STATUS.md).
 
 ## Implementation
 
@@ -33,3 +33,12 @@ This consolidation validates copied source inventory, privacy gates and scoped s
 ## Licenses
 
 Original LICENSE, third-party licenses, legal notices and source headers are retained where present. If upstream has no top-level license, no new license is inferred. Dependencies retain their own terms; this repo does not relicense them.
+
+## APK11 rendering/camera repair
+
+APK11 uses the native package `org.openclaw.markertrackinglab` and keeps its existing data during `adb install -r`. It does not replace `PaperLab Vuforia Prototype`.
+
+- Camera pixels: `AsyncGPUReadback`, with image timestamp and `GetCameraPose()` snapped before the asynchronous request; top-left RGBA conversion before OpenCV. Android does not call the unsupported CPU-image API.
+- 3D materials: `Resources.Load<Shader>("MarkerQuestSurface")` keeps the shader in the player. The shader uses URP transforms and single-pass stereo macros; missing or unsupported shaders fail explicitly.
+- Real authored meshes: solar spheres/orbit/rotating cube, hinged cube net, function tube, inclined plane, pendulum, circuit, vectors and probability bars. Y changes application; stick click changes its action. They are not automatic semantic recognition of the worksheet diagram.
+- Tracking validity, freshness, focus/pause and origin-change gates remain enabled. A screen recording is not a calibrated sensor/pose capture.
