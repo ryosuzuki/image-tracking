@@ -1,27 +1,33 @@
-# Image Tracking — 実装を方式別に整理
+# Image Tracking
 
-既存実装を **画像の種類 × 検出エンジン × プラットフォーム** で比較・再開できる公開ソース集です。元リポジトリを削除・移動・変更せず、独立したフォルダにソースを追加コピーしました。各フォルダは別実装で、rootに一つのアプリや共通buildを作ったものではありません。
+Image and marker tracking implementations, organized by target type, engine and platform. Each folder is an independent source snapshot, not one shared application.
 
-## どれを開くか
+## Start here: Quest
 
-| Folder | Target form | Engine | Platform |
+**Use the installed native Unity app, not the Quest browser.** Open **App Library → Unknown Sources → PaperLab / Interactive Paper Lab**. On the computer, display **dots-8.png**, then look at it through the headset.
+
+- **[Quest quick start: exactly what to open](QUEST-QUICKSTART.md)**
+- **[Tracking images: direct links and which app uses them](TRACKING-IMAGES.md)**
+- **[Current implementation and device acceptance](PROGRESS.md)**
+
+The installed APK10 detected colored-dot ID8 and estimated its pose. Binocular alignment and interaction are **not yet accepted**; invalid headset tracking gates spatial content. The published Unity snapshot is older than that installed repair; see PROGRESS.md.
+
+## Implementation map
+
+| Folder | Target | Engine | Platform |
 |---|---|---|---|
-| [image/8thwall-web](image/8thwall-web/README.md) | Natural image | 8th Wall open-source | Browser camera / optional WebXR |
+| [image/8thwall-web](image/8thwall-web/README.md) | Natural image | 8th Wall | Browser camera / optional WebXR |
 | [image/arkit-swift](image/arkit-swift/README.md) | Natural image | ARKit / SceneKit | Swift iPhone / iPad |
-| [image/quest-native-opencv](image/quest-native-opencv/README.md) | Natural image | OpenCV ORB + RANSAC / Camera2 | Quest native Android |
+| [image/quest-native-opencv](image/quest-native-opencv/README.md) | Natural image | OpenCV ORB + RANSAC / Camera2 | Quest Android |
 | [image/quest-unity-artoolkit](image/quest-unity-artoolkit/README.md) | Natural image | ARToolKitX / Meta XR | Unity Quest |
-| [markers/web-webxr](markers/web-webxr/README.md) | Colored dots + ArUco | Custom dots / OpenCV-style ArUco | Web camera / capability-gated WebXR |
-| [markers/arkit-swift](markers/arkit-swift/README.md) | Colored dots + ArUco + image baseline | Custom dots / OpenCV / ARKit | Swift iPhone |
-| [markers/unity-quest-ios](markers/unity-quest-ios/README.md) | Colored dots + ArUco | OpenCV / Meta XR or ARFoundation | Unity Quest + separate iOS project |
-| [research/vuforia](research/vuforia/README.md) | Natural image (planned) | Vuforia | Research only, not implemented |
+| [markers/web-webxr](markers/web-webxr/README.md) | Colored dots / ArUco | Custom dots / ArUco | Web camera / capability-gated WebXR |
+| [markers/arkit-swift](markers/arkit-swift/README.md) | Markers / image baseline | OpenCV / ARKit | Swift iPhone |
+| [markers/unity-quest-ios](markers/unity-quest-ios/README.md) | Colored dots / ArUco | OpenCV / Meta XR or ARFoundation | Unity Quest / separate iOS project |
+| [research/vuforia](research/vuforia/README.md) | Natural image (planned) | Vuforia | Research only |
 
-**Colored dots/ArUcoはマーカーの種類、8th Wall/ARKit/OpenCV/ARToolKitX/VuforiaはエンジンやSDKです。** WebXRは実行環境/APIであり、画像認識エンジンではありません。公式Realtalk実装を複製したとは主張しません。
+Colored dots and ArUco are marker types; ARKit, OpenCV, ARToolKitX and Vuforia are engines/SDKs. WebXR is an execution API, not an image-recognition engine. These are not claimed to be copies of official Realtalk.
 
-## 継続開発と実機状況
-
-[PROGRESS.md](PROGRESS.md)にArUco・色ドット・Quest両眼AR・Vuforiaの検証済み範囲と次の作業を記録します。今後の実装・検証結果はこのリポジトリへチェックポイントごとに反映します。未反映の実機修正は明記し、SDKキーや私的な録画は公開しません。
-
-## 最初に試す
+## Browser development
 
 ```sh
 cd markers/web-webxr
@@ -32,18 +38,14 @@ npm run build
 npm run dev
 ```
 
-ブラウザに表示されるURLを開き、included markerカードを別画面/紙で提示してcameraを開始します。HTTPS/端末permissionが必要で、synthetic tests合格は実機tracking精度の保証ではありません。
+Open the server URL, present a marker on another screen or paper, and start the camera. Remote-device camera use requires HTTPS and permission. Passing synthetic tests does not establish physical accuracy or Quest browser camera support.
 
-Swift画像とSwiftマーカーは同じAppleアプリの別entrypointを独立コピーしてあります。UnityマーカーはrootがQuest、`ios-unity`がiPhone専用projectです。画像UnityとマーカーUnityは別packageです。visionOS内の仮想紙はsimulated poseであり、実カメラ画像認識ではありません。
+For Unity markers, the folder root is Quest; `ios-unity` is the separate iPhone project. Image Unity and marker Unity are separate projects. The current visionOS virtual-paper scene uses simulated pose, not verified physical image tracking.
 
-## 公開範囲と再現
+## Assets, verification and licenses
 
-[ASSETS.md](ASSETS.md)にアセット復元・依存導入方法を記載。個人録画・部屋スキャン・私的ログ・署名情報・端末識別子・非公開の参照ページ/生成モデルは含みません。公開markerカード/fixturesとソース/build設定を保持し、private upstreamのGit履歴は継承しない新規initial commitです。公開用にpath/環境設定を一般化しています。upstream名/commitは各folder READMEにありますが、private元repoへの閲覧権限はこの公開repoでは付与されません。
+See [ASSETS.md](ASSETS.md) for dependencies and authorized asset restoration, and [VERIFICATION.md](VERIFICATION.md) for checks. Private recordings, room scans, personal photos, signing credentials, SDK keys and non-redistributable reference pages/models are excluded. Authored marker cards and synthetic fixtures are included. Each folder records its upstream revision; public access does not grant access to private upstream repositories.
 
-検証結果は[VERIFICATION.md](VERIFICATION.md)。全ソースのコピー/公開sanitizationを検証し、Web markerのsoftware build/testを実施。実機・全catalogの再buildを今回新たに達成したとは扱いません。
+Original per-folder licenses and third-party notices remain authoritative; no blanket license overrides them.
 
-関連整理repo: [3d-generation](https://github.com/ryosuzuki/3d-generation), [digital-twin](https://github.com/ryosuzuki/digital-twin), [3d-avatar](https://github.com/ryosuzuki/3d-avatar)。
-
-## Licenses
-
-Original per-folder license/legal notices and source headers remain authoritative. There is no blanket license that overrides third-party terms. Missing upstream top-level licenses are not invented. Dependencies and excluded assets require their own authorization/terms.
+Related repositories: [3d-generation](https://github.com/ryosuzuki/3d-generation), [digital-twin](https://github.com/ryosuzuki/digital-twin), [3d-avatar](https://github.com/ryosuzuki/3d-avatar).

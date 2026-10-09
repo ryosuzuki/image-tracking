@@ -14,8 +14,16 @@
       "sha256": "67c012af5ea93289f1ef6cdf41f0739287d1bfbf308bd368a02c63f66cf1ad79"
     },
     {
+      "path": "QUEST-QUICKSTART.md",
+      "sha256": "ea0fe08adf518128efb89b53c99cf3c121e697ff0acafce2def648fae6cb6a79"
+    },
+    {
       "path": "README.md",
-      "sha256": "cdf347b7f2989ac255e027fcdf2855d6ec9e972d419e9993aee9d4213d5b7b2d"
+      "sha256": "75e10fb2b6d32472c5195c2dc15effe816a98fdad66749d408f5b50a5c7043f7"
+    },
+    {
+      "path": "TRACKING-IMAGES.md",
+      "sha256": "a134dc361f0072720e747badb20655cb9da76648465971ef2df543f77a1467b8"
     },
     {
       "path": "VERIFICATION.md",
@@ -5467,7 +5475,7 @@
     },
     {
       "path": "markers/unity-quest-ios/README.md",
-      "sha256": "7599376e4351a5973d630d8ae2dc23be50df2df5f1473f229fe9d6dd6f468e5e"
+      "sha256": "67ac10721ac2da2f403261bdd23c6dd40a0daf85a6060dd6d602804627738b82"
     },
     {
       "path": "markers/unity-quest-ios/SOURCE-LICENSE.md",
