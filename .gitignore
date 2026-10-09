@@ -1,0 +1,16 @@
+**/node_modules/
+**/Library/
+**/Temp/
+**/Builds/
+**/build/
+**/dist/
+**/__pycache__/
+**/.DS_Store
+**/*.keystore
+**/*.jks
+**/*.pem
+**/*.p12
+**/*.mobileprovision
+.asset-cache/
+**/evidence/
+**/public/pose/*.task

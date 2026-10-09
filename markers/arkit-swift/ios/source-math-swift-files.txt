@@ -1,0 +1,12 @@
+Sources/App.swift
+Sources/NativeMathBinding.swift
+Sources/NativeSourceMathAdapter.swift
+Sources/NativeSourceMathExtensions.swift
+Sources/SciencePages.swift
+Sources/SourcePhysicsDynamics.swift
+Sources/TrackingStability.swift
+Sources/DomainInteractionState.swift
+Sources/DomainInteractionAdapter.swift
+Sources/NativeTriangleBinding.swift
+Sources/NativeTriangleAdapter.swift
+Sources/SourcePartAnimator.swift

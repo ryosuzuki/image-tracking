@@ -1,0 +1,34 @@
+{
+  "source": "ucalgary-ilab/augmented-math",
+  "commit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+  "originalPath": "public/sample/sample-10.jpg",
+  "sha256": "2c56b44c1730b3698f32bc2e2a8cfc48085e38e29fd2f92ff77330f266fee0e4",
+  "sourceSize": [
+    1240,
+    1755
+  ],
+  "referenceCrop": [
+    500,
+    970,
+    650,
+    310
+  ],
+  "vertices": {
+    "left": [
+      839,
+      1218
+    ],
+    "rightAngle": [
+      1051,
+      1218
+    ],
+    "upper": [
+      1051,
+      1086
+    ]
+  },
+  "relationship": "a\u00b2+b\u00b2=c\u00b2",
+  "normalization": "a=1 illustrative unit; 212 source pixels/unit; no numeric lengths printed; not physical calibration",
+  "implementation": "new native binding, not original triangle handler; approximate contour landmarks from original SVG/pixels",
+  "physicalAcceptance": "not yet captured"
+}

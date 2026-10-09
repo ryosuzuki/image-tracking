@@ -1,0 +1,38 @@
+{
+  "schema": "source-math-1",
+  "source": "ucalgary-ilab/augmented-math/sample/sample-09.jpg",
+  "sourceRevision": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+  "sourceSize": [
+    1275,
+    1651
+  ],
+  "referenceCrop": [
+    450,
+    1140,
+    440,
+    250
+  ],
+  "graphOrigin": null,
+  "bindingBox": [
+    605,
+    1180,
+    60,
+    65
+  ],
+  "implementation": "New Swift prepared-fixture adapter, not original JS solver reuse, arbitrary OCR, or physically verified tracking.",
+  "printedEquation": "sum(i=1...20) i",
+  "upperBox": [
+    614,
+    1181,
+    28,
+    20
+  ],
+  "lowerBox": [
+    607,
+    1228,
+    38,
+    18
+  ],
+  "pageSHA256": "d6cce6a7fc54755bfe7894f06349a2d53e1550b9407c8e3bb106b68708df0f2a",
+  "referenceRevisionReason": "Closer original source formula crop preserves the actual sigma glyph and two printed summation formulas, enlarging relevant symbols in monitor-camera acceptance without adding markers."
+}

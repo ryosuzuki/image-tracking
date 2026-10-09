@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.openclaw.questarcoreprobe" android:versionCode="1" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="35" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <queries><package android:name="com.google.ar.core"/><package android:name="com.android.vending"/></queries>
+  <application android:label="Quest ARCore Compatibility Probe" android:theme="@android:style/Theme.Material.NoActionBar" android:debuggable="true">
+    <meta-data android:name="com.google.ar.core" android:value="optional" />
+    <meta-data android:name="com.google.ar.core.min_apk_version" android:value="253130000" />
+    <activity android:name="com.google.ar.core.InstallActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+    <activity android:name=".ProbeActivity" android:exported="true"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter></activity>
+  </application>
+</manifest>

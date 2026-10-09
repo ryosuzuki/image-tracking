@@ -1,0 +1,48 @@
+{
+  "name": "8thwall-image-tracking-test",
+  "version": "1.0.0",
+  "description": "Integrated research reimplementation with real 8th Wall image tracking, authored math/physics and responsive sketches",
+  "scripts": {
+    "prepare": "node scripts/prepare-engine.mjs && node scripts/prepare-pose.mjs",
+    "dev": "vite",
+    "dev:https": "HTTPS=1 vite",
+    "build": "node scripts/prepare-engine.mjs && node scripts/prepare-pose.mjs && vite build",
+    "preview": "vite preview",
+    "target": "node scripts/generate-target.mjs",
+    "test:camera:fixture": "node scripts/synthetic-camera.mjs",
+    "test:browser": "node scripts/verify-browser.mjs",
+    "test:permission": "node scripts/verify-denied.mjs",
+    "start": "npm run build && node scripts/serve.mjs",
+    "targets": "node scripts/generate-original-targets.mjs",
+    "targets:original": "node scripts/generate-original-targets.mjs",
+    "test:math": "node scripts/verify-math-semantics.mjs",
+    "test:physics": "node scripts/verify-physics.mjs",
+    "test:color": "node scripts/verify-color-tracking.mjs",
+    "prepare:ocr": "node scripts/prepare-native-ocr.mjs",
+    "test:body": "node scripts/verify-body-tracking.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@8thwall/engine": "0.1.0",
+    "@mediapipe/tasks-vision": "1.1.0",
+    "katex": "0.19.0",
+    "matter-js": "0.20.0",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@8thwall/image-target-cli": "1.0.0",
+    "@vitejs/plugin-basic-ssl": "2.1.0",
+    "playwright": "1.63.0",
+    "sharp": "0.35.5",
+    "vite": "7.3.7"
+  },
+  "overrides": {
+    "@8thwall/image-target-cli": {
+      "sharp": "0.35.5"
+    }
+  },
+  "private": true
+}

@@ -1,0 +1,27 @@
+/Library/
+/Temp/
+/Logs/
+/Obj/
+/Builds/
+/UserSettings/
+*.csproj
+*.sln
+*.slnx
+.DS_Store
+Assets/XR/Temp/
+Assets/Resources/DevAgentSettings.asset
+Assets/Resources/DevAgentSettings.asset.meta
+
+/.utmp/
+
+/build/
+
+# Generated Unity iPhone cache/builds and redistributable dependency (>100MB)
+ios-unity/Library/
+ios-unity/Temp/
+ios-unity/Logs/
+ios-unity/Obj/
+ios-unity/Builds/
+ios-unity/UserSettings/
+Assets/MarkerLab/Plugins/iOS/libopencv2.a
+ios-unity/Assets/MarkerLab/Plugins/iOS/libopencv2.a

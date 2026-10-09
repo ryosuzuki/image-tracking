@@ -1,0 +1,10 @@
+{
+  "kind": "circuit",
+  "width": 640,
+  "height": 640,
+  "page_resource": "Catalog/source-diagram-circuit-page",
+  "page_sha256": "db7e31b02237313d02407c65d19a616bdbb4670661e13be51e10e6bbb02abcdb",
+  "page_width": 0.21,
+  "source_scope": "Prepared original figure, authored thin lens/series circuit/nonlinear RK4; not OCR/MNA/calibration",
+  "receipt_sha256": "95ad4abe7db75bb9abc61edab81e50e1393e88b8ab7db4d353064364cb0350ff"
+}

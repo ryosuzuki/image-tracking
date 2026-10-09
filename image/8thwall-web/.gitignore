@@ -1,0 +1,19 @@
+node_modules/
+dist/
+public/engine/
+.vite/
+*.y4m
+.DS_Store
+.test-fixtures/
+*.pem
+*.key
+.test-recordings/
+
+# Obsolete generated gallery controls; the shipped gallery uses original-* sources.
+public/cards/
+public/image-targets/math-[0-9][0-9]*
+
+# Temporary original source crop acquisition experiments.
+public/testing/
+
+public/pose/wasm/

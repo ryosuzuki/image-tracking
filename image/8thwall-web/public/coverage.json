@@ -1,0 +1,633 @@
+{
+  "updated": "2026-10-07T13:53:02.289Z",
+  "scope": "Working reimplementation under development. Representative verified functions are not full reproduction. No positive physical body binding, correct camera math OCR, semantic diagram segmentation or full paper reproduction has been verified.",
+  "trackingTargets": [
+    {
+      "number": 1,
+      "name": "original-01",
+      "label": "Augmented Math sample 01",
+      "currentRevision": 1,
+      "physicalRecognized": true,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 2,
+      "name": "original-02",
+      "label": "Augmented Math sample 02",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 3,
+      "name": "original-03",
+      "label": "Augmented Math sample 03",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 4,
+      "name": "original-04",
+      "label": "Augmented Math sample 04",
+      "currentRevision": 1,
+      "physicalRecognized": true,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 5,
+      "name": "original-05",
+      "label": "Augmented Math sample 05",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 6,
+      "name": "original-06",
+      "label": "Augmented Math sample 06",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 7,
+      "name": "original-07",
+      "label": "Augmented Math sample 07",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 8,
+      "name": "original-08",
+      "label": "Augmented Math sample 08",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": false,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": "Full-page20-target conditions remain unacquired. A matching header-only cropped reference and enlarged landscape input acquired2 times/330 updates; crop-to-full-page coordinates and physical registration are unverified"
+    },
+    {
+      "number": 9,
+      "name": "original-09",
+      "label": "Augmented Math sample 09",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 10,
+      "name": "original-10",
+      "label": "Augmented Math sample 10",
+      "currentRevision": 1,
+      "physicalRecognized": true,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 11,
+      "name": "original-11",
+      "label": "Augmented Math original figure 2",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 12,
+      "name": "original-12",
+      "label": "Augmented Math original figure 3",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 13,
+      "name": "original-13",
+      "label": "Augmented Math original figure 4",
+      "currentRevision": 1,
+      "physicalRecognized": true,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 14,
+      "name": "original-14",
+      "label": "Augmented Math original figure 5",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 15,
+      "name": "original-15",
+      "label": "Augmented Math original figure 6",
+      "currentRevision": 1,
+      "physicalRecognized": true,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 16,
+      "name": "original-16",
+      "label": "Augmented Math original figure 7",
+      "currentRevision": 1,
+      "physicalRecognized": true,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 1,
+      "note": ""
+    },
+    {
+      "number": 17,
+      "name": "original-17",
+      "label": "Augmented Physics · Experiments",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 2,
+      "note": ""
+    },
+    {
+      "number": 18,
+      "name": "original-18",
+      "label": "Augmented Physics · Animated diagrams",
+      "currentRevision": 1,
+      "physicalRecognized": true,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 2,
+      "note": ""
+    },
+    {
+      "number": 19,
+      "name": "original-19",
+      "label": "Augmented Physics · Bi-directional binding",
+      "currentRevision": 2,
+      "physicalRecognized": null,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 2,
+      "note": "Physical historical cycle used a mislabeled body-text crop; corrected Figure4 physical acquisition pending"
+    },
+    {
+      "number": 20,
+      "name": "original-20",
+      "label": "Augmented Physics · Optics",
+      "currentRevision": 1,
+      "physicalRecognized": false,
+      "syntheticRecognized": true,
+      "syntheticRevision": 3,
+      "trackingReferenceRevision": 2,
+      "note": ""
+    }
+  ],
+  "trackingEvidence": {
+    "physical": "/evidence/gallery-c920-complete.json",
+    "synthetic": "/evidence/gallery-synthetic-20-v3.json",
+    "imagePlaneRegistration": "/evidence/image-plane-registration.json",
+    "diagnostics": "/evidence/target-diagnostics.json",
+    "rotatedCropDiagnostics": "/evidence/target-reference-crop-rotation.json",
+    "cropCloseupCandidate": "/evidence/target-crop-closeup.json",
+    "nativeReplay": "/evidence/gallery-native-replay-canonical.json"
+  },
+  "coverage": [
+    {
+      "study": "Augmented Math",
+      "source": "https://arxiv.org/abs/2307.16112",
+      "features": [
+        {
+          "feature": "Dynamic values",
+          "implementation": "Implemented for prepared Figure 5; h, k, x and summation n",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/math-interaction.json"
+        },
+        {
+          "feature": "Interactive figures",
+          "implementation": "Prepared quadratic, safe expression binding and vertex drag",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/math-interaction.json"
+        },
+        {
+          "feature": "Relationship highlights",
+          "implementation": "Selected x → y projection on the prepared graph",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/math-interaction.json"
+        },
+        {
+          "feature": "Concrete examples",
+          "implementation": "Numeric substitution and finite summation expansion; n=20 verified gives 210",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/math-interaction.json"
+        },
+        {
+          "feature": "Source affine and quadratic hints",
+          "implementation": "Prepared source05 year inequality, negative-coefficient reversal and18 source08 formulas manually entered on tracked source05; source08 acquisition and live OCR unverified",
+          "status": "Synthetic SDK recognition; prepared/manual formulas",
+          "evidence": "/evidence/source-hints.json"
+        },
+        {
+          "feature": "Step-by-step hints",
+          "implementation": "Completing the square and quadratic roots for supported formulas",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/math-interaction.json"
+        },
+        {
+          "feature": "Automatic textbook extraction",
+          "implementation": "Partial: 100 localized candidates from author OCR, CnSTD and Mathpix assets; live camera OCR pending",
+          "status": "Prepared author assets verified; live extraction pending",
+          "evidence": "/evidence/source-math.json"
+        },
+        {
+          "feature": "Prepared graph axes and correspondence",
+          "implementation": "24 axis-bearing regions across 10 author-prepared SVG samples. Spatial equation-to-figure suggestion and selected origin placement verified in actual C920 replay; live extraction and general semantic correspondence pending",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/math-figures.json"
+        },
+        {
+          "feature": "Camera text OCR",
+          "implementation": "Local Apple Vision processes camera pixels. Source-image OCR read 34 lines; physical C920 page replay read zero. Mathematical OCR accuracy and automatic correspondence remain pending",
+          "status": "Camera workflow verified; physical text recognition pending",
+          "evidence": "/evidence/camera-ocr.json"
+        },
+        {
+          "feature": "General figure/equation selection",
+          "implementation": "Source candidate selection and KaTeX rendering, supported quadratic / function binding, tracked page origin selection; general circle equations and triangle model parsing tested",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/source-math.json"
+        },
+        {
+          "feature": "Direct symbol and numeric literal drag",
+          "implementation": "Explicit image-anchored authored equation overlay: drag h/k/r/a/b/x or an individual numeric occurrence; corresponding expression, computed value and graph update. C920 replay verifies repeated literals, variable h, mode cancellation and stale expression cancellation. Automatic printed-symbol localization pending",
+          "status": "Actual C920 replay; authored overlay",
+          "evidence": "/evidence/math-symbols.json"
+        },
+        {
+          "feature": "Circle and triangle direct manipulation",
+          "implementation": "Radius/center and independent triangle-leg source-plane drags update parameters, hypotenuse and rendered geometry. Actual C920 source01 replay with manually entered circle/triangle formulas; automatic correspondence pending.",
+          "status": "C920 replay with manual formula binding",
+          "evidence": "/evidence/math-handles.json"
+        },
+        {
+          "feature": "Direct curve-line translation",
+          "implementation": "Explicitly enabled dragging on a shifted quadratic/power curve changes h/k and computed y while preserving exponent, graph origin and units. Existing handles and relationship probes take priority. Source picker and disabled-mode guards verified; mode stored in portable project",
+          "status": "Actual C920 replay; authored shifted curves",
+          "evidence": "/evidence/curve-translation.json"
+        },
+        {
+          "feature": "Shared variables across retained equations",
+          "implementation": "Retained equations optionally share active h/k/r/a/b/n values. Unlink freezes the current effective values. Frozen and linked curves, rendered segments and fresh-page project restoration verified on C920 replay. Common authored variable names only",
+          "status": "Actual C920 replay; explicit shared values",
+          "evidence": "/evidence/shared-curves.json"
+        },
+        {
+          "feature": "Symbol-to-figure relationship highlights",
+          "implementation": "Hover or hold symbols on the authored equation strip to highlight triangle a/b/c edges, circle r/h/k segments and selected x/computed y projections. Exact rendered line endpoints verified on C920 replay. Derived c/y are passive. Pointer leave, mode/source selection and invalid values suppress highlights; automatic printed-symbol localization excluded",
+          "status": "Actual C920 replay; explicit authored correspondence",
+          "evidence": "/evidence/math-relationships.json"
+        },
+        {
+          "feature": "Portable authored Math project",
+          "implementation": "Downloaded JSON stores formula, numeric values and ranges, graph origin/unit, relationship hint state and frozen comparison curves. Fresh-page file import restores actual rendered segments and remains draggable. Source SHA/revision checked; eleven malformed files rejected before mutation. Recording stores project snapshots and load/save events. Printed selection and derivation overlays excluded",
+          "status": "Actual C920 replay; manually authored graphs",
+          "evidence": "/evidence/math-project.json"
+        },
+        {
+          "feature": "Curve point and x/y relationship probe",
+          "implementation": "Select a real-domain point on the bound curve and drag its x coordinate. Numeric y and projected guides update while shape parameters stay fixed. C920 replay verifies quadratic, shifted power, sine, upper circle branch, mode cancellation and source-picker priority. Invalid values remove probe and empty the guide geometry; selected x restores per source",
+          "status": "Actual C920 replay; authored formulas",
+          "evidence": "/evidence/math-probe.json"
+        },
+        {
+          "feature": "Variable exponent and graph translation",
+          "implementation": "Explicit shifted power (x+h)^n+k: image-overlay n drag changes the real-domain curve and numeric value, graph reference-point drag changes h/k, retained cubic keeps frozen exponent and shifts. Fractional negative-base samples excluded; substitution hints and SDK restart/source return verified",
+          "status": "Actual C920 replay; authored formula",
+          "evidence": "/evidence/math-power.json"
+        },
+        {
+          "feature": "Cross-study source return",
+          "implementation": "Actual native C920 gallery seek original01→Physics18→original01; selected equation and parameters restore, Math controls remain hidden on Physics sources",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/math-return.json"
+        },
+        {
+          "feature": "Multiple equations on one graph",
+          "implementation": "Explicitly retained numeric curve snapshots share one origin/unit with an editable active curve. Actual C920 replay verifies quadratic/sine/line, visibility/removal, unit changes, Physics source return and SDK restart. Clearer C920 source01 replay uses prepared SVG origin; automatic correspondence pending",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/math-comparison.json"
+        },
+        {
+          "feature": "Structural recognition and exact values",
+          "implementation": "Structural degree-two polynomial classification rejects higher-degree sampling aliases; fractional quadratic vertices and irrational circle radii remain exact. Active1/x plot is disconnected at its pole. Actual C920 replay with manual formulas and existing circle/triangle/quadratic regressions",
+          "status": "C920 replay with manually entered formulas",
+          "evidence": "/evidence/polynomial-model.json"
+        }
+      ]
+    },
+    {
+      "study": "Augmented Physics",
+      "source": "https://arxiv.org/abs/2405.18614",
+      "features": [
+        {
+          "feature": "Augmented experiments",
+          "implementation": "Authored pendulum, optics, projectile and DC circuit on shared image anchor",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/unified-interaction.json"
+        },
+        {
+          "feature": "Animated diagrams",
+          "implementation": "Computed simulation geometry; source ink polygon conversion available with manual crop",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/unified-interaction.json"
+        },
+        {
+          "feature": "Bi-directional binding",
+          "implementation": "Authored image-plane handles for pendulum length/amplitude, lens focal/object distance, launch speed/angle and DC voltage/resistance. Actual C920 Physics18 replay verifies formula readouts, reset velocity and gesture cancellation. Automatic printed-component correspondence pending",
+          "status": "Actual C920 replay; authored simulation handles",
+          "evidence": "/evidence/physics-direct.json"
+        },
+        {
+          "feature": "Parameter visualization",
+          "implementation": "Length, angle, energy, period, image distance, current and power",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/unified-interaction.json"
+        },
+        {
+          "feature": "Import, segmentation, role assignment",
+          "implementation": "Manual box selection from original target image; source-pixel dynamic bodies and static surfaces, collision engine, mass / gravity, spring / string constraints and reset verified. Semantic masks and general textured-background reconstruction pending",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/source-physics.json"
+        },
+        {
+          "feature": "Connected ink selection",
+          "implementation": "User taps one connected non-white component of prepared source pixels. Component-only texture and mask, dynamic mesh and static convex hull, camera-color repair, mass/gravity, spring/string and reset verified in actual C920 Physics18 replay. User-selected roles; semantic segmentation pending",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/physics-ink-selection.json"
+        },
+        {
+          "feature": "Printed shape collisions",
+          "implementation": "Optional thresholded ink convex hull preserves source texture alignment and excludes empty corners; manual crop remains; camera paper-color repair is available",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/source-physics-hull.json"
+        },
+        {
+          "feature": "Concavities and holes",
+          "implementation": "Thresholded source-pixel contours are triangulated into compound collision bodies. Hole and concavity point-collision tests plus physical Physics figure replay passed; semantic region detection pending",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/physics-paper-mesh.json"
+        },
+        {
+          "feature": "Background repair",
+          "implementation": "Reproject raw camera pixels and locally fill the prepared source ink mask with surrounding paper colors. Physical replay and uniform-color mask fill tested; complex or learned reconstruction pending",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/physics-paper-repair.json"
+        },
+        {
+          "feature": "Text-to-parameter linking",
+          "implementation": "Pending; explicitly entered parameters",
+          "status": "Gap",
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "study": "RealitySketch",
+      "source": "https://arxiv.org/abs/2008.08688",
+      "features": [
+        {
+          "feature": "Angle gestures",
+          "implementation": "An interior-to-interior stroke between two nonparallel lines infers an angle. Actual C920 source replay verifies the arc and update from about 90 to 61 degrees after dragging a reference endpoint. Closed-region inference verified separately",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/angle-gesture.json"
+        },
+        {
+          "feature": "Perpendicular constraints",
+          "implementation": "Nearby near-perpendicular strokes infer an editable +90/-90 relation to an existing line. Dynamic heading and root, fixed drawn length, absence and cycle rejection tested. Synthetic pixel fixture; physical metric geometry pending",
+          "status": "Synthetic pixel fixture verified; physical geometry pending",
+          "evidence": "/evidence/perpendicular-browser.json"
+        },
+        {
+          "feature": "Independent RGB inputs",
+          "implementation": "Up to six independent selected RGB components per target, proximity endpoint binding, two tracked inputs driving a distance and dependent a/2 line. Red absence invalidates dependencies while blue continues. Synthetic pixel fixture; live objects pending",
+          "status": "Synthetic pixel fixture verified; live objects pending",
+          "evidence": "/evidence/multiple-color.json"
+        },
+        {
+          "feature": "Sketching and object binding",
+          "implementation": "User strokes bound to an 8th Wall image plane",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/unified-interaction.json"
+        },
+        {
+          "feature": "Length and angle parameterization",
+          "implementation": "Measured segment with world-fixed start and tracked endpoint; user height calibration",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/unified-interaction.json"
+        },
+        {
+          "feature": "Input-output mapping",
+          "implementation": "Length, length×2, angle/2 visibly drive a second line",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/unified-interaction.json"
+        },
+        {
+          "feature": "Color object tracking",
+          "implementation": "Camera RGB connected components, selected color point, visible marker and stroke binding",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/unified-interaction.json"
+        },
+        {
+          "feature": "Skeleton object tracking",
+          "implementation": "Local shared-camera worker and joint binding implemented. Actual official moving-person video composite verifies joint-bound strokes, measurements, particles, body-motion trigger and absence handling. Actual C920 no-person replay rejects binding. Positive physical-camera registration pending",
+          "status": "Moving-video composite verified; physical body registration pending",
+          "evidence": "/evidence/body-motion.json"
+        },
+        {
+          "feature": "Area, expressions and graphs",
+          "implementation": "Named lines/polygons, angle between selected lines, length/angle expressions, endpoint editing, dependency-safe renaming, cycle rejection, placed/resized multiseries plots and user-chosen X axis verified on actual C920 replay",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/sketch-objects.json"
+        },
+        {
+          "feature": "Multiple tracked endpoints",
+          "implementation": "Two selected pixel-inferred joints drive a named distance and a dependent length=a/2, with two-series plots and propagated absence. Actual moving-video composite; live metric registration pending; synthetic independent RGB objects verified separately",
+          "status": "Moving-video composite verified; physical registration pending",
+          "evidence": "/evidence/sketch-object-inputs.json"
+        },
+        {
+          "feature": "Per-target state",
+          "implementation": "Named measurements, particle emitter, Sketch/Canvas paths and Math controls restore per target; actual SDK synthetic target-switch sequence",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/authoring-scope.json"
+        },
+        {
+          "feature": "Metric registration",
+          "implementation": "Partial: user target height calibration; accuracy not independently validated",
+          "status": "Gap",
+          "evidence": null
+        },
+        {
+          "feature": "Inferred closed regions and endpoint references",
+          "implementation": "Closing a nearby directed edge loop infers a named area; source endpoint references update dependent edges, area, e*2 expression and two-series plot. Opened/missing edges invalidate. Actual C920 original-source replay; pure triangles/quads and cycles. Image-plane heuristic with bounded search, no verified metric calibration",
+          "status": "Actual C920 replay verified; heuristic scope",
+          "evidence": "/evidence/closed-region.json"
+        },
+        {
+          "feature": "Portable measurement and constraint graph",
+          "implementation": "Versioned source-checked JSON preserves named line/polygon/angle geometry, endpoint/edge references, expressions, inference controls, plot origin/settings and assumed height. Seven measurements restore and remain editable in fresh C920-replay page; ten invalid files rejected before mutation. Recorder stores initial/final projects and timestamped save/load events",
+          "status": "Actual C920 replay; authored image-plane graph",
+          "evidence": "/evidence/sketch-project.json"
+        },
+        {
+          "feature": "Restored tracked measurement inputs",
+          "implementation": "Independent RGB configurations and inferred ankle/wrist references restore in fresh-page projects. Newly inferred pixels drive source length, dependent a/2 and two-series plots; missing red/person invalidates both measurements. Physical RGB/body registration remains pending",
+          "status": "Synthetic RGB and learned moving-person composite",
+          "evidence": "/evidence/sketch-project-inputs.json"
+        }
+      ]
+    },
+    {
+      "study": "RealityCanvas",
+      "source": "https://arxiv.org/abs/2307.16116",
+      "features": [
+        {
+          "feature": "Recorded-frame authoring",
+          "implementation": "Pause decoded input while actual SDK continues rendering; seek by source seconds, approximate 1/30-second stepping, draw/save flipbook frames, particle/flipbook clock freezes and resumes, stop/restart verified on moving-video composite",
+          "status": "Moving-video composite verified; source time stepping is approximate",
+          "evidence": "/evidence/replay-authoring.json"
+        },
+        {
+          "feature": "Object binding",
+          "implementation": "Image-anchored freehand strokes",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/unified-interaction.json"
+        },
+        {
+          "feature": "Flipbook animation",
+          "implementation": "User-drawn saved frames cycle at 180 ms and follow the selected wrist; disappearance hides bound frames. Actual moving-video composite",
+          "status": "Moving-video composite verified; physical body registration pending",
+          "evidence": "/evidence/bound-flipbook.json"
+        },
+        {
+          "feature": "Action trigger",
+          "implementation": "Manual/motion triggers plus two tracked point distance crossings, user threshold and above/below direction; wrist/ankle dynamic range and absence verified in moving-video composite",
+          "status": "Moving-video composite verified; physical body registration pending",
+          "evidence": "/evidence/distance-trigger.json"
+        },
+        {
+          "feature": "Particle effects",
+          "implementation": "User-drawn particle sprite, emitting line and motion path, editable speed/size/count; actual C920 replay verifies 36→12 particles and separation from flipbook frames",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/canvas-authoring.json"
+        },
+        {
+          "feature": "Motion trajectory",
+          "implementation": "User-authored element clones retain prior tracked positions, with element limit (default30), lifetime, opacity and scale controls. Pixel-derived blue-object synthetic fixture verifies distinct positions, fading, paused ages and expiration. Detected moving-video wrist trajectory also verified; physical registration pending",
+          "status": "Synthetic pixel fixture verified; positive physical registration pending",
+          "evidence": "/evidence/trajectory-clones.json"
+        },
+        {
+          "feature": "Contour highlight",
+          "implementation": "RGB connected-component outline and alpha fill preserve holes in actual C920 replay. Optional local Pose Landmarker person mask supports fill, animated outline and trigger gating; paused inference, absence and configuration changes verified on moving-video composite. General learned object segmentation and physical body registration pending",
+          "status": "RGB physical replay; learned person composite verified",
+          "evidence": "/evidence/person-contour.json"
+        },
+        {
+          "feature": "Color point tracking",
+          "implementation": "Selected RGB region moves bound sketches and particle emitter",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/unified-interaction.json"
+        },
+        {
+          "feature": "Skeleton tracking",
+          "implementation": "Actual official moving-video composite verifies joint-bound strokes/particles and motion trigger; positive physical body registration pending",
+          "status": "Moving-video composite verified; physical body registration pending",
+          "evidence": "/evidence/body-motion.json"
+        },
+        {
+          "feature": "Arbitrary emitter authoring",
+          "implementation": "Draw a sprite, emitter line and relative particle motion path; size, speed and count controls, inherited point binding. Current camera-input replay verifies drawing and rendered effect",
+          "status": "Verified representative implementation",
+          "evidence": "/evidence/canvas-authoring.json"
+        },
+        {
+          "feature": "Independent bindings per authored stroke",
+          "implementation": "Each next drawing can follow its own selected RGB component or wrist, remain fixed, or inherit shared binding. Saved frames retain individual bindings; synthetic pixel test verifies red-bound, blue-bound and fixed strokes, independent motion and loss, maximum stroke/input center separation 1.19 pixels. Shared wrist flipbook and authored particle regressions pass. Physical multiple-object registration pending",
+          "status": "Synthetic pixel fixture verified; positive physical registration pending",
+          "evidence": "/evidence/canvas-independent-inputs.json"
+        },
+        {
+          "feature": "Triggered saved-frame animation",
+          "implementation": "An optional trigger gates saved flipbook frames; synthetic RGB input verifies two frames alternate during the trigger window and disappear afterwards",
+          "status": "Synthetic pixel fixture verified",
+          "evidence": "/evidence/trajectory-clones.json"
+        },
+        {
+          "feature": "Authored stroke width and opacity",
+          "implementation": "Screen-width Line2 strokes with user-selected 1–20px width and opacity; screenshot pixels verify opaque2px versus half-transparent12px strokes, partial contour geometry and full restoration. Redundant straight vertices simplified below 0.001 target height to avoid translucent cap overdraw; particle, trajectory and wrist flipbook regressions pass",
+          "status": "Synthetic pixel rendering verified at 960x720",
+          "evidence": "/evidence/stroke-style.json"
+        },
+        {
+          "feature": "Long unindexed replay seeking",
+          "implementation": "Local packet timestamps supply a missing WebM duration;100-second gallery cycle inside129.822-second raw file can seek past60 seconds. Numeric jump for unknown file input. Private recording metadata remains localhost-only",
+          "status": "Private packet duration and native C920 return verified; approximate time stepping",
+          "evidence": "/evidence/recording-duration.json"
+        },
+        {
+          "feature": "Editable project and SVG export",
+          "implementation": "Saved source SHA and revision, vector stroke geometry, styles, frames, particle/trajectory source references, independent RGB and inherited/independent wrist bindings. Fresh-page import re-infers inputs from camera pixels; RGB absence and person absence hide their drawings. Seven malformed/mismatched files rejected without mutation. Static SVG includes drawing extents; exact clock/history and named Sketch constraints excluded",
+          "status": "Synthetic RGB and official moving-video composite verified",
+          "evidence": "/evidence/canvas-project.json"
+        },
+        {
+          "feature": "Recorded authoring conditions",
+          "implementation": "Versioned initial/final control and graph snapshots, plus timestamped input/change events, include settings selected before camera recording. Canvas drawing geometry and binding references, and authored Math graphs now have dedicated project snapshots. General solver state and transient input history require additional serialization",
+          "status": "Actual SDK composite replay; control audit only",
+          "evidence": "/evidence/authoring-snapshot.json"
+        }
+      ]
+    }
+  ]
+}

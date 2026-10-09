@@ -1,0 +1,15 @@
+export class TrackingState{
+ constructor(){this.epoch=0;this.active=false;this.last=null;this.poseAt=-Infinity;this.seen=false;this.events=[];this.found=0;this.lost=0;this.reacquisitionsMs=[];this.lostAt=null;this.idSwitches=0;this.context={}}
+ start(now){this.active=true;this.invalidate(now,'start')}
+ select(now){this.epoch++;this.invalidate(now,'tracker-switch')}
+ invalidate(now,reason){if(this.seen)this.lost++;this.events.push({at:now,type:'invalidated',reason,epoch:this.epoch,...this.context});this.last=null;this.poseAt=-Infinity;this.seen=false;this.lostAt=null}
+ observe(epoch,now,o,context={}){if(epoch!==this.epoch||!this.active||!Number.isFinite(now))return false;this.context=context;if(o){if(!this.seen){this.found++;if(this.lostAt!==null)this.reacquisitionsMs.push(now-this.lostAt);this.events.push({at:now,type:'found',id:o.id,epoch,...context})}if(this.last&&this.last.id!==o.id){this.idSwitches++;this.events.push({at:now,type:'id-switch',from:this.last.id,to:o.id,epoch,...context})}this.last=o;this.poseAt=now;this.seen=true;this.lostAt=null}else if(this.seen){this.seen=false;this.lost++;this.lostAt=now;this.events.push({at:now,type:'lost',epoch,...context})}return !!o}
+ fresh(now){return this.active&&this.seen&&now-this.poseAt>=0&&now-this.poseAt<160}
+ visible(now){return this.active&&!!this.last&&now-this.poseAt>=0&&now-this.poseAt<650}
+ stop(now){this.active=false;this.invalidate(now,'stop')}
+}
+export class Metrics{
+ constructor(){this.frames=[];this.conditions=[];this.provenance='No physical acceptance yet'}
+ record(frame){this.frames.push(frame)}
+ summary(state){const pct=(a,p)=>a.length?[...a].sort((x,y)=>x-y)[Math.min(a.length-1,Math.floor(a.length*p))]:null;const times=this.frames.map(f=>f.detectMs);return {provenance:this.provenance,frames:this.frames.length,trackedFrames:this.frames.filter(f=>f.tracked).length,wrongIdFrames:this.frames.filter(f=>f.tracked&&f.expectedId!==null&&f.id!==f.expectedId).length,conditionSummaries:this.conditions.map((c,i)=>{const fs=this.frames.filter(f=>f.at>=c.at&&f.at<(this.conditions[i+1]?.at??Infinity)),valid=fs.filter(f=>f.tracked);const xy=valid.map(f=>f.center).filter(Boolean),mean=xy.length?xy.reduce((s,q)=>[s[0]+q[0]/xy.length,s[1]+q[1]/xy.length],[0,0]):null;return {...c,frames:fs.length,trackedFrames:valid.length,detectionFraction:fs.length?valid.length/fs.length:null,centroidJitterPx:c.stationary&&xy.length>1?Math.sqrt(xy.reduce((s,q)=>s+(q[0]-mean[0])**2+(q[1]-mean[1])**2,0)/xy.length):null,jitterBoundary:'Only meaningful when both camera AND marker physically stationary; manually specified condition.'}}),detectMs:{median:pct(times,.5),p95:pct(times,.95)},ids:[...new Set(this.frames.filter(f=>f.tracked).map(f=>f.id))],found:state.found,lost:state.lost,idSwitches:state.idSwitches,reacquisitionMs:state.reacquisitionsMs,conditions:this.conditions,framesDetail:this.frames,events:state.events,limitations:['Reprojection/fit residual is not independent physical accuracy.','Camera pose is approximate unless user measured intrinsics match active resolution.','Distance/tilt/lighting are manually recorded, not automatically assumed.']}}
+}

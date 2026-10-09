@@ -1,0 +1,106 @@
+{
+  "kind": "optics",
+  "width": 1028,
+  "height": 1334,
+  "page_resource": "Catalog/source-diagram-optics-page",
+  "page_sha256": "deb9a16da87521376bbb2411a9428d49246cc43553456f210154f99a19604136",
+  "page_width": 0.21,
+  "source_scope": "Prepared original figure, authored thin lens/series circuit/nonlinear RK4; not OCR/MNA/calibration",
+  "receipt_sha256": "95ad4abe7db75bb9abc61edab81e50e1393e88b8ab7db4d353064364cb0350ff",
+  "cutout_resource": "Catalog/source-diagram-optics-cutout",
+  "cutout_sha256": "b29c765bffa6fd57b0e44d96a97d7badc8be5d11452484d85c1f47a2594e489a",
+  "crop": [
+    330,
+    490,
+    37,
+    78
+  ],
+  "centroid": [
+    348.7286470143613,
+    535.854119425548
+  ],
+  "segmentation": {
+    "id": "optics-tree",
+    "source": "/path/to/projects/realityextract-webxr/public/originals/physics-optics-original.png",
+    "source_sha256": "deb9a16da87521376bbb2411a9428d49246cc43553456f210154f99a19604136",
+    "reference_copy": "/tmp/image-tracking-output/native-original-physics-extended-20261009/physics-optics-original.png",
+    "reference_copy_sha256": "deb9a16da87521376bbb2411a9428d49246cc43553456f210154f99a19604136",
+    "cutout": "/tmp/image-tracking-output/native-original-physics-extended-20261009/optics-tree-sam2-cutout.png",
+    "cutout_sha256": "b29c765bffa6fd57b0e44d96a97d7badc8be5d11452484d85c1f47a2594e489a",
+    "mask": "/tmp/image-tracking-output/native-original-physics-extended-20261009/optics-tree-sam2-mask.png",
+    "mask_sha256": "c65ac17eaf7bb66f32b5cf4d2ae4cedbf5aa846a7eeef1a9df562966651f90f0",
+    "bbox": [
+      330,
+      490,
+      37,
+      78
+    ],
+    "centroid": [
+      348.7286470143613,
+      535.854119425548
+    ],
+    "pixels": 1323,
+    "prompt_box": [
+      327,
+      486,
+      374,
+      568
+    ],
+    "prompt_points": [
+      [
+        348,
+        535
+      ],
+      [
+        354,
+        553
+      ],
+      [
+        350,
+        506
+      ],
+      [
+        350,
+        490
+      ],
+      [
+        350,
+        565
+      ],
+      [
+        330,
+        515
+      ],
+      [
+        332,
+        533
+      ],
+      [
+        330,
+        565
+      ],
+      [
+        370,
+        565
+      ]
+    ],
+    "prompt_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "selected_score": 0.8928181529045105,
+    "inference_seconds": 0.3959395829588175,
+    "rgb_exact": true,
+    "raw_learned_mask": "/tmp/image-tracking-output/native-original-physics-extended-20261009/optics-tree-sam2-raw-mask.png",
+    "raw_learned_mask_sha256": "53722ccbed7b247b024c556936aa6da22edb45c425e32802ce9ac547061332f6",
+    "postprocessing": "Learned SAM2 mask intersect source-green pixels dilated 1 pixel; removes neighboring black letters on white, preserves original RGB. This is explicit source-specific color cleanup, not pure automatic segmentation.",
+    "removed_pixels": 264
+  }
+}

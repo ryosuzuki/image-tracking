@@ -1,0 +1,3 @@
+import {parseExpression} from './math-semantics.js'
+export function polygonArea(points){if(points.length<3)return 0;let a=0;for(let i=0;i<points.length;i++){const p=points[i],q=points[(i+1)%points.length];a+=p.x*q.y-q.x*p.y}return Math.abs(a)/2}
+export function evaluateSketchBinding(expression,values,names={length:'length',angle:'angle',area:'area'}){const scope={t:values.t};for(const kind of ['length','angle','area']){const name=names[kind];if(!/^[A-Za-z]+$/.test(name))throw Error('Variable names must use letters');if(Object.values(names).filter(n=>n===name).length>1)throw Error('Variable names must be distinct');scope[name]=values[kind]}const result=parseExpression(expression)(scope);if(!Number.isFinite(result))throw Error('Binding has no finite value');return result}

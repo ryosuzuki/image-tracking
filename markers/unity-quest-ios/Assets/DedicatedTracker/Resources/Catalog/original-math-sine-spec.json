@@ -1,0 +1,41 @@
+{
+  "schema": "source-math-1",
+  "source": "ucalgary-ilab/augmented-math/sample/sample-01.jpg",
+  "sourceRevision": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+  "sourceSize": [
+    1284,
+    1541
+  ],
+  "referenceCrop": [
+    430,
+    1030,
+    800,
+    445
+  ],
+  "graphOrigin": [
+    869,
+    1311
+  ],
+  "bindingBox": [
+    726,
+    1205,
+    432,
+    183
+  ],
+  "implementation": "New Swift prepared-fixture adapter, not original JS solver reuse, arbitrary OCR, or physically verified tracking.",
+  "pixelsPerUnit": 37,
+  "printedEquation": "y=sin(2x)",
+  "coefficientBox": [
+    558,
+    1063,
+    15,
+    24
+  ],
+  "equationBox": [
+    453,
+    1061,
+    133,
+    28
+  ],
+  "calibration": "Manual source-pixel inspection of Figure7 axis intersection and pi/1 ticks; original Graph.jsx sample01 Figure9 ratio37. No measured physical registration accuracy claimed."
+}

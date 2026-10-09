@@ -1,0 +1,82 @@
+{
+  "kind": "pendulum",
+  "width": 430,
+  "height": 344,
+  "page_resource": "Catalog/source-diagram-pendulum-page",
+  "page_sha256": "0a5be85326526cc5f20fe1b28e5eebf3ec09d6ee33a752cf90149e02434f2c7f",
+  "page_width": 0.21,
+  "source_scope": "Prepared original figure, authored thin lens/series circuit/nonlinear RK4; not OCR/MNA/calibration",
+  "receipt_sha256": "95ad4abe7db75bb9abc61edab81e50e1393e88b8ab7db4d353064364cb0350ff",
+  "cutout_resource": "Catalog/source-diagram-pendulum-cutout",
+  "cutout_sha256": "b2cc75ff632545eeb433b1f76fd0b60a0bd059da7d8e548fa42016feb9e3acfc",
+  "crop": [
+    146,
+    243,
+    23,
+    22
+  ],
+  "centroid": [
+    156.76822916666666,
+    253.82291666666666
+  ],
+  "segmentation": {
+    "id": "pendulum-bob",
+    "source": "/path/to/projects/realityextract-webxr/public/originals/physics-pendulum-original.png",
+    "source_sha256": "0a5be85326526cc5f20fe1b28e5eebf3ec09d6ee33a752cf90149e02434f2c7f",
+    "reference_copy": "/tmp/image-tracking-output/native-original-physics-extended-20261009/physics-pendulum-original.png",
+    "reference_copy_sha256": "0a5be85326526cc5f20fe1b28e5eebf3ec09d6ee33a752cf90149e02434f2c7f",
+    "cutout": "/tmp/image-tracking-output/native-original-physics-extended-20261009/pendulum-bob-sam2-cutout.png",
+    "cutout_sha256": "b2cc75ff632545eeb433b1f76fd0b60a0bd059da7d8e548fa42016feb9e3acfc",
+    "mask": "/tmp/image-tracking-output/native-original-physics-extended-20261009/pendulum-bob-sam2-mask.png",
+    "mask_sha256": "49039530e33ee2a0225a6310805452f7ed2151c942505b44b074ae7b985f6a58",
+    "bbox": [
+      146,
+      243,
+      23,
+      22
+    ],
+    "centroid": [
+      156.76822916666666,
+      253.82291666666666
+    ],
+    "pixels": 384,
+    "prompt_box": [
+      142,
+      241,
+      173,
+      270
+    ],
+    "prompt_points": [
+      [
+        157,
+        254
+      ],
+      [
+        153,
+        252
+      ],
+      [
+        160,
+        257
+      ],
+      [
+        160,
+        238
+      ],
+      [
+        140,
+        256
+      ]
+    ],
+    "prompt_labels": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "selected_score": 0.889613151550293,
+    "inference_seconds": 0.2970686668995768,
+    "rgb_exact": true
+  }
+}

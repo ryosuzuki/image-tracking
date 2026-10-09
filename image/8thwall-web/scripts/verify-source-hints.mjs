@@ -1,0 +1,66 @@
+import {chromium} from 'playwright'
+import assert from 'node:assert/strict'
+import {readFile,writeFile} from 'node:fs/promises'
+const targets=JSON.parse(await readFile('public/targets.json','utf8')).filter(t=>['original-05','original-01'].includes(t.name))
+const source8=JSON.parse(await readFile('public/math-semantics.json','utf8')).samples.find(s=>s.sample===8)
+const browser=await chromium.launch({headless:true,args:['--use-angle=metal','--autoplay-policy=no-user-gesture-required']})
+const page=await browser.newPage({viewport:{width:960,height:720}}),errors=[]
+page.on('pageerror',e=>errors.push(e.message))
+try{
+ await page.route('**/targets.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(targets)}))
+ await page.goto('http://localhost:5173/?replay=source-hints-synthetic&input=synthetic&record=1')
+ await page.waitForFunction(()=>window.demoDiagnostics?.engineLoaded)
+ await page.locator('#start').click()
+ await page.waitForFunction(()=>demoDiagnostics.currentTarget==='original-05'&&demoDiagnostics.overlayVisible,null,{timeout:20000})
+ await page.locator('#replay-pause').click()
+ await page.locator('#replay-seek').evaluate(e=>{e.value=2;e.dispatchEvent(new Event('input'))})
+ await page.waitForFunction(()=>!demoReplayVideo.seeking&&Math.abs(demoReplayVideo.currentTime-2)<.03)
+ await page.waitForTimeout(500)
+ await page.locator('#source-math').evaluate(e=>e.open=true)
+ await page.locator('#source-equation').selectOption('5')
+ await page.locator('#source-bind').click()
+ await page.waitForFunction(()=>demoDiagnostics.sourceAlgebra?.kind==='affine'&&demoDiagnostics.sourceAlgebra.overlayVisible)
+ const inequality=await page.evaluate(()=>demoDiagnostics.sourceAlgebra)
+ assert.ok(inequality.solution.startsWith('t > 2019.788'))
+ assert.equal(inequality.steps.length,3)
+ assert.equal(inequality.provenance,'Author-prepared source equation candidate')
+ await page.locator('#toggle-controls').click();await page.waitForTimeout(2500)
+ await page.screenshot({path:'../math-source-inequality-hints.png'})
+ await page.locator('#toggle-controls').click()
+ async function manual(formula){await page.locator('#camera-ocr-equation').fill(formula);await page.locator('#camera-ocr-bind').click();const result=await page.evaluate(()=>demoDiagnostics.sourceAlgebra);assert.equal(result.target,'original-05');assert.equal(result.provenance,'Reviewed or manually entered formula');assert.equal(result.overlayVisible,true);return result}
+ const flipped=await manual('-2x+3>7');assert.equal(flipped.solution,'x < -2')
+ await page.locator('#camera-ocr-equation').fill('x^3+1=0');await page.locator('#camera-ocr-bind').click();await page.waitForTimeout(200);assert.equal(await page.evaluate(()=>demoDiagnostics.sourceAlgebra.overlayVisible),false,'Unsupported formula must hide previous hints')
+ const quadratics=[]
+ for(const equation of source8.equations){const result=await manual(equation.latex);assert.equal(result.kind,'quadratic');quadratics.push({...result,sourceSample:8,sourceEquation:equation.id})}
+ const noLinear=await manual(source8.equations[2].latex)
+ assert.equal(noLinear.solution,'x = -6, 6')
+ assert.ok(noLinear.steps.some(s=>s.includes('(x + 6) (x − 6)')))
+ await page.locator('#toggle-controls').click();await page.waitForTimeout(2500)
+ await page.screenshot({path:'../math-source-quadratic-hints.png'})
+ await page.locator('#toggle-controls').click()
+ await page.locator('#mode').selectOption('canvas')
+ assert.equal(await page.evaluate(()=>demoDiagnostics.sourceAlgebra.overlayVisible),false)
+ await page.locator('#mode').selectOption('math')
+ assert.equal(await page.evaluate(()=>demoDiagnostics.sourceAlgebra.overlayVisible),true)
+ await page.locator('#source-equation').selectOption('5');await page.locator('#source-bind').click()
+ await page.locator('#replay-pause').click()
+ await page.waitForFunction(()=>demoDiagnostics.currentTarget==='original-01',null,{timeout:18000})
+ assert.equal(await page.evaluate(()=>demoDiagnostics.sourceAlgebra.overlayVisible),false)
+ await page.locator('#mode').selectOption('canvas')
+ await page.waitForFunction(()=>demoDiagnostics.currentTarget==='original-05'&&demoDiagnostics.sourceAlgebra.target==='original-05',null,{timeout:18000})
+ assert.equal(await page.evaluate(()=>demoDiagnostics.sourceAlgebra.overlayVisible),false,'Returning source must keep Math hints hidden in Canvas')
+ await page.locator('#mode').selectOption('math')
+ assert.equal(await page.evaluate(()=>demoDiagnostics.sourceAlgebra.overlayVisible),true)
+ const restored=await page.evaluate(()=>demoDiagnostics.sourceAlgebra)
+ assert.deepEqual(restored.steps,inequality.steps)
+ await page.waitForTimeout(800)
+ const d=await page.evaluate(()=>({session:demoCaptureSession,found:demoDiagnostics.found,updated:demoDiagnostics.updated,lost:demoDiagnostics.lost,errors:demoDiagnostics.errors,targets:demoDiagnostics.targets,inputProvenance:demoInputProvenance}))
+ await page.locator('#stop').click();await page.waitForFunction(()=>!demoDiagnostics.cameraStarted)
+ await page.locator('#start').click();await page.waitForFunction(()=>demoDiagnostics.currentTarget==='original-05'&&demoDiagnostics.overlayVisible&&demoDiagnostics.sourceAlgebra?.overlayVisible,null,{timeout:20000});assert.deepEqual(await page.evaluate(()=>demoDiagnostics.sourceAlgebra.steps),inequality.steps);const restartSession=await page.evaluate(()=>demoCaptureSession);
+ await page.locator('#math-expression').fill('(x+');await page.locator('#bind-equation').click();assert.equal(await page.evaluate(()=>demoDiagnostics.sourceAlgebra.overlayVisible),true,'Invalid manual binding leaves the existing supported source hints visible');
+ await page.locator('#math-expression').fill('(x+h)^2+k');await page.locator('#bind-equation').click();assert.equal(await page.evaluate(()=>demoDiagnostics.sourceAlgebra.overlayVisible),false,'Explicitly binding a new graph clears the old source derivation');assert.equal(await page.evaluate(()=>demoTarget.graph.family),'quadratic','Manual binding creates a graph on a source with no previous graph');await page.locator('#mode').selectOption('canvas');await page.locator('#mode').selectOption('math');assert.equal(await page.evaluate(()=>demoDiagnostics.sourceAlgebra.overlayVisible),false,'Old source hints stay cleared after mode return');const explicitRebindClearsOldHints=true;await page.locator('#stop').click();await page.waitForFunction(()=>!demoDiagnostics.cameraStarted)
+ assert.equal(d.inputProvenance.kind,'synthetic');assert.deepEqual(errors,[]);assert.deepEqual(d.errors,[])
+ await writeFile('evidence/source-hints.json',JSON.stringify({input:'SYNTHETIC original-source pixel sequence 05→01→05 with actual SDK recognition. Source05 inequality is selected from author-prepared candidates. All18 source08 formulas are explicitly manually entered and solved on tracked source05; source08 recognition is NOT verified. No injected pose or OCR output.',inequality,flipped,quadratics,noLinear,restored,restartSession,preparedHintsRestoreAfterRestart:true,explicitRebindClearsOldHints,...d,pageErrors:errors,verified:['Paper year inequality solves to t>2019.788391','Negative coefficient reverses the inequality','All18 source08 quadratics produce steps through manual formula entry on source05','Missing-linear-term quadratic factors and solves ±6','Hints hide on source01 and restore on source05; hide outside Math mode'],limitations:['Author-prepared candidates and manual entry; not live camera OCR','Source08 did not acquire in separate full-page/cropped synthetic checks','Additive numeric affine relations and simple x quadratics; no general symbolic CAS','Synthetic source pixels; no new physical image acquisition claim']},null,2))
+ console.log(JSON.stringify({passed:true,inequality:inequality.solution,quadratics:quadratics.length,noLinear:noLinear.solution,...d}))
+}catch(error){await writeFile('evidence/source-hints-failed.json',JSON.stringify({error:error.message,state:await page.evaluate(()=>({session:demoCaptureSession,current:demoDiagnostics.currentTarget,found:demoDiagnostics.found,updated:demoDiagnostics.updated,source:demoDiagnostics.sourceMath,algebra:demoDiagnostics.sourceAlgebra,errors:demoDiagnostics.errors})),errors},null,2));throw error}
+finally{try{await page.locator('#stop').click({timeout:2000});await page.waitForFunction(()=>!demoDiagnostics.cameraStarted,null,{timeout:15000})}catch{}await browser.close()}

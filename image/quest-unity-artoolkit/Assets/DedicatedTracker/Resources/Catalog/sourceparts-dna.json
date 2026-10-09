@@ -1,0 +1,88 @@
+{
+  "topic": "dna",
+  "page_width": 0.21,
+  "source_size": [
+    1000,
+    1400
+  ],
+  "reference_crop": [
+    242,
+    483,
+    491,
+    577
+  ],
+  "selection_manifest_sha256": "8c611dff3e9c94f33da5eb6ff7c4f1cd3e26e3f8e6b7dcc98ed8a25b163b57c7",
+  "basis": "Host source-front PCA for gears before Unity target(x,y,-z); explicit authored hinge/roles, not learned articulation",
+  "parts": [
+    {
+      "checked_rasters": true,
+      "id": "dna-red-strand",
+      "bbox": [
+        307,
+        609,
+        604,
+        927
+      ],
+      "centroid": [
+        487.65554126540985,
+        787.5506446249882
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "cutout_resource": "Catalog/dna-red-strand-cutout",
+      "cutout_sha256": "510b202ec9216027dd3af81bdfe6a94a8d7f010ec97df130f4509231b1fd1a4a",
+      "hinge": [],
+      "role": "Authored fixture role: visible red bead strand, not discovered molecular topology",
+      "selection_reason": "Recognizable genuine source-derived mesh; source occlusions and unseen surfaces unknown",
+      "limits": "Roles/kinematics authored fixture metadata, not inferred biology/topology/rig. No hidden DNA connectivity recovery. GLTF Y-up unchanged. Swift identity UV/UIImage no additional flip; host-specific origins, no UV bake.",
+      "baseline_mesh_resource": "Catalog/dna-red-strand-selected",
+      "baseline_mesh_sha256": "a5a14e358c8dfb5a109c4adb9bced326ae529f6880057b5c7183bdb92bf9f323",
+      "baseline_texture_resource": "Catalog/dna-red-strand-selected-texture",
+      "baseline_texture_sha256": "28eee38efb4e70018adca025932bdb0113f55f401e36a891db8ad80dead5227a",
+      "baseline_glb_sha256": "ac85707d5d33fc595ce7a7d6269bb508786b428bc8b2c3d129691695657a2302",
+      "baseline_source_texture_sha256": "3147fc5d3fa56b9ae9948e1d41c769a16acd5cb28acc921ac51298874bac6ee3",
+      "selected_mesh_resource": "Catalog/dna-red-strand-selected",
+      "selected_mesh_sha256": "a5a14e358c8dfb5a109c4adb9bced326ae529f6880057b5c7183bdb92bf9f323",
+      "selected_texture_resource": "Catalog/dna-red-strand-selected-texture",
+      "selected_texture_sha256": "28eee38efb4e70018adca025932bdb0113f55f401e36a891db8ad80dead5227a",
+      "selected_glb_sha256": "ac85707d5d33fc595ce7a7d6269bb508786b428bc8b2c3d129691695657a2302",
+      "selected_source_texture_sha256": "3147fc5d3fa56b9ae9948e1d41c769a16acd5cb28acc921ac51298874bac6ee3"
+    },
+    {
+      "checked_rasters": true,
+      "id": "dna-blue-strand",
+      "bbox": [
+        369,
+        548,
+        668,
+        996
+      ],
+      "centroid": [
+        535.4293775840877,
+        757.9121968935076
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "cutout_resource": "Catalog/dna-blue-strand-cutout",
+      "cutout_sha256": "e51bcde96d96b818994279cb86919f1e7a503ecad523186dff0327bc298dfb3f",
+      "hinge": [],
+      "role": "Authored fixture role: visible blue bead strand, not discovered molecular topology",
+      "selection_reason": "Recognizable genuine source-derived mesh; source occlusions and unseen surfaces unknown",
+      "limits": "Roles/kinematics authored fixture metadata, not inferred biology/topology/rig. No hidden DNA connectivity recovery. GLTF Y-up unchanged. Swift identity UV/UIImage no additional flip; host-specific origins, no UV bake.",
+      "baseline_mesh_resource": "Catalog/dna-blue-strand-selected",
+      "baseline_mesh_sha256": "e17fd367acf17f558eaa63071ac2ec03387aeac2e56278a1fa57c806c4952227",
+      "baseline_texture_resource": "Catalog/dna-blue-strand-selected-texture",
+      "baseline_texture_sha256": "2f700adae41ed6f3b3574caab09ccb7cc9e47b28d97f94d4520bc8185318f341",
+      "baseline_glb_sha256": "ee31692794532dbb350457d128bdb5ee1e3e48184d857b8bc5b660b3e0db2cb7",
+      "baseline_source_texture_sha256": "2f700adae41ed6f3b3574caab09ccb7cc9e47b28d97f94d4520bc8185318f341",
+      "selected_mesh_resource": "Catalog/dna-blue-strand-selected",
+      "selected_mesh_sha256": "e17fd367acf17f558eaa63071ac2ec03387aeac2e56278a1fa57c806c4952227",
+      "selected_texture_resource": "Catalog/dna-blue-strand-selected-texture",
+      "selected_texture_sha256": "2f700adae41ed6f3b3574caab09ccb7cc9e47b28d97f94d4520bc8185318f341",
+      "selected_glb_sha256": "ee31692794532dbb350457d128bdb5ee1e3e48184d857b8bc5b660b3e0db2cb7",
+      "selected_source_texture_sha256": "2f700adae41ed6f3b3574caab09ccb7cc9e47b28d97f94d4520bc8185318f341"
+    }
+  ]
+}

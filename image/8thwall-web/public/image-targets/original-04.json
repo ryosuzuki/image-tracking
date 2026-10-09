@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/original-04_luminance.png",
+  "metadata": null,
+  "name": "original-04",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 0,
+    "width": 900,
+    "height": 1200,
+    "isRotated": false,
+    "originalWidth": 900,
+    "originalHeight": 1200
+  },
+  "resources": {
+    "originalImage": "original-04_original.png",
+    "croppedImage": "original-04_cropped.png",
+    "thumbnailImage": "original-04_thumbnail.png",
+    "luminanceImage": "original-04_luminance.png"
+  },
+  "created": 1791347907205,
+  "updated": 1791347907205
+}

@@ -1,0 +1,172 @@
+{
+  "topic": "solar-system",
+  "parts": [
+    {
+      "id": "solar-sun",
+      "bbox": [
+        349,
+        670,
+        562,
+        884
+      ],
+      "centroid": [
+        456.9339723417155,
+        777.5103790744002
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "provenance": "SAM2.1 learned alpha/source RGB exact; genuine Hunyuan2mini shape/Paint; unrigged authored transforms",
+      "cutout_resource": "Catalog/solar-sun-cutout",
+      "cutout_sha256": "f3df3959c7c6aa5cbf2cd6682018dc718d8db5e00818c4d3be3110271720c5f2",
+      "baseline_glb_sha256": "18d77591f0fd52dddc6f068a1408589a5294f061e684861bd2e24fd3274b6fb5",
+      "baseline_mesh_resource": "Catalog/solar-sun-baseline",
+      "baseline_texture_resource": "Catalog/solar-sun-baseline-texture",
+      "baseline_mesh_sha256": "a7c6af603b7151c19fd6518b578a1b84d6f98194dbeeeed92b1b711bc7ca2043",
+      "baseline_texture_sha256": "14ee22854648f2c4055f51592e56a062e84a6d5e763107d1a74974be3f61750b",
+      "baseline_source_texture_sha256": "ff9db84ad10e1558196c4e18208dfce5063725c6c03e90389c12cb8e0526d4fa",
+      "selected_glb_sha256": "18d77591f0fd52dddc6f068a1408589a5294f061e684861bd2e24fd3274b6fb5",
+      "selected_mesh_resource": "Catalog/solar-sun-selected",
+      "selected_texture_resource": "Catalog/solar-sun-selected-texture",
+      "selected_mesh_sha256": "a7c6af603b7151c19fd6518b578a1b84d6f98194dbeeeed92b1b711bc7ca2043",
+      "selected_texture_sha256": "14ee22854648f2c4055f51592e56a062e84a6d5e763107d1a74974be3f61750b",
+      "selected_source_texture_sha256": "ff9db84ad10e1558196c4e18208dfce5063725c6c03e90389c12cb8e0526d4fa"
+    },
+    {
+      "id": "solar-red",
+      "bbox": [
+        385,
+        593,
+        474,
+        678
+      ],
+      "centroid": [
+        428.08154059680777,
+        635.3117626648161
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "provenance": "SAM2.1 learned alpha/source RGB exact; genuine Hunyuan2mini shape/Paint; unrigged authored transforms",
+      "cutout_resource": "Catalog/solar-red-cutout",
+      "cutout_sha256": "74b0c072cee8d2858c8205ae9d7d7e2e9b00e3093bed790e0a1ee1b5744c1b1f",
+      "baseline_glb_sha256": "ad86b8765e073a8db5c67be0d34340e9acd8b8646eb968a85a2ef5a94b4ac808",
+      "baseline_mesh_resource": "Catalog/solar-red-baseline",
+      "baseline_texture_resource": "Catalog/solar-red-baseline-texture",
+      "baseline_mesh_sha256": "eea0bb4012ff1e851c8603211dbcb14412687a2fbc181ed4b4977b19734d9823",
+      "baseline_texture_sha256": "87074292d002c1806f7eafd657523d975fb23d5b2a3c4f06b29db07b56803713",
+      "baseline_source_texture_sha256": "2f28b6b9f8a864ed0510aae361974d082e192bb7def5f63da49e6a33db0a0ec9",
+      "selected_glb_sha256": "ad86b8765e073a8db5c67be0d34340e9acd8b8646eb968a85a2ef5a94b4ac808",
+      "selected_mesh_resource": "Catalog/solar-red-selected",
+      "selected_texture_resource": "Catalog/solar-red-selected-texture",
+      "selected_mesh_sha256": "eea0bb4012ff1e851c8603211dbcb14412687a2fbc181ed4b4977b19734d9823",
+      "selected_texture_sha256": "87074292d002c1806f7eafd657523d975fb23d5b2a3c4f06b29db07b56803713",
+      "selected_source_texture_sha256": "2f28b6b9f8a864ed0510aae361974d082e192bb7def5f63da49e6a33db0a0ec9"
+    },
+    {
+      "id": "solar-green",
+      "bbox": [
+        276,
+        669,
+        379,
+        773
+      ],
+      "centroid": [
+        326.9033552151714,
+        720.1639922197909
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "provenance": "SAM2.1 learned alpha/source RGB exact; genuine Hunyuan2mini shape/Paint; unrigged authored transforms",
+      "cutout_resource": "Catalog/solar-green-cutout",
+      "cutout_sha256": "0994fde3f815b922fe04fde9bc4235c8fda0a20eb761d25e897188fba018fadb",
+      "baseline_glb_sha256": "3dc5a27bc735d96c0cb4a51210e1e069fd82af264e9dd3f62df710c8336eb1cf",
+      "baseline_mesh_resource": "Catalog/solar-green-baseline",
+      "baseline_texture_resource": "Catalog/solar-green-baseline-texture",
+      "baseline_mesh_sha256": "2958d7bc5477d46c0c05b8710ec137ade9060141c3718402f2d285e9de7b2332",
+      "baseline_texture_sha256": "7a63aa16d87e34f564c98f65e69b18b9a76b51ad14494555798eaef5ff462df4",
+      "baseline_source_texture_sha256": "7a63aa16d87e34f564c98f65e69b18b9a76b51ad14494555798eaef5ff462df4",
+      "selected_glb_sha256": "3dc5a27bc735d96c0cb4a51210e1e069fd82af264e9dd3f62df710c8336eb1cf",
+      "selected_mesh_resource": "Catalog/solar-green-selected",
+      "selected_texture_resource": "Catalog/solar-green-selected-texture",
+      "selected_mesh_sha256": "2958d7bc5477d46c0c05b8710ec137ade9060141c3718402f2d285e9de7b2332",
+      "selected_texture_sha256": "7a63aa16d87e34f564c98f65e69b18b9a76b51ad14494555798eaef5ff462df4",
+      "selected_source_texture_sha256": "7a63aa16d87e34f564c98f65e69b18b9a76b51ad14494555798eaef5ff462df4"
+    },
+    {
+      "id": "solar-purple",
+      "bbox": [
+        606,
+        760,
+        724,
+        879
+      ],
+      "centroid": [
+        664.0712224187693,
+        818.3500605157807
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "provenance": "SAM2.1 learned alpha/source RGB exact; genuine Hunyuan2mini shape/Paint; unrigged authored transforms",
+      "cutout_resource": "Catalog/solar-purple-cutout",
+      "cutout_sha256": "d2a1f31ec88246457ba9926c862ab8fbfef78800cee77c835398315c3ba013bd",
+      "baseline_glb_sha256": "9ffb5f8136cb13935814deebfe3812fefc2ba835cabfbe572cf56ef7be57e5d1",
+      "baseline_mesh_resource": "Catalog/solar-purple-baseline",
+      "baseline_texture_resource": "Catalog/solar-purple-baseline-texture",
+      "baseline_mesh_sha256": "2c112f4c9d04f8231298ba7b7e0fe14cbea9d35aff8762f76c743a34ce3392a0",
+      "baseline_texture_sha256": "6587b72111e0fb8a641fc47dc09c632496eafad41381dcecdc7ae0582fd2708a",
+      "baseline_source_texture_sha256": "0dfa6cda3989fa8d0a8bdeb23784e13411e341d545cbdcdc22f1ae8d76a4229f",
+      "selected_glb_sha256": "9ffb5f8136cb13935814deebfe3812fefc2ba835cabfbe572cf56ef7be57e5d1",
+      "selected_mesh_resource": "Catalog/solar-purple-selected",
+      "selected_texture_resource": "Catalog/solar-purple-selected-texture",
+      "selected_mesh_sha256": "2c112f4c9d04f8231298ba7b7e0fe14cbea9d35aff8762f76c743a34ce3392a0",
+      "selected_texture_sha256": "6587b72111e0fb8a641fc47dc09c632496eafad41381dcecdc7ae0582fd2708a",
+      "selected_source_texture_sha256": "0dfa6cda3989fa8d0a8bdeb23784e13411e341d545cbdcdc22f1ae8d76a4229f"
+    },
+    {
+      "id": "solar-blue",
+      "bbox": [
+        606,
+        853,
+        680,
+        913
+      ],
+      "centroid": [
+        639.0111607142857,
+        886.9092261904761
+      ],
+      "fallback": true,
+      "host_z": 0,
+      "quantity": 1,
+      "provenance": "SAM2.1 learned alpha/source RGB exact; genuine Hunyuan2mini shape/Paint; unrigged authored transforms",
+      "cutout_resource": "Catalog/solar-blue-cutout",
+      "cutout_sha256": "ef924cc898e8843b6b73b652ed4d1eebe7bfb387a99ccf4ee7e0a5f7a6e21394",
+      "baseline_glb_sha256": "9c5633b0669cfd9225aad71499fcebe151b645de0b08cf0a1ff5f3a1b9e76949",
+      "baseline_mesh_resource": "Catalog/solar-blue-baseline",
+      "baseline_texture_resource": "Catalog/solar-blue-baseline-texture",
+      "baseline_mesh_sha256": "df3d198b3dde72cffe918561d37dfd95de0c8b6b9be596ace789e0f610d0d6a1",
+      "baseline_texture_sha256": "9be41ef556ef4165366620bcca8ec9aaa8efc0152a195175db051a76eacfb87a",
+      "baseline_source_texture_sha256": "9be41ef556ef4165366620bcca8ec9aaa8efc0152a195175db051a76eacfb87a",
+      "selected_glb_sha256": "9c5633b0669cfd9225aad71499fcebe151b645de0b08cf0a1ff5f3a1b9e76949",
+      "selected_mesh_resource": "Catalog/solar-blue-selected",
+      "selected_texture_resource": "Catalog/solar-blue-selected-texture",
+      "selected_mesh_sha256": "df3d198b3dde72cffe918561d37dfd95de0c8b6b9be596ace789e0f610d0d6a1",
+      "selected_texture_sha256": "9be41ef556ef4165366620bcca8ec9aaa8efc0152a195175db051a76eacfb87a",
+      "selected_source_texture_sha256": "9be41ef556ef4165366620bcca8ec9aaa8efc0152a195175db051a76eacfb87a"
+    }
+  ],
+  "page_width": 0.21,
+  "source_size": [
+    1000,
+    1400
+  ],
+  "reference_crop": [
+    212,
+    529,
+    577,
+    449
+  ],
+  "basis": "Hunyuan Y-up -> Unity ARToolKit local (x,y,-z), host Z alignment first; page x right/y up/negative z outward; not calibration"
+}

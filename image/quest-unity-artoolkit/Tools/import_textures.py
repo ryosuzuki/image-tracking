@@ -1,0 +1,7 @@
+import pathlib,json,struct,hashlib,shutil
+import trimesh,numpy as np
+root=pathlib.Path(__file__).resolve().parents[1];src=pathlib.Path('/tmp/image-tracking-output/alienware-gpu-lab/2026-10-08/hunyuan-paint-3');res=root/'Assets/DedicatedTracker/Resources/Catalog';targets=root/'Assets/StreamingAssets/catalog';manifest=json.loads((res/'manifest.json').read_text());manifest['items']=[x for x in manifest['items'] if not x.get('textured')]
+for i in json.loads((src/'mobile-manifest.json').read_text())['items']:
+ base=next(x for x in manifest['items'] if x['id']==i['id']);id=i['id']+'-textured';path=src/i['mobile']['glb'];scene=trimesh.load(path);mesh=scene.to_geometry();v=np.array(mesh.vertices,dtype='<f4');v-= (v.min(0)+v.max(0))/2;v/=np.ptp(v,axis=0).max();f=np.array(mesh.faces,dtype='<i4');uv=np.array(mesh.visual.uv,dtype='<f4');colors=np.ones((len(v),4),dtype=np.uint8)*255
+ data=struct.pack('<ii',len(v),len(f))+v.tobytes()+colors.tobytes()+f.tobytes()+uv.tobytes();(res/(id+'.bytes')).write_bytes(data);shutil.copyfile(src/i['mobile']['texture'],res/(id+'-texture.png'));shutil.copyfile(targets/(base['id']+'.jpg'),targets/(id+'.jpg'));manifest['items'].append(dict(base,id=id,title=base['title']+' (Hunyuan UV)',textured=True,source='Hunyuan3D-2mini actual geometry + Hunyuan3D-2 actual paint',mesh_sha256=hashlib.sha256(data).hexdigest(),model_sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
+(res/'manifest.json').write_text(json.dumps(manifest,indent=2));print('45target catalog including3UV variants')

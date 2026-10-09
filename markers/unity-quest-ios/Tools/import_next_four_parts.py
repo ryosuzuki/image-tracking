@@ -1,0 +1,26 @@
+import pathlib,json,hashlib,struct
+import numpy as np,trimesh
+from PIL import Image
+root=pathlib.Path(__file__).resolve().parents[1];res=root/'Assets/DedicatedTracker/Resources/Catalog';source=pathlib.Path('/tmp/image-tracking-output/alienware-gpu-lab/2026-10-09/hunyuan-next-four-parts-full-repair/hunyuan-next-four-selected-manifest.json');swift=pathlib.Path('/path/to/projects/apple-paper-lab/ios/Resources/SciencePages')
+def sha(b):return hashlib.sha256(b).hexdigest()
+def checked(p,h):
+ b=p.read_bytes();assert sha(b)==h,(p,'SHA mismatch');return b
+selection=json.loads(checked(source,'8c611dff3e9c94f33da5eb6ff7c4f1cd3e26e3f8e6b7dcc98ed8a25b163b57c7'));selected={p['id']:p for p in selection['items']};config=json.loads((swift/'source-parts-animator.json').read_text());manifest=json.loads((res/'manifest.json').read_text());old=[x for x in manifest['items'] if x.get('cohort')!='next-four-parts'];assert len(old)==71;manifest['items']=old
+for page in config['pages']:
+ topic=page['domainID']
+ if topic not in ['cell','dna','machine','origami']:continue
+ native=dict(topic=topic,page_width=.21,source_size=page['sourceSize'],reference_crop=page['referenceCrop'],selection_manifest_sha256=sha(source.read_bytes()),basis='Host source-front PCA for gears before Unity target(x,y,-z); explicit authored hinge/roles, not learned articulation',parts=[]);target='sourceparts-'+topic+'.png';pagebytes=checked(swift/page['page']['file'],page['page']['sha256']);(root/'Assets/StreamingAssets/catalog'/target).write_bytes(pagebytes)
+ for p in page['parts']:
+  selectedpart=selected[p['id']];base=selectedpart['basis'];directory=pathlib.Path(selectedpart['selected_output_root']);assert p['fallback2D']==(selectedpart['selected_representation']=='exact-source-RGBA-2.5D');cutout=checked(directory/base['files']['cutout'],base['cutout_sha256']);assert sha(cutout)==p['cutout']['sha256'];image=np.asarray(Image.open(directory/base['files']['cutout']).convert('RGBA'));original=np.asarray(Image.open(directory/base['files']['source_page']).convert('RGB').crop(tuple(base['crop_bbox_px'])));assert image.shape[:2]==original.shape[:2];mask=image[:,:,3]>0;assert np.array_equal(original[mask],image[:,:,:3][mask]);(res/(p['id']+'-cutout.png')).write_bytes(cutout)
+  (res/(p['id']+'-cutout-hashbytes.bytes')).write_bytes(cutout)
+  entry=dict(checked_rasters=True,id=p['id'],bbox=p['bbox'],centroid=p['centroid'],fallback=p['fallback2D'],host_z=0,quantity=1,cutout_resource='Catalog/'+p['id']+'-cutout',cutout_sha256=sha(cutout),hinge=p.get('hinge',[]),role=selectedpart['role'],selection_reason=selectedpart['selection_reason'],limits=selectedpart['limits'])
+  glbfile=base['files']['glb'];glb=checked(directory/glbfile,base['sha256'][glbfile]);mesh=trimesh.load(directory/glbfile).to_geometry();v=np.asarray(mesh.vertices,dtype=np.float64);basis=np.eye(3)
+  if topic=='machine':
+   eigen,axes=np.linalg.eigh(np.cov(v.T));normal=axes[:,0];normal*=1 if normal[1]>=0 else -1;to=np.array([0,0,1]);axis=np.cross(normal,to);dot=float(normal@to);K=np.array([[0,-axis[2],axis[1]],[axis[2],0,-axis[0]],[-axis[1],axis[0],0]]);basis=np.eye(3)+K+K@K/(1+dot);assert np.linalg.norm(basis@normal-to)<1e-8;assert np.allclose(basis,np.asarray(p['hostBasis']).reshape(3,3),atol=1e-5);entry.update(host_basis=basis.reshape(-1).tolist(),source_face_normal=normal.tolist(),normal_eigenvalues=eigen.tolist(),basis_normal_unity=[0,0,-1]);v=v@basis.T
+  v[:,2]*=-1;vertices=v.astype('<f4');faces=np.asarray(mesh.faces[:,[0,2,1]],dtype='<i4');bytes_=struct.pack('<ii',len(v),len(faces))+vertices.tobytes()+np.full((len(v),4),255,dtype=np.uint8).tobytes()+faces.tobytes()+np.asarray(mesh.visual.uv,dtype='<f4').tobytes();rid=p['id']+'-selected';(res/(rid+'.bytes')).write_bytes(bytes_);tex=mesh.visual.material.baseColorTexture;tex.save(res/(rid+'-texture.png'));checked(swift/p['selectedTexture']['file'],p['selectedTexture']['sha256']);assert tex.convert('RGBA').tobytes()==Image.open(swift/p['selectedTexture']['file']).convert('RGBA').tobytes()
+  (res/(rid+'-texture-hashbytes.bytes')).write_bytes((res/(rid+'-texture.png')).read_bytes())
+  for suffix in ['baseline','selected']:entry.update({suffix+'_mesh_resource':'Catalog/'+rid,suffix+'_mesh_sha256':sha(bytes_),suffix+'_texture_resource':'Catalog/'+rid+'-texture',suffix+'_texture_sha256':sha((res/(rid+'-texture.png')).read_bytes()),suffix+'_glb_sha256':sha(glb),suffix+'_source_texture_sha256':p['selectedTexture']['sha256']})
+  native['parts'].append(entry)
+ resource='sourceparts-'+topic;data=(json.dumps(native,indent=2)+'\n').encode();(res/(resource+'.json')).write_bytes(data)
+ for mode in ['3d','2d']:manifest['items'].append(dict(id=resource+'-'+mode,title=topic+' · '+('actual selected source parts (quality-gated RGBA)' if mode=='3d' else 'exact source RGBA2.5D'),animation='source-parts',source_parts_file='Catalog/'+resource,source_parts_mode=mode,source_parts_sha256=sha(data),width=.21,height=.294,center_x=0,center_y=0,target_file=target,target_sha256=sha(pagebytes),cohort='next-four-parts',source='Genuine mini inference + explicit exactRGBA fallbacks; authored rigid mechanics, no recovered topology/rig/calibration',physical_verified=False))
+(res/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');print('Preserved71 + eight next-four views =79; independently recomputed both PCA front corrections')

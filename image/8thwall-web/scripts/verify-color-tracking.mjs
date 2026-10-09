@@ -1,0 +1,6 @@
+import assert from 'node:assert/strict'
+import {findColorRegion} from '../src/color-tracking.js'
+const width=100,height=80,data=new Uint8ClampedArray(width*height*4);const paint=(x,y,w,h,color)=>{for(let j=y;j<y+h;j++)for(let i=x;i<x+w;i++)data.set([...color,255],(j*width+i)*4)}
+paint(10,20,10,10,[10,220,30]);paint(70,10,15,15,[10,220,30]);let result=findColorRegion({width,height,data},[10,220,30],{previous:{x:15,y:25}});assert.equal(result.x,14.5);assert.equal(result.y,24.5);assert.equal(result.pixels,100);paint(10,20,10,10,[0,0,0]);paint(20,25,10,10,[10,220,30]);result=findColorRegion({width,height,data},[10,220,30],{previous:result});assert.equal(result.x,24.5);assert.equal(result.y,29.5);assert.equal(findColorRegion({width,height,data},[250,10,100]),null);console.log('Color centroid motion, distractor rejection and loss passed')
+
+result=findColorRegion({width,height,data},[10,220,30],{previous:{x:24,y:29},contour:true});assert.equal(result.contourEdges.length,40);paint(24,29,2,2,[0,0,0]);result=findColorRegion({width,height,data},[10,220,30],{previous:{x:24,y:29},contour:true});assert.equal(result.pixels,96);assert.equal(result.contourEdges.length,48);console.log('Camera component boundary and internal hole contour passed')

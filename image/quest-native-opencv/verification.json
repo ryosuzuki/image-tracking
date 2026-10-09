@@ -1,0 +1,103 @@
+{
+  "tested": "actual Quest 3 on home Mac USB ADB; left Camera2 source=0 position=0",
+  "cameraResolution": [
+    1280,
+    960
+  ],
+  "renderedResolution": [
+    960,
+    720
+  ],
+  "nativeProcessingMedianMs": 69.0,
+  "nativeFpsMedian": 8.58346605286916,
+  "capturedFrames": 226,
+  "captureElapsed": 32.86403583409265,
+  "statesByStimulus": {
+    "baseline": {
+      "TRACKED": 72,
+      "BRIEF HOLD": 1,
+      "SEARCHING": 1
+    },
+    "left": {
+      "TRACKED": 34,
+      "BRIEF HOLD": 2
+    },
+    "right": {
+      "TRACKED": 22,
+      "BRIEF HOLD": 15
+    },
+    "rotate": {
+      "TRACKED": 35
+    },
+    "short-gap": {
+      "BRIEF HOLD": 3,
+      "TRACKED": 26
+    },
+    "hidden": {
+      "TRACKED": 1,
+      "BRIEF HOLD": 4,
+      "SEARCHING": 10
+    }
+  },
+  "shortLossPolicy": "650 ms image-space hold, amber; stale pose is not continued measurement",
+  "verified": [
+    "camera real RGB",
+    "native Android app panel visible on Quest compositor",
+    "monitor target translations and rotation",
+    "300 ms target hidden and returned",
+    "2 seconds target hidden then reacquired"
+  ],
+  "limitations": [
+    "not Vuforia",
+    "not ARCore",
+    "not world-anchored 6DoF",
+    "no physical head movement",
+    "no comparative accuracy benchmark",
+    "dark-room room tracking unavailable; developer boundary temporarily paused for stationary diagnostics"
+  ],
+  "artifacts": {
+    "quest-native-image-tracking.mp4": {
+      "path": "/tmp/image-tracking-output/quest-native-image-lab/2026-10-08/quest-native-image-tracking.mp4",
+      "size": 4643852,
+      "sha256": "7503ffb8df2882003009dcf2c28b5308db56249e91951947c3fba9621c3a6383"
+    },
+    "native-image-panel.mp4": {
+      "path": "/tmp/image-tracking-output/quest-native-image-lab/2026-10-08/native-image-panel.mp4",
+      "size": 8000388,
+      "sha256": "a06c4bd7b20fe224e4682b18f22335109482000dd4b251630fd539053e761db0"
+    },
+    "contact-sheet.jpg": {
+      "path": "/tmp/image-tracking-output/quest-native-image-lab/2026-10-08/contact-sheet.jpg",
+      "size": 89408,
+      "sha256": "24ba380a4c821beaa1cfa1a706d2528f2dbe0e33d1b92472b4891d1a7d1e89ee"
+    },
+    "native-panel-frame.jpg": {
+      "path": "/tmp/image-tracking-output/quest-native-image-lab/2026-10-08/native-panel-frame.jpg",
+      "size": 66736,
+      "sha256": "22a2c387e6930cf22bc2f0442bda6afcb66ea557cea198bf892443f7e4c4f715"
+    }
+  },
+  "videoEncoding": "25 FPS CFR, repeated chronological ~7 FPS real native frame snapshots, no motion interpolation",
+  "fullDecode": "both MP4s decoded end-to-end with ffmpeg after delivery CFR encode; no errors",
+  "finalApkSha256": "0410e71bc8e3dba80916432e28e028d70be8f359eca92ee62c77ff1cba189b36",
+  "finalSourceRuntimeReadback": {
+    "state": "camera 50 open 1280x960",
+    "frames": 92,
+    "tracking": "TRACKED",
+    "inliers": 25,
+    "processingMs": 68
+  },
+  "cleanup": {
+    "status": "verified",
+    "reviewedTarget": "6169889096F36A0161461FCB22227265",
+    "closedTarget": "6169889096F36A0161461FCB22227265",
+    "remainingPresenterPageTargets": 0,
+    "cameraClientAfter": [],
+    "taskAppRunningAfter": false,
+    "guardianPauseRestored": "empty original property",
+    "proximityOverrideRestored": "empty original property",
+    "retained": "app installed; user Store and shell panels preserved; no iPhone or GPU changes",
+    "visualBefore": "presenter-before-cleanup.png and native-panel-frame.jpg",
+    "macDisplayCapture": "SSH screencapture denied (could not create image from display); CDP task page screenshot and actual Quest view inspected"
+  }
+}

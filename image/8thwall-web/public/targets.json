@@ -1,0 +1,415 @@
+[
+  {
+    "number": 1,
+    "name": "original-01",
+    "aspect": 0.75,
+    "label": "Augmented Math sample 01",
+    "shape": "original-parabola",
+    "color": "hsl(43,95%,60%)",
+    "image": "/originals/original-01-present.png",
+    "data": "/image-targets/original-01.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/figure-01.jpg",
+      "kind": "Original extracted figure asset from Augmented Math sample 01",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original figure scaled to fit; white margins only",
+      "imageSHA256": "87cbe9cc70bb5b03f6fbff080b82a729bd39a5eb269cd300263b928183109f73"
+    },
+    "graph": {
+      "originX": 0.22546728971962618,
+      "originY": -0.10426401869158876,
+      "unit": 0.014018691588785047,
+      "equation": "y = (x + h)² + k",
+      "defaultH": 3,
+      "defaultK": 1,
+      "sourceExample": "Sample 01 Example 2 and Figure 5; original equation x² + 6x + 10 = (x + 3)² + 1"
+    }
+  },
+  {
+    "number": 2,
+    "name": "original-02",
+    "aspect": 0.75,
+    "label": "Augmented Math sample 02",
+    "shape": "quadratic",
+    "color": "hsl(86,95%,60%)",
+    "image": "/originals/original-02.png",
+    "data": "/image-targets/original-02.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/sample-02.jpg",
+      "kind": "Original textbook page from Augmented Math",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "3e9e4407805c2f8485c05fe7311b224b99fc862d2b48ae8f930cff04f30d4b61"
+    }
+  },
+  {
+    "number": 3,
+    "name": "original-03",
+    "aspect": 0.75,
+    "label": "Augmented Math sample 03",
+    "shape": "quadratic",
+    "color": "hsl(129,95%,60%)",
+    "image": "/originals/original-03.png",
+    "data": "/image-targets/original-03.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/sample-03.jpg",
+      "kind": "Original textbook page from Augmented Math",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "c4f050015d36bea1ce91962ce058dfec342f3d439e22c9fa38d683ae41fbe12d"
+    }
+  },
+  {
+    "number": 4,
+    "name": "original-04",
+    "aspect": 0.75,
+    "label": "Augmented Math sample 04",
+    "shape": "quadratic",
+    "color": "hsl(172,95%,60%)",
+    "image": "/originals/original-04.png",
+    "data": "/image-targets/original-04.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/sample-04.jpg",
+      "kind": "Original textbook page from Augmented Math",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "942639957836870908093eddcac285c38f93ef4f72e4016b4caf40a3277a0d96"
+    }
+  },
+  {
+    "number": 5,
+    "name": "original-05",
+    "aspect": 0.75,
+    "label": "Augmented Math sample 05",
+    "shape": "quadratic",
+    "color": "hsl(215,95%,60%)",
+    "image": "/originals/original-05.png",
+    "data": "/image-targets/original-05.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/sample-05.jpg",
+      "kind": "Original textbook page from Augmented Math",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "b1301be6d84f449b220b187a097c94f32de06ff8f8f6fb886a5ae1359f6c33f5"
+    }
+  },
+  {
+    "number": 6,
+    "name": "original-06",
+    "aspect": 0.75,
+    "label": "Augmented Math sample 06",
+    "shape": "quadratic",
+    "color": "hsl(258,95%,60%)",
+    "image": "/originals/original-06.png",
+    "data": "/image-targets/original-06.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/sample-06.jpg",
+      "kind": "Original textbook page from Augmented Math",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "7d9762175666d9b839c6eb643f06ef7f2691faf6de8c971ee06be88361de8f2b"
+    }
+  },
+  {
+    "number": 7,
+    "name": "original-07",
+    "aspect": 0.75,
+    "label": "Augmented Math sample 07",
+    "shape": "quadratic",
+    "color": "hsl(301,95%,60%)",
+    "image": "/originals/original-07.png",
+    "data": "/image-targets/original-07.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/sample-07.jpg",
+      "kind": "Original textbook page from Augmented Math",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "4d236682f686169b93c219c3e13aed064eae6414dbf2afd8f69e7eff90d5e2e7"
+    }
+  },
+  {
+    "number": 8,
+    "name": "original-08",
+    "aspect": 0.75,
+    "label": "Augmented Math sample 08",
+    "shape": "quadratic",
+    "color": "hsl(344,95%,60%)",
+    "image": "/originals/original-08.png",
+    "data": "/image-targets/original-08.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/sample-08.jpg",
+      "kind": "Original textbook page from Augmented Math",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "e08d6bf37b6594b4bed8d0cf3283f64d263016f633f746299b3167c0f7e34d42"
+    }
+  },
+  {
+    "number": 9,
+    "name": "original-09",
+    "aspect": 0.75,
+    "label": "Augmented Math sample 09",
+    "shape": "quadratic",
+    "color": "hsl(27,95%,60%)",
+    "image": "/originals/original-09.png",
+    "data": "/image-targets/original-09.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/sample-09.jpg",
+      "kind": "Original textbook page from Augmented Math",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "b4a2004e086bb117eaf3ddec1eabbe3f51449d39d6958b9a5f858d2388d3c886"
+    }
+  },
+  {
+    "number": 10,
+    "name": "original-10",
+    "aspect": 0.75,
+    "label": "Augmented Math sample 10",
+    "shape": "quadratic",
+    "color": "hsl(70,95%,60%)",
+    "image": "/originals/original-10.png",
+    "data": "/image-targets/original-10.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/sample-10.jpg",
+      "kind": "Original textbook page from Augmented Math",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "8852b7a3499fcf1c9dfda905357e527eb10c7f9179682fdb413aa109a061d65e"
+    }
+  },
+  {
+    "number": 11,
+    "name": "original-11",
+    "aspect": 0.75,
+    "label": "Augmented Math original figure 2",
+    "shape": "sine",
+    "color": "hsl(113,95%,60%)",
+    "image": "/originals/original-11.png",
+    "data": "/image-targets/original-11.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/figure-02.jpg",
+      "kind": "Original extracted math figure",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "e2dd40939d58d5c7212638976fd17a6659499eb92078811f975ecd4dd7380c9b"
+    }
+  },
+  {
+    "number": 12,
+    "name": "original-12",
+    "aspect": 0.75,
+    "label": "Augmented Math original figure 3",
+    "shape": "sine",
+    "color": "hsl(156,95%,60%)",
+    "image": "/originals/original-12.png",
+    "data": "/image-targets/original-12.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/figure-03.jpg",
+      "kind": "Original extracted math figure",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "a1cfa4297f7d0b1b73acf0acfffe4d238ce1e7f1e9fdc2667d0d4ec6a605951c"
+    }
+  },
+  {
+    "number": 13,
+    "name": "original-13",
+    "aspect": 0.75,
+    "label": "Augmented Math original figure 4",
+    "shape": "sine",
+    "color": "hsl(199,95%,60%)",
+    "image": "/originals/original-13.png",
+    "data": "/image-targets/original-13.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/figure-04.jpg",
+      "kind": "Original extracted math figure",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "5ff5d0cbba8609b579dceef07963693a7111020cf92e7d7c6ff86cdf3b49d12f"
+    }
+  },
+  {
+    "number": 14,
+    "name": "original-14",
+    "aspect": 0.75,
+    "label": "Augmented Math original figure 5",
+    "shape": "sine",
+    "color": "hsl(242,95%,60%)",
+    "image": "/originals/original-14.png",
+    "data": "/image-targets/original-14.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/figure-05.jpg",
+      "kind": "Original extracted math figure",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "ba66b53cbe0d4e9855aa53f50d9147752dc53c045cd6001f7065a320c4e938fe"
+    }
+  },
+  {
+    "number": 15,
+    "name": "original-15",
+    "aspect": 0.75,
+    "label": "Augmented Math original figure 6",
+    "shape": "sine",
+    "color": "hsl(285,95%,60%)",
+    "image": "/originals/original-15.png",
+    "data": "/image-targets/original-15.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/figure-06.jpg",
+      "kind": "Original extracted math figure",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "45934918d8e424e3f018e9df68c7088249b220ffc1b98155b9bd5634e1828823"
+    }
+  },
+  {
+    "number": 16,
+    "name": "original-16",
+    "aspect": 0.75,
+    "label": "Augmented Math original figure 7",
+    "shape": "sine",
+    "color": "hsl(328,95%,60%)",
+    "image": "/originals/original-16.png",
+    "data": "/image-targets/original-16.json",
+    "source": {
+      "project": "https://github.com/ucalgary-ilab/augmented-math",
+      "path": "public/sample/figure-07.jpg",
+      "kind": "Original extracted math figure",
+      "upstreamCommit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+      "padding": "Original image scaled to fit 900 x 1200; white margins only",
+      "imageSHA256": "af68e2342dbebabf8544a831b073ccf6a1b6729f4e4151fc1f74735674763088"
+    }
+  },
+  {
+    "number": 17,
+    "name": "original-17",
+    "aspect": 2.2421875,
+    "label": "Augmented Physics · Experiments",
+    "shape": "circle",
+    "color": "hsl(11,95%,60%)",
+    "image": "/originals/original-17.png",
+    "data": "/image-targets/original-17.json",
+    "source": {
+      "project": "https://arxiv.org/abs/2405.18614",
+      "path": "arXiv:2405.18614 page 5, published figure crop",
+      "kind": "Original physics paper figure (includes published augmentation graphics)",
+      "padding": "Original published crop at natural aspect ratio; no added margins",
+      "imageSHA256": "b645c9186b7e502fedcb0fc08ea048ce78f4c5b7b01461bbaa3506acecc1f10f"
+    },
+    "trackingReference": {
+      "revision": 2,
+      "orientation": "Official CLI90-degree portrait reference; original source and camera presentation remain landscape",
+      "canonicalPlane": "Target height one; width equals source aspect",
+      "scaledHeight": 0.445993031358885
+    }
+  },
+  {
+    "number": 18,
+    "name": "original-18",
+    "aspect": 2.9,
+    "label": "Augmented Physics · Animated diagrams",
+    "shape": "circle",
+    "color": "hsl(54,95%,60%)",
+    "image": "/originals/original-18.png",
+    "data": "/image-targets/original-18.json",
+    "source": {
+      "project": "https://arxiv.org/abs/2405.18614",
+      "path": "arXiv:2405.18614 page 5, published figure crop",
+      "kind": "Original physics paper figure (includes published augmentation graphics)",
+      "padding": "Original published crop at natural aspect ratio; no added margins",
+      "imageSHA256": "99ed2541188c16457b8b9b16a4ab1f32e22ca50088feff18b678293a03488efe"
+    },
+    "trackingReference": {
+      "revision": 2,
+      "orientation": "Official CLI90-degree portrait reference; original source and camera presentation remain landscape",
+      "canonicalPlane": "Target height one; width equals source aspect",
+      "scaledHeight": 0.3448275862068966
+    }
+  },
+  {
+    "number": 19,
+    "name": "original-19",
+    "aspect": 2.8984375,
+    "label": "Augmented Physics · Bi-directional binding",
+    "shape": "circle",
+    "color": "hsl(97,95%,60%)",
+    "image": "/originals/original-19.png",
+    "data": "/image-targets/original-19.json",
+    "source": {
+      "project": "https://arxiv.org/abs/2405.18614",
+      "path": "arXiv:2405.18614 page5 Figure4, published diagram and caption crop",
+      "kind": "Original physics paper figure (includes published augmentation graphics)",
+      "padding": "Original published crop at natural aspect ratio; no added margins",
+      "crop": {
+        "normalized": [
+          0.075,
+          0.724,
+          0.42,
+          0.112
+        ],
+        "pixels": {
+          "left": 102,
+          "top": 1274,
+          "width": 571,
+          "height": 197
+        },
+        "pageSize": {
+          "width": 1360,
+          "height": 1760
+        }
+      },
+      "previousRevision": {
+        "image": "/originals/original-19-text-crop-v1.png",
+        "sha256": "e25abe76f7fb60388d6958c8537ed77b36c39948cdbe10c8347d0384ce29e7f7",
+        "description": "Historical gallery used a body-text crop mislabeled as parameter binding; physical reacquisition of corrected Figure4 is pending"
+      },
+      "imageSHA256": "b966d62569c2fefaf6e650db9570c8fd8aeba40338dbdb9469ce72a53dc15511"
+    },
+    "assetRevision": 2,
+    "trackingReference": {
+      "revision": 2,
+      "orientation": "Official CLI90-degree portrait reference; original source and camera presentation remain landscape",
+      "canonicalPlane": "Target height one; width equals source aspect",
+      "scaledHeight": 0.3450134770889488
+    }
+  },
+  {
+    "number": 20,
+    "name": "original-20",
+    "aspect": 3.2265625,
+    "label": "Augmented Physics · Optics",
+    "shape": "circle",
+    "color": "hsl(140,95%,60%)",
+    "image": "/originals/original-20.png",
+    "data": "/image-targets/original-20.json",
+    "source": {
+      "project": "https://arxiv.org/abs/2405.18614",
+      "path": "arXiv:2405.18614 page 5, published figure crop",
+      "kind": "Original physics paper figure (includes published augmentation graphics)",
+      "padding": "Original published crop at natural aspect ratio; no added margins",
+      "imageSHA256": "da99d741223c4facff28901fd229f1d097a13d5c4df3f2bb576eb451717b42f9"
+    },
+    "trackingReference": {
+      "revision": 2,
+      "orientation": "Official CLI90-degree portrait reference; original source and camera presentation remain landscape",
+      "canonicalPlane": "Target height one; width equals source aspect",
+      "scaledHeight": 0.3099273607748184
+    }
+  }
+]

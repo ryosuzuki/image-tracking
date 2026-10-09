@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleExecutable</key><string>VisionPaperLab</string>
+<key>CFBundleIdentifier</key><string>org.programmablereality.visionpaperlab</string>
+<key>CFBundleName</key><string>Vision Paper Lab</string>
+<key>CFBundleDisplayName</key><string>Vision Paper Lab</string>
+<key>CFBundleVersion</key><string>1</string><key>CFBundleShortVersionString</key><string>1.0</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>LSRequiresIPhoneOS</key><true/>
+<key>UIDeviceFamily</key><array><integer>7</integer></array>
+<key>UIApplicationSceneManifest</key><dict><key>UIApplicationSupportsMultipleScenes</key><true/><key>UISceneConfigurations</key><dict/></dict>
+<key>MinimumOSVersion</key><string>2.0</string>
+<key>NSWorldSensingUsageDescription</key><string>Paper Lab supports spatial image anchors on physical devices.</string>
+</dict></plist>

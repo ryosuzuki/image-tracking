@@ -1,0 +1,132 @@
+[
+  {
+    "file": "dots-7-front.png",
+    "tracker": "dots",
+    "expectedId": 7,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "dots-7-perspective.png",
+    "tracker": "dots",
+    "expectedId": 7,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "dots-7-warm-dim.png",
+    "tracker": "dots",
+    "expectedId": 7,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "dots-7-occluded.png",
+    "tracker": "dots",
+    "expectedId": 7,
+    "kind": "synthetic-corner-occlusion",
+    "expectedDetected": true
+  },
+  {
+    "file": "dots-8-front.png",
+    "tracker": "dots",
+    "expectedId": 8,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "dots-8-perspective.png",
+    "tracker": "dots",
+    "expectedId": 8,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "dots-8-warm-dim.png",
+    "tracker": "dots",
+    "expectedId": 8,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "dots-8-occluded.png",
+    "tracker": "dots",
+    "expectedId": 8,
+    "kind": "synthetic-corner-occlusion",
+    "expectedDetected": true
+  },
+  {
+    "file": "aruco-7-front.png",
+    "tracker": "aruco",
+    "expectedId": 7,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "aruco-7-perspective.png",
+    "tracker": "aruco",
+    "expectedId": 7,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "aruco-7-warm-dim.png",
+    "tracker": "aruco",
+    "expectedId": 7,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "aruco-7-occluded.png",
+    "tracker": "aruco",
+    "expectedId": null,
+    "kind": "synthetic-corner-occlusion",
+    "expectedDetected": false
+  },
+  {
+    "file": "aruco-8-front.png",
+    "tracker": "aruco",
+    "expectedId": 8,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "aruco-8-perspective.png",
+    "tracker": "aruco",
+    "expectedId": 8,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "aruco-8-warm-dim.png",
+    "tracker": "aruco",
+    "expectedId": 8,
+    "kind": "synthetic-perspective-fixture",
+    "expectedDetected": true
+  },
+  {
+    "file": "aruco-8-occluded.png",
+    "tracker": "aruco",
+    "expectedId": null,
+    "kind": "synthetic-corner-occlusion",
+    "expectedDetected": false
+  },
+  {
+    "file": "blank.png",
+    "tracker": "dots",
+    "expectedId": null,
+    "expectedDetected": false
+  },
+  {
+    "file": "blank.png",
+    "tracker": "aruco",
+    "expectedId": null,
+    "expectedDetected": false
+  },
+  {
+    "file": "dots-7-real-dark-green.png",
+    "tracker": "dots",
+    "expectedId": 7,
+    "provenance": "Synthetic known marker with green core RGB34,83,49 observed in actual native iPhone optical frame; not new live camera capture"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "library": {
+    "package": "@mediapipe/tasks-vision",
+    "version": "1.1.0",
+    "license": "Apache-2.0"
+  },
+  "model": {
+    "name": "Pose Landmarker Lite float16 version 1",
+    "source": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task",
+    "sha256": "59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a"
+  },
+  "documentation": "https://developers.google.com/edge/mediapipe/solutions/vision/pose_landmarker/web_js",
+  "privacy": "No runtime cloud inference; camera pixels stay in browser worker. Capture events save estimated landmarks with the camera recording."
+}

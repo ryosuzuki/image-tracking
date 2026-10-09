@@ -1,0 +1,3 @@
+import assert from 'node:assert/strict'
+import {parseExpression,summation,quadraticSteps} from '../src/math-semantics.js'
+assert.equal(parseExpression('x^2 + 6x + 10')({x:-3}),1);assert.equal(parseExpression('(x+h)^2+k')({x:-3,h:3,k:1}),1);assert.equal(parseExpression('-x^2')({x:3}),-9);assert.equal(parseExpression('2^3^2')({}),512);assert.ok(Math.abs(parseExpression('sin(pi/2)')({})-1)<1e-10);assert.equal(parseExpression('sqrt(4)+2(3+1)')({}),10);assert.throws(()=>parseExpression('window.location'));assert.throws(()=>parseExpression('x=alert(1)'));assert.equal(summation(20).sum,210);assert.equal(quadraticSteps(1,-7,10).at(-1),'x = 2, 5');console.log('Safe expression evaluation, summation and quadratic derivation passed')

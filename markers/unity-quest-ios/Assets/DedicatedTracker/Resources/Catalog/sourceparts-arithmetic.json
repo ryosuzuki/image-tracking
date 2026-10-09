@@ -1,0 +1,172 @@
+{
+  "topic": "arithmetic",
+  "parts": [
+    {
+      "id": "arithmetic-column-1",
+      "bbox": [
+        278,
+        611,
+        401,
+        759
+      ],
+      "centroid": [
+        338.9485720198675,
+        684.5843336092715
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "provenance": "SAM2.1 learned alpha/source RGB exact; genuine Hunyuan2mini shape/Paint; unrigged authored transforms",
+      "cutout_resource": "Catalog/arithmetic-column-1-cutout",
+      "cutout_sha256": "ff7a42ab315b5e5cc29ef9f0310c849d54373d110160566312778e18d746e456",
+      "baseline_glb_sha256": "8e30669f4989c8c60c8387e0ab1a0c67e9622251e978a4db677718fae682d7f1",
+      "baseline_mesh_resource": "Catalog/arithmetic-column-1-baseline",
+      "baseline_texture_resource": "Catalog/arithmetic-column-1-baseline-texture",
+      "baseline_mesh_sha256": "09f9526cab3c18ab56bc47c81ce336e93706781614c82ce82a56b873e522f360",
+      "baseline_texture_sha256": "4d13e6f921c9295e152daf1b66c12871516adf96f6c33fddd5b8f192f0156d7e",
+      "baseline_source_texture_sha256": "322a52f26cc482761a3b9191b143c21e6904554d8979beef7c806c6054384215",
+      "selected_glb_sha256": "8e30669f4989c8c60c8387e0ab1a0c67e9622251e978a4db677718fae682d7f1",
+      "selected_mesh_resource": "Catalog/arithmetic-column-1-selected",
+      "selected_texture_resource": "Catalog/arithmetic-column-1-selected-texture",
+      "selected_mesh_sha256": "09f9526cab3c18ab56bc47c81ce336e93706781614c82ce82a56b873e522f360",
+      "selected_texture_sha256": "4d13e6f921c9295e152daf1b66c12871516adf96f6c33fddd5b8f192f0156d7e",
+      "selected_source_texture_sha256": "322a52f26cc482761a3b9191b143c21e6904554d8979beef7c806c6054384215"
+    },
+    {
+      "id": "arithmetic-column-2",
+      "bbox": [
+        357,
+        653,
+        481,
+        802
+      ],
+      "centroid": [
+        419.05789310451775,
+        727.1966297942727
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "provenance": "SAM2.1 learned alpha/source RGB exact; genuine Hunyuan2mini shape/Paint; unrigged authored transforms",
+      "cutout_resource": "Catalog/arithmetic-column-2-cutout",
+      "cutout_sha256": "5ad6eef9facfc5665e0545d07dcd0bd4329b61035b2561eb87aba67b2309ef44",
+      "baseline_glb_sha256": "ef7a37cb14d17450674893e9c6f52173e6edd5c1a5f441b632d1b609f48987d3",
+      "baseline_mesh_resource": "Catalog/arithmetic-column-2-baseline",
+      "baseline_texture_resource": "Catalog/arithmetic-column-2-baseline-texture",
+      "baseline_mesh_sha256": "a6728b0c54adaf310ce55cc56e9b8b18c87d94b09b6ecd7713a9e09e368de08b",
+      "baseline_texture_sha256": "8f6aa6f11b1fbb49b32691c49553e51e898e60b86f8918c925f97a58a2c2a4c4",
+      "baseline_source_texture_sha256": "8f6aa6f11b1fbb49b32691c49553e51e898e60b86f8918c925f97a58a2c2a4c4",
+      "selected_glb_sha256": "ef7a37cb14d17450674893e9c6f52173e6edd5c1a5f441b632d1b609f48987d3",
+      "selected_mesh_resource": "Catalog/arithmetic-column-2-selected",
+      "selected_texture_resource": "Catalog/arithmetic-column-2-selected-texture",
+      "selected_mesh_sha256": "a6728b0c54adaf310ce55cc56e9b8b18c87d94b09b6ecd7713a9e09e368de08b",
+      "selected_texture_sha256": "8f6aa6f11b1fbb49b32691c49553e51e898e60b86f8918c925f97a58a2c2a4c4",
+      "selected_source_texture_sha256": "8f6aa6f11b1fbb49b32691c49553e51e898e60b86f8918c925f97a58a2c2a4c4"
+    },
+    {
+      "id": "arithmetic-column-3",
+      "bbox": [
+        438,
+        696,
+        562,
+        844
+      ],
+      "centroid": [
+        499.2947390011281,
+        769.487949953851
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "provenance": "SAM2.1 learned alpha/source RGB exact; genuine Hunyuan2mini shape/Paint; unrigged authored transforms",
+      "cutout_resource": "Catalog/arithmetic-column-3-cutout",
+      "cutout_sha256": "ff1c85d2aed50129080530ab1db640167675c134b8098eb788f85342a6140398",
+      "baseline_glb_sha256": "6ccec77d5e9493853bf386ff14fcda18b5d10d9a8832537512746add33df4e57",
+      "baseline_mesh_resource": "Catalog/arithmetic-column-3-baseline",
+      "baseline_texture_resource": "Catalog/arithmetic-column-3-baseline-texture",
+      "baseline_mesh_sha256": "4c12572d5129f65d111cc58f7020bfd83aa4bf2242d9634362596c527f96880f",
+      "baseline_texture_sha256": "12376564766fb431f43401f1dbca2b2bbf87fda14f2fcea258712faeeea39634",
+      "baseline_source_texture_sha256": "12376564766fb431f43401f1dbca2b2bbf87fda14f2fcea258712faeeea39634",
+      "selected_glb_sha256": "6ccec77d5e9493853bf386ff14fcda18b5d10d9a8832537512746add33df4e57",
+      "selected_mesh_resource": "Catalog/arithmetic-column-3-selected",
+      "selected_texture_resource": "Catalog/arithmetic-column-3-selected-texture",
+      "selected_mesh_sha256": "4c12572d5129f65d111cc58f7020bfd83aa4bf2242d9634362596c527f96880f",
+      "selected_texture_sha256": "12376564766fb431f43401f1dbca2b2bbf87fda14f2fcea258712faeeea39634",
+      "selected_source_texture_sha256": "12376564766fb431f43401f1dbca2b2bbf87fda14f2fcea258712faeeea39634"
+    },
+    {
+      "id": "arithmetic-column-4",
+      "bbox": [
+        519,
+        737,
+        641,
+        887
+      ],
+      "centroid": [
+        579.6425036089915,
+        811.8175912559291
+      ],
+      "fallback": false,
+      "host_z": -27,
+      "quantity": 1,
+      "provenance": "Full Hunyuan3D-2 genuine volumetric repair selected; original mini baseline preserved; authored host Z=-27 degrees before front basis",
+      "cutout_resource": "Catalog/arithmetic-column-4-cutout",
+      "cutout_sha256": "9b222802801c3907f48469684c7aac725d46a5f35a7300605a792c97ccecd2f8",
+      "baseline_glb_sha256": "ebbe725387d17a18b3640ef54b1f25d1dd1a4704f8016b43dcd07ac42e666232",
+      "baseline_mesh_resource": "Catalog/arithmetic-column-4-baseline",
+      "baseline_texture_resource": "Catalog/arithmetic-column-4-baseline-texture",
+      "baseline_mesh_sha256": "a4066b894cc0b1028b9e12e94e44e7d3998ca8fb9e4b456330f20745fc6a2c87",
+      "baseline_texture_sha256": "59749b3deb353726e44fed7773180a6bb3e3447e086cd18848a64062fc7b01da",
+      "baseline_source_texture_sha256": "32088fc16970aea51693f54ee733e32560d00597a4447b23de029f011c302a41",
+      "selected_glb_sha256": "1688fe26e1fd9ed668ddec4c8cfd99d0f0e3f89e5d205afe0282ee8e8b381ca6",
+      "selected_mesh_resource": "Catalog/arithmetic-column-4-selected",
+      "selected_texture_resource": "Catalog/arithmetic-column-4-selected-texture",
+      "selected_mesh_sha256": "29864565ee61ace09b1ed5e279a1669e89d6e3c4b9cce3beddce7aa3c784c97f",
+      "selected_texture_sha256": "fd92baed0dff46f2102697847566006360b503352bd171f5376f2e887272d4bd",
+      "selected_source_texture_sha256": "fd92baed0dff46f2102697847566006360b503352bd171f5376f2e887272d4bd"
+    },
+    {
+      "id": "arithmetic-column-5",
+      "bbox": [
+        599,
+        779,
+        722,
+        930
+      ],
+      "centroid": [
+        659.9494573643411,
+        854.4336950904393
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "provenance": "SAM2.1 learned alpha/source RGB exact; genuine Hunyuan2mini shape/Paint; unrigged authored transforms",
+      "cutout_resource": "Catalog/arithmetic-column-5-cutout",
+      "cutout_sha256": "dc2ba002d04eefa78493883384d54a7bde14821117e6147827425bf4954a2902",
+      "baseline_glb_sha256": "9beb1d83006f41a0dc7d8d4859a8a196d80960e302000850ae6bb2204724e606",
+      "baseline_mesh_resource": "Catalog/arithmetic-column-5-baseline",
+      "baseline_texture_resource": "Catalog/arithmetic-column-5-baseline-texture",
+      "baseline_mesh_sha256": "441f1583f970437b1ae383ee2a30e34b1f0666aa86f7bf0a1ef71eca6a0dfd1d",
+      "baseline_texture_sha256": "66bcb225c0bdc7ee3220b3f82ca273c62757a3f5f0ae5b28367d21807a4ea3da",
+      "baseline_source_texture_sha256": "c3c0cd8be5dc590bb926e856663db19629c9fafcfa2b1c9c8268f6dc76adcb5d",
+      "selected_glb_sha256": "9beb1d83006f41a0dc7d8d4859a8a196d80960e302000850ae6bb2204724e606",
+      "selected_mesh_resource": "Catalog/arithmetic-column-5-selected",
+      "selected_texture_resource": "Catalog/arithmetic-column-5-selected-texture",
+      "selected_mesh_sha256": "441f1583f970437b1ae383ee2a30e34b1f0666aa86f7bf0a1ef71eca6a0dfd1d",
+      "selected_texture_sha256": "66bcb225c0bdc7ee3220b3f82ca273c62757a3f5f0ae5b28367d21807a4ea3da",
+      "selected_source_texture_sha256": "c3c0cd8be5dc590bb926e856663db19629c9fafcfa2b1c9c8268f6dc76adcb5d"
+    }
+  ],
+  "page_width": 0.21,
+  "source_size": [
+    1000,
+    1400
+  ],
+  "reference_crop": [
+    212,
+    545,
+    575,
+    450
+  ],
+  "basis": "Hunyuan Y-up -> Unity ARToolKit local (x,y,-z), host Z alignment first; page x right/y up/negative z outward; not calibration"
+}

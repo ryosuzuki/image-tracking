@@ -1,0 +1,911 @@
+[
+  {
+    "id": "earth",
+    "title": "Earth: a rotating planet",
+    "page": "earth.png",
+    "mesh": "earth.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "moon",
+    "title": "The Moon and its surface",
+    "page": "moon.png",
+    "mesh": "moon.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "mars",
+    "title": "Mars: the red planet",
+    "page": "mars.png",
+    "mesh": "mars.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "quartz",
+    "title": "Quartz and crystal structure",
+    "page": "quartz.png",
+    "mesh": "quartz.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "halite",
+    "title": "Salt: a cubic crystal",
+    "page": "halite.png",
+    "mesh": "halite.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "shell",
+    "title": "A spiral shell",
+    "page": "shell.png",
+    "mesh": "shell.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "leaf",
+    "title": "Leaves and photosynthesis",
+    "page": "leaf.png",
+    "mesh": "leaf.obj",
+    "animation": "bob",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "acorn",
+    "title": "Seeds carry a new generation",
+    "page": "acorn.png",
+    "mesh": "acorn.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "flower",
+    "title": "Flowers and reproduction",
+    "page": "flower.png",
+    "mesh": "flower.obj",
+    "animation": "bob",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "flask",
+    "title": "A flask in the laboratory",
+    "page": "flask.png",
+    "mesh": "flask.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "magnet",
+    "title": "Magnetic poles",
+    "page": "magnet.png",
+    "mesh": "magnet.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "gear",
+    "title": "Gears transfer motion",
+    "page": "gear.png",
+    "mesh": "gear.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "satellite",
+    "title": "A satellite in orbit",
+    "page": "satellite.png",
+    "mesh": "satellite.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "rocket",
+    "title": "Rockets and reaction forces",
+    "page": "rocket.png",
+    "mesh": "rocket.obj",
+    "animation": "bob",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "volcano",
+    "title": "A volcano and its cone",
+    "page": "volcano.png",
+    "mesh": "volcano.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "rx-solar-system",
+    "title": "Solar system",
+    "page": "rx-solar-system.png",
+    "mesh": "rx-solar-system.obj",
+    "animation": "orbit",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      212,
+      529,
+      577,
+      449
+    ]
+  },
+  {
+    "id": "rx-car",
+    "title": "A moving car",
+    "page": "rx-car.png",
+    "mesh": "rx-car.obj",
+    "animation": "drive",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      202,
+      174,
+      576,
+      1087
+    ]
+  },
+  {
+    "id": "rx-cell",
+    "title": "Inside an animal cell",
+    "page": "rx-cell.png",
+    "mesh": "rx-cell.obj",
+    "animation": "explode",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      192,
+      575,
+      577,
+      439
+    ]
+  },
+  {
+    "id": "rx-dna",
+    "title": "DNA base pairs",
+    "page": "rx-dna.png",
+    "mesh": "rx-dna.obj",
+    "animation": "unzip",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      242,
+      483,
+      491,
+      577
+    ]
+  },
+  {
+    "id": "rx-mountain-river",
+    "title": "Mountains and flowing rivers",
+    "page": "rx-mountain-river.png",
+    "mesh": "rx-mountain-river.obj",
+    "animation": "flow",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      166,
+      555,
+      572,
+      557
+    ]
+  },
+  {
+    "id": "rx-machine",
+    "title": "How gears transfer motion",
+    "page": "rx-machine.png",
+    "mesh": "rx-machine.obj",
+    "animation": "gears",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      210,
+      557,
+      573,
+      424
+    ]
+  },
+  {
+    "id": "rx-origami",
+    "title": "Fold a paper bird",
+    "page": "rx-origami.png",
+    "mesh": "rx-origami.obj",
+    "animation": "fold",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      198,
+      593,
+      572,
+      412
+    ]
+  },
+  {
+    "id": "rx-arithmetic",
+    "title": "Regroup five visible blocks",
+    "page": "rx-arithmetic.png",
+    "mesh": "rx-arithmetic.obj",
+    "animation": "count",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      212,
+      545,
+      575,
+      450
+    ]
+  },
+  {
+    "id": "rx-storybook",
+    "title": "A lighthouse story",
+    "page": "rx-storybook.png",
+    "mesh": "rx-storybook.obj",
+    "animation": "story",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      183,
+      538,
+      530,
+      572
+    ]
+  },
+  {
+    "id": "rx-water-cycle",
+    "title": "The water cycle",
+    "page": "rx-water-cycle.png",
+    "mesh": "rx-water-cycle.obj",
+    "animation": "cycle",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      197,
+      514,
+      575,
+      564
+    ]
+  },
+  {
+    "id": "rx-pendulum",
+    "title": "A swinging pendulum",
+    "page": "rx-pendulum.png",
+    "mesh": "rx-pendulum.obj",
+    "animation": "swing",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      356,
+      472,
+      436,
+      575
+    ]
+  },
+  {
+    "id": "rx-lever",
+    "title": "A balanced lever",
+    "page": "rx-lever.png",
+    "mesh": "rx-lever.obj",
+    "animation": "tilt",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      218,
+      485,
+      571,
+      486
+    ]
+  },
+  {
+    "id": "rx-pulley",
+    "title": "A lifting pulley",
+    "page": "rx-pulley.png",
+    "mesh": "rx-pulley.obj",
+    "animation": "lift",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      208,
+      479,
+      573,
+      521
+    ]
+  },
+  {
+    "id": "rx-wind-turbine",
+    "title": "Wind makes a turbine turn",
+    "page": "rx-wind-turbine.png",
+    "mesh": "rx-wind-turbine.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      284,
+      451,
+      444,
+      578
+    ]
+  },
+  {
+    "id": "rx-hydro-turbine",
+    "title": "Water turns a turbine",
+    "page": "rx-hydro-turbine.png",
+    "mesh": "rx-hydro-turbine.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      169,
+      543,
+      573,
+      527
+    ]
+  },
+  {
+    "id": "rx-piston",
+    "title": "A piston in a cylinder",
+    "page": "rx-piston.png",
+    "mesh": "rx-piston.obj",
+    "animation": "reciprocate",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      307,
+      483,
+      364,
+      576
+    ]
+  },
+  {
+    "id": "rx-bridge",
+    "title": "Bridge supports and loads",
+    "page": "rx-bridge.png",
+    "mesh": "rx-bridge.obj",
+    "animation": "load",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      202,
+      553,
+      573,
+      509
+    ]
+  },
+  {
+    "id": "rx-electromagnet",
+    "title": "Coil and iron core",
+    "page": "rx-electromagnet.png",
+    "mesh": "rx-electromagnet.obj",
+    "animation": "field",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      257,
+      481,
+      486,
+      578
+    ]
+  },
+  {
+    "id": "rx-electric-motor",
+    "title": "A rotating electric motor",
+    "page": "rx-electric-motor.png",
+    "mesh": "rx-electric-motor.obj",
+    "animation": "spin",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      212,
+      85,
+      575,
+      926
+    ]
+  },
+  {
+    "id": "rx-lunar-phases",
+    "title": "Phases of the Moon",
+    "page": "rx-lunar-phases.png",
+    "mesh": "rx-lunar-phases.obj",
+    "animation": "orbit",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      219,
+      531,
+      576,
+      402
+    ]
+  },
+  {
+    "id": "rx-eclipse",
+    "title": "Sun Earth Moon alignment",
+    "page": "rx-eclipse.png",
+    "mesh": "rx-eclipse.obj",
+    "animation": "orbit",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      210,
+      542,
+      577,
+      441
+    ]
+  },
+  {
+    "id": "rx-atom",
+    "title": "A simplified atomic model",
+    "page": "rx-atom.png",
+    "mesh": "rx-atom.obj",
+    "animation": "orbit",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      209,
+      576,
+      579,
+      459
+    ]
+  },
+  {
+    "id": "rx-water-molecule",
+    "title": "A water molecule",
+    "page": "rx-water-molecule.png",
+    "mesh": "rx-water-molecule.obj",
+    "animation": "bond",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      252,
+      476,
+      576,
+      520
+    ]
+  },
+  {
+    "id": "rx-carbon-dioxide",
+    "title": "Carbon dioxide molecule",
+    "page": "rx-carbon-dioxide.png",
+    "mesh": "rx-carbon-dioxide.obj",
+    "animation": "bond",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      211,
+      547,
+      578,
+      446
+    ]
+  },
+  {
+    "id": "rx-neuron",
+    "title": "Signals along a neuron",
+    "page": "rx-neuron.png",
+    "mesh": "rx-neuron.obj",
+    "animation": "pulse",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      206,
+      491,
+      577,
+      430
+    ]
+  },
+  {
+    "id": "rx-heart",
+    "title": "A simplified beating heart",
+    "page": "rx-heart.png",
+    "mesh": "rx-heart.obj",
+    "animation": "pulse",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      231,
+      502,
+      504,
+      575
+    ]
+  },
+  {
+    "id": "rx-lungs",
+    "title": "Lungs during breathing",
+    "page": "rx-lungs.png",
+    "mesh": "rx-lungs.obj",
+    "animation": "breathe",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      197,
+      508,
+      549,
+      576
+    ]
+  },
+  {
+    "id": "rx-bacterium",
+    "title": "A bacterial cell",
+    "page": "rx-bacterium.png",
+    "mesh": "rx-bacterium.obj",
+    "animation": "explode",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      212,
+      553,
+      577,
+      424
+    ]
+  },
+  {
+    "id": "rx-butterfly",
+    "title": "Wings and symmetry",
+    "page": "rx-butterfly.png",
+    "mesh": "rx-butterfly.obj",
+    "animation": "flap",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      212,
+      519,
+      577,
+      503
+    ]
+  },
+  {
+    "id": "rx-fish",
+    "title": "A swimming fish",
+    "page": "rx-fish.png",
+    "mesh": "rx-fish.obj",
+    "animation": "swim",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      206,
+      552,
+      576,
+      434
+    ]
+  },
+  {
+    "id": "rx-turtle",
+    "title": "A turtle and its shell",
+    "page": "rx-turtle.png",
+    "mesh": "rx-turtle.obj",
+    "animation": "walk",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      198,
+      566,
+      578,
+      411
+    ]
+  },
+  {
+    "id": "rx-dinosaur",
+    "title": "A dinosaur skeleton idea",
+    "page": "rx-dinosaur.png",
+    "mesh": "rx-dinosaur.obj",
+    "animation": "walk",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      250,
+      542,
+      577,
+      474
+    ]
+  },
+  {
+    "id": "rx-tree-growth",
+    "title": "A seed grows into a tree",
+    "page": "rx-tree-growth.png",
+    "mesh": "rx-tree-growth.obj",
+    "animation": "grow",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      275,
+      452,
+      553,
+      577
+    ]
+  },
+  {
+    "id": "rx-mushroom",
+    "title": "A mushroom releases spores",
+    "page": "rx-mushroom.png",
+    "mesh": "rx-mushroom.obj",
+    "animation": "release",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      258,
+      468,
+      577,
+      542
+    ]
+  },
+  {
+    "id": "rx-snowflake",
+    "title": "Six-fold snowflake symmetry",
+    "page": "rx-snowflake.png",
+    "mesh": "rx-snowflake.obj",
+    "animation": "expand",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      211,
+      555,
+      578,
+      429
+    ]
+  },
+  {
+    "id": "rx-crystal-growth",
+    "title": "A crystal grows in layers",
+    "page": "rx-crystal-growth.png",
+    "mesh": "rx-crystal-growth.obj",
+    "animation": "grow",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      246,
+      511,
+      433,
+      573
+    ]
+  },
+  {
+    "id": "rx-fractions",
+    "title": "One whole and four quarters",
+    "page": "rx-fractions.png",
+    "mesh": "rx-fractions.obj",
+    "animation": "divide",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      213,
+      527,
+      574,
+      486
+    ]
+  },
+  {
+    "id": "rx-geometry-net",
+    "title": "A cube net folds",
+    "page": "rx-geometry-net.png",
+    "mesh": "rx-geometry-net.obj",
+    "animation": "fold",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      197,
+      552,
+      574,
+      454
+    ]
+  },
+  {
+    "id": "rx-storybook-space",
+    "title": "A small spacecraft story",
+    "page": "rx-storybook-space.png",
+    "mesh": "rx-storybook-space.obj",
+    "animation": "story",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      229,
+      519,
+      441,
+      575
+    ]
+  },
+  {
+    "id": "original-physics-spring",
+    "title": "Original Augmented Physics \u00b7 spring and pulley",
+    "page": "original-physics-spring.png",
+    "mesh": "original-physics-spring.json",
+    "animation": "source-pixel-physics",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "original-physics-carts",
+    "title": "Original Augmented Physics \u00b7 carts",
+    "page": "original-physics-carts.png",
+    "mesh": "original-physics-carts.json",
+    "animation": "source-pixel-physics",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "original-math-quadratic",
+    "title": "Original Augmented Math \u00b7 linked quadratic",
+    "page": "original-math-quadratic.png",
+    "mesh": "original-math-quadratic.json",
+    "animation": "source-math-binding",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "original-math-sine",
+    "title": "Original Math \u00b7 sine frequency",
+    "page": "original-math-quadratic.png",
+    "mesh": "original-math-sine.json",
+    "animation": "source-math-extension",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "original-math-summation",
+    "title": "Original Math \u00b7 summation bounds",
+    "page": "original-math-summation.jpg",
+    "mesh": "original-math-summation.json",
+    "animation": "source-math-extension",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "original-oct2-printed-car",
+    "title": "October2 original printed car \u00b7 inferred texture",
+    "page": "original-oct2-printed-car.png",
+    "mesh": "original-oct2-printed-car.geom",
+    "texture": "original-oct2-printed-car-texture.png",
+    "animation": "drive",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "original-math-triangle",
+    "title": "Original Math \u00b7 Pythagorean triangle",
+    "page": "original-math-triangle.jpg",
+    "mesh": "original-math-triangle.json",
+    "animation": "source-math-triangle",
+    "physicalWidth": 0.21
+  },
+  {
+    "id": "primary9-solar-system",
+    "title": "Solar system \u00b7 fresh same-input comparison",
+    "page": "primary9-solar-system.png",
+    "mesh": "primary9-solar-system.obj",
+    "variantMesh": "primary9-solar-system.geom",
+    "variantTexture": "primary9-solar-system-texture.png",
+    "animation": "orbit",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      212,
+      529,
+      577,
+      449
+    ]
+  },
+  {
+    "id": "primary9-car",
+    "title": "A moving car \u00b7 fresh same-input comparison",
+    "page": "primary9-car.png",
+    "mesh": "primary9-car.obj",
+    "variantMesh": "primary9-car.geom",
+    "variantTexture": "primary9-car-texture.png",
+    "animation": "drive",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      202,
+      522,
+      576,
+      531
+    ]
+  },
+  {
+    "id": "primary9-cell",
+    "title": "Inside an animal cell \u00b7 fresh same-input comparison",
+    "page": "primary9-cell.png",
+    "mesh": "primary9-cell.obj",
+    "variantMesh": "primary9-cell.geom",
+    "variantTexture": "primary9-cell-texture.png",
+    "animation": "explode",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      192,
+      575,
+      577,
+      439
+    ]
+  },
+  {
+    "id": "primary9-dna",
+    "title": "DNA base pairs \u00b7 fresh same-input comparison",
+    "page": "primary9-dna.png",
+    "mesh": "primary9-dna.obj",
+    "variantMesh": "primary9-dna.geom",
+    "variantTexture": "primary9-dna-texture.png",
+    "animation": "unzip",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      242,
+      483,
+      491,
+      577
+    ]
+  },
+  {
+    "id": "primary9-mountain-river",
+    "title": "Mountains and flowing rivers \u00b7 fresh same-input comparison",
+    "page": "primary9-mountain-river.png",
+    "mesh": "primary9-mountain-river.obj",
+    "variantMesh": "primary9-mountain-river.geom",
+    "variantTexture": "primary9-mountain-river-texture.png",
+    "animation": "flow",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      166,
+      555,
+      572,
+      557
+    ]
+  },
+  {
+    "id": "primary9-machine",
+    "title": "How gears transfer motion \u00b7 fresh same-input comparison",
+    "page": "primary9-machine.png",
+    "mesh": "primary9-machine.obj",
+    "variantMesh": "primary9-machine.geom",
+    "variantTexture": "primary9-machine-texture.png",
+    "animation": "gears",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      210,
+      557,
+      573,
+      424
+    ]
+  },
+  {
+    "id": "primary9-origami",
+    "title": "Fold a paper bird \u00b7 fresh same-input comparison",
+    "page": "primary9-origami.png",
+    "mesh": "primary9-origami.obj",
+    "variantMesh": "primary9-origami.geom",
+    "variantTexture": "primary9-origami-texture.png",
+    "animation": "fold",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      198,
+      593,
+      572,
+      412
+    ]
+  },
+  {
+    "id": "primary9-arithmetic",
+    "title": "Regroup five visible blocks \u00b7 fresh same-input comparison",
+    "page": "primary9-arithmetic.png",
+    "mesh": "primary9-arithmetic.obj",
+    "variantMesh": "primary9-arithmetic.geom",
+    "variantTexture": "primary9-arithmetic-texture.png",
+    "animation": "count",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      212,
+      545,
+      575,
+      450
+    ]
+  },
+  {
+    "id": "primary9-storybook",
+    "title": "A lighthouse story \u00b7 fresh same-input comparison",
+    "page": "primary9-storybook.png",
+    "mesh": "primary9-storybook.obj",
+    "variantMesh": "primary9-storybook.geom",
+    "variantTexture": "primary9-storybook-texture.png",
+    "animation": "story",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      183,
+      538,
+      530,
+      572
+    ]
+  },
+  {
+    "id": "original-physics-optics",
+    "title": "Original optics: source tree and thin-lens rays",
+    "page": "original-physics-optics.png",
+    "mesh": "original-physics-optics-provenance.json",
+    "animation": "source-diagram-physics",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      290,
+      450,
+      640,
+      245
+    ]
+  },
+  {
+    "id": "original-physics-circuit",
+    "title": "Original circuit: prepared 100 V series",
+    "page": "original-physics-circuit.jpg",
+    "mesh": "original-physics-circuit-provenance.json",
+    "animation": "source-diagram-physics",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      125,
+      270,
+      380,
+      175
+    ]
+  },
+  {
+    "id": "original-physics-pendulum",
+    "title": "Original pendulum: source bob and nonlinear dynamics",
+    "page": "original-physics-pendulum.png",
+    "mesh": "original-physics-pendulum-provenance.json",
+    "animation": "source-diagram-physics",
+    "physicalWidth": 0.21,
+    "referenceCrop": [
+      120,
+      25,
+      180,
+      290
+    ]
+  }
+]

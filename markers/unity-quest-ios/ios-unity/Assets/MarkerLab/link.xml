@@ -1,0 +1,12 @@
+<linker>
+  <!-- GameObject.CreatePrimitive instantiates these by native type, not a managed generic reference. -->
+  <assembly fullname="UnityEngine.PhysicsModule">
+    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+    <type fullname="UnityEngine.SphereCollider" preserve="all" />
+    <type fullname="UnityEngine.CapsuleCollider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule">
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+  </assembly>
+</linker>

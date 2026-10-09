@@ -1,0 +1,3 @@
+import assert from 'node:assert/strict'
+import {inputProvenance} from '../src/input-provenance.js'
+assert.equal(inputProvenance({replay:true}).label,'RECORDED INPUT REPLAY');assert.equal(inputProvenance({file:true}).verifiedPhysicalCapture,false);assert.equal(inputProvenance({replay:true,evidence:'fixture'}).label,'COMPOSITE FIXTURE REPLAY');assert.equal(inputProvenance({evidence:'synthetic'}).label,'SYNTHETIC CAMERA INPUT');assert.equal(inputProvenance({cameraLabel:'C920'}).verifiedPhysicalCapture,false);console.log('Replay/file camera provenance remains unknown unless separately verified; fixtures and synthetic inputs are explicit')

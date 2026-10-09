@@ -1,0 +1,4598 @@
+[
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/math-card_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/math-card_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/math-card_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/math-card_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-01_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-01_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-01_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-01_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-02_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-02_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-02_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-02_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-03_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-03_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-03_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-03_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-04_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-04_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-04_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-04_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-05_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-05_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-05_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-05_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-06_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-06_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-06_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-06_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-07_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-07_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-07_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-07_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-08_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-08_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-08_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-08_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-09_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-09_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-09_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-09_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-10_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-10_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-10_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-10_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-11_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-11_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-11_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-11_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-12_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-12_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-12_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-12_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-13_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-13_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-13_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-13_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-14_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-14_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-14_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-14_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-15_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-15_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-15_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-15_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-16_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-16_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-16_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-16_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-17_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-17_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-17_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-17_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-18_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-18_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-18_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-18_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-19_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-19_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-19_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-19_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-20_cropped.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-20_luminance.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-20_original.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/image-targets/original-20_thumbnail.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-01-present.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-01.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-02.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-03.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-04.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-05.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-06.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-07.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-08.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-09.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-10.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-11.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-12.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-13.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-14.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-15.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-16.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-17.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-18.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-19-text-crop-v1.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-19.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/originals/original-20.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/target.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/target.svg"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "evidence/camera-color-contour.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "evidence/failure.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "evidence/permission-denied.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "evidence/pixel8pro-tracking.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "evidence/tracking-found.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "evidence/tracking-lost.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "evidence/webkit-mobile-ready.png"
+  },
+  {
+    "folder": "image/8thwall-web",
+    "path": "public/pose/pose_landmarker_lite.task"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/acorn.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/earth.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/flask.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/flower.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/gear.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/halite.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/leaf.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/magnet.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/mars.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/moon.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/optics-tree-sam2-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/optics-tree-sam2-mask.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/optics-tree-sam2-raw-mask.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-left-cart.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-math-quadratic.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-math-summation.jpg"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-math-triangle-contour.svg"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-math-triangle.jpg"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-oct2-printed-car-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-oct2-printed-car.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-physics-carts.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-physics-circuit.jpg"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-physics-optics.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-physics-pendulum.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-physics-spring.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-pulley.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-right-cart.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-spring-coil.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-spring-mass.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-butterfly-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-butterfly.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-car-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-car.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/pendulum-bob-sam2-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/pendulum-bob-sam2-mask.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-arithmetic-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-arithmetic.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-car-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-car.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-cell-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-cell.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-dna-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-dna.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-machine-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-machine.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-mountain-river-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-mountain-river.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-origami-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-origami.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-solar-system-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-solar-system.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-storybook-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-storybook.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/quartz.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rocket.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-arithmetic.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-atom.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-bacterium.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-bridge.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-butterfly.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-car.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-carbon-dioxide.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-cell.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-crystal-growth.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-dinosaur.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-dna.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-eclipse.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-electric-motor.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-electromagnet.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-fish.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-fractions.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-geometry-net.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-heart.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-hydro-turbine.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lever.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lunar-phases.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lungs.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-machine.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-mountain-river.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-mushroom.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-neuron.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-origami.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-pendulum.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-piston.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-pulley.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-snowflake.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-solar-system.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-storybook-space.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-storybook.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-tree-growth.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-turtle.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-water-cycle.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-water-molecule.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-wind-turbine.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/satellite.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/shell.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-1-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-1-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-2-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-2-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-3-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-3-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-4-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-4-full-seed42-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-4-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-5-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-5-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-membrane-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-membrane-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-nucleus-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-nucleus-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-organelle-group-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-organelle-group-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-blue-strand-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-blue-strand-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-red-strand-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-red-strand-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-blue-gear-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-blue-gear-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-yellow-gear-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-yellow-gear-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-left-panel-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-left-panel-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-right-panel-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-right-panel-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-blue-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-blue-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-green-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-green-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-purple-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-purple-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-red-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-red-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-sun-cutout.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-sun-swift-texture.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/volcano.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/math.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/trebuchet.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "visionos/Resources/incline.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "visionos/Resources/math.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "visionos/Resources/pendulum.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "visionos/Resources/trebuchet.png"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/acorn.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/earth.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/flask.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/flower.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/gear.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/halite.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/leaf.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/magnet.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/mars.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/moon.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-oct2-printed-car.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-butterfly.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-car.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-arithmetic.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-arithmetic.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-car.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-car.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-cell.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-cell.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-dna.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-dna.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-machine.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-machine.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-mountain-river.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-mountain-river.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-origami.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-origami.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-solar-system.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-solar-system.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-storybook.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-storybook.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/quartz.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rocket.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-arithmetic.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-atom.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-bacterium.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-bridge.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-butterfly.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-car.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-carbon-dioxide.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-cell.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-crystal-growth.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-dinosaur.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-dna.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-eclipse.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-electric-motor.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-electromagnet.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-fish.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-fractions.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-geometry-net.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-heart.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-hydro-turbine.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lever.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lunar-phases.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lungs.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-machine.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-mountain-river.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-mushroom.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-neuron.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-origami.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-pendulum.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-piston.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-pulley.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-snowflake.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-solar-system.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-storybook-space.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-storybook.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-tree-growth.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-turtle.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-water-cycle.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-water-molecule.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-wind-turbine.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/satellite.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/shell.obj"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-1.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-2.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-3.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-4-full-seed42.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-4.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-5.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-membrane.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-nucleus.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-organelle-group.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-blue-strand.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-red-strand.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-blue-gear.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-yellow-gear.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-left-panel.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-right-panel.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-blue.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-green.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-purple.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-red.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-sun.geom"
+  },
+  {
+    "folder": "image/arkit-swift",
+    "path": "ios/Resources/SciencePages/volcano.obj"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-1-baseline-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-1-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-1-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-2-baseline-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-2-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-2-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-3-baseline-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-3-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-3-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-4-baseline-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-4-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-4-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-5-baseline-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-5-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-5-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/butterfly-textured-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/car-textured-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-membrane-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-membrane-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-nucleus-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-nucleus-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-organelle-group-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-organelle-group-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-blue-strand-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-blue-strand-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-red-strand-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-red-strand-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-arithmetic-49b0e9d6c932-hunyuan-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-car-e7b98f18ecb9-hunyuan-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-cell-dc29f71ca46e-hunyuan-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-dna-56a7adac4d60-hunyuan-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-machine-8143d56c2f54-hunyuan-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-mountain-river-5e6c7ea28a2e-hunyuan-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-origami-4d08b37d42bc-hunyuan-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-solar-system-0879c3f128c6-hunyuan-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-storybook-39e7688eda1f-hunyuan-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-blue-gear-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-blue-gear-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-yellow-gear-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-yellow-gear-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-left-panel-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-left-panel-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-right-panel-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-right-panel-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-textured-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/original-oct2-printed-car-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-incline-original-0.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-incline-original-1.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-incline-original-repair.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-pendulum-original-0.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-pendulum-original-1.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-pendulum-original-repair.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-blue-baseline-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-blue-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-blue-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-green-baseline-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-green-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-green-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-purple-baseline-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-purple-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-purple-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-red-baseline-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-red-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-red-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-sun-baseline-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-sun-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-sun-selected-texture.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-circuit-page.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-optics-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-optics-page.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-pendulum-cutout.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-pendulum-page.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/RealityLog/Textures/overview.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/arithmetic.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/atom.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/bacterium.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/bridge.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/butterfly-textured.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/butterfly.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/car-textured.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/car.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/carbon-dioxide.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/cell.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/crystal-growth.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/dinosaur.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/dna.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/eclipse.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/electric-motor.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/electromagnet.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/fish.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/fractions.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/geometry-net.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/heart.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/hp9-arithmetic-49b0e9d6c932.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/hp9-car-e7b98f18ecb9.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/hp9-cell-dc29f71ca46e.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/hp9-dna-56a7adac4d60.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/hp9-machine-8143d56c2f54.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/hp9-mountain-river-5e6c7ea28a2e.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/hp9-origami-4d08b37d42bc.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/hp9-solar-system-0879c3f128c6.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/hp9-storybook-39e7688eda1f.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/hydro-turbine.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/lever.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/lunar-phases.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/lungs.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/machine.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/math-original.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/mountain-river.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/mushroom.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/neuron.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/origami-textured.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/origami.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/original-math-sine.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/original-math-summation.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/original-math-triangle.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/original-oct2-printed-car.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/pendulum.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/physics-incline-original.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/physics-pendulum-original.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/piston.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/pulley.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/snowflake.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/solar-system.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/source-diagram-circuit.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/source-diagram-optics.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/source-diagram-pendulum.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-arithmetic.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-cell.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-dna.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-machine.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-origami.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-solar-system.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/storybook-space.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/storybook.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/tree-growth.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/turtle.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/water-cycle.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/water-molecule.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/catalog/wind-turbine.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/StreamingAssets/target.jpg"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/TutorialInfo/Icons/URP.png"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Plugins/Android/arm64-v8a/libARX.so"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-1-baseline.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-1-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-2-baseline.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-2-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-3-baseline.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-3-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-4-baseline.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-4-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-5-baseline.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-5-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/atom.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/bacterium.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/bridge.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/butterfly-textured.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/butterfly.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/car-textured.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/car.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/carbon-dioxide.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-membrane-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-membrane-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-membrane-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-nucleus-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-nucleus-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-nucleus-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-organelle-group-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-organelle-group-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-organelle-group-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/crystal-growth.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dinosaur.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-blue-strand-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-blue-strand-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-blue-strand-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-red-strand-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-red-strand-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-red-strand-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/eclipse.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/electric-motor.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/electromagnet.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/fish.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/fractions.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/geometry-net.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/heart.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-arithmetic-49b0e9d6c932-hunyuan.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-arithmetic-49b0e9d6c932-triposr.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-car-e7b98f18ecb9-hunyuan.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-car-e7b98f18ecb9-triposr.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-cell-dc29f71ca46e-hunyuan.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-cell-dc29f71ca46e-triposr.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-dna-56a7adac4d60-hunyuan.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-dna-56a7adac4d60-triposr.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-machine-8143d56c2f54-hunyuan.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-machine-8143d56c2f54-triposr.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-mountain-river-5e6c7ea28a2e-hunyuan.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-mountain-river-5e6c7ea28a2e-triposr.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-origami-4d08b37d42bc-hunyuan.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-origami-4d08b37d42bc-triposr.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-solar-system-0879c3f128c6-hunyuan.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-solar-system-0879c3f128c6-triposr.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-storybook-39e7688eda1f-hunyuan.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-storybook-39e7688eda1f-triposr.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hydro-turbine.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/lever.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/lunar-phases.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/lungs.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-blue-gear-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-blue-gear-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-blue-gear-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-yellow-gear-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-yellow-gear-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-yellow-gear-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/mountain-river.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/mushroom.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/neuron.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-left-panel-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-left-panel-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-left-panel-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-right-panel-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-right-panel-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-right-panel-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-textured.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/original-oct2-printed-car.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/pendulum.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/piston.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/pulley.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/snowflake.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-blue-baseline.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-blue-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-green-baseline.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-green-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-purple-baseline.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-purple-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-red-baseline.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-red-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-sun-baseline.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-sun-selected.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-system.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-circuit-page-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-optics-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-optics-page-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-pendulum-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-pendulum-page-hashbytes.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/storybook-space.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/storybook.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/tree-growth.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/turtle.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/water-cycle.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/water-molecule.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/wind-turbine.bytes"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/Plugins/Android/arm64-v8a/libqrc_camera_native.so"
+  },
+  {
+    "folder": "image/quest-unity-artoolkit",
+    "path": "Assets/Plugins/Android/questcameralib.aar"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/binomial-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/binomial-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/circuit-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/circuit-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/cross-section-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/cross-section-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/cube-net-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/cube-net-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/fractions-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/fractions-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/graph-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/graph-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/native-incline-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/native-incline-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/native-pendulum-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/native-pendulum-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/native-solar-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/native-solar-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/native-vectors-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/native-vectors-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/pendulum-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/pendulum-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/ramp-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/ramp-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/revolution-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/revolution-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/solar-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/solar-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/spring-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/spring-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/surface-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/surface-id8.svg"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/vectors-id8.png"
+  },
+  {
+    "folder": "markers/web-webxr",
+    "path": "docs/printables/worksheets/vectors-id8.svg"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/acorn.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/earth.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/flask.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/flower.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/gear.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/halite.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/leaf.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/magnet.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/mars.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/moon.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/optics-tree-sam2-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/optics-tree-sam2-mask.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/optics-tree-sam2-raw-mask.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-left-cart.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-math-quadratic.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-math-summation.jpg"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-math-triangle-contour.svg"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-math-triangle.jpg"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-oct2-printed-car-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-oct2-printed-car.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-physics-carts.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-physics-circuit.jpg"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-physics-optics.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-physics-pendulum.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-physics-spring.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-pulley.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-right-cart.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-spring-coil.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-spring-mass.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-butterfly-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-butterfly.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-car-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-car.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/pendulum-bob-sam2-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/pendulum-bob-sam2-mask.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-arithmetic-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-arithmetic.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-car-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-car.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-cell-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-cell.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-dna-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-dna.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-machine-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-machine.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-mountain-river-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-mountain-river.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-origami-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-origami.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-solar-system-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-solar-system.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-storybook-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-storybook.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/quartz.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rocket.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-arithmetic.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-atom.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-bacterium.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-bridge.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-butterfly.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-car.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-carbon-dioxide.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-cell.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-crystal-growth.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-dinosaur.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-dna.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-eclipse.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-electric-motor.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-electromagnet.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-fish.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-fractions.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-geometry-net.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-heart.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-hydro-turbine.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lever.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lunar-phases.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lungs.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-machine.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-mountain-river.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-mushroom.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-neuron.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-origami.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-pendulum.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-piston.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-pulley.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-snowflake.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-solar-system.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-storybook-space.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-storybook.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-tree-growth.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-turtle.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-water-cycle.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-water-molecule.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-wind-turbine.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/satellite.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/shell.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-1-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-1-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-2-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-2-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-3-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-3-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-4-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-4-full-seed42-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-4-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-5-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-5-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-membrane-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-membrane-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-nucleus-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-nucleus-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-organelle-group-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-organelle-group-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-blue-strand-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-blue-strand-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-red-strand-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-red-strand-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-blue-gear-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-blue-gear-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-yellow-gear-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-yellow-gear-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-left-panel-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-left-panel-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-right-panel-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-right-panel-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-blue-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-blue-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-green-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-green-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-purple-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-purple-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-red-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-red-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-sun-cutout.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-sun-swift-texture.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/volcano.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/math.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/trebuchet.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "visionos/Resources/incline.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "visionos/Resources/math.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "visionos/Resources/pendulum.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "visionos/Resources/trebuchet.png"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/acorn.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/earth.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/flask.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/flower.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/gear.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/halite.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/leaf.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/magnet.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/mars.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/moon.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/original-oct2-printed-car.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-butterfly.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/paint-car.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-arithmetic.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-arithmetic.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-car.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-car.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-cell.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-cell.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-dna.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-dna.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-machine.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-machine.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-mountain-river.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-mountain-river.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-origami.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-origami.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-solar-system.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-solar-system.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-storybook.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/primary9-storybook.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/quartz.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rocket.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-arithmetic.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-atom.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-bacterium.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-bridge.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-butterfly.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-car.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-carbon-dioxide.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-cell.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-crystal-growth.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-dinosaur.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-dna.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-eclipse.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-electric-motor.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-electromagnet.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-fish.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-fractions.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-geometry-net.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-heart.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-hydro-turbine.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lever.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lunar-phases.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-lungs.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-machine.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-mountain-river.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-mushroom.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-neuron.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-origami.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-pendulum.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-piston.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-pulley.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-snowflake.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-solar-system.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-storybook-space.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-storybook.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-tree-growth.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-turtle.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-water-cycle.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-water-molecule.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/rx-wind-turbine.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/satellite.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/shell.obj"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-1.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-2.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-3.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-4-full-seed42.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-4.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-arithmetic-column-5.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-membrane.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-nucleus.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-cell-organelle-group.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-blue-strand.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-dna-red-strand.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-blue-gear.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-machine-yellow-gear.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-left-panel.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-origami-right-panel.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-blue.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-green.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-purple.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-red.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/sourceparts-solar-sun.geom"
+  },
+  {
+    "folder": "markers/arkit-swift",
+    "path": "ios/Resources/SciencePages/volcano.obj"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-1-baseline-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-1-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-1-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-2-baseline-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-2-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-2-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-3-baseline-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-3-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-3-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-4-baseline-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-4-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-4-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-5-baseline-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-5-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-5-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/butterfly-textured-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/car-textured-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-membrane-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-membrane-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-nucleus-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-nucleus-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-organelle-group-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-organelle-group-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-blue-strand-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-blue-strand-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-red-strand-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-red-strand-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-arithmetic-49b0e9d6c932-hunyuan-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-car-e7b98f18ecb9-hunyuan-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-cell-dc29f71ca46e-hunyuan-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-dna-56a7adac4d60-hunyuan-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-machine-8143d56c2f54-hunyuan-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-mountain-river-5e6c7ea28a2e-hunyuan-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-origami-4d08b37d42bc-hunyuan-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-solar-system-0879c3f128c6-hunyuan-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-storybook-39e7688eda1f-hunyuan-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-blue-gear-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-blue-gear-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-yellow-gear-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-yellow-gear-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-left-panel-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-left-panel-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-right-panel-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-right-panel-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-textured-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/original-oct2-printed-car-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-incline-original-0.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-incline-original-1.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-incline-original-repair.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-pendulum-original-0.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-pendulum-original-1.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/physics-pendulum-original-repair.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-blue-baseline-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-blue-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-blue-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-green-baseline-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-green-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-green-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-purple-baseline-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-purple-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-purple-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-red-baseline-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-red-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-red-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-sun-baseline-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-sun-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-sun-selected-texture.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-circuit-page.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-optics-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-optics-page.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-pendulum-cutout.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-pendulum-page.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/RealityLog/Textures/overview.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/arithmetic.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/atom.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/bacterium.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/bridge.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/butterfly-textured.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/butterfly.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/car-textured.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/car.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/carbon-dioxide.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/cell.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/crystal-growth.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/dinosaur.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/dna.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/eclipse.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/electric-motor.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/electromagnet.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/fish.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/fractions.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/geometry-net.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/heart.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/hp9-arithmetic-49b0e9d6c932.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/hp9-car-e7b98f18ecb9.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/hp9-cell-dc29f71ca46e.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/hp9-dna-56a7adac4d60.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/hp9-machine-8143d56c2f54.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/hp9-mountain-river-5e6c7ea28a2e.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/hp9-origami-4d08b37d42bc.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/hp9-solar-system-0879c3f128c6.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/hp9-storybook-39e7688eda1f.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/hydro-turbine.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/lever.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/lunar-phases.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/lungs.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/machine.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/math-original.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/mountain-river.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/mushroom.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/neuron.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/origami-textured.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/origami.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/original-math-sine.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/original-math-summation.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/original-math-triangle.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/original-oct2-printed-car.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/pendulum.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/physics-incline-original.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/physics-pendulum-original.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/piston.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/pulley.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/snowflake.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/solar-system.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/source-diagram-circuit.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/source-diagram-optics.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/source-diagram-pendulum.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-arithmetic.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-cell.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-dna.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-machine.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-origami.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/sourceparts-solar-system.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/storybook-space.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/storybook.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/tree-growth.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/turtle.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/water-cycle.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/water-molecule.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/catalog/wind-turbine.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/StreamingAssets/target.jpg"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/TutorialInfo/Icons/URP.png"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Plugins/Android/arm64-v8a/libARX.so"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-1-baseline.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-1-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-2-baseline.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-2-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-3-baseline.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-3-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-4-baseline.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-4-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-5-baseline.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic-column-5-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/arithmetic.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/atom.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/bacterium.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/bridge.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/butterfly-textured.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/butterfly.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/car-textured.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/car.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/carbon-dioxide.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-membrane-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-membrane-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-membrane-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-nucleus-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-nucleus-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-nucleus-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-organelle-group-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-organelle-group-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell-organelle-group-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/cell.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/crystal-growth.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dinosaur.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-blue-strand-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-blue-strand-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-blue-strand-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-red-strand-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-red-strand-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna-red-strand-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/dna.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/eclipse.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/electric-motor.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/electromagnet.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/fish.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/fractions.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/geometry-net.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/heart.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-arithmetic-49b0e9d6c932-hunyuan.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-arithmetic-49b0e9d6c932-triposr.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-car-e7b98f18ecb9-hunyuan.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-car-e7b98f18ecb9-triposr.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-cell-dc29f71ca46e-hunyuan.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-cell-dc29f71ca46e-triposr.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-dna-56a7adac4d60-hunyuan.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-dna-56a7adac4d60-triposr.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-machine-8143d56c2f54-hunyuan.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-machine-8143d56c2f54-triposr.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-mountain-river-5e6c7ea28a2e-hunyuan.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-mountain-river-5e6c7ea28a2e-triposr.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-origami-4d08b37d42bc-hunyuan.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-origami-4d08b37d42bc-triposr.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-solar-system-0879c3f128c6-hunyuan.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-solar-system-0879c3f128c6-triposr.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-storybook-39e7688eda1f-hunyuan.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hp9-storybook-39e7688eda1f-triposr.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/hydro-turbine.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/lever.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/lunar-phases.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/lungs.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-blue-gear-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-blue-gear-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-blue-gear-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-yellow-gear-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-yellow-gear-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine-yellow-gear-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/machine.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/mountain-river.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/mushroom.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/neuron.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-left-panel-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-left-panel-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-left-panel-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-right-panel-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-right-panel-selected-texture-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-right-panel-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami-textured.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/origami.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/original-oct2-printed-car.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/pendulum.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/piston.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/pulley.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/snowflake.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-blue-baseline.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-blue-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-green-baseline.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-green-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-purple-baseline.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-purple-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-red-baseline.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-red-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-sun-baseline.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-sun-selected.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/solar-system.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-circuit-page-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-optics-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-optics-page-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-pendulum-cutout-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/source-diagram-pendulum-page-hashbytes.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/storybook-space.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/storybook.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/tree-growth.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/turtle.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/water-cycle.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/water-molecule.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/DedicatedTracker/Resources/Catalog/wind-turbine.bytes"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/MarkerLab/Plugins/Android/arm64-v8a/libc++_shared.so"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/MarkerLab/Plugins/Android/arm64-v8a/libmarker_core.so"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/MarkerLab/Plugins/Android/arm64-v8a/libopencv_java4.so"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/MarkerLab/Plugins/iOS/libmarker_core.a"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/Plugins/Android/arm64-v8a/libqrc_camera_native.so"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "Assets/Plugins/Android/questcameralib.aar"
+  },
+  {
+    "folder": "markers/unity-quest-ios",
+    "path": "ios-unity/Assets/MarkerLab/Plugins/iOS/libmarker_core.a"
+  }
+]

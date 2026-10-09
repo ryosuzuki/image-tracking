@@ -1,0 +1,123 @@
+{
+  "topic": "cell",
+  "page_width": 0.21,
+  "source_size": [
+    1000,
+    1400
+  ],
+  "reference_crop": [
+    192,
+    575,
+    577,
+    439
+  ],
+  "selection_manifest_sha256": "8c611dff3e9c94f33da5eb6ff7c4f1cd3e26e3f8e6b7dcc98ed8a25b163b57c7",
+  "basis": "Host source-front PCA for gears before Unity target(x,y,-z); explicit authored hinge/roles, not learned articulation",
+  "parts": [
+    {
+      "checked_rasters": true,
+      "id": "cell-membrane",
+      "bbox": [
+        257,
+        665,
+        704,
+        949
+      ],
+      "centroid": [
+        467.4204868653842,
+        829.68568741182
+      ],
+      "fallback": true,
+      "host_z": 0,
+      "quantity": 1,
+      "cutout_resource": "Catalog/cell-membrane-cutout",
+      "cutout_sha256": "99d1ccb07fc4ef377790935a1f27b7a1affebbfe1a2479b99fe4afbace1d5b92",
+      "hinge": [],
+      "role": "Authored fixture role: green visible membrane/base compartment",
+      "selection_reason": "Known visually unfaithful mini/full geometry; exact original visible pixels retained, no primitive stand-in",
+      "limits": "Roles/kinematics authored fixture metadata, not inferred biology/topology/rig. No hidden DNA connectivity recovery. GLTF Y-up unchanged. Swift identity UV/UIImage no additional flip; host-specific origins, no UV bake.",
+      "baseline_mesh_resource": "Catalog/cell-membrane-selected",
+      "baseline_mesh_sha256": "72edd36eeab242a1ce26cbf4a66efcb8a076455d0d4a5951658c11657f5ca830",
+      "baseline_texture_resource": "Catalog/cell-membrane-selected-texture",
+      "baseline_texture_sha256": "22c0beefd986330f174eae5486d5eae2504a5ca7acf217ce025537e6efeac744",
+      "baseline_glb_sha256": "8080e68c3dff5bfc3f1df103d55ac9a0e21a7700c807d38707a33a375958a474",
+      "baseline_source_texture_sha256": "341cca6f14f5eae53571d4d1f2b6b1cdb183dd48422dd0351eb762680590f587",
+      "selected_mesh_resource": "Catalog/cell-membrane-selected",
+      "selected_mesh_sha256": "72edd36eeab242a1ce26cbf4a66efcb8a076455d0d4a5951658c11657f5ca830",
+      "selected_texture_resource": "Catalog/cell-membrane-selected-texture",
+      "selected_texture_sha256": "22c0beefd986330f174eae5486d5eae2504a5ca7acf217ce025537e6efeac744",
+      "selected_glb_sha256": "8080e68c3dff5bfc3f1df103d55ac9a0e21a7700c807d38707a33a375958a474",
+      "selected_source_texture_sha256": "341cca6f14f5eae53571d4d1f2b6b1cdb183dd48422dd0351eb762680590f587"
+    },
+    {
+      "checked_rasters": true,
+      "id": "cell-nucleus",
+      "bbox": [
+        437,
+        668,
+        592,
+        804
+      ],
+      "centroid": [
+        517.3574154852781,
+        730.6256134133042
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "cutout_resource": "Catalog/cell-nucleus-cutout",
+      "cutout_sha256": "dd33ec9a3b1d75d3203ce98d9ad8ed5a76fdda175a213ecead5db0425b9a50e3",
+      "hinge": [],
+      "role": "Authored fixture role: purple visible nucleus",
+      "selection_reason": "Recognizable genuine source-derived mesh; source occlusions and unseen surfaces unknown",
+      "limits": "Roles/kinematics authored fixture metadata, not inferred biology/topology/rig. No hidden DNA connectivity recovery. GLTF Y-up unchanged. Swift identity UV/UIImage no additional flip; host-specific origins, no UV bake.",
+      "baseline_mesh_resource": "Catalog/cell-nucleus-selected",
+      "baseline_mesh_sha256": "058d7a190c2ec21d54ba40bbfaf06afe34766930f96158eb4f5f4f7a9e4df5a9",
+      "baseline_texture_resource": "Catalog/cell-nucleus-selected-texture",
+      "baseline_texture_sha256": "68d25bf345f70f712380e5e66ab853dee769869741c3ad6ec558b614f37e7207",
+      "baseline_glb_sha256": "df63aae9320ef22515437c54bbc033a161d3fcf9735f0a70d1d4814c25d7dbb9",
+      "baseline_source_texture_sha256": "35c7184d766e588702f5f3689a5904bdb5bf3d433e5a189d81eae4503b1f58d3",
+      "selected_mesh_resource": "Catalog/cell-nucleus-selected",
+      "selected_mesh_sha256": "058d7a190c2ec21d54ba40bbfaf06afe34766930f96158eb4f5f4f7a9e4df5a9",
+      "selected_texture_resource": "Catalog/cell-nucleus-selected-texture",
+      "selected_texture_sha256": "68d25bf345f70f712380e5e66ab853dee769869741c3ad6ec558b614f37e7207",
+      "selected_glb_sha256": "df63aae9320ef22515437c54bbc033a161d3fcf9735f0a70d1d4814c25d7dbb9",
+      "selected_source_texture_sha256": "35c7184d766e588702f5f3689a5904bdb5bf3d433e5a189d81eae4503b1f58d3"
+    },
+    {
+      "checked_rasters": true,
+      "id": "cell-organelle-group",
+      "bbox": [
+        322,
+        639,
+        696,
+        878
+      ],
+      "centroid": [
+        507.28544505084614,
+        761.3123404923633
+      ],
+      "fallback": true,
+      "host_z": 0,
+      "quantity": 1,
+      "cutout_resource": "Catalog/cell-organelle-group-cutout",
+      "cutout_sha256": "16853dc418c2ec8b90a2f08882dcf63ff8fc2fa16b63955a8624dec3f42584b6",
+      "hinge": [],
+      "role": "Authored fixture role: union of six visible yellow organelle fragments",
+      "selection_reason": "Known visually unfaithful mini/full geometry; exact original visible pixels retained, no primitive stand-in",
+      "limits": "Roles/kinematics authored fixture metadata, not inferred biology/topology/rig. No hidden DNA connectivity recovery. GLTF Y-up unchanged. Swift identity UV/UIImage no additional flip; host-specific origins, no UV bake.",
+      "baseline_mesh_resource": "Catalog/cell-organelle-group-selected",
+      "baseline_mesh_sha256": "3480f071d81bc47e0fc6790e6754975285535a43ac0f4e4e081519d21b822e8e",
+      "baseline_texture_resource": "Catalog/cell-organelle-group-selected-texture",
+      "baseline_texture_sha256": "913779122f2ccb201cc54868e97e4a93bbbff5225e4ab518b96ff5d1203e1948",
+      "baseline_glb_sha256": "41c73fd326356ed55a2ade4106d4cb80a2e62cc38258c89fd5d4cc58e9a71eb0",
+      "baseline_source_texture_sha256": "913779122f2ccb201cc54868e97e4a93bbbff5225e4ab518b96ff5d1203e1948",
+      "selected_mesh_resource": "Catalog/cell-organelle-group-selected",
+      "selected_mesh_sha256": "3480f071d81bc47e0fc6790e6754975285535a43ac0f4e4e081519d21b822e8e",
+      "selected_texture_resource": "Catalog/cell-organelle-group-selected-texture",
+      "selected_texture_sha256": "913779122f2ccb201cc54868e97e4a93bbbff5225e4ab518b96ff5d1203e1948",
+      "selected_glb_sha256": "41c73fd326356ed55a2ade4106d4cb80a2e62cc38258c89fd5d4cc58e9a71eb0",
+      "selected_source_texture_sha256": "913779122f2ccb201cc54868e97e4a93bbbff5225e4ab518b96ff5d1203e1948"
+    }
+  ]
+}

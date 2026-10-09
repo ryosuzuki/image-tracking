@@ -1,0 +1,1757 @@
+{
+  "pipeline": "Author Google Vision/CnSTD/Mathpix outputs, local spatial matching and bigram similarity. No new OCR request or secret/API key used.",
+  "samples": [
+    {
+      "sample": 1,
+      "width": 1284,
+      "height": 1541,
+      "source": {
+        "repository": "https://github.com/ucalgary-ilab/augmented-math",
+        "commit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+        "ocr": "public/sample/ocr-01.json",
+        "regions": "public/sample/math-01.json",
+        "latex": "public/sample/mathpix-01.md"
+      },
+      "equations": [
+        {
+          "id": 0,
+          "rect": {
+            "x": 1065,
+            "y": 133,
+            "width": 121,
+            "height": 24
+          },
+          "raw": "y√x2,",
+          "latex": "y=\\sqrt{x}",
+          "detectionScore": 0.5254120230674744,
+          "matchSimilarity": 0.6666666666666666,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 1,
+          "rect": {
+            "x": 846,
+            "y": 195,
+            "width": 72,
+            "height": 28
+          },
+          "raw": "y=√x,",
+          "latex": "y=\\sqrt{x}",
+          "detectionScore": 0.40927988290786743,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 2,
+          "rect": {
+            "x": 450,
+            "y": 245,
+            "width": 140,
+            "height": 28
+          },
+          "raw": "y=√x-2by",
+          "latex": "y=\\sqrt{x}-2",
+          "detectionScore": 0.728001058101654,
+          "matchSimilarity": 0.8888888888888888,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 3,
+          "rect": {
+            "x": 822,
+            "y": 244,
+            "width": 140,
+            "height": 28
+          },
+          "raw": "y=√x-2by",
+          "latex": "y=\\sqrt{x}-2",
+          "detectionScore": 0.5965784192085266,
+          "matchSimilarity": 0.8888888888888888,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 4,
+          "rect": {
+            "x": 797,
+            "y": 273,
+            "width": 86,
+            "height": 25
+          },
+          "raw": ",y=2√√x",
+          "latex": "y=2 \\sqrt{x}",
+          "detectionScore": 0.5930448174476624,
+          "matchSimilarity": 0.7777777777777778,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 5,
+          "rect": {
+            "x": 152,
+            "y": 538,
+            "width": 80,
+            "height": 30
+          },
+          "raw": "(a)y=√√x",
+          "latex": "y=\\sqrt{x}",
+          "detectionScore": 0.665852427482605,
+          "matchSimilarity": 0.7058823529411765,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 6,
+          "rect": {
+            "x": 364,
+            "y": 537,
+            "width": 73,
+            "height": 27
+          },
+          "raw": "=√√√x-2",
+          "latex": "y=\\sqrt{x-2}, y=-\\sqrt{x}, y=2 \\sqrt{x}",
+          "detectionScore": 0.409447580575943,
+          "matchSimilarity": 0.6666666666666666,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 7,
+          "rect": {
+            "x": 534,
+            "y": 537,
+            "width": 109,
+            "height": 29
+          },
+          "raw": "(c)y=√x-2",
+          "latex": "y=\\sqrt{x}-2",
+          "detectionScore": 0.6306443810462952,
+          "matchSimilarity": 0.9411764705882353,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 8,
+          "rect": {
+            "x": 833,
+            "y": 603,
+            "width": 192,
+            "height": 26
+          },
+          "raw": "f(x)=x²+6x+10.",
+          "latex": "f(x)=x^{2}+6 x+10",
+          "detectionScore": 0.7760927677154541,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 9,
+          "rect": {
+            "x": 678,
+            "y": 675,
+            "width": 309,
+            "height": 30
+          },
+          "raw": "y=x²+6x+10=(x+3)²+1",
+          "latex": "y=x^{2}+6 x+10=(x+3)^{2}+1",
+          "detectionScore": 0.8239156603813171,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 10,
+          "rect": {
+            "x": 1044,
+            "y": 714,
+            "width": 56,
+            "height": 23
+          },
+          "raw": "y=x²",
+          "latex": "y=x^{2}",
+          "detectionScore": 0.8157801628112793,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 11,
+          "rect": {
+            "x": 623,
+            "y": 997,
+            "width": 75,
+            "height": 27
+          },
+          "raw": "(a)y=x²",
+          "latex": "y=x^{2}",
+          "detectionScore": 0.8349450826644897,
+          "matchSimilarity": 0.8571428571428571,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 12,
+          "rect": {
+            "x": 898,
+            "y": 997,
+            "width": 141,
+            "height": 26
+          },
+          "raw": "(b)y=(x+3)²+1",
+          "latex": "y=(x+3)^{2}+1",
+          "detectionScore": 0.6169342994689941,
+          "matchSimilarity": 0.9333333333333333,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 13,
+          "rect": {
+            "x": 486,
+            "y": 1064,
+            "width": 95,
+            "height": 22
+          },
+          "raw": "ysin2x",
+          "latex": "y=\\sin (2 x)",
+          "detectionScore": 0.5714733004570007,
+          "matchSimilarity": 0.7272727272727273,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 14,
+          "rect": {
+            "x": 848,
+            "y": 1063,
+            "width": 128,
+            "height": 23
+          },
+          "raw": "y1sinx",
+          "latex": "y=\\sin (x)",
+          "detectionScore": 0.6046971082687378,
+          "matchSimilarity": 0.6,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 15,
+          "rect": {
+            "x": 664,
+            "y": 1126,
+            "width": 99,
+            "height": 25
+          },
+          "raw": "ofy=sin",
+          "latex": "y=\\sin (x)",
+          "detectionScore": 0.4653260409832001,
+          "matchSimilarity": 0.7272727272727273,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 16,
+          "rect": {
+            "x": 885,
+            "y": 1125,
+            "width": 113,
+            "height": 24
+          },
+          "raw": "y=sinxby",
+          "latex": "y=\\sin (x)",
+          "detectionScore": 0.5476392507553101,
+          "matchSimilarity": 0.8333333333333334,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        }
+      ],
+      "allLatex": [
+        "y=\\sqrt{x}",
+        "y=\\sqrt{x}-2",
+        "y=\\sqrt{x-2}, y=-\\sqrt{x}, y=2 \\sqrt{x}",
+        "y=\\sqrt{-x}",
+        "y=\\sqrt{x-2}",
+        "y=-\\sqrt{x}",
+        "y=2 \\sqrt{x}",
+        "f(x)=x^{2}+6 x+10",
+        "y=x^{2}+6 x+10=(x+3)^{2}+1",
+        "y=x^{2}",
+        "y=(x+3)^{2}+1",
+        "y=\\sin (2 x)",
+        "y=1-\\sin (x)",
+        "y=\\sin (x)",
+        "2 \\pi",
+        "2 \\pi / 2=\\pi"
+      ]
+    },
+    {
+      "sample": 2,
+      "width": 1240,
+      "height": 1755,
+      "source": {
+        "repository": "https://github.com/ucalgary-ilab/augmented-math",
+        "commit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+        "ocr": "public/sample/ocr-02.json",
+        "regions": "public/sample/math-02.json",
+        "latex": "public/sample/mathpix-02.md"
+      },
+      "equations": [
+        {
+          "id": 0,
+          "rect": {
+            "x": 501,
+            "y": 218,
+            "width": 223,
+            "height": 36
+          },
+          "raw": "(x-h)²+(y-k)²=r².",
+          "latex": "(x-h)^{2}+(y-k)^{2}=r^{2}",
+          "detectionScore": 0.8135851621627808,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 1,
+          "rect": {
+            "x": 324,
+            "y": 352,
+            "width": 234,
+            "height": 49
+          },
+          "raw": "(x−h)²+(y−k)²=r.",
+          "latex": "(x-h)^{2}+(y-k)^{2}=r^{2}",
+          "detectionScore": 0.820564866065979,
+          "matchSimilarity": 0.631578947368421,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 2,
+          "rect": {
+            "x": 486,
+            "y": 606,
+            "width": 255,
+            "height": 34
+          },
+          "raw": "x²-4x+y²++6y-12=0.",
+          "latex": "x^{2}-4 x+y^{2}+6 y-12=0",
+          "detectionScore": 0.9315937161445618,
+          "matchSimilarity": 0.967741935483871,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 3,
+          "rect": {
+            "x": 399,
+            "y": 695,
+            "width": 426,
+            "height": 150
+          },
+          "raw": "x²-4x+y²+6y12(x²-4x+4)+(y²+6y+9)12+4+9(x-2)²+(y+3)²25(x-2)²+(y-(-3))²5²===",
+          "latex": "\\begin{aligned}\nx^{2}-4 x+y^{2}+6 y & =12 \\\\\n\\left(x^{2}-4 x+4\\right)+\\left(y^{2}+6 y+9\\right) & =12+4+9 \\\\\n(x-2)^{2}+(y+3)^{2} & =25 \\\\\n(x-2)^{2}+(y-(-3))^{2} & =5^{2}\n\\end{aligned}",
+          "detectionScore": 0.5873973369598389,
+          "matchSimilarity": 0.7969924812030075,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 4,
+          "rect": {
+            "x": 511,
+            "y": 995,
+            "width": 208,
+            "height": 37
+          },
+          "raw": "y²+6y+a=(y+b)²",
+          "latex": "y^{2}+6 y+a=(y+b)^{2}",
+          "detectionScore": 0.958419919013977,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 5,
+          "rect": {
+            "x": 357,
+            "y": 1085,
+            "width": 74,
+            "height": 22
+          },
+          "raw": "2b=6,",
+          "latex": "2 b=6",
+          "detectionScore": 0.5860626697540283,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 6,
+          "rect": {
+            "x": 501,
+            "y": 1084,
+            "width": 63,
+            "height": 23
+          },
+          "raw": "b=3.",
+          "latex": "b=3",
+          "detectionScore": 0.7245071530342102,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 7,
+          "rect": {
+            "x": 148,
+            "y": 1115,
+            "width": 63,
+            "height": 27
+          },
+          "raw": "b²=9",
+          "latex": "a=b^{2}=9",
+          "detectionScore": 0.4757303297519684,
+          "matchSimilarity": 0.75,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        }
+      ],
+      "allLatex": [
+        "\\mathcal{C}",
+        "C(h, k)",
+        "(x-h)^{2}+(y-k)^{2}=r^{2}",
+        "P(x, y)",
+        "\\sqrt{(x-h)^{2}+(y-k)^{2}}=r",
+        "(0.8 .1)",
+        "x^{2}-4 x+y^{2}+6 y-12=0",
+        "\\begin{aligned}\nx^{2}-4 x+y^{2}+6 y & =12 \\\\\n\\left(x^{2}-4 x+4\\right)+\\left(y^{2}+6 y+9\\right) & =12+4+9 \\\\\n(x-2)^{2}+(y+3)^{2} & =25 \\\\\n(x-2)^{2}+(y-(-3))^{2} & =5^{2}\n\\end{aligned}",
+        "(2,-3)",
+        "\\left(y^{2}+6 y+a\\right)",
+        "y^{2}+6 y+a=(y+b)^{2}",
+        "2 b=6",
+        "b=3",
+        "a=b^{2}=9",
+        "(-3,4)",
+        "(4,0)",
+        "(0,-7)",
+        "(7,5)",
+        "(12,17)",
+        "(-2,9)",
+        "(3,-1)",
+        "x^{2}+y^{2}-4 y+1=0",
+        "x^{2}+y^{2}+4 x-2 y-4=0",
+        "2 x^{2}+2 y^{2}+4 x-2 y+1=0",
+        "(-2,3)",
+        "x+y=1",
+        "(1,2)",
+        "2 x+y-6=0"
+      ]
+    },
+    {
+      "sample": 3,
+      "width": 1240,
+      "height": 1755,
+      "source": {
+        "repository": "https://github.com/ucalgary-ilab/augmented-math",
+        "commit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+        "ocr": "public/sample/ocr-03.json",
+        "regions": "public/sample/math-03.json",
+        "latex": "public/sample/mathpix-03.md"
+      },
+      "equations": [
+        {
+          "id": 0,
+          "rect": {
+            "x": 560,
+            "y": 210,
+            "width": 112,
+            "height": 31
+          },
+          "raw": "F(x,y)=0",
+          "latex": "F(x, y)=0",
+          "detectionScore": 0.6267703175544739,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 1,
+          "rect": {
+            "x": 494,
+            "y": 340,
+            "width": 240,
+            "height": 34
+          },
+          "raw": "{(x,y)=R²:F(x,y)=0}.",
+          "latex": "F(x, y)=0",
+          "detectionScore": 0.8447092175483704,
+          "matchSimilarity": 0.6153846153846154,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 2,
+          "rect": {
+            "x": 538,
+            "y": 526,
+            "width": 156,
+            "height": 29
+          },
+          "raw": "2x+3y-4=0.",
+          "latex": "2 x+3 y-4=0 .",
+          "detectionScore": 0.5909518599510193,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 3,
+          "rect": {
+            "x": 223,
+            "y": 666,
+            "width": 220,
+            "height": 26
+          },
+          "raw": "2(1)+3(2)-4=4#0,",
+          "latex": "2(1)+3(2)-4=4 \\neq 0",
+          "detectionScore": 0.4718749225139618,
+          "matchSimilarity": 0.7619047619047619,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 4,
+          "rect": {
+            "x": 861,
+            "y": 776,
+            "width": 112,
+            "height": 27
+          },
+          "raw": "F(x,y)=0",
+          "latex": "F(x, y)=0",
+          "detectionScore": 0.7680298686027527,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 5,
+          "rect": {
+            "x": 539,
+            "y": 897,
+            "width": 153,
+            "height": 29
+          },
+          "raw": "2x+3y-4=0",
+          "latex": "2 x+3 y-4=0 .",
+          "detectionScore": 0.7779232859611511,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 6,
+          "rect": {
+            "x": 355,
+            "y": 1074,
+            "width": 110,
+            "height": 31
+          },
+          "raw": "x²+y²=1",
+          "latex": "x^{2}+y^{2}=1",
+          "detectionScore": 0.729375958442688,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 7,
+          "rect": {
+            "x": 540,
+            "y": 1424,
+            "width": 150,
+            "height": 31
+          },
+          "raw": "y=x-5x+6",
+          "latex": "y=x^{2}-5 x+6",
+          "detectionScore": 0.5626239776611328,
+          "matchSimilarity": 0.8,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        }
+      ],
+      "allLatex": [
+        "F(x, y)=0",
+        "(x, y)",
+        "\\mathbb{R}^{2}",
+        "\\left\\{(x, y) \\in \\mathbb{R}^{2}: F(x, y)=0\\right\\}",
+        "2 x+3 y-4=0 .",
+        "2(2)+3(0)-4=0",
+        "P(2,0)",
+        "2(-1)+3(2)-4=0",
+        "Q(-1,2)",
+        "2(1)+3(2)-4=4 \\neq 0",
+        "R(1,2)",
+        "2 x+3 y-4=0",
+        "(2,0)",
+        "\\left(0, \\frac{4}{3}\\right)",
+        "y=0",
+        "x=0",
+        "x^{2}+y^{2}=1",
+        "(0,0)",
+        "(1,0)",
+        "(-1,0)",
+        "(0,1)",
+        "(0,-1)",
+        "y=x^{2}-5 x+6",
+        "\\begin{aligned}\n& 0=x^{2}-5 x+6 \\\\\n& 0=(x-2)(x-3)\n\\end{aligned}"
+      ]
+    },
+    {
+      "sample": 4,
+      "width": 1285,
+      "height": 1541,
+      "source": {
+        "repository": "https://github.com/ucalgary-ilab/augmented-math",
+        "commit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+        "ocr": "public/sample/ocr-04.json",
+        "regions": "public/sample/math-04.json",
+        "latex": "public/sample/mathpix-04.md"
+      },
+      "equations": [
+        {
+          "id": 0,
+          "rect": {
+            "x": 644,
+            "y": 468,
+            "width": 267,
+            "height": 30
+          },
+          "raw": "P(x)=2x6x++3x³+√2",
+          "latex": "P(x)=2 x^{6}-x^{4}+\\frac{2}{5} x^{3}+\\sqrt{2}",
+          "detectionScore": 0.9557710289955139,
+          "matchSimilarity": 0.6666666666666666,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 1,
+          "rect": {
+            "x": 768,
+            "y": 533,
+            "width": 132,
+            "height": 24
+          },
+          "raw": "P(x)=mx+b",
+          "latex": "P(x)=m x+b",
+          "detectionScore": 0.8322843313217163,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 2,
+          "rect": {
+            "x": 743,
+            "y": 558,
+            "width": 192,
+            "height": 24
+          },
+          "raw": "P(x)=ax²+bx+c",
+          "latex": "P(x)=a x^{2}+b x+c",
+          "detectionScore": 0.801687479019165,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 3,
+          "rect": {
+            "x": 1022,
+            "y": 583,
+            "width": 78,
+            "height": 23
+          },
+          "raw": "y=ax²,",
+          "latex": "y=a x^{2}",
+          "detectionScore": 0.4835880696773529,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 4,
+          "rect": {
+            "x": 883,
+            "y": 611,
+            "width": 61,
+            "height": 19
+          },
+          "raw": "a>0",
+          "latex": "a>0",
+          "detectionScore": 0.6846027374267578,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 5,
+          "rect": {
+            "x": 601,
+            "y": 1004,
+            "width": 355,
+            "height": 29
+          },
+          "raw": "P(x)=ax³+bx²+cx+d(a+0)",
+          "latex": "P(x)=a x^{3}+b x^{2}+c x+d \\quad(a \\neq 0)",
+          "detectionScore": 0.8368242979049683,
+          "matchSimilarity": 0.75,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 6,
+          "rect": {
+            "x": 461,
+            "y": 1351,
+            "width": 133,
+            "height": 28
+          },
+          "raw": "(a)y=x³-x+1",
+          "latex": "y=x^{3}-x+1",
+          "detectionScore": 0.7395395636558533,
+          "matchSimilarity": 0.9333333333333333,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 7,
+          "rect": {
+            "x": 719,
+            "y": 1353,
+            "width": 149,
+            "height": 27
+          },
+          "raw": "(b)y=x²-3x²+x",
+          "latex": "y=x^{4}-3 x^{2}+x",
+          "detectionScore": 0.7609456181526184,
+          "matchSimilarity": 0.7368421052631579,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 8,
+          "rect": {
+            "x": 952,
+            "y": 1353,
+            "width": 185,
+            "height": 27
+          },
+          "raw": "(c)y=3x5-25x³+60x",
+          "latex": "y=3 x^{5}-25 x^{3}+60 x",
+          "detectionScore": 0.5546641945838928,
+          "matchSimilarity": 0.9629629629629629,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        }
+      ],
+      "allLatex": [
+        "\\mathrm{CO}_{2}",
+        "400 \\mathrm{ppm}",
+        "P(x)=a_{n} x^{n}+a_{n-1} x^{n-1}+\\cdots+a_{2} x^{2}+a_{1} x+a_{0}",
+        "a_{0}, a_{1}, a_{2}, \\ldots, a_{n}",
+        "\\mathbb{R}=(-\\infty, \\infty)",
+        "a_{n} \\neq 0",
+        "P(x)=2 x^{6}-x^{4}+\\frac{2}{5} x^{3}+\\sqrt{2}",
+        "P(x)=m x+b",
+        "P(x)=a x^{2}+b x+c",
+        "y=a x^{2}",
+        "a>0",
+        "a<0",
+        "y=x^{2}+x+1",
+        "y=-2 x^{2}+3 x+1",
+        "P(x)=a x^{3}+b x^{2}+c x+d \\quad(a \\neq 0)",
+        "y=x^{3}-x+1",
+        "y=x^{4}-3 x^{2}+x",
+        "y=3 x^{5}-25 x^{3}+60 x"
+      ]
+    },
+    {
+      "sample": 5,
+      "width": 1284,
+      "height": 1541,
+      "source": {
+        "repository": "https://github.com/ucalgary-ilab/augmented-math",
+        "commit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+        "ocr": "public/sample/ocr-05.json",
+        "regions": "public/sample/math-05.json",
+        "latex": "public/sample/mathpix-05.md"
+      },
+      "equations": [
+        {
+          "id": 0,
+          "rect": {
+            "x": 675,
+            "y": 243,
+            "width": 308,
+            "height": 28
+          },
+          "raw": "m=1.55192b=-2734.55",
+          "latex": "m=1.55192 \\quad b=-2734.55",
+          "detectionScore": 0.8894459009170532,
+          "matchSimilarity": 0.8333333333333334,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 1,
+          "rect": {
+            "x": 705,
+            "y": 340,
+            "width": 217,
+            "height": 26
+          },
+          "raw": "C=1.55192t-2734.55",
+          "latex": "C=1.55192 t-2734.55",
+          "detectionScore": 0.642211377620697,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 2,
+          "rect": {
+            "x": 620,
+            "y": 943,
+            "width": 424,
+            "height": 28
+          },
+          "raw": "C(1987)(1.55192)(1987)2734.55349.12",
+          "latex": "C(1987)=(1.55192)(1987)-2734.55 \\approx 349.12",
+          "detectionScore": 0.8267053961753845,
+          "matchSimilarity": 0.7586206896551724,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 3,
+          "rect": {
+            "x": 476,
+            "y": 1063,
+            "width": 134,
+            "height": 24
+          },
+          "raw": "With=2010,",
+          "latex": "t=2010",
+          "detectionScore": 0.5068713426589966,
+          "matchSimilarity": 0.6153846153846154,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 4,
+          "rect": {
+            "x": 618,
+            "y": 1105,
+            "width": 425,
+            "height": 29
+          },
+          "raw": "=C(2010)(1.55192)(2010)-2734.55384.81",
+          "latex": "C(2010)=(1.55192)(2010)-2734.55 \\approx 384.81",
+          "detectionScore": 0.7257866263389587,
+          "matchSimilarity": 0.8,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 5,
+          "rect": {
+            "x": 713,
+            "y": 1274,
+            "width": 237,
+            "height": 25
+          },
+          "raw": "1.55192t2734.55>400",
+          "latex": "1.55192 t-2734.55>400",
+          "detectionScore": 0.7500532865524292,
+          "matchSimilarity": 0.9032258064516129,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 6,
+          "rect": {
+            "x": 722,
+            "y": 1357,
+            "width": 216,
+            "height": 53
+          },
+          "raw": "3134.551.55192≈2019.79",
+          "latex": "t>\\frac{3134.55}{1.55192} \\approx 2019.79",
+          "detectionScore": 0.9440189003944397,
+          "matchSimilarity": 0.7804878048780488,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        }
+      ],
+      "allLatex": [
+        "m=1.55192 \\quad b=-2734.55",
+        "\\mathrm{CO}_{2}",
+        "C=1.55192 t-2734.55",
+        "t=1987",
+        "C(1987)=(1.55192)(1987)-2734.55 \\approx 349.12",
+        "348.93 \\mathrm{ppm}",
+        "t=2010",
+        "C(2010)=(1.55192)(2010)-2734.55 \\approx 384.81",
+        "384.8 \\mathrm{ppm}",
+        "400 \\mathrm{ppm}",
+        "1.55192 t-2734.55>400",
+        "t>\\frac{3134.55}{1.55192} \\approx 2019.79"
+      ]
+    },
+    {
+      "sample": 6,
+      "width": 1284,
+      "height": 1541,
+      "source": {
+        "repository": "https://github.com/ucalgary-ilab/augmented-math",
+        "commit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+        "ocr": "public/sample/ocr-06.json",
+        "regions": "public/sample/math-06.json",
+        "latex": "public/sample/mathpix-06.md"
+      },
+      "equations": [
+        {
+          "id": 0,
+          "rect": {
+            "x": 485,
+            "y": 155,
+            "width": 134,
+            "height": 24
+          },
+          "raw": "f(x)=2x1",
+          "latex": "f(x)=2 x-1",
+          "detectionScore": 0.5980650186538696,
+          "matchSimilarity": 0.7272727272727273,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 1,
+          "rect": {
+            "x": 848,
+            "y": 154,
+            "width": 88,
+            "height": 25
+          },
+          "raw": "g(x)=x²",
+          "latex": "g(x)=x^{2}",
+          "detectionScore": 0.41475293040275574,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 2,
+          "rect": {
+            "x": 724,
+            "y": 218,
+            "width": 113,
+            "height": 25
+          },
+          "raw": "y=2x1,",
+          "latex": "y=2 x-1",
+          "detectionScore": 0.8710541129112244,
+          "matchSimilarity": 0.6666666666666666,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 3,
+          "rect": {
+            "x": 807,
+            "y": 246,
+            "width": 31,
+            "height": 18
+          },
+          "raw": "-1.",
+          "latex": "(-1,1)",
+          "detectionScore": 0.5734346508979797,
+          "matchSimilarity": 0.6666666666666666,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 4,
+          "rect": {
+            "x": 815,
+            "y": 295,
+            "width": 65,
+            "height": 20
+          },
+          "raw": "2x-1",
+          "latex": "2 x-1",
+          "detectionScore": 0.6050880551338196,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 5,
+          "rect": {
+            "x": 1090,
+            "y": 374,
+            "width": 49,
+            "height": 25
+          },
+          "raw": "(2,4)",
+          "latex": "(2,4)",
+          "detectionScore": 0.47671958804130554,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 6,
+          "rect": {
+            "x": 451,
+            "y": 398,
+            "width": 72,
+            "height": 26
+          },
+          "raw": "(-1,1),",
+          "latex": "(-1,1)",
+          "detectionScore": 0.5901955962181091,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 7,
+          "rect": {
+            "x": 824,
+            "y": 425,
+            "width": 82,
+            "height": 22
+          },
+          "raw": "isy=x²,",
+          "latex": "y=x^{2}",
+          "detectionScore": 0.823893129825592,
+          "matchSimilarity": 0.75,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 8,
+          "rect": {
+            "x": 580,
+            "y": 576,
+            "width": 185,
+            "height": 25
+          },
+          "raw": "f(x)=2x²=5x+1",
+          "latex": "f(x)=2 x^{2}-5 x+1",
+          "detectionScore": 0.4759277403354645,
+          "matchSimilarity": 0.8,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 9,
+          "rect": {
+            "x": 661,
+            "y": 630,
+            "width": 82,
+            "height": 24
+          },
+          "raw": "f(a+h)",
+          "latex": "f(a+h)",
+          "detectionScore": 0.5881007313728333,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 10,
+          "rect": {
+            "x": 894,
+            "y": 632,
+            "width": 35,
+            "height": 21
+          },
+          "raw": "a+",
+          "latex": "a+h",
+          "detectionScore": 0.42994579672813416,
+          "matchSimilarity": 0.6666666666666666,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 11,
+          "rect": {
+            "x": 620,
+            "y": 672,
+            "width": 408,
+            "height": 118
+          },
+          "raw": "2(a+h)²5(a+h)+12(a²+2ah+h²)-5(a+h)+12a²+4ah+2h²-5a-5h+1f(a+h)==-",
+          "latex": "\\begin{aligned}\nf(a+h) & =2(a+h)^{2}-5(a+h)+1 \\\\\n& =2\\left(a^{2}+2 a h+h^{2}\\right)-5(a+h)+1 \\\\\n& =2 a^{2}+4 a h+2 h^{2}-5 a-5 h+1\n\\end{aligned}",
+          "detectionScore": 0.7475576400756836,
+          "matchSimilarity": 0.7768595041322314,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 12,
+          "rect": {
+            "x": 126,
+            "y": 1045,
+            "width": 83,
+            "height": 21
+          },
+          "raw": "x=a+h.",
+          "latex": "x=a+h",
+          "detectionScore": 0.5407921075820923,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 13,
+          "rect": {
+            "x": 493,
+            "y": 845,
+            "width": 655,
+            "height": 217
+          },
+          "raw": "f(a+h)-f(a)h(2a²+4ah+2h²5a-5h+1)(2a²-5a+1)h2a²+4ah+2h²5a-5h+1-2a²+5a-1h4ah2h²5hh4a+2h-5",
+          "latex": "\\begin{aligned}\n\\frac{f(a+h)-f(a)}{h} & =\\frac{\\left(2 a^{2}+4 a h+2 h^{2}-5 a-5 h+1\\right)-\\left(2 a^{2}-5 a+1\\right)}{h} \\\\\n& =\\frac{2 a^{2}+4 a h+2 h^{2}-5 a-5 h+1-2 a^{2}+5 a-1}{h} \\\\\n& =\\frac{4 a h+2 h^{2}-5 h}{h}=4 a+2 h-5\n\\end{aligned}",
+          "detectionScore": 0.8279219269752502,
+          "matchSimilarity": 0.770949720670391,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        }
+      ],
+      "allLatex": [
+        "\\frac{f(a+h)-f(a)}{h}",
+        "f(x)",
+        "x=a",
+        "x=a+h",
+        "f(x)=2 x-1",
+        "g(x)=x^{2}",
+        "y=2 x-1",
+        "y=m x+b",
+        "2 x-1",
+        "\\mathbb{R}",
+        "g(2)=2^{2}=4",
+        "g(-1)=(-1)^{2}=1",
+        "(2,4)",
+        "(-1,1)",
+        "y=x^{2}",
+        "g(x)",
+        "x^{2}",
+        "x^{2} \\geqslant 0",
+        "\\{y \\mid y \\geqslant 0\\}=[0, \\infty)",
+        "f(x)=2 x^{2}-5 x+1",
+        "h \\neq 0",
+        "f(a+h)",
+        "a+h",
+        "\\begin{aligned}\nf(a+h) & =2(a+h)^{2}-5(a+h)+1 \\\\\n& =2\\left(a^{2}+2 a h+h^{2}\\right)-5(a+h)+1 \\\\\n& =2 a^{2}+4 a h+2 h^{2}-5 a-5 h+1\n\\end{aligned}",
+        "\\begin{aligned}\n\\frac{f(a+h)-f(a)}{h} & =\\frac{\\left(2 a^{2}+4 a h+2 h^{2}-5 a-5 h+1\\right)-\\left(2 a^{2}-5 a+1\\right)}{h} \\\\\n& =\\frac{2 a^{2}+4 a h+2 h^{2}-5 a-5 h+1-2 a^{2}+5 a-1}{h} \\\\\n& =\\frac{4 a h+2 h^{2}-5 h}{h}=4 a+2 h-5\n\\end{aligned}"
+      ]
+    },
+    {
+      "sample": 7,
+      "width": 1285,
+      "height": 1541,
+      "source": {
+        "repository": "https://github.com/ucalgary-ilab/augmented-math",
+        "commit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+        "ocr": "public/sample/ocr-07.json",
+        "regions": "public/sample/math-07.json",
+        "latex": "public/sample/mathpix-07.md"
+      },
+      "equations": [
+        {
+          "id": 0,
+          "rect": {
+            "x": 703,
+            "y": 393,
+            "width": 144,
+            "height": 28
+          },
+          "raw": "(b)g(x)=x²-25",
+          "latex": "g(x)=\\sqrt[4]{x^{2}-25}",
+          "detectionScore": 0.6560129523277283,
+          "matchSimilarity": 0.6,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 1,
+          "rect": {
+            "x": 956,
+            "y": 395,
+            "width": 157,
+            "height": 25
+          },
+          "raw": "(c)h(x)=x²/³(x-2)²",
+          "latex": "h(x)=x^{2 / 3}(x-2)^{2}",
+          "detectionScore": 0.6471964716911316,
+          "matchSimilarity": 0.9473684210526315,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 2,
+          "rect": {
+            "x": 668,
+            "y": 496,
+            "width": 220,
+            "height": 50
+          },
+          "raw": "m=f(v)mo√1-v²/c²",
+          "latex": "m=f(v)=\\frac{m_{0}}{\\sqrt{1-v^{2} / c^{2}}}",
+          "detectionScore": 0.9239229559898376,
+          "matchSimilarity": 0.7741935483870968,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 3,
+          "rect": {
+            "x": 587,
+            "y": 1067,
+            "width": 62,
+            "height": 24
+          },
+          "raw": "[-1,1].",
+          "latex": "[-1,1]",
+          "detectionScore": 0.6244004368782043,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        }
+      ],
+      "allLatex": [
+        "f(x)=x \\sqrt{x+3}",
+        "g(x)=\\sqrt[4]{x^{2}-25}",
+        "h(x)=x^{2 / 3}(x-2)^{2}",
+        "m=f(v)=\\frac{m_{0}}{\\sqrt{1-v^{2} / c^{2}}}",
+        "m_{0}",
+        "c=3.0 \\times 10^{5} \\mathrm{~km} / \\mathrm{s}",
+        "f(x)=\\sin x",
+        "\\sin x",
+        "g(x)=\\cos x",
+        "(-\\infty, \\infty)",
+        "[-1,1]",
+        "-1 \\leqslant \\sin x \\leqslant 1 \\quad-1 \\leqslant \\cos x \\leqslant 1",
+        "|\\sin x| \\leqslant 1 \\quad|\\cos x| \\leqslant 1",
+        "\\pi",
+        "\\sin x=0 \\quad \\text { when } \\quad x=n \\pi \\quad n \\text { an integer }"
+      ]
+    },
+    {
+      "sample": 8,
+      "width": 1275,
+      "height": 1651,
+      "source": {
+        "repository": "https://github.com/ucalgary-ilab/augmented-math",
+        "commit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+        "ocr": "public/sample/ocr-08.json",
+        "regions": "public/sample/math-08.json",
+        "latex": "public/sample/mathpix-08.md"
+      },
+      "equations": [
+        {
+          "id": 0,
+          "rect": {
+            "x": 160,
+            "y": 286,
+            "width": 173,
+            "height": 28
+          },
+          "raw": "x2+5x+6=0",
+          "latex": "x^{2}+5 x+6=0",
+          "detectionScore": 0.641048014163971,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 1,
+          "rect": {
+            "x": 658,
+            "y": 283,
+            "width": 178,
+            "height": 30
+          },
+          "raw": "x²-2x+1=0",
+          "latex": "x^{2}-2 x+1=0",
+          "detectionScore": 0.46053388714790344,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 2,
+          "rect": {
+            "x": 135,
+            "y": 406,
+            "width": 156,
+            "height": 29
+          },
+          "raw": "2.x²-36=0",
+          "latex": "x^{2}-36=0",
+          "detectionScore": 0.4702063798904419,
+          "matchSimilarity": 0.9230769230769231,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 3,
+          "rect": {
+            "x": 662,
+            "y": 407,
+            "width": 173,
+            "height": 28
+          },
+          "raw": "x²7x+6=0",
+          "latex": "x^{2}-7 x+6=0",
+          "detectionScore": 0.5721980333328247,
+          "matchSimilarity": 0.8,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 4,
+          "rect": {
+            "x": 161,
+            "y": 529,
+            "width": 186,
+            "height": 28
+          },
+          "raw": "x²2x15=0",
+          "latex": "x^{2}-2 x-15=0",
+          "detectionScore": 0.7205027341842651,
+          "matchSimilarity": 0.625,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 5,
+          "rect": {
+            "x": 660,
+            "y": 529,
+            "width": 190,
+            "height": 27
+          },
+          "raw": "x²2x-350",
+          "latex": "x^{2}-2 x-35=0",
+          "detectionScore": 0.8260732889175415,
+          "matchSimilarity": 0.625,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 6,
+          "rect": {
+            "x": 127,
+            "y": 649,
+            "width": 220,
+            "height": 28
+          },
+          "raw": "4.x²3x28=0",
+          "latex": "x^{2}-3 x-28=0",
+          "detectionScore": 0.5255423784255981,
+          "matchSimilarity": 0.5882352941176471,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 7,
+          "rect": {
+            "x": 661,
+            "y": 649,
+            "width": 190,
+            "height": 27
+          },
+          "raw": "x2+5x−14=0",
+          "latex": "x^{2}+5 x-14=0",
+          "detectionScore": 0.7031699419021606,
+          "matchSimilarity": 0.8235294117647058,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 8,
+          "rect": {
+            "x": 159,
+            "y": 769,
+            "width": 203,
+            "height": 29
+          },
+          "raw": "x²+11x+18=0",
+          "latex": "x^{2}+11 x+18=0",
+          "detectionScore": 0.6607240438461304,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 9,
+          "rect": {
+            "x": 661,
+            "y": 769,
+            "width": 176,
+            "height": 29
+          },
+          "raw": "x²x30=0",
+          "latex": "x^{2}-x-30=0",
+          "detectionScore": 0.7258754372596741,
+          "matchSimilarity": 0.5714285714285714,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 10,
+          "rect": {
+            "x": 154,
+            "y": 890,
+            "width": 207,
+            "height": 29
+          },
+          "raw": "x²+14x+48=0",
+          "latex": "x^{2}+14 x+48=0",
+          "detectionScore": 0.6398960947990417,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 11,
+          "rect": {
+            "x": 661,
+            "y": 890,
+            "width": 205,
+            "height": 30
+          },
+          "raw": "x²14x+45=0",
+          "latex": "x^{2}-14 x+45=0",
+          "detectionScore": 0.5727312564849854,
+          "matchSimilarity": 0.8421052631578947,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 12,
+          "rect": {
+            "x": 156,
+            "y": 1012,
+            "width": 162,
+            "height": 27
+          },
+          "raw": "x²+x-2=0",
+          "latex": "x^{2}+x-2=0",
+          "detectionScore": 0.4462433159351349,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 13,
+          "rect": {
+            "x": 661,
+            "y": 1012,
+            "width": 190,
+            "height": 28
+          },
+          "raw": "x²+9x+18=0",
+          "latex": "x^{2}+9 x+18=0",
+          "detectionScore": 0.5760693550109863,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 14,
+          "rect": {
+            "x": 161,
+            "y": 1133,
+            "width": 200,
+            "height": 29
+          },
+          "raw": "x²11x+28=0",
+          "latex": "x^{2}-11 x+28=0",
+          "detectionScore": 0.6748175621032715,
+          "matchSimilarity": 0.8421052631578947,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 15,
+          "rect": {
+            "x": 661,
+            "y": 1133,
+            "width": 203,
+            "height": 29
+          },
+          "raw": "x²14x+48=0",
+          "latex": "x^{2}+14 x+48=0",
+          "detectionScore": 0.6287830471992493,
+          "matchSimilarity": 0.8421052631578947,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 16,
+          "rect": {
+            "x": 158,
+            "y": 1373,
+            "width": 190,
+            "height": 30
+          },
+          "raw": "x²3x40=0",
+          "latex": "x^{2}-3 x-40=0",
+          "detectionScore": 0.877936601638794,
+          "matchSimilarity": 0.625,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 17,
+          "rect": {
+            "x": 660,
+            "y": 1373,
+            "width": 176,
+            "height": 32
+          },
+          "raw": "x²+2x-3=0",
+          "latex": "x^{2}+2 x-3=0",
+          "detectionScore": 0.7964993119239807,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        }
+      ],
+      "allLatex": [
+        "\\mathrm{x}",
+        "x^{2}+5 x+6=0",
+        "x^{2}-2 x+1=0",
+        "x^{2}-36=0",
+        "x^{2}-7 x+6=0",
+        "x^{2}-2 x-15=0",
+        "x^{2}-2 x-35=0",
+        "x^{2}-3 x-28=0",
+        "x^{2}+5 x-14=0",
+        "x^{2}+11 x+18=0",
+        "x^{2}-x-30=0",
+        "x^{2}+14 x+48=0",
+        "x^{2}-14 x+45=0",
+        "x^{2}+x-2=0",
+        "x^{2}+9 x+18=0",
+        "x^{2}-11 x+28=0",
+        "x^{2}-14 x+48=0",
+        "x^{2}-6 x-27=0",
+        "x^{2}+12 x+27=0",
+        "x^{2}-3 x-40=0",
+        "x^{2}+2 x-3=0"
+      ]
+    },
+    {
+      "sample": 9,
+      "width": 1275,
+      "height": 1651,
+      "source": {
+        "repository": "https://github.com/ucalgary-ilab/augmented-math",
+        "commit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+        "ocr": "public/sample/ocr-09.json",
+        "regions": "public/sample/math-09.json",
+        "latex": "public/sample/mathpix-09.md"
+      },
+      "equations": [
+        {
+          "id": 0,
+          "rect": {
+            "x": 956,
+            "y": 644,
+            "width": 45,
+            "height": 26
+          },
+          "raw": "f(x),",
+          "latex": "f(x)",
+          "detectionScore": 0.5880903005599976,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 1,
+          "rect": {
+            "x": 510,
+            "y": 1109,
+            "width": 252,
+            "height": 25
+          },
+          "raw": "1+2+3+4+...+19+20,",
+          "latex": "1+2+3+4+\\cdots+19+20",
+          "detectionScore": 0.6035091876983643,
+          "matchSimilarity": 0.7741935483870968,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 2,
+          "rect": {
+            "x": 599,
+            "y": 1181,
+            "width": 68,
+            "height": 67
+          },
+          "raw": "20Σi,i=1",
+          "latex": "\\sum_{i=1}^{20} i",
+          "detectionScore": 0.6769281625747681,
+          "matchSimilarity": 0.6153846153846154,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 3,
+          "rect": {
+            "x": 602,
+            "y": 1330,
+            "width": 70,
+            "height": 63
+          },
+          "raw": "ai",
+          "latex": "a_{i}",
+          "detectionScore": 0.8382579684257507,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 4,
+          "rect": {
+            "x": 403,
+            "y": 1462,
+            "width": 49,
+            "height": 22
+          },
+          "raw": "i=1",
+          "latex": "i=1",
+          "detectionScore": 0.76939457654953,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 5,
+          "rect": {
+            "x": 723,
+            "y": 1463,
+            "width": 53,
+            "height": 22
+          },
+          "raw": "i=n.",
+          "latex": "i=n",
+          "detectionScore": 0.6732551455497742,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        }
+      ],
+      "allLatex": [
+        "f(x)",
+        "[a, b]",
+        "\\Sigma",
+        "1+2+3+4+5+6+7+8+9+10+11+12+13+14+15+16+17+18+19+20 .",
+        "1+2+3+4+\\cdots+19+20",
+        "\\sum_{i=1}^{20} i",
+        "\\sum_{i=1}^{n} a_{i}",
+        "a_{i}",
+        "i=1",
+        "i=n",
+        "\\sum_{i=2}^{7} s_{i}"
+      ]
+    },
+    {
+      "sample": 10,
+      "width": 1240,
+      "height": 1755,
+      "source": {
+        "repository": "https://github.com/ucalgary-ilab/augmented-math",
+        "commit": "9ebf72a8ccb4844707bb87be34b31f201cbbcf00",
+        "ocr": "public/sample/ocr-10.json",
+        "regions": "public/sample/math-10.json",
+        "latex": "public/sample/mathpix-10.md"
+      },
+      "equations": [
+        {
+          "id": 0,
+          "rect": {
+            "x": 354,
+            "y": 215,
+            "width": 98,
+            "height": 23
+          },
+          "raw": "y=3x+1",
+          "latex": "y=3 x+1",
+          "detectionScore": 0.8446084856987,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 1,
+          "rect": {
+            "x": 823,
+            "y": 260,
+            "width": 70,
+            "height": 26
+          },
+          "raw": "(3,-2)",
+          "latex": "(3,-2)",
+          "detectionScore": 0.6406405568122864,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 2,
+          "rect": {
+            "x": 377,
+            "y": 379,
+            "width": 507,
+            "height": 54
+          },
+          "raw": "y(-2)=3(x−3)andy-(-2)=-1(x-3)",
+          "latex": "y-(-2)=3(x-3) \\quad \\text { and } \\quad y-(-2)=-\\frac{1}{3}(x-3)",
+          "detectionScore": 0.93348628282547,
+          "matchSimilarity": 0.6037735849056604,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 3,
+          "rect": {
+            "x": 425,
+            "y": 505,
+            "width": 404,
+            "height": 32
+          },
+          "raw": "3x-y-11=0andx+3y+3=0",
+          "latex": "3 x-y-11=0 \\quad \\text { and } \\quad x+3 y+3=0",
+          "detectionScore": 0.8857341408729553,
+          "matchSimilarity": 0.72,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 4,
+          "rect": {
+            "x": 600,
+            "y": 842,
+            "width": 137,
+            "height": 25
+          },
+          "raw": "2x-y-3=0.",
+          "latex": "2 x-y-3=0",
+          "detectionScore": 0.716066837310791,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 5,
+          "rect": {
+            "x": 395,
+            "y": 909,
+            "width": 63,
+            "height": 26
+          },
+          "raw": "(1,-1)",
+          "latex": "(1,-1)",
+          "detectionScore": 0.5499681234359741,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 6,
+          "rect": {
+            "x": 489,
+            "y": 1307,
+            "width": 118,
+            "height": 26
+          },
+          "raw": "Q=(x2,y2).",
+          "latex": "Q=\\left(x_{2}, y_{2}\\right)",
+          "detectionScore": 0.5121703743934631,
+          "matchSimilarity": 1,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 7,
+          "rect": {
+            "x": 434,
+            "y": 1353,
+            "width": 289,
+            "height": 46
+          },
+          "raw": "VPQ=√√(x₂-x₁)²+(y2−y₁)².",
+          "latex": "P Q=\\sqrt{\\left(x_{2}-x_{1}\\right)^{2}+\\left(y_{2}-y_{1}\\right)^{2}}",
+          "detectionScore": 0.6681821942329407,
+          "matchSimilarity": 0.6153846153846154,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        },
+        {
+          "id": 8,
+          "rect": {
+            "x": 1030,
+            "y": 1380,
+            "width": 83,
+            "height": 27
+          },
+          "raw": "Q(x2,Y2)",
+          "latex": "Q=\\left(x_{2}, y_{2}\\right)",
+          "detectionScore": 0.4269312918186188,
+          "matchSimilarity": 0.6666666666666666,
+          "matchStatus": "Prepared candidate from author OCR; verify correspondence"
+        }
+      ],
+      "allLatex": [
+        "(3,-2)",
+        "y=3 x+1",
+        "\\ell_{1}",
+        "\\left.\\ell_{2}\\right)",
+        "\\ell_{2}",
+        "-\\frac{1}{3}",
+        "y-(-2)=3(x-3) \\quad \\text { and } \\quad y-(-2)=-\\frac{1}{3}(x-3)",
+        "3 x-y-11=0 \\quad \\text { and } \\quad x+3 y+3=0",
+        "(-2,3)",
+        "(5,-1)",
+        "(0,7)",
+        "(-3,2)",
+        "2 x-y-3=0",
+        "(1,4)",
+        "x+3 y=0",
+        "(1,-1)",
+        "a, b",
+        "a^{2}+b^{2}=c^{2}",
+        "P=\\left(x_{1}, y_{1}\\right)",
+        "Q=\\left(x_{2}, y_{2}\\right)",
+        "P Q",
+        "P Q=\\sqrt{\\left(x_{2}-x_{1}\\right)^{2}+\\left(y_{2}-y_{1}\\right)^{2}}"
+      ]
+    }
+  ]
+}

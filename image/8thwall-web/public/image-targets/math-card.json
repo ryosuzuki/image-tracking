@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/math-card_luminance.png",
+  "metadata": null,
+  "name": "math-card",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 0,
+    "width": 720,
+    "height": 960,
+    "isRotated": false,
+    "originalWidth": 720,
+    "originalHeight": 960
+  },
+  "resources": {
+    "originalImage": "math-card_original.png",
+    "croppedImage": "math-card_cropped.png",
+    "thumbnailImage": "math-card_thumbnail.png",
+    "luminanceImage": "math-card_luminance.png"
+  },
+  "created": 1791586716307,
+  "updated": 1791586716307
+}

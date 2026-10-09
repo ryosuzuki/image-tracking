@@ -1,0 +1,17 @@
+import {parseExpression} from './math-semantics.js'
+const allowed=new Set(['sin','cos','sqrt','abs','exp','log','pi'])
+const format=value=>Number.isInteger(value)?String(value):Number(value.toPrecision(9)).toString()
+export function linearRelation(source){
+ const match=source.match(/^(.+?)(<=|>=|<|>|=)(.+)$/);if(!match||/[<>=]/.test(match[1]+match[3]))return null
+ const [left,operator,right]=match.slice(1),names=[...new Set((left+' '+right).match(/[A-Za-z]+/g)||[])].filter(n=>!allowed.has(n));if(names.length!==1)return null
+ const variable=names[0],number='(?:\\d+(?:\\.\\d*)?|\\.\\d+)',variableTerm=new RegExp(`^(?:(${number})\\*?)?${variable}(?:/(${number}))?$`);try{function affine(expression){const compact=expression.replace(/\s/g,''),terms=compact.match(/[+-]?[^+-]+/g)||[];if(terms.join('')!==compact)throw Error('Unsupported affine syntax');let a=0,b=0;for(let term of terms){const sign=term[0]==='-'?-1:1;if(['+','-'].includes(term[0]))term=term.slice(1);const m=variableTerm.exec(term);if(m){const numerator=m[1]==null?1:Number(m[1]),denominator=m[2]==null?1:Number(m[2]);if(!denominator)throw Error('Zero divisor');a+=sign*numerator/denominator}else b+=sign*parseExpression(term)({})}if(![a,b].every(Number.isFinite))throw Error('Nonfinite relation');return{a,b}}const l=affine(left),r=affine(right),coefficient=l.a-r.a,constant=l.b-r.b;
+  if(coefficient===0){const valid=operator==='='?constant===0:operator==='<'?constant<0:operator==='>'?constant>0:operator==='<='?constant<=0:constant>=0;return{variable,operator,coefficient,constant,solution:valid?'All real values':'No solutions',steps:[source,`${format(constant)} ${operator} 0`,valid?'All real values satisfy this relation':'No values satisfy this relation']}}
+  const value=-constant/coefficient;if(!Number.isFinite(value))return null;const inverse={'<':'>','>':'<','<=':'>=','>=':'<='},solvedOperator=coefficient<0?inverse[operator]||operator:operator;return{variable,operator:solvedOperator,coefficient,constant,value,solution:`${variable} ${solvedOperator} ${format(value)}`,steps:[source,`${format(coefficient)} ${variable} ${operator} ${format(-constant)}`,`${coefficient<0&&operator!=='='?'Divide by a negative coefficient and reverse the inequality: ':'Divide by '+format(coefficient)+': '}${variable} ${solvedOperator} ${format(value)}`]}
+ }catch{return null}
+}
+export function quadraticRelation(source){
+ const sides=source.split('=');if(sides.length!==2||/[<>]/.test(source))return null
+ const names=[...new Set(source.match(/[A-Za-z]+/g)||[])].filter(n=>!allowed.has(n));if(names.length!==1||names[0]!=='x')return null
+ const number='(?:\\d+(?:\\.\\d*)?|\\.\\d+)',termPattern=new RegExp(`^(?:(${number})\\*?)?x(\\^(?:2|\\(2\\)))?(?:/(${number}))?$`)
+ try{function coefficients(expression){const compact=expression.replace(/\s/g,''),terms=compact.match(/[+-]?[^+-]+/g)||[];if(terms.join('')!==compact)throw Error('Unsupported quadratic syntax');const c=[0,0,0];for(let term of terms){const sign=term[0]==='-'?-1:1;if(['+','-'].includes(term[0]))term=term.slice(1);const m=termPattern.exec(term);if(m){const denominator=m[3]==null?1:Number(m[3]);if(!denominator)throw Error('Zero divisor');c[m[2]?2:1]+=sign*(m[1]==null?1:Number(m[1]))/denominator}else c[0]+=sign*parseExpression(term)({})}if(c.some(n=>!Number.isFinite(n)))throw Error('Nonfinite quadratic');return c}const l=coefficients(sides[0]),r=coefficients(sides[1]),[c,b,a]=l.map((n,i)=>n-r[i]);return a?{a,b,c,variable:'x'}:null}catch{return null}
+}

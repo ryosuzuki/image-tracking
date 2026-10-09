@@ -1,0 +1,23 @@
+{
+  "name": "marker-tracking-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 18961",
+    "build": "vite build",
+    "verify": "node scripts/verify.mjs",
+    "test:applications": "node --test tests/applications.test.mjs",
+    "verify:applications:browser": "node scripts/verify-applications-browser.mjs"
+  },
+  "dependencies": {
+    "js-aruco2": "2.0.0",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "vite": "7.3.7",
+    "@vitejs/plugin-basic-ssl": "2.1.0",
+    "playwright": "1.63.0",
+    "sharp": "0.35.5"
+  }
+}

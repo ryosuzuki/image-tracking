@@ -1,0 +1,17 @@
+export function installReplayControls(video,recordEvent){
+ let epoch=0,pausedAt=null,pausedTotal=0
+ const box=document.createElement('details');box.id='replay-controls';box.open=true;box.innerHTML='<summary>Recorded input authoring</summary><button id="replay-pause">Pause input to draw</button><button id="replay-back">Previous 1/30 s</button><button id="replay-forward">Next 1/30 s</button><label>Source time (seconds) <input id="replay-seek" type="range" min="0" step="0.001" value="0"></label><label>Jump to seconds <input id="replay-jump-time" type="number" min="0" step="0.001" value="0"></label><button id="replay-jump">Go</button><output id="replay-time"></output>'
+ document.querySelector('#replay-controls')?.remove();document.querySelector('#setup').after(box)
+ const slider=box.querySelector('#replay-seek'),button=box.querySelector('#replay-pause')
+ const state=window.demoReplayState={paused:false,seeking:false,epoch:0,sourceTime:0,duration:0,animationTime:performance.now()}
+ function update(){state.paused=video.paused;state.seeking=video.seeking;state.epoch=epoch;state.sourceTime=video.currentTime;state.duration=Number.isFinite(video.duration)&&video.duration>0?video.duration:video._demoDurationInfo?.durationSeconds??null;state.durationSource=Number.isFinite(video.duration)&&video.duration>0?'Video metadata':video._demoDurationInfo?.durationSource??'Unavailable';state.animationTime=(pausedAt??performance.now())-pausedTotal;slider.max=state.duration||Math.max(60,state.sourceTime+5);slider.value=state.sourceTime;button.textContent=video.paused?'Resume input and animation':'Pause input to draw';box.querySelector('#replay-time').textContent=`${state.sourceTime.toFixed(3)} / ${state.duration===null?'duration unavailable':state.duration.toFixed(3)+' s'}${state.seeking?' · seeking':video.paused?' · paused for drawing':''}`;window.demoDiagnostics&&(window.demoDiagnostics.replay={...state,stream:'Repeated decoded pixels keep actual SDK rendering while paused',stepping:'Approximate 1/30 second time step; codec exact-frame indexing unavailable'})}
+ video.addEventListener('pause',()=>{pausedAt=performance.now();update();recordEvent({name:'replaypause',at:performance.now(),sourceTime:video.currentTime})})
+ video.addEventListener('play',()=>{if(pausedAt!==null)pausedTotal+=performance.now()-pausedAt;pausedAt=null;update();recordEvent({name:'replayresume',at:performance.now(),sourceTime:video.currentTime})})
+ video.addEventListener('seeking',()=>{epoch++;update()});video.addEventListener('seeked',()=>{update();recordEvent({name:'replayseek',at:performance.now(),sourceTime:video.currentTime,epoch})})
+ button.onclick=()=>video.paused?video.play():video.pause()
+ slider.oninput=()=>{const requested=Number(slider.value);video.pause();video.currentTime=Math.max(0,Math.min(state.duration||Infinity,requested))}
+ for(const [id,delta]of [['#replay-back',-1/30],['#replay-forward',1/30]])box.querySelector(id).onclick=()=>{video.pause();video.currentTime=Math.max(0,Math.min(state.duration||Infinity,video.currentTime+delta))}
+ box.querySelector('#replay-jump').onclick=()=>{const requested=Number(box.querySelector('#replay-jump-time').value);if(!Number.isFinite(requested)||requested<0)return;video.pause();video.currentTime=Math.min(state.duration||Infinity,requested)}
+ const timer=setInterval(update,33);update()
+ return()=>{clearInterval(timer);box.remove();window.demoReplayState=null}
+}

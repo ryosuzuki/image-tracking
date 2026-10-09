@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/original-20_luminance.png",
+  "metadata": null,
+  "name": "original-20",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 0,
+    "width": 640,
+    "height": 2065,
+    "isRotated": true,
+    "originalWidth": 640,
+    "originalHeight": 2065
+  },
+  "resources": {
+    "originalImage": "original-20_original.png",
+    "croppedImage": "original-20_cropped.png",
+    "thumbnailImage": "original-20_thumbnail.png",
+    "luminanceImage": "original-20_luminance.png"
+  },
+  "created": 1791373440224,
+  "updated": 1791373440224
+}

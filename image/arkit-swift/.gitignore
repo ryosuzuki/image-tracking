@@ -1,0 +1,7 @@
+**/build/
+**/device-build/
+**/DerivedData/
+**/xcuserdata/
+.DS_Store
+*.mp4
+*.mov

@@ -1,0 +1,17 @@
+/Library/
+/Temp/
+/Logs/
+/Obj/
+/Builds/
+/UserSettings/
+*.csproj
+*.sln
+*.slnx
+.DS_Store
+Assets/XR/Temp/
+Assets/Resources/DevAgentSettings.asset
+Assets/Resources/DevAgentSettings.asset.meta
+
+/.utmp/
+
+/build/

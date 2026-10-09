@@ -1,0 +1,140 @@
+{
+  "topic": "machine",
+  "page_width": 0.21,
+  "source_size": [
+    1000,
+    1400
+  ],
+  "reference_crop": [
+    210,
+    557,
+    573,
+    424
+  ],
+  "selection_manifest_sha256": "8c611dff3e9c94f33da5eb6ff7c4f1cd3e26e3f8e6b7dcc98ed8a25b163b57c7",
+  "basis": "Host source-front PCA for gears before Unity target(x,y,-z); explicit authored hinge/roles, not learned articulation",
+  "parts": [
+    {
+      "checked_rasters": true,
+      "id": "machine-blue-gear",
+      "bbox": [
+        275,
+        622,
+        520,
+        811
+      ],
+      "centroid": [
+        395.629162782025,
+        714.4776058176394
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "cutout_resource": "Catalog/machine-blue-gear-cutout",
+      "cutout_sha256": "83950e69e250b017c3cf592582deb52cc9889f2979ff74cc54e6bed168152ba1",
+      "hinge": [],
+      "role": "Authored fixture role: blue driver gear",
+      "selection_reason": "Recognizable genuine source-derived mesh; source occlusions and unseen surfaces unknown",
+      "limits": "Roles/kinematics authored fixture metadata, not inferred biology/topology/rig. No hidden DNA connectivity recovery. GLTF Y-up unchanged. Swift identity UV/UIImage no additional flip; host-specific origins, no UV bake.",
+      "host_basis": [
+        0.80428383330573,
+        -0.39722644186665573,
+        -0.44197134450662884,
+        -0.39722644186665573,
+        0.193787366760933,
+        -0.8970270956698132,
+        0.44197134450662884,
+        0.8970270956698132,
+        -0.0019287999333370554
+      ],
+      "source_face_normal": [
+        0.44197134450662884,
+        0.8970270956698132,
+        -0.001928799933336866
+      ],
+      "normal_eigenvalues": [
+        0.02284110273450539,
+        0.3387746525289662,
+        0.40476700757174117
+      ],
+      "basis_normal_unity": [
+        0,
+        0,
+        -1
+      ],
+      "baseline_mesh_resource": "Catalog/machine-blue-gear-selected",
+      "baseline_mesh_sha256": "d76a17ac9ad3700050950308c54e34b971a445f30e69114cf0536176ed5e423d",
+      "baseline_texture_resource": "Catalog/machine-blue-gear-selected-texture",
+      "baseline_texture_sha256": "48bc2b69686175dda602757a1a01ff9d84b4baf84168b7085d7adf3ee23b700d",
+      "baseline_glb_sha256": "522133fc4af1ab11d1276f9b1effbb5c9474da8153235422af6184bbc6ea55e4",
+      "baseline_source_texture_sha256": "48bc2b69686175dda602757a1a01ff9d84b4baf84168b7085d7adf3ee23b700d",
+      "selected_mesh_resource": "Catalog/machine-blue-gear-selected",
+      "selected_mesh_sha256": "d76a17ac9ad3700050950308c54e34b971a445f30e69114cf0536176ed5e423d",
+      "selected_texture_resource": "Catalog/machine-blue-gear-selected-texture",
+      "selected_texture_sha256": "48bc2b69686175dda602757a1a01ff9d84b4baf84168b7085d7adf3ee23b700d",
+      "selected_glb_sha256": "522133fc4af1ab11d1276f9b1effbb5c9474da8153235422af6184bbc6ea55e4",
+      "selected_source_texture_sha256": "48bc2b69686175dda602757a1a01ff9d84b4baf84168b7085d7adf3ee23b700d"
+    },
+    {
+      "checked_rasters": true,
+      "id": "machine-yellow-gear",
+      "bbox": [
+        480,
+        728,
+        718,
+        916
+      ],
+      "centroid": [
+        600.2792500652279,
+        822.8714450780872
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "cutout_resource": "Catalog/machine-yellow-gear-cutout",
+      "cutout_sha256": "5209fa69c22d6aeac9718ac8ba675d7871cfa31bf19c57d564f3bd33eab768c0",
+      "hinge": [],
+      "role": "Authored fixture role: yellow follower gear",
+      "selection_reason": "Recognizable genuine source-derived mesh; source occlusions and unseen surfaces unknown",
+      "limits": "Roles/kinematics authored fixture metadata, not inferred biology/topology/rig. No hidden DNA connectivity recovery. GLTF Y-up unchanged. Swift identity UV/UIImage no additional flip; host-specific origins, no UV bake.",
+      "host_basis": [
+        0.9040549130004721,
+        -0.2406698249293345,
+        -0.3532177085710628,
+        -0.2406698249293345,
+        0.39630087956664706,
+        -0.8860156026973708,
+        0.3532177085710628,
+        0.8860156026973708,
+        0.3003557925671191
+      ],
+      "source_face_normal": [
+        0.3532177085710628,
+        0.8860156026973708,
+        0.3003557925671187
+      ],
+      "normal_eigenvalues": [
+        0.02497818163667348,
+        0.28894082728749604,
+        0.3766300184166945
+      ],
+      "basis_normal_unity": [
+        0,
+        0,
+        -1
+      ],
+      "baseline_mesh_resource": "Catalog/machine-yellow-gear-selected",
+      "baseline_mesh_sha256": "c60002240f9577f43788bb49bf385bea8472362ce9dc49b1b119b68130e730be",
+      "baseline_texture_resource": "Catalog/machine-yellow-gear-selected-texture",
+      "baseline_texture_sha256": "1d08cd747590a8f91bccf0becc0ea16c94e077f2ea803b1d7cf007f5db3d2f8f",
+      "baseline_glb_sha256": "2481a78d6f6d979491966257d1c0a3f4c56d9508e4aa44ccfdea49100cb20767",
+      "baseline_source_texture_sha256": "861072960339f69f7da068f19e2b65058336a3ab4e4610c5776e47b8c283e5d9",
+      "selected_mesh_resource": "Catalog/machine-yellow-gear-selected",
+      "selected_mesh_sha256": "c60002240f9577f43788bb49bf385bea8472362ce9dc49b1b119b68130e730be",
+      "selected_texture_resource": "Catalog/machine-yellow-gear-selected-texture",
+      "selected_texture_sha256": "1d08cd747590a8f91bccf0becc0ea16c94e077f2ea803b1d7cf007f5db3d2f8f",
+      "selected_glb_sha256": "2481a78d6f6d979491966257d1c0a3f4c56d9508e4aa44ccfdea49100cb20767",
+      "selected_source_texture_sha256": "861072960339f69f7da068f19e2b65058336a3ab4e4610c5776e47b8c283e5d9"
+    }
+  ]
+}

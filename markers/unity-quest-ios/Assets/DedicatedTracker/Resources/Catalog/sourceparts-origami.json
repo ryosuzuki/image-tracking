@@ -1,0 +1,98 @@
+{
+  "topic": "origami",
+  "page_width": 0.21,
+  "source_size": [
+    1000,
+    1400
+  ],
+  "reference_crop": [
+    198,
+    593,
+    572,
+    412
+  ],
+  "selection_manifest_sha256": "8c611dff3e9c94f33da5eb6ff7c4f1cd3e26e3f8e6b7dcc98ed8a25b163b57c7",
+  "basis": "Host source-front PCA for gears before Unity target(x,y,-z); explicit authored hinge/roles, not learned articulation",
+  "parts": [
+    {
+      "checked_rasters": true,
+      "id": "origami-left-panel",
+      "bbox": [
+        264,
+        700,
+        527,
+        904
+      ],
+      "centroid": [
+        405.44062401760453,
+        776.3317353033638
+      ],
+      "fallback": false,
+      "host_z": 0,
+      "quantity": 1,
+      "cutout_resource": "Catalog/origami-left-panel-cutout",
+      "cutout_sha256": "23b6137bb0f2e16eb63e2a5d65fe24c7ea9f0fb20dc731b0c73e818eab9d5ed5",
+      "hinge": [
+        527,
+        724,
+        431,
+        904
+      ],
+      "role": "Authored fixture role: left lighter-blue visible paper panel",
+      "selection_reason": "Recognizable genuine source-derived mesh; source occlusions and unseen surfaces unknown",
+      "limits": "Roles/kinematics authored fixture metadata, not inferred biology/topology/rig. No hidden DNA connectivity recovery. GLTF Y-up unchanged. Swift identity UV/UIImage no additional flip; host-specific origins, no UV bake.",
+      "baseline_mesh_resource": "Catalog/origami-left-panel-selected",
+      "baseline_mesh_sha256": "09630fbdda314a95e3f9fedfe44b6311eeed99c964b177382ae61ad7a06f03a3",
+      "baseline_texture_resource": "Catalog/origami-left-panel-selected-texture",
+      "baseline_texture_sha256": "6bd6b787806ef68c06527030c56c19e21cb3991c6b3117e35d42e54f7cbb43d5",
+      "baseline_glb_sha256": "b6cbd0e6a2b3c56512f73d479e028aa7d38a919311509849ffac11fb1a1760bf",
+      "baseline_source_texture_sha256": "401b40c49d2a4f1a97957a7007f7d4d281ec3ee90d6690b9d49c4b0efe6ccb30",
+      "selected_mesh_resource": "Catalog/origami-left-panel-selected",
+      "selected_mesh_sha256": "09630fbdda314a95e3f9fedfe44b6311eeed99c964b177382ae61ad7a06f03a3",
+      "selected_texture_resource": "Catalog/origami-left-panel-selected-texture",
+      "selected_texture_sha256": "6bd6b787806ef68c06527030c56c19e21cb3991c6b3117e35d42e54f7cbb43d5",
+      "selected_glb_sha256": "b6cbd0e6a2b3c56512f73d479e028aa7d38a919311509849ffac11fb1a1760bf",
+      "selected_source_texture_sha256": "401b40c49d2a4f1a97957a7007f7d4d281ec3ee90d6690b9d49c4b0efe6ccb30"
+    },
+    {
+      "checked_rasters": true,
+      "id": "origami-right-panel",
+      "bbox": [
+        431,
+        724,
+        691,
+        928
+      ],
+      "centroid": [
+        549.7273634621527,
+        851.4863062919195
+      ],
+      "fallback": true,
+      "host_z": 0,
+      "quantity": 1,
+      "cutout_resource": "Catalog/origami-right-panel-cutout",
+      "cutout_sha256": "d669f850bc46d656a1beada9d3437afc4e7dd6f1d3be3bf90d71a90003e1754c",
+      "hinge": [
+        527,
+        724,
+        431,
+        904
+      ],
+      "role": "Authored fixture role: right darker-blue visible paper panel",
+      "selection_reason": "Known visually unfaithful mini/full geometry; exact original visible pixels retained, no primitive stand-in",
+      "limits": "Roles/kinematics authored fixture metadata, not inferred biology/topology/rig. No hidden DNA connectivity recovery. GLTF Y-up unchanged. Swift identity UV/UIImage no additional flip; host-specific origins, no UV bake.",
+      "baseline_mesh_resource": "Catalog/origami-right-panel-selected",
+      "baseline_mesh_sha256": "d59387d4d6179f03aaa5e47070d9b000df1dd8ef94bde1d5052b5e53438649e5",
+      "baseline_texture_resource": "Catalog/origami-right-panel-selected-texture",
+      "baseline_texture_sha256": "deb45b6130e1388d1b68de5e35023c443633a6d39bb6e33bc0c265bf0aeadffa",
+      "baseline_glb_sha256": "d743d491c98a6d6ce351e605dd8cbadc0f31af25e2f33c25207191d1eb1bcfa5",
+      "baseline_source_texture_sha256": "6da4b2ff5dcd1137c41b204d7297041b7c44026d686bdf562bb505203964686a",
+      "selected_mesh_resource": "Catalog/origami-right-panel-selected",
+      "selected_mesh_sha256": "d59387d4d6179f03aaa5e47070d9b000df1dd8ef94bde1d5052b5e53438649e5",
+      "selected_texture_resource": "Catalog/origami-right-panel-selected-texture",
+      "selected_texture_sha256": "deb45b6130e1388d1b68de5e35023c443633a6d39bb6e33bc0c265bf0aeadffa",
+      "selected_glb_sha256": "d743d491c98a6d6ce351e605dd8cbadc0f31af25e2f33c25207191d1eb1bcfa5",
+      "selected_source_texture_sha256": "6da4b2ff5dcd1137c41b204d7297041b7c44026d686bdf562bb505203964686a"
+    }
+  ]
+}
