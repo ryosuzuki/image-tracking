@@ -10,8 +10,12 @@
       "sha256": "00dc02bd23a2bc7ce917c02dd27d53caeb17abe426ddd5b81c31392737c291d9"
     },
     {
+      "path": "PROGRESS.md",
+      "sha256": "67c012af5ea93289f1ef6cdf41f0739287d1bfbf308bd368a02c63f66cf1ad79"
+    },
+    {
       "path": "README.md",
-      "sha256": "288cf5e2aa7fcf3d0cc9e6278d7b791ca0471a16938372451d98581bfbad2120"
+      "sha256": "cdf347b7f2989ac255e027fcdf2855d6ec9e972d419e9993aee9d4213d5b7b2d"
     },
     {
       "path": "VERIFICATION.md",

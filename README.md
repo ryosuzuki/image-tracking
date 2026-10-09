@@ -17,6 +17,10 @@
 
 **Colored dots/ArUcoはマーカーの種類、8th Wall/ARKit/OpenCV/ARToolKitX/VuforiaはエンジンやSDKです。** WebXRは実行環境/APIであり、画像認識エンジンではありません。公式Realtalk実装を複製したとは主張しません。
 
+## 継続開発と実機状況
+
+[PROGRESS.md](PROGRESS.md)にArUco・色ドット・Quest両眼AR・Vuforiaの検証済み範囲と次の作業を記録します。今後の実装・検証結果はこのリポジトリへチェックポイントごとに反映します。未反映の実機修正は明記し、SDKキーや私的な録画は公開しません。
+
 ## 最初に試す
 
 ```sh
