@@ -26,3 +26,7 @@ Equivalent Unity cards are in [docs/marker-lab/markers](markers/unity-quest-ios/
 The prepared **Tracking Images** desktop folder includes markers, worksheet sheets and reference images. Not every reference or worksheet is redistributable; the public repository contains authored marker cards and authorized public resources, not the entire private desktop collection. See [asset inventory and restoration](ASSETS.md). Do not assume every image is supported by the same app.
 
 The source, startup instructions and verification status belong here. Private recordings and non-redistributable images remain outside the public repository.
+
+## Vuforia prototype target
+
+The independent Vuforia prototype uses [paper-target.png](image/quest-unity-vuforia/Assets/Resources/paper-target.png), an authored asymmetric feature image, displayed or printed **20 cm wide**. It is not `dots-8.png`. Open **PaperLab Vuforia Prototype** only after the APK/device gates in [the Vuforia guide](image/quest-unity-vuforia/README.md) have been completed. Do not treat source compilation as a working Quest demo.

@@ -19,9 +19,12 @@ This repository is the continuing public home for image/marker tracking implemen
 
 ### Vuforia
 
-- Account creation is confirmed; SDK/license setup, frame ingestion and a runnable device integration remain unverified.
-- Evaluate natural-image targets for the existing interactive 3D worksheets. On Quest, establish the camera-driver path and per-eye spatial registration before claiming a working integration.
-- See [Vuforia research](research/vuforia/README.md). Existing research notes are not an implemented app.
+- Official developer account authenticated; a free Basic development license was activated and stored privately in 1Password. No key is in the repository.
+- Vuforia Unity Engine 11.4.4 package recovered and metadata verified. Official Android SDK 11.4.4 downloaded; archive integrity and publisher SHA-256 matched.
+- Added [isolated Vuforia source](image/quest-unity-vuforia/README.md), derived from pinned MIT Quforia source with original notice retained. Proprietary SDK files, upstream keys and sample databases are excluded.
+- Android arm64 custom camera driver **built against official SDK headers**. Unity C# **compiled** and the independent Image Target scene was generated.
+- Replaced Android-unsupported CPU color reads with GPU readback, capture-time metadata snapshots and Unix-nanosecond timestamps. Added a private runtime license loader, authored 20 cm image target and a shader-referenced cyan cube.
+- APK build and physical Vuforia initialization/frame ingestion/tracking are still pending at this checkpoint. No Vuforia target tracking or binocular alignment success is claimed.
 
 ### Next acceptance checkpoints
 
@@ -29,4 +32,4 @@ This repository is the continuing public home for image/marker tracking implemen
 2. Verify tracking-valid Unity per-eye AR alignment, marker loss/recovery and interactive 3D worksheets on Quest.
 3. Implement and separately qualify Vuforia tracking; compare against ArUco and colored dots under matched conditions.
 
-Implementation, software-test, optical-device and binocular-spatial results must remain separately labelled. This entry summarizes existing evidence; no new device test was performed for this documentation update.
+Implementation, software-test, optical-device and binocular-spatial results must remain separately labelled. Build and account gates above are newly checked; physical acceptance remains separately labelled.

@@ -11,7 +11,7 @@
     },
     {
       "path": "PROGRESS.md",
-      "sha256": "67c012af5ea93289f1ef6cdf41f0739287d1bfbf308bd368a02c63f66cf1ad79"
+      "sha256": "f5875cd5991fd74b70516bd48f239ad85b9358034038cb798a94147183ca6cf8"
     },
     {
       "path": "QUEST-QUICKSTART.md",
@@ -19,15 +19,15 @@
     },
     {
       "path": "README.md",
-      "sha256": "75e10fb2b6d32472c5195c2dc15effe816a98fdad66749d408f5b50a5c7043f7"
+      "sha256": "11e0d66d51969927d0e0b1ae0dc9c264233ab729d85dd998b5505d753861b82d"
     },
     {
       "path": "TRACKING-IMAGES.md",
-      "sha256": "a134dc361f0072720e747badb20655cb9da76648465971ef2df543f77a1467b8"
+      "sha256": "104cbaae8928b1bd8d5dff04f5781eb774e06196ddade5b78e7ef881547dfd93"
     },
     {
       "path": "VERIFICATION.md",
-      "sha256": "4c05f150bd4b24570a2614e9fc8ec73ddd0ad4294d96e8319ed9ed4e58bf62f2"
+      "sha256": "3803e256a87b84302e6ff13514db8e4b1a87fdc94792a07ce14a9c80412bc1f9"
     },
     {
       "path": "assets-required.json",
@@ -3116,6 +3116,514 @@
     {
       "path": "image/quest-unity-artoolkit/Tools/validate_catalog.py",
       "sha256": "deaff6612a4dc289b714d6c04a3a9044674819e756ec9a2c3f334303a5d4efc6"
+    },
+    {
+      "path": "image/quest-unity-vuforia/.gitignore",
+      "sha256": "df09562e3bb243e92f87fcb984e8261b3326b9c2aa508c25c2ec25f8577d661e"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Editor.meta",
+      "sha256": "175ac78d42aec6d89d9cbbc1fe73a028dff1550bc7b5629f516d15918d22a46a"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Editor/VuforiaBuild.cs",
+      "sha256": "cccb8d12081ca89865085b1b00ec73aedabb2fed515fab55a3b3526aaca399dd"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Editor/VuforiaBuild.cs.meta",
+      "sha256": "60360bae2da1682c8629db3c465aa5e8d06456c297ac90a52b3f4b47720274ef"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/MetaXR.meta",
+      "sha256": "693914e9324044da4cdac7456622aeb223d5fd3498d59a6e7a40db31d9f4e951"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/MetaXR/MetaXRProjectSettings.asset",
+      "sha256": "16803b84f24d52e45369892c817d996832bdbc034708c02838df29554b5f2509"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/MetaXR/MetaXRProjectSettings.asset.meta",
+      "sha256": "ef11ae04d4626085ace85197980ef974929a28baf8d94cd3321c076f4a439757"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Oculus.meta",
+      "sha256": "29791cf93c44323bc9057f0e3b41104b2883141c92a335b80779bf8a3b8497e5"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Oculus/OculusProjectConfig.asset",
+      "sha256": "284418819d3b8ef26eb3b18050d8409f4caaa4a540b1c4129e3190dd62b761e7"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Oculus/OculusProjectConfig.asset.meta",
+      "sha256": "573191f2432979be203b16a582dc8334e324c413f050b0d6163d0385c09a7a03"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Oculus/OculusProjectSetupSettings.asset",
+      "sha256": "f2780185774bb82852aff5eba1124254441884fc7a938673ea1dd638d9407d53"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Oculus/OculusProjectSetupSettings.asset.meta",
+      "sha256": "08eb93d5fbb97cfac7f78d50cb362be050674d28d110d00b49203b01de2bad43"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Plugins.meta",
+      "sha256": "d31dc8c04f0f72d766d79ebfb1b78b4b32e3440a0c0fecf718fd8aafb1ea7526"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Plugins/Android.meta",
+      "sha256": "6c568b4fb9a1a93845b28506479cf3b652a7caa5f66eab3da51fdb9bf511bb4b"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Plugins/Android/AndroidManifest.xml",
+      "sha256": "31052d9e96b1b6f3f15e248153127bc53849551653eafb927214d7864f75fb22"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Plugins/Android/arm64-v8a.meta",
+      "sha256": "49e3c951792a8532156271378e32d5a0054173d7f9020eb30625c9ba1582b0dd"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Plugins/Android/arm64-v8a/libquforia.so.meta",
+      "sha256": "387999eb01c68ecbf1a836f7f09c67dd2d3004ab1af61865fadd239e9d5c6c6c"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia.meta",
+      "sha256": "2b26df90e026d8750be108edb8d7e8035a818083dde176264a981afed89fcabb"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/MetaCameraProvider.cs",
+      "sha256": "b09c0f725d2a5d920733d08b585c8fe5a1bca3a1b4a56ae724b49793c3800c87"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/MetaCameraProvider.cs.meta",
+      "sha256": "eb805e6531ecd9c724d436027bc4097fc51990bcc8fcea8426d8066b71d4a474"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/PaperTarget.cs",
+      "sha256": "fda2f988796c568f370d2268830853fd623365a544327df2a36ff44c3966bfbf"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/PaperTarget.cs.meta",
+      "sha256": "bb37cf302f4444e0db3b3109c6e880468e2b18ad1ac5aa242e4e4da7407ead7d"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/PaperVuforiaScene.unity",
+      "sha256": "435026b957953c3f44af4621c08fe72d87761eb36674a2bd373e259b7ea0c702"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/PaperVuforiaScene.unity.meta",
+      "sha256": "895445099379f5b61887848f626a41de8c8efacee1da76530c3f501e705c89ba"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/QuestVuforiaBridge.cs",
+      "sha256": "c63aec75c1f4d2f7f9e7105e3b8059058357eb0cfcaebc2f248c64f59b4a0ab5"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/QuestVuforiaBridge.cs.meta",
+      "sha256": "d81215d9fd4b3828ce4a4e696fb85361605ac92996d550650376a0602424f752"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/QuestVuforiaDriverInit.cs",
+      "sha256": "a10a5d06aba3f22e17ef73adccbe3a1833d3c0db136922a1ba77e4e2ffad7924"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/QuestVuforiaDriverInit.cs.meta",
+      "sha256": "6de32e52a9be2e059f552b9d6fc836db56f8cbefb39ed0586b317dd40476c795"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/VuforiaCameraPoseDriver.cs",
+      "sha256": "3f0c3464974df24bd8c85b7acb3f42b15c4e9db69e3648c4aee605f86ae30731"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/QuestVuforia/VuforiaCameraPoseDriver.cs.meta",
+      "sha256": "8ccf5fc749031a7d1c091b70629c1720ddaf9fe7331e53c7b01cf10908ff786e"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources.meta",
+      "sha256": "871e7c4714a16c9e3ad14f4c7161014a0633fe1918b9384564ca4c26a492a773"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/DevAgentSettings.asset",
+      "sha256": "61fea116ab521716f24ae87570519dd8f6633dec9b5f4e5a12f4535e3f4c55d2"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/DevAgentSettings.asset.meta",
+      "sha256": "97f30213d95bd66a6f050df63d5843b692d110b0ae25a8e99b5d2956b85d8714"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/ImmersiveDebuggerSettings.asset",
+      "sha256": "2b02e20bda735aa40bb60d11f1b46bd8f81366f1cedaabdc320b02f68c29619b"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/ImmersiveDebuggerSettings.asset.meta",
+      "sha256": "767d6edb2499de6f65c5730c1904381e82134ffc36353898647f3ca077a851ce"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/InputActions.asset",
+      "sha256": "141e5aa9e547535a2196b85d8ada4733608c28f8cf791247988fa6dda9de3f59"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/InputActions.asset.meta",
+      "sha256": "bc6918b1621420df706798e3c18c46043a4ee48225c787903768e86333f6225b"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/OculusRuntimeSettings.asset",
+      "sha256": "666e62273ba4d0727233a4bb5ff70b4010a545adc4f82f3309fa3021dc581cfb"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/OculusRuntimeSettings.asset.meta",
+      "sha256": "861f5f004e90b4642f10c5c8a41374acc40ad2c36f7f7434b7c76176047b2270"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/PaperSurface.mat",
+      "sha256": "c16b41b4381a10e262bc77fbe0d4b7c62930f4a00410e042daa3b9debf68911c"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/PaperSurface.mat.meta",
+      "sha256": "aa1afb10e37eab4bac50a932399fef94dcf890d9e6c00bbc5145bb1f479a65e7"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/PerformanceTestRunInfo.json",
+      "sha256": "1039fe1d458c393493570fffe6f65d20e3149a07d40e2e4913f11c2ef861e55f"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/PerformanceTestRunInfo.json.meta",
+      "sha256": "5b74e29c75e55641b50e38242cc0a88ed6c244361b62afc8283cd09d3c067f82"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/PerformanceTestRunSettings.json",
+      "sha256": "600c5c3dab7e18e51c28aad096457da91fcf60a3eedd908b6bf30194dae2b55b"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/PerformanceTestRunSettings.json.meta",
+      "sha256": "60d063376aa20e5f68d1b4e09b1d9b680c731848374c0d454efdd8e3cdf2b510"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/alpha.shader",
+      "sha256": "78383383894a2eafbe2d7a815dc34177a5b578951cd0ca9dc121a274738502de"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/alpha.shader.meta",
+      "sha256": "81e4e9bc43ec55604ee403fe871f8d05bd42404d3165fac0fc4207e0444cd8b9"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/paper-target.png",
+      "sha256": "51d7ad5d3f04a3a036322d5b1d2e94dd1d5a1e0ebea25cf18fd5f89399add654"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Resources/paper-target.png.meta",
+      "sha256": "ab85b8902c14f7c6182aad92f5813b75b5839bf20ace7bf04c0b71c7ec524706"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings.meta",
+      "sha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/DefaultVolumeProfile.asset",
+      "sha256": "463776c51ae49d4fef980e8fd268081b2f505610d79315003faae1acff8f4115"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/DefaultVolumeProfile.asset.meta",
+      "sha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/Mobile_RPAsset.asset",
+      "sha256": "4a7d49669f4ec60b0fc0c633d08a633907e92dc49c4c6e285bf0570acf9bed46"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/Mobile_RPAsset.asset.meta",
+      "sha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/Mobile_Renderer.asset",
+      "sha256": "aa93274c9521fa941170becec9e87c5fa36b8587eefd5eeb5c0eed0d1d4b1dbe"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/Mobile_Renderer.asset.meta",
+      "sha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/PC_RPAsset.asset",
+      "sha256": "08a9c221b335a0dbca1b6967b7de5c42b957c5f0d5e43da9edb36ca8fce5966b"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/PC_RPAsset.asset.meta",
+      "sha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/PC_Renderer.asset",
+      "sha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/PC_Renderer.asset.meta",
+      "sha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/SampleSceneProfile.asset",
+      "sha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/SampleSceneProfile.asset.meta",
+      "sha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+      "sha256": "04e6c78974afa9857261529e696b6d5e51833e9b6436fc7d8db6b092c3356139"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta",
+      "sha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/StreamingAssets.meta",
+      "sha256": "9f6e3c3b1e98b23bcb6a5eadd4406fc4fbcd051c63ef9bd609412f6cc616a69a"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/StreamingAssets/RuntimeActionBindings.json",
+      "sha256": "ea13bfa9d5c736b126cc2b1501f48d85fb9a352a786427bfb9ac45dfa953261a"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/StreamingAssets/RuntimeActionBindings.json.meta",
+      "sha256": "51f07a4fdc99aeea7c76f8ca1d48147a1a8b06f59118815414da8727640a7110"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR.meta",
+      "sha256": "3ed37a4fa4c5ccf0caa4847121f9e26b395a2b2ab2f065ecf13b1c4bf3c6753f"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Loaders.meta",
+      "sha256": "7b6b8826c98f55a5695f89d4d60ff0b84b3da57458877e498876561f0f8b690f"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Loaders/OpenXRLoader.asset",
+      "sha256": "6489cd5500c64a356888e57846a3b8580b288e18b5bbe7472bc13a10405d7915"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Loaders/OpenXRLoader.asset.meta",
+      "sha256": "e86b5ea383ffedb59920b77a0985ad678ab1cf9c289ee18756eaaa3ff1a3f4a6"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Loaders/SimulationLoader.asset",
+      "sha256": "6cf9f4eac7cb5f18efa943450f30bdd85378cfbdbe244ae6d13e55085c2b9d08"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Loaders/SimulationLoader.asset.meta",
+      "sha256": "b278a8a3c651c501a597e8f24cb5a8472857452d48b4857142cc9399384cef91"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Resources.meta",
+      "sha256": "9ea155c7959e52c41173a00a2f4cb90181aa8d9a160bf721478b188f43e724c6"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Settings.meta",
+      "sha256": "71902e38a25d1f8af70f381314948b0ff5be8171598cb1cbb895620de6d10fff"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Settings/OpenXR Editor Settings.asset",
+      "sha256": "26c6c2766f56db46567eb487984dbbaa9e248a9ddb35d489374c90792b69fb84"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Settings/OpenXR Editor Settings.asset.meta",
+      "sha256": "85d902c453f20f3d7d30f68a7b48f2b3705ea53c84ffc3aae3695006db69ef70"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Settings/OpenXR Package Settings.asset",
+      "sha256": "3535af4ecf852407e146d842dc16a35ee5c44b751d24983d6544646346cef526"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Settings/OpenXR Package Settings.asset.meta",
+      "sha256": "cb30ccfe119fbaedd1c7371f4913a02b6562f354a12217b4349cfef9447e6e06"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Settings/XRSimulationSettings.asset",
+      "sha256": "2ccaa9bd5cc17b374e68c3907dd5cef4a5f1643786b7dfa875b1bf4ea742bf8d"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Settings/XRSimulationSettings.asset.meta",
+      "sha256": "3a0043c7539b316d190229085b54cfb545b4a0dface1e3e7eca204e3c57624c2"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Temp.meta",
+      "sha256": "64359ec38efe6e2e09d5d365d061a057b3b21eff9c96caafaf8ac8769ec096c6"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/UserSimulationSettings.meta",
+      "sha256": "d16dca15d909accf064f931f11549a20509775216769fb4634146cabdf786cbf"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/UserSimulationSettings/Resources.meta",
+      "sha256": "b548bb62fea981fa25508622d820777394e5fbc48ce1a328b5308a612fa225eb"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/UserSimulationSettings/SimulationEnvironmentAssetsManager.asset",
+      "sha256": "87aa75aa5d967a93b6fe2c2545400f8e9e569f899af3839fdc37de75d9610927"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/UserSimulationSettings/SimulationEnvironmentAssetsManager.asset.meta",
+      "sha256": "41a16d50dc5eef50377f77c9b4434c160a2544eed4ad1e3f8481f4100085c4f5"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/XRGeneralSettingsPerBuildTarget.asset",
+      "sha256": "cb7e86aeae37bbd1e0d8381da40bc5a4df3751226971abe5ecd25bf465375850"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/XRGeneralSettingsPerBuildTarget.asset.meta",
+      "sha256": "cbead459adbfe7bd3f9655d02ae3ded057f3890ac67036f2114da5753bb02865"
+    },
+    {
+      "path": "image/quest-unity-vuforia/LICENSE.upstream",
+      "sha256": "744a32188f73b945e8c9fc49daef9fe92bbe924b6af25a21e4a973c951b5b8a5"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Native/CMakeLists.txt",
+      "sha256": "ee404661823ae04c398ab76c6d8d722f1a5b0554997f8a3c0c619c3a29bee55c"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Native/src/external_camera.cpp",
+      "sha256": "b83bc00235d5c637a97e0360cc9aead406a0529aae12646168e0d5ef439b9d8a"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Native/src/external_camera.h",
+      "sha256": "b47e64846dc15864fe966a45611877b4604910ff5bf868442f406ba52c94098d"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Native/src/external_tracker.cpp",
+      "sha256": "a349e79b648fd6d2f647f266515f228680a852c397c607857ddb55bd769a83de"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Native/src/external_tracker.h",
+      "sha256": "d2d225f53459a319f79737b96f7a0719e9e7131f22cbdd26430350d0e7325ab0"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Native/src/quforia_jni.cpp",
+      "sha256": "9f6cdeae4a31ceda69c95369cdcb1c3267e6b86d4b54f00fd656e4196d38d3be"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Native/src/vuforia_driver.cpp",
+      "sha256": "45cad8c14c055d0257bcffa57134f55ff08533b2251411802ef76994732eb8dd"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Native/src/vuforia_driver.h",
+      "sha256": "8bcee5684b75d093d23961602e51eca0a006ed774fd62b267560746a39c86886"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Packages/manifest.json",
+      "sha256": "29d206b3a87ab1d6bdec83aef08c09981418628a36a99ed5375964230b17853e"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Packages/packages-lock.json",
+      "sha256": "11726a517f41ca29e68e0ef7781e861660f417908ce3ebb82d2b538bfe6c3484"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/AudioManager.asset",
+      "sha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/ClusterInputManager.asset",
+      "sha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/DynamicsManager.asset",
+      "sha256": "b7c9a9dc08b98990109d4346f68745e15e238de400f96c583e53e1c83c743a78"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/EditorBuildSettings.asset",
+      "sha256": "b7653e34dc61d8f512555e645e533953c6e2a2c1d996ee44303415589a69618c"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/EditorSettings.asset",
+      "sha256": "1ef9414984ae135d74e2d05dfbeb10a04ca7f8434b867c2b2053f46b78a365a6"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/GraphicsSettings.asset",
+      "sha256": "6736f33dc62c35b0e7a88e275242080bc7a1d94c91154d18fceb332b661a6bce"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/InputManager.asset",
+      "sha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/MemorySettings.asset",
+      "sha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/MultiplayerManager.asset",
+      "sha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/NavMeshAreas.asset",
+      "sha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/PackageManagerSettings.asset",
+      "sha256": "a7dabba589abe7fc2b45bd3d3fba3fe9be97043492703f716da2d9131c13a807"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/Physics2DSettings.asset",
+      "sha256": "e3cbdbf0be15244b7b67d2f07bdb8e8981911c11a8c7fe8035f5261272fec658"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/PresetManager.asset",
+      "sha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/ProjectSettings.asset",
+      "sha256": "ead5bffaac2019e1d811311e4d3907901da967b56b66002586a500c30c8ee2fe"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/ProjectVersion.txt",
+      "sha256": "c88aca53996b7a2c9be5551cb82a59b405b91d5eb9ac511bdb83b16cfb0c4d96"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/QualitySettings.asset",
+      "sha256": "7c76f72b87766f65a6dd102fdd1eb8a46de980176164fcfa8566cd61a942fda2"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/SceneTemplateSettings.json",
+      "sha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/ShaderGraphSettings.asset",
+      "sha256": "cdba1e5d65bcf6e3269d76ed3e60b6c21f98322002996642c9d74f1eb89f6b91"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/TagManager.asset",
+      "sha256": "23fc56b484aa3d7edf5914cd3591f7a823ccef5e3f3496f8a51f30388ead63dc"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/TimeManager.asset",
+      "sha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/URPProjectSettings.asset",
+      "sha256": "596d5c8bf4f957b03684c949bebc252ae1918f25415a1147a00684c4b086efda"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/UnityConnectSettings.asset",
+      "sha256": "d6034acbef6c9e3179866486c31eab81fcbe5e7ed350ce71e0fa2b1449b77109"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/VFXManager.asset",
+      "sha256": "f066c6483919961332415ee64204f74fe52f38c02e82892eb02b7a5b2e381f0e"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/VersionControlSettings.asset",
+      "sha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071"
+    },
+    {
+      "path": "image/quest-unity-vuforia/ProjectSettings/XRSettings.asset",
+      "sha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f"
+    },
+    {
+      "path": "image/quest-unity-vuforia/README.md",
+      "sha256": "d975851c715455a21cec29f2d9f11530df0b50ac47da30daa27c2d1decc9570e"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Tools/build-native.sh",
+      "sha256": "a191ee495bd8f5f7016291ba480ec832a008e191528da3ac94bf20708254bd57"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Tools/make-target.py",
+      "sha256": "a633ac95c12f77c01509746c2487d17a6a9540778ca4dc5c7bd45e34ed9e93de"
     },
     {
       "path": "markers/arkit-swift/.gitignore",
@@ -6323,7 +6831,7 @@
     },
     {
       "path": "research/vuforia/README.md",
-      "sha256": "52270c3bb70cf4080dac3b3b90a7baea3d034c959a920c83b167106788490fd7"
+      "sha256": "846cca3f432443cefe9478f4280d28804370b24fc52139a881366eae02c7132a"
     },
     {
       "path": "tools/import-assets.py",
@@ -6331,7 +6839,7 @@
     },
     {
       "path": "tools/verify-public-tree.py",
-      "sha256": "87d93253fe428e109633b3f4a260858866bf4f05da31bf406e60b9ae0420bab6"
+      "sha256": "b9863130fccbc9f7dabd66e36359b8e142da83d7d916d57f52005e269660073c"
     }
   ]
 }

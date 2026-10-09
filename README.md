@@ -23,7 +23,7 @@ The installed APK10 detected colored-dot ID8 and estimated its pose. Binocular a
 | [markers/web-webxr](markers/web-webxr/README.md) | Colored dots / ArUco | Custom dots / ArUco | Web camera / capability-gated WebXR |
 | [markers/arkit-swift](markers/arkit-swift/README.md) | Markers / image baseline | OpenCV / ARKit | Swift iPhone |
 | [markers/unity-quest-ios](markers/unity-quest-ios/README.md) | Colored dots / ArUco | OpenCV / Meta XR or ARFoundation | Unity Quest / separate iOS project |
-| [research/vuforia](research/vuforia/README.md) | Natural image (planned) | Vuforia | Research only |
+| [image/quest-unity-vuforia](image/quest-unity-vuforia/README.md) | Authored natural image | Vuforia 11.4.4 / custom driver / Meta XR | Unity Quest prototype; device acceptance pending |
 
 Colored dots and ArUco are marker types; ARKit, OpenCV, ARToolKitX and Vuforia are engines/SDKs. WebXR is an execution API, not an image-recognition engine. These are not claimed to be copies of official Realtalk.
 

@@ -1,0 +1,10 @@
+Packages/*.tgz
+Native/build/
+Assets/Plugins/Android/**/*.so
+**/vuforia-license.txt
+Assets/Resources/VuforiaConfiguration.asset*
+Library/
+Temp/
+Logs/
+Builds/
+UserSettings/

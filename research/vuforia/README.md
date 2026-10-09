@@ -1,9 +1,11 @@
-# Vuforia — research only / 未実装
+# Vuforia integration
 
-Vuforia is an SDK/engine, not a marker type. It can support natural-image targets, but no runnable Vuforia implementation or SDK/Driver.h was found in the inspected existing project snapshots. Existing Quest alternatives are OpenCV and ARToolKitX, not Vuforia. The user confirmed on2026-10-09 that a Vuforia account has been created. SDK installation, configured license and working implementation remain unverified. No new registration, license acceptance or SDK installation was performed for this organization task.
+Implementation now lives in [image/quest-unity-vuforia](../../image/quest-unity-vuforia/README.md). It is an isolated Unity/Android source project, not yet an accepted physical tracking demo. The existing colored-dot/ArUco app remains separate.
 
-Possible Quest route: calibrated real RGB frames plus capture-time camera pose through Vuforia custom Driver Framework; Meta/OpenXR owns per-eye rendering. Quest compatibility is not established by this specification. SDK/license and a real frame-ingestion/build/device test would be needed.
+Verified on 2026-10-09: official account login, free Basic development license activation, official Android SDK 11.4.4 download with matching publisher SHA-256, native arm64 driver build with official headers, and Unity script compilation/scene preparation. The private license is stored in 1Password and is not distributed with source or SDK files. APK/device gates are recorded in [PROGRESS.md](../../PROGRESS.md).
 
-Official references: [supported versions](https://developer.vuforia.com/library/vuforia-engine/platform-support/supported-versions/), [Driver Framework](https://developer.vuforia.com/library/vuforia-engine/platform-support/camera/driver-framework/driver-framework/), [custom driver](https://developer.vuforia.com/library/vuforia-engine/platform-support/camera/driver-framework/simple-driver/creating-custom-driver/).
+The experimental Quest route uses Meta PCA RGB frames and Vuforia's camera-only Driver Framework, while Meta/OpenXR owns binocular rendering. The adapter has been rewritten to use GPU readback instead of Android-unsupported CPU color access. Pose fusion remains disabled in the upstream driver; image/result timing and visual alignment need measured device acceptance. Existing upstream sample videos are not proof for this project.
 
-Source evidence: existing upstream `quest-native-image-lab/docs/vuforia-stereo-integration.md` and `quest-artoolkit-stereo/README.md`; private evidence is retained outside this public repo. This folder is deliberately documentation, not a fake Vuforia app.
+Official references: [supported versions](https://developer.vuforia.com/library/vuforia-engine/platform-support/supported-versions/), [Driver Framework](https://developer.vuforia.com/library/vuforia-engine/platform-support/camera/driver-framework/driver-framework/), [custom driver](https://developer.vuforia.com/library/vuforia-engine/platform-support/camera/driver-framework/simple-driver/creating-custom-driver/), [custom eyewear](https://developer.vuforia.com/library/vuforia-engine/platform-support/camera/driver-framework/vuforia-support-custom-devices-using-vuforia-driver/).
+
+Quest is not listed as an officially supported Vuforia device. The custom-driver path is experimental, not a claim of official Quest support.
