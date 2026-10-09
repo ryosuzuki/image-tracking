@@ -12,6 +12,18 @@ public static class VuforiaBuild
 {
     public static void Prepare()
     {
+        var devSettings = AssetDatabase.LoadAssetAtPath<ScriptableObject>("Assets/Resources/DevAgentSettings.asset");
+        if (devSettings)
+        {
+            var dev = new SerializedObject(devSettings);
+            dev.FindProperty("enabled").boolValue = false;
+            dev.FindProperty("accessToken").stringValue = "";
+            dev.FindProperty("serverAddress").stringValue = "";
+            dev.ApplyModifiedPropertiesWithoutUndo();
+        }
+        var questConfig = OVRProjectConfig.CachedProjectConfig;
+        questConfig.handTrackingSupport = OVRProjectConfig.HandTrackingSupport.ControllersAndHands;
+        OVRProjectConfig.CommitProjectConfig(questConfig);
         var config = VuforiaConfiguration.Instance;
         config.Vuforia.LicenseKey = "";
         config.Vuforia.DelayedInitialization = true;

@@ -24,7 +24,9 @@ This repository is the continuing public home for image/marker tracking implemen
 - Added [isolated Vuforia source](image/quest-unity-vuforia/README.md), derived from pinned MIT Quforia source with original notice retained. Proprietary SDK files, upstream keys and sample databases are excluded.
 - Android arm64 custom camera driver **built against official SDK headers**. Unity C# **compiled** and the independent Image Target scene was generated.
 - Replaced Android-unsupported CPU color reads with GPU readback, capture-time metadata snapshots and Unix-nanosecond timestamps. Added a private runtime license loader, authored 20 cm image target and a shader-referenced cyan cube.
-- APK build and physical Vuforia initialization/frame ingestion/tracking are still pending at this checkpoint. No Vuforia target tracking or binocular alignment success is claimed.
+- Android APK **built successfully** with Vuforia, custom driver and the C++ runtime packaged. Installed and updated safely as separate package `org.openclaw.paperlabvuforia`; existing marker app/data remain untouched. Private license-file presence was verified after the update.
+- Configured optional hands/controller support for this controller-free cube smoke test. Actual launch attempts are currently stopped at the Quest system `LaunchCheckControllerRequiredDialogActivity` while the headset is asleep. No app process or Vuforia initialization success was observed. This is a device launch gate, not evidence of a Vuforia recognition failure.
+- Physical Vuforia initialization, frame ingestion, target tracking and binocular alignment remain **unverified**. Resume with the headset awake/worn and an available controller or enabled hand navigation. No upstream sample video is used as evidence.
 
 ### Next acceptance checkpoints
 

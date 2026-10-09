@@ -146,8 +146,6 @@ PlayerSettings:
   bundleVersion: 0.1-vuforia-experimental
   preloadedAssets:
   - {fileID: 11400000, guid: e6ae2769653f248d4b808ce68e52dd4b, type: 2}
-  - {fileID: -7648697558124687280, guid: 64ace5216a2ab48169146d84ddb51595, type: 2}
-  - {fileID: 1533443625180988420, guid: 8d8797d0db2d14abf8c8b025f9337406, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   xboxOneDisableKinectGpuReservation: 1

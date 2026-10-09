@@ -29,3 +29,9 @@ ArUco IDs 7/8 have historical Quest monocular camera acceptance. This is not pro
 ## Source versus installed build
 
 The installed APK10 camera-readback repair is not yet synchronized into this public source snapshot. Building the published snapshot is not a way to reproduce that installed repair yet. Build dependencies and commands are in the [Unity README](markers/unity-quest-ios/README.md); acceptance status is in [PROGRESS.md](PROGRESS.md).
+
+## Separate Vuforia test app
+
+The independent **PaperLab Vuforia Prototype** APK is installed in Unknown Sources. Do not open the browser or the original marker app for this test. On the computer open **Tracking Images → vuforia-paper-target.png**, also available [here](image/quest-unity-vuforia/Assets/Resources/paper-target.png). The nominal target width is **20 cm**. The first test is a cyan cube, not the full lesson catalog.
+
+Headset sleep/controller-required launch checks currently prevent runtime verification. Wake/wear Quest and make a controller or enabled hand navigation available. See the [Vuforia guide and acceptance status](image/quest-unity-vuforia/README.md); successful target tracking and binocular alignment are not claimed yet.

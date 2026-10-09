@@ -37,9 +37,9 @@ Privately provision `vuforia-license.txt` into this development app's persistent
 
 ## What to open
 
-After an APK has been built and qualified, launch **PaperLab Vuforia Prototype** from Quest's Unknown Sources. On the computer display [paper-target.png](Assets/Resources/paper-target.png), with its printed/displayed width measured at **20 cm**. This target is different from `dots-8.png`; runtime image recognition does not use the dot detector or require a portal target database.
+The development APK has been built and installed on the test Quest. To perform the still-pending physical acceptance test, launch **PaperLab Vuforia Prototype** from Quest's Unknown Sources. On the computer display [paper-target.png](Assets/Resources/paper-target.png), with its printed/displayed width measured at **20 cm**. This target is different from `dots-8.png`; runtime image recognition does not use the dot detector or require a portal target database.
 
-The first visible augmentation is intentionally one cyan cube, not the full educational catalog. Passing this smoke test is required before porting the lessons.
+The intended first augmentation is one cyan cube, not the full educational catalog. Passing this smoke test is required before porting the lessons.
 
 ## Acceptance gates
 
@@ -54,3 +54,9 @@ Quest is not listed as an officially supported Vuforia device. The custom-driver
 ## Provenance
 
 Native driver and bridge derived from [Quforia](https://github.com/danieloquelis/Unity-QuestVuforia), pinned revision `66ac200dc8c745cef472b58eb83d58707676bf9f`. The original MIT notice is preserved in [LICENSE.upstream](LICENSE.upstream). Our GPU camera adapter, private runtime license initialization, target creation and build scene are additions/revisions. No upstream license, target database, pretrained model, sample recording or proprietary SDK is copied into this public folder.
+
+## Current device checkpoint
+
+Native build, Unity scene preparation, APK build and safe device install/update passed on 2026-10-09. A private runtime license file was provisioned and retained across the update. The manifest supports optional hands/controllers, and developer-agent settings are disabled for the player and excluded from public source.
+
+The headset is currently asleep. Launch requests stop in the Quest system controller-required dialog before an app process starts; Vuforia initialization and camera/target ingestion are therefore not verified. Wake/wear the headset and make a controller or configured hand navigation available, then perform the acceptance gates above. Do not interpret installation as a working tracker.

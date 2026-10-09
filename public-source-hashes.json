@@ -11,11 +11,11 @@
     },
     {
       "path": "PROGRESS.md",
-      "sha256": "f5875cd5991fd74b70516bd48f239ad85b9358034038cb798a94147183ca6cf8"
+      "sha256": "ded645961c009a1f4d32a13dfd50871f1615016b78c20f9b0a20e88c4873fb9e"
     },
     {
       "path": "QUEST-QUICKSTART.md",
-      "sha256": "ea0fe08adf518128efb89b53c99cf3c121e697ff0acafce2def648fae6cb6a79"
+      "sha256": "d8ded509977b49bfbd24153953dd7300822039dcb0f35034b920cd7b15e1e1fd"
     },
     {
       "path": "README.md",
@@ -27,7 +27,7 @@
     },
     {
       "path": "VERIFICATION.md",
-      "sha256": "3803e256a87b84302e6ff13514db8e4b1a87fdc94792a07ce14a9c80412bc1f9"
+      "sha256": "b01495cb19f1f8331ccc2dfef21dc90a7b21b20a62a41fe7749e03e10cf7846c"
     },
     {
       "path": "assets-required.json",
@@ -3119,7 +3119,15 @@
     },
     {
       "path": "image/quest-unity-vuforia/.gitignore",
-      "sha256": "df09562e3bb243e92f87fcb984e8261b3326b9c2aa508c25c2ec25f8577d661e"
+      "sha256": "6b4ae24d890ae758e05d26a8d3ca7114d97e11d6fec9962b884cc0d96258bbff"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/CompositionLayers.meta",
+      "sha256": "a2994f4f6d6e48cba946dd4a112f7e9c1f19bf0101fbd2fd27cebed152de4193"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/CompositionLayers/UserSettings.meta",
+      "sha256": "317c765dcb3ed99d273bd6f057845d97a940e839b0547972f825e21d5a1afcf6"
     },
     {
       "path": "image/quest-unity-vuforia/Assets/Editor.meta",
@@ -3127,7 +3135,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/Assets/Editor/VuforiaBuild.cs",
-      "sha256": "cccb8d12081ca89865085b1b00ec73aedabb2fed515fab55a3b3526aaca399dd"
+      "sha256": "05efe780868e00964cbc9705e0e952b920152c86bf0cf2b8b32313784c955a87"
     },
     {
       "path": "image/quest-unity-vuforia/Assets/Editor/VuforiaBuild.cs.meta",
@@ -3151,7 +3159,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/Assets/Oculus/OculusProjectConfig.asset",
-      "sha256": "284418819d3b8ef26eb3b18050d8409f4caaa4a540b1c4129e3190dd62b761e7"
+      "sha256": "4376e5cf117bd6eeade2ebd033d360ef61e9c9edacd90ac8b9c410ac1709edc8"
     },
     {
       "path": "image/quest-unity-vuforia/Assets/Oculus/OculusProjectConfig.asset.meta",
@@ -3178,8 +3186,16 @@
       "sha256": "31052d9e96b1b6f3f15e248153127bc53849551653eafb927214d7864f75fb22"
     },
     {
+      "path": "image/quest-unity-vuforia/Assets/Plugins/Android/AndroidManifest.xml.meta",
+      "sha256": "502c26fa14c54c35f56d3b8007b374c7213251d977cc6df4ff71028adbe81f3f"
+    },
+    {
       "path": "image/quest-unity-vuforia/Assets/Plugins/Android/arm64-v8a.meta",
       "sha256": "49e3c951792a8532156271378e32d5a0054173d7f9020eb30625c9ba1582b0dd"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/Plugins/Android/arm64-v8a/libc++_shared.so.meta",
+      "sha256": "285bd4dfe673c5086873432692e9bd8b77aa05f5b067425f487bc4df592b8fcb"
     },
     {
       "path": "image/quest-unity-vuforia/Assets/Plugins/Android/arm64-v8a/libquforia.so.meta",
@@ -3207,7 +3223,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/Assets/QuestVuforia/PaperVuforiaScene.unity",
-      "sha256": "435026b957953c3f44af4621c08fe72d87761eb36674a2bd373e259b7ea0c702"
+      "sha256": "1d2fa04d694d22f6865beda3bf543553da39db578f3ad5cd51354c982ff65f39"
     },
     {
       "path": "image/quest-unity-vuforia/Assets/QuestVuforia/PaperVuforiaScene.unity.meta",
@@ -3242,14 +3258,6 @@
       "sha256": "871e7c4714a16c9e3ad14f4c7161014a0633fe1918b9384564ca4c26a492a773"
     },
     {
-      "path": "image/quest-unity-vuforia/Assets/Resources/DevAgentSettings.asset",
-      "sha256": "61fea116ab521716f24ae87570519dd8f6633dec9b5f4e5a12f4535e3f4c55d2"
-    },
-    {
-      "path": "image/quest-unity-vuforia/Assets/Resources/DevAgentSettings.asset.meta",
-      "sha256": "97f30213d95bd66a6f050df63d5843b692d110b0ae25a8e99b5d2956b85d8714"
-    },
-    {
       "path": "image/quest-unity-vuforia/Assets/Resources/ImmersiveDebuggerSettings.asset",
       "sha256": "2b02e20bda735aa40bb60d11f1b46bd8f81366f1cedaabdc320b02f68c29619b"
     },
@@ -3280,30 +3288,6 @@
     {
       "path": "image/quest-unity-vuforia/Assets/Resources/PaperSurface.mat.meta",
       "sha256": "aa1afb10e37eab4bac50a932399fef94dcf890d9e6c00bbc5145bb1f479a65e7"
-    },
-    {
-      "path": "image/quest-unity-vuforia/Assets/Resources/PerformanceTestRunInfo.json",
-      "sha256": "1039fe1d458c393493570fffe6f65d20e3149a07d40e2e4913f11c2ef861e55f"
-    },
-    {
-      "path": "image/quest-unity-vuforia/Assets/Resources/PerformanceTestRunInfo.json.meta",
-      "sha256": "5b74e29c75e55641b50e38242cc0a88ed6c244361b62afc8283cd09d3c067f82"
-    },
-    {
-      "path": "image/quest-unity-vuforia/Assets/Resources/PerformanceTestRunSettings.json",
-      "sha256": "600c5c3dab7e18e51c28aad096457da91fcf60a3eedd908b6bf30194dae2b55b"
-    },
-    {
-      "path": "image/quest-unity-vuforia/Assets/Resources/PerformanceTestRunSettings.json.meta",
-      "sha256": "60d063376aa20e5f68d1b4e09b1d9b680c731848374c0d454efdd8e3cdf2b510"
-    },
-    {
-      "path": "image/quest-unity-vuforia/Assets/Resources/alpha.shader",
-      "sha256": "78383383894a2eafbe2d7a815dc34177a5b578951cd0ca9dc121a274738502de"
-    },
-    {
-      "path": "image/quest-unity-vuforia/Assets/Resources/alpha.shader.meta",
-      "sha256": "81e4e9bc43ec55604ee403fe871f8d05bd42404d3165fac0fc4207e0444cd8b9"
     },
     {
       "path": "image/quest-unity-vuforia/Assets/Resources/paper-target.png",
@@ -3378,14 +3362,6 @@
       "sha256": "9f6e3c3b1e98b23bcb6a5eadd4406fc4fbcd051c63ef9bd609412f6cc616a69a"
     },
     {
-      "path": "image/quest-unity-vuforia/Assets/StreamingAssets/RuntimeActionBindings.json",
-      "sha256": "ea13bfa9d5c736b126cc2b1501f48d85fb9a352a786427bfb9ac45dfa953261a"
-    },
-    {
-      "path": "image/quest-unity-vuforia/Assets/StreamingAssets/RuntimeActionBindings.json.meta",
-      "sha256": "51f07a4fdc99aeea7c76f8ca1d48147a1a8b06f59118815414da8727640a7110"
-    },
-    {
       "path": "image/quest-unity-vuforia/Assets/XR.meta",
       "sha256": "3ed37a4fa4c5ccf0caa4847121f9e26b395a2b2ab2f065ecf13b1c4bf3c6753f"
     },
@@ -3412,6 +3388,14 @@
     {
       "path": "image/quest-unity-vuforia/Assets/XR/Resources.meta",
       "sha256": "9ea155c7959e52c41173a00a2f4cb90181aa8d9a160bf721478b188f43e724c6"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Resources/XRSimulationRuntimeSettings.asset",
+      "sha256": "874020069cb804237c5ee53296252b4d465169414316331b929fce5d1da64ff0"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/Resources/XRSimulationRuntimeSettings.asset.meta",
+      "sha256": "2a159040e71e535a3017ce46bea46fe7b0121a49881f591ee9648b101a57b748"
     },
     {
       "path": "image/quest-unity-vuforia/Assets/XR/Settings.meta",
@@ -3442,16 +3426,20 @@
       "sha256": "3a0043c7539b316d190229085b54cfb545b4a0dface1e3e7eca204e3c57624c2"
     },
     {
-      "path": "image/quest-unity-vuforia/Assets/XR/Temp.meta",
-      "sha256": "64359ec38efe6e2e09d5d365d061a057b3b21eff9c96caafaf8ac8769ec096c6"
-    },
-    {
       "path": "image/quest-unity-vuforia/Assets/XR/UserSimulationSettings.meta",
       "sha256": "d16dca15d909accf064f931f11549a20509775216769fb4634146cabdf786cbf"
     },
     {
       "path": "image/quest-unity-vuforia/Assets/XR/UserSimulationSettings/Resources.meta",
       "sha256": "b548bb62fea981fa25508622d820777394e5fbc48ce1a328b5308a612fa225eb"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/UserSimulationSettings/Resources/XRSimulationPreferences.asset",
+      "sha256": "34c3bba22bda70717e3ffde77996eefb3f5d4cbd0032838c8654ca9cc8d5cf66"
+    },
+    {
+      "path": "image/quest-unity-vuforia/Assets/XR/UserSimulationSettings/Resources/XRSimulationPreferences.asset.meta",
+      "sha256": "1a0b2d0d61e9a62dbcf701aa5679a0738777819ca0142ef87370104c3b5611e6"
     },
     {
       "path": "image/quest-unity-vuforia/Assets/XR/UserSimulationSettings/SimulationEnvironmentAssetsManager.asset",
@@ -3567,7 +3555,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/ProjectSettings/ProjectSettings.asset",
-      "sha256": "ead5bffaac2019e1d811311e4d3907901da967b56b66002586a500c30c8ee2fe"
+      "sha256": "7138b661235b22707144a94a77c48033296270274907d5e50303dabf42f21fad"
     },
     {
       "path": "image/quest-unity-vuforia/ProjectSettings/ProjectVersion.txt",
@@ -3615,7 +3603,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/README.md",
-      "sha256": "d975851c715455a21cec29f2d9f11530df0b50ac47da30daa27c2d1decc9570e"
+      "sha256": "707ecb1a5d494f11fd9add1331889b18233739f48132ecb54948677c206ed89f"
     },
     {
       "path": "image/quest-unity-vuforia/Tools/build-native.sh",

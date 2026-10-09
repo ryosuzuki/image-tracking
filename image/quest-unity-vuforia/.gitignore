@@ -8,3 +8,10 @@ Temp/
 Logs/
 Builds/
 UserSettings/
+.utmp/
+Assets/Resources/DevAgentSettings.asset*
+Assets/Resources/OVRBuildConfig.asset*
+Assets/Resources/alpha.shader*
+Assets/StreamingAssets/RuntimeActionBindings.json*
+Assets/XR/Temp.meta
+Assets/Resources/PerformanceTestRun*.json*

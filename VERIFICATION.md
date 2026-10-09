@@ -12,3 +12,11 @@ Run the public gate from a staged or fetched checkout:
 ```sh
 python3 tools/verify-public-tree.py
 ```
+
+## Vuforia prototype checkpoint
+
+- Official Android SDK 11.4.4 ZIP integrity/publisher SHA-256 matched; proprietary SDK assets stay outside Git. Free Basic license activated and stored privately in 1Password.
+- Custom Android arm64 driver built with official headers; Unity script/scene preparation and Android APK builds passed. APK contains Vuforia, custom driver and C++ shared runtime.
+- Separate app installed/updated using `adb install -r`; private license provision and retained file presence verified. Existing marker app data preserved.
+- Physical app startup is blocked by the Quest system controller-required launch dialog while the headset is asleep. No Vuforia initialization, camera ingestion, target detection, or binocular visual success is asserted.
+- Generated developer-agent settings are disabled in the build and excluded from public source. Public gate now also rejects non-empty serialized access/license fields.
