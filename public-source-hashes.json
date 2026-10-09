@@ -118,12 +118,24 @@
       "sha256": "2353ce07e33d5b0ba9b176e497c1e7217da1ddb3ee67bd3c04ddf43ea39e3fdb"
     },
     {
+      "path": "design/recognition-patterns/L-CORNERS.md",
+      "sha256": "f4619a614173b8d02e84f33dd0f96f3d28ebb498ee9676d0274f84590d093a5e"
+    },
+    {
       "path": "design/recognition-patterns/README.md",
-      "sha256": "1283171fcf7ec12c86a79892ee219799e0b91c31d6e5919d0677f66db3edc922"
+      "sha256": "7ab589a4e26cb243588007bb6284682ab38d930df8da03f4bbc9329c8557b57b"
     },
     {
       "path": "design/recognition-patterns/generate.py",
       "sha256": "75d50a8fec37333786b4badb2443abfc52b7feb022e4aa73e0ca4675e4f49b45"
+    },
+    {
+      "path": "design/recognition-patterns/l-corners.png",
+      "sha256": "7e8da65dcd276905143c002e7c394329e777e5ade5def00d11da06b14912568c"
+    },
+    {
+      "path": "design/recognition-patterns/l-corners.svg",
+      "sha256": "a6a0b2514a7cdec957a9e414582fcd0e71fba6091bf707835e2e3b834dc0061e"
     },
     {
       "path": "design/recognition-patterns/recognition-patterns-20.png",

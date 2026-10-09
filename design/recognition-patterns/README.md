@@ -6,6 +6,8 @@
 
 [Editable overview](recognition-patterns-20.svg) · [Reproducible sketch generator](generate.py) · [Display content ideas](DISPLAY-CONTENT.md)
 
+**Follow-up: [four L-shaped corners without a page ID](L-CORNERS.md)** — illustrated geometry-first design, oblique-view homography, calibrated 3D pose, and multi-sheet ambiguity.
+
 ## Recommendation
 
 Start with a **Dynamicland-inspired separation of physical identity, spatial pose, and programmable behavior**, rather than making each content image the sole identity. This is an architectural recommendation, not a claim that colored dots are the most reliable Quest detector, or a copy of official Realtalk. Dynamicland is a communal spatial computing medium, not just a marker design.
