@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {CODEBOOK,setCodebook,stripeLayout,drawCard,observeRectified,readRectified,decodeObserved,READER_OPTIONS,PALETTE} from './color-code.mjs?v=iter-20261010-h';
+import {CODEBOOK,setCodebook,stripeLayout,drawCard,observeRectified,readRectified,decodeObserved,READER_OPTIONS,PALETTE,configurePalette,setHueRefs,MGBY_PALETTE,classify} from './color-code.mjs?v=iter-20261010-i';
 // Minimal axis-aligned RGBA canvas fixture for actual renderer/reader sampling.
 // Not a geometry or perspective detector substitute.
 class Canvas {
@@ -75,4 +75,17 @@ test('side colors cannot bypass asymmetric orientation marks or blank controls',
   const noColors=new Canvas();drawCard(noColors,0,{content:false,sides:true,dual:true});eraseHorizontalColors(noColors);erase(noColors,39,130,48,620);erase(noColors,553,130,48,620);assert.ok(observeRectified(noColors).symbols.every(x=>x===null));assert.equal(readRectified(noColors),null);
  }
  READER_OPTIONS.useSides=false;setCodebook();
+});
+
+test('magenta palette reads every ID without changing dictionary or accepting blank/conflicting colors',()=>{
+ setCodebook('balanced');const ids=CODEBOOK.map(x=>x.id);configurePalette('mgby');
+ try{for(const dual of [false,true])for(let i=0;i<30;i++){const c=new Canvas();drawCard(c,i,{content:false,dual,palette:MGBY_PALETTE});assert.equal(readRectified(c)?.id,ids[i]);}
+ for(const fill of ['white','#aaa']){const c=new Canvas();drawCard(c,0,{content:false,dual:true,palette:MGBY_PALETTE});c.ctx.fillStyle=fill;c.ctx.fillRect(100,42,430,48);c.ctx.fillRect(100,792,430,48);assert.equal(readRectified(c),null);}
+ const c=new Canvas();drawCard(c,0,{content:false,dual:true,palette:MGBY_PALETTE});c.ctx.fillStyle=MGBY_PALETTE[(CODEBOOK[0].symbols[0]+1)%4];c.ctx.fillRect(105,809,50,8);assert.equal(readRectified(c),null);assert.deepEqual(CODEBOOK.map(x=>x.id),ids);
+ }finally{configurePalette('original');setCodebook();}
+});
+test('palette references validate, copy, wrap and reset without unknown-option mutation',()=>{
+ try{for(const refs of [[],[0,1,2],[0,1,2,360],[0,1,2,NaN],[0,1,2,-1]])assert.throws(()=>setHueRefs(refs),RangeError);
+ const refs=[359,215,48,148];setHueRefs(refs);refs[0]=180;assert.equal(classify([255,0,0]),0);configurePalette('mgby');assert.equal(classify([190,39,191]),0);configurePalette('unknown');assert.deepEqual(READER_OPTIONS.hueRefs,[300,215,48,148]);configurePalette('original');assert.deepEqual(READER_OPTIONS.hueRefs,[0,215,48,148]);
+ }finally{configurePalette('original');}
 });

@@ -1,6 +1,6 @@
-import {selectCubicFallbackCandidates,mergeCubicFallback,readCubicFallback} from './cubic-fallback.mjs?v=iter-20261010-h';
-import {detectLCorners,detectLCornersConsensus} from './l-corners.mjs?v=iter-20261010-h';
-import {observeRectified,decodeObserved,READER_OPTIONS} from './color-code.mjs?v=iter-20261010-h';
+import {selectCubicFallbackCandidates,mergeCubicFallback,readCubicFallback} from './cubic-fallback.mjs?v=iter-20261010-i';
+import {detectLCorners,detectLCornersConsensus} from './l-corners.mjs?v=iter-20261010-i';
+import {observeRectified,decodeObserved,READER_OPTIONS} from './color-code.mjs?v=iter-20261010-i';
 // Allocate transform copies: Embind Mat.clone() aliases the same native Mat.
 export const GEOMETRY_OPTIONS={strips:true,consensus:false,rankSkew:0};
 let fallbackFrame=0;

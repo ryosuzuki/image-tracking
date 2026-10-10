@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {EvidenceTracker} from './evidence-tracker.mjs?v=iter-20261010-h';
-import {CODEBOOK,setCodebook} from './color-code.mjs?v=iter-20261010-h';
+import {EvidenceTracker} from './evidence-tracker.mjs?v=iter-20261010-i';
+import {CODEBOOK,setCodebook} from './color-code.mjs?v=iter-20261010-i';
 setCodebook('balanced');
 const q=(x=0,size=100)=>[[x,0],[x+size,0],[x+size,140],[x,140]];
 const obs=(item,indices,x=0)=>({q:q(x),symbols:item.symbols.map((v,i)=>indices.includes(i)?v:null),conflict:false});
@@ -51,7 +51,7 @@ test('backwards time, explicit ID change and duplicate detections reset associat
 });
 
 test('eight-slot temporal fusion, color conflict and book switching are bounded',async()=>{
- const {setCodebook}=await import('./color-code.mjs?v=iter-20261010-h');
+ const {setCodebook}=await import('./color-code.mjs?v=iter-20261010-i');
  setCodebook('eight');const item=CODEBOOK[0],t=new EvidenceTracker();
  assert.equal(t.update([obs(item,[0,1,2,3])],0)[0].temporalId,null);
  assert.equal(t.update([obs(item,[4,5,6,7])],100)[0].temporalId,item.id);
@@ -64,7 +64,7 @@ test('eight-slot temporal fusion, color conflict and book switching are bounded'
 });
 
 test('weak current colors cannot keep an old ID after an indistinguishable partial swap',async()=>{
- const {setCodebook}=await import('./color-code.mjs?v=iter-20261010-h');
+ const {setCodebook}=await import('./color-code.mjs?v=iter-20261010-i');
  for(const kind of ['original','balanced','eight']){setCodebook(kind);const first=CODEBOOK[0],second=CODEBOOK.find(c=>c.id!==first.id),common=second.symbols.flatMap((v,i)=>v===first.symbols[i]?[i]:[]),t=new EvidenceTracker();t.update([obs(first,first.symbols.map((_,i)=>i))],0);assert.equal(t.update([obs(second,common)],100)[0].temporalId,null,kind);}
  setCodebook();
 });

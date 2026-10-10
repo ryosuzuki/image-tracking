@@ -1,7 +1,7 @@
-import {CODEBOOK_EIGHT} from './codebook-eight.mjs?v=iter-20261010-h';
-import {BALANCED_CODEBOOK} from './balanced-codebook.mjs?v=iter-20261010-h';
+import {CODEBOOK_EIGHT} from './codebook-eight.mjs?v=iter-20261010-i';
+import {BALANCED_CODEBOOK} from './balanced-codebook.mjs?v=iter-20261010-i';
 export const PALETTE=['#d52d36','#166bd0','#e0ae09','#168e56'];
-export const READER_OPTIONS={useBottom:true,useSides:false,useCubicFallback:false,minVote:8,dominance:2,minSaturation:.12};
+export const READER_OPTIONS={useBottom:true,useSides:false,useCubicFallback:false,minVote:8,dominance:2,minSaturation:.12,hueRefs:[0,215,48,148]};
 export const NAMES=['赤','青','黄','緑'];
 const distance=(a,b)=>a.reduce((s,x,i)=>s+(x!==b[i]),0);
 export const CODEBOOK=[];
@@ -15,8 +15,11 @@ export function decodeSymbols(a){if(!Array.isArray(a)||a.length!==CODEBOOK[0].sy
 // Known erasures only; observed colors are never corrected. Eight-slot words
 // use dictionary membership, not the seven-slot weighted checksum.
 export function decodeObserved(symbols){const count=CODEBOOK[0].symbols.length;if(!Array.isArray(symbols)||symbols.length!==count||Array.from(symbols).some(x=>x!==null&&(!Number.isInteger(x)||x<0||x>3)))return null;const missing=symbols.filter(x=>x===null).length;if(missing===0)return decodeSymbols(symbols);if(missing>(count===8?3:2))return null;const candidates=CODEBOOK.filter(c=>symbols.every((x,i)=>x===null||x===c.symbols[i]));return candidates.length===1?candidates[0]:null;}
-const HUE_REFS=[0,215,48,148];
-function classifyRGB(r,g,b){const mx=Math.max(r,g,b),mn=Math.min(r,g,b),d=mx-mn;if(mx<35||d<12||d/mx<.075)return null;let h=mx===r?((g-b)/d)%6:mx===g?(b-r)/d+2:(r-g)/d+4;h=(h*60+360)%360;let best=-1,first=Infinity,second=Infinity;for(let i=0;i<4;i++){const delta=Math.abs(h-HUE_REFS[i]),distance=Math.min(delta,360-delta);if(distance<first){second=first;first=distance;best=i;}else if(distance<second)second=distance;}return first<=30&&second-first>15?best:null;}
+export const MGBY_PALETTE=['#be27bf','#0055ff','#ffc800','#00ff79'];
+export function setHueRefs(refs){if(!Array.isArray(refs)||refs.length!==4||refs.some(x=>typeof x!=='number'||!Number.isFinite(x)||x<0||x>=360))throw new RangeError('hueRefs requires four finite angles in [0,360)');READER_OPTIONS.hueRefs=refs.slice();}
+export function configurePalette(kind){if(kind==='original'){setHueRefs([0,215,48,148]);return PALETTE.slice();}if(kind==='mgby'){setHueRefs([300,215,48,148]);return MGBY_PALETTE.slice();}return null;}
+
+function classifyRGB(r,g,b){const mx=Math.max(r,g,b),mn=Math.min(r,g,b),d=mx-mn;if(mx<35||d<12||d/mx<.075)return null;let h=mx===r?((g-b)/d)%6:mx===g?(b-r)/d+2:(r-g)/d+4;h=(h*60+360)%360;let best=-1,first=Infinity,second=Infinity;for(let i=0;i<4;i++){const delta=Math.abs(h-READER_OPTIONS.hueRefs[i]),distance=Math.min(delta,360-delta);if(distance<first){second=first;first=distance;best=i;}else if(distance<second)second=distance;}return first<=30&&second-first>15?best:null;}
 export function classify([r,g,b]){return classifyRGB(r,g,b);}
 export function drawCard(canvas,index=0,{content=true,corrupt=false,dual=false,sides=false,lineHeight=8,lineLength=40,palette=PALETTE}={}){canvas.width=640;canvas.height=880;const c=canvas.getContext('2d'),item=CODEBOOK[index],layout=stripeLayout();if(layout.count===8)lineLength=Math.min(lineLength,layout.pitch-10);c.fillStyle='white';c.fillRect(0,0,640,880);c.strokeStyle='black';c.lineWidth=20;for(const [x,y,s,t]of [[25,25,1,1],[615,25,-1,1],[615,855,-1,-1],[25,855,1,-1]]){c.beginPath();c.moveTo(x+s*60,y);c.lineTo(x,y);c.lineTo(x,y+t*60);c.stroke();}c.fillStyle='black';c.fillRect(76,51,14,24);c.fillRect(534,56,8,14);item.symbols.forEach((s,i)=>{c.fillStyle=corrupt&&i===2?'#aaa':palette[s];c.fillRect(layout.center(i)-lineLength/2,63-lineHeight/2,lineLength,lineHeight)});if(dual){c.fillStyle='black';c.fillRect(76,801,14,24);c.fillRect(534,806,8,14);item.symbols.forEach((s,i)=>{c.fillStyle=palette[s];c.fillRect(layout.center(i)-lineLength/2,813-lineHeight/2,lineLength,lineHeight)});}if(sides){item.symbols.forEach((symbol,i)=>{c.fillStyle=palette[symbol];const y=160+i*560/(layout.count-1);for(const x of [63,577])c.fillRect(x-lineHeight/2,y-lineLength/2,lineHeight,lineLength);});}if(content){c.fillStyle='#222';c.textAlign='center';c.font='bold 36px sans-serif';c.fillText(item.id,320,175);c.font='22px sans-serif';c.fillText('L corners + thin LINE ID',320,230);c.fillStyle='#eee';for(let i=0;i<10;i++)c.fillRect(85,290+i*36,400-(i%3)*50,8);c.font='18px sans-serif';c.fillStyle='#555';c.fillText('Page content is NOT matched',320,755);}return canvas;}
 export function observeRectified(canvas){
