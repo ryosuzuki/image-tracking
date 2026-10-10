@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {golayDecoderQuery} from './reader-query.mjs';import {GOLAY24_BOOK,decodeGolay24} from './golay24.mjs';
+const q=s=>golayDecoderQuery(new URLSearchParams(s));
+test('absent query preserves defaults and partial query preserves other bound',()=>{assert.deepEqual(q(''),{maxErrors:1,maxErasures:3});assert.deepEqual(q('maxErrors=0'),{maxErrors:0,maxErasures:3});assert.deepEqual(q('maxErrors=0&maxErasures=2'),{maxErrors:0,maxErasures:2});});
+test('invalid bounds reject not silently coerce',()=>{for(const s of ['maxErrors=','maxErrors=-1','maxErrors=1.5','maxErrors=NaN','maxErrors=3','maxErasures=8','maxErasures=Infinity','maxErrors=2','maxErasures=4','maxErrors=2&maxErasures=7'])assert.throws(()=>q(s),RangeError);});
+test('all2576 exact codes default/strict decode without mutating bits',()=>{for(const w of GOLAY24_BOOK){const b=[...w.bits];assert.equal(decodeGolay24(b,q('')).id,w.id);assert.equal(decodeGolay24(b,q('maxErrors=0&maxErasures=2')).id,w.id);assert.deepEqual(b,w.bits);}});
+test('three actual dense misreads rejected strict0+r2; strict0 alone insufficient',()=>{const first=[0,0,1,null,null,1,1,1,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0];const second=[...first];second[1]=null;for(const b of [first,second,second]){const original=[...b];assert.equal(decodeGolay24(b,q('')).id,'paper-003');assert.equal(decodeGolay24(b,q('maxErrors=0&maxErasures=2')),null);assert.deepEqual(b,original);}assert.equal(decodeGolay24(second,q('maxErrors=0')).id,'paper-003');});
