@@ -1,4 +1,4 @@
-import {detectLCorners} from './l-corners.mjs?v=l2';
+import {detectLCorners} from './l-corners.mjs?v=l3';
 import {ColoredDotsTracker} from './colored-dots.mjs';
 const contract=await(await fetch('./contract.json')).json(),dots=new ColoredDotsTracker(contract);
 const video=document.querySelector('#video'),view=document.querySelector('#view'),ctx=view.getContext('2d'),status=document.querySelector('#status'),start=document.querySelector('#start');let stream,running=false,last=0;

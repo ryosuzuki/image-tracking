@@ -6,7 +6,7 @@ The camera must be served from HTTPS or localhost. No backend or image uploads a
 
 ## Detector boundaries
 
-- Four-L v2: dark concave L candidates are grouped by their two arm directions and convex four-corner geometry, independently of white-paper regions. Extra candidates do not automatically reject a sheet. Local non-sharing groups are preferred over large cross-sheet combinations. Four visible corners are still required. Detection has no ID or persistent association. This is a JavaScript/OpenCV port of the optical experiment, not a native Quest detector.
+- Four-L v3: dark concave L candidates are grouped by their two arm directions and convex four-corner geometry, independently of white-paper regions. Extra candidates do not automatically reject a sheet. Local non-sharing groups are preferred over large cross-sheet combinations. Four visible corners are still required. Detection has no ID or persistent association. This is a JavaScript/OpenCV port of the optical experiment, not a native Quest detector.
 - Colored dots: independently implemented Dynamicland-inspired seven-dot corner codes. Two-sheet targets use IDs 7 and 8; four-sheet targets use distinct IDs 7, 8, 9 and 10. Each ID has four unique corner words; all 16 words are separated by at least three color positions. Duplicate IDs remain unsupported for persistent identity.
 - Green outlines show current-frame planar corner estimates. No metric 3D pose, calibrated accuracy, independent ground truth, or robustness guarantee is claimed.
 - Processing downsizes input to at most 960 pixels wide and runs at approximately 8 Hz or slower on slower devices. The camera may have higher native resolution.
@@ -31,3 +31,13 @@ In actual OpenCV.js/Chrome, 21 generated regression scenes pass: 1/2/4 sheets un
 For a reproducible browser regression, serve this directory, open `tests/regression.html`, wait for `window.ready`, then run `window.runAll()` in the browser console. Each row reports expected count, detected count and pass/fail.
 
 Remaining limitations: no persistent IDs, no occlusion completion, possible cross-sheet ambiguity, threshold sensitivity to uneven lighting, fixed shape/angle tolerances, and no new physical-camera accuracy measurement. Corners represent the L's inner notch, not a corrected printed-paper corner or metric 3D pose.
+
+## Thin-arm refinement (v3)
+
+Thin brackets can be rejected before geometric grouping: the former solidity floor of 0.25 excludes thin L shapes, and perimeter-only polygon simplification can remove their notch. The v3 candidate extraction uses a lower solidity floor (0.07) and a thickness-aware simplification tolerance for low-solidity contours. Existing four-corner convexity and arm-alignment checks remain required; no three-corner completion is added. This may admit more background candidates, so no general false-positive reduction is claimed.
+
+In the same 960 × 720 rendered four-sheet fixture, a 4-pixel stroke changes from zero detected sheets to four, both unrotated and rotated by 0.25 radians. All 21 previous regressions, six thin/medium stroke cases and five negative scenes (blank, circles, squares, text and an isolated L) pass. Call `runAll()`, `runThin()` and `runNegative()` in `tests/regression.html`. These are synthetic tests, not optical accuracy. One/two-pixel strokes remain unreliable; three-pixel rotated and four-pixel blurred strokes remain limited. Medium strokes remain the practical recommendation.
+
+The user reported that medium strokes and hand-drawn paper worked, while thin strokes did not. This is user-reported feedback, not an independently measured acceptance rate.
+
+Quest browser camera streaming remains unverified: the page can be opened and controlled through DevTools, but the camera request did not produce video during the test. Do not interpret page access as live external-camera support.

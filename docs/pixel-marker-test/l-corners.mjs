@@ -21,8 +21,11 @@ export function groupCorners(candidates){
 }
 export function detectLCorners(gray){
  const mask=new cv.Mat(),cs=new cv.MatVector(),hier=new cv.Mat();cv.threshold(gray,mask,0,255,cv.THRESH_BINARY_INV|cv.THRESH_OTSU);cv.findContours(mask,cs,hier,cv.RETR_LIST,cv.CHAIN_APPROX_SIMPLE);const candidates=[];
- for(let i=0;i<cs.size();i++){const contour=cs.get(i),area=cv.contourArea(contour);if(area<15||area>gray.rows*gray.cols*.025){contour.delete();continue}const hull=new cv.Mat(),poly=new cv.Mat();cv.convexHull(contour,hull);const solidity=area/cv.contourArea(hull);cv.approxPolyDP(contour,poly,.025*cv.arcLength(contour,true),true);
- if(poly.rows>=5&&poly.rows<=9&&solidity>.25&&solidity<.83){const p=Array.from({length:poly.rows},(_,j)=>[poly.data32S[2*j],poly.data32S[2*j+1]]),signed=p.reduce((s,v,j)=>s+v[0]*p[(j+1)%p.length][1]-v[1]*p[(j+1)%p.length][0],0);let best=null,bc=-4;
+ for(let i=0;i<cs.size();i++){const contour=cs.get(i),area=cv.contourArea(contour);if(area<15||area>gray.rows*gray.cols*.025){contour.delete();continue}const hull=new cv.Mat(),poly=new cv.Mat();cv.convexHull(contour,hull);const solidity=area/cv.contourArea(hull);const perimeter=cv.arcLength(contour,true);
+ // Preserve thin arms: a perimeter-only epsilon can erase the inner notch.
+ const epsilon=solidity>=.25 ? .025*perimeter : Math.min(.025*perimeter,Math.max(1.2,area/perimeter*.65));
+ cv.approxPolyDP(contour,poly,epsilon,true);
+ if(poly.rows>=5&&poly.rows<=9&&solidity>.07&&solidity<.83){const p=Array.from({length:poly.rows},(_,j)=>[poly.data32S[2*j],poly.data32S[2*j+1]]),signed=p.reduce((s,v,j)=>s+v[0]*p[(j+1)%p.length][1]-v[1]*p[(j+1)%p.length][0],0);let best=null,bc=-4;
  for(let j=0;j<p.length;j++){const a=p[(j+p.length-1)%p.length],b=p[j],d=p[(j+1)%p.length],cr=((b[0]-a[0])*(d[1]-b[1])-(b[1]-a[1])*(d[0]-b[0]))*Math.sign(signed);if(cr<bc){bc=cr;best={point:b,arms:[unit(a.map((v,n)=>v-b[n])),unit(d.map((v,n)=>v-b[n]))],extent:Math.sqrt(area)}}}if(best)candidates.push(best)}hull.delete();poly.delete();contour.delete();}
  mask.delete();cs.delete();hier.delete();return groupCorners(candidates);
 }
