@@ -13,6 +13,9 @@ export function groupCorners(candidates){
    for(let z=0;z<4;z++){const here=c[ids[z]],prev=c[ids[(z+3)%4]],next=c[ids[(z+1)%4]],a=unit(prev.point.map((v,n)=>v-here.point[n])),b=unit(next.point.map((v,n)=>v-here.point[n]));const fit=Math.max(Math.min(alignment(a,here.arms[0]),alignment(b,here.arms[1])),Math.min(alignment(a,here.arms[1]),alignment(b,here.arms[0])));if(fit<.65||here.extent/prev.extent>2.3||here.extent/prev.extent<.45){valid=false;break}score+=fit}
    if(!valid)continue;const q=ids.map(id=>c[id].point);const sides=q.map((p,z)=>Math.hypot(p[0]-q[(z+1)%4][0],p[1]-q[(z+1)%4][1]));if(Math.max(sides[0]/sides[2],sides[2]/sides[0],sides[1]/sides[3],sides[3]/sides[1])>1.25)continue;const scale=Math.min(...sides)/(ids.reduce((n,i)=>n+c[i].extent,0)/4);if(scale<9||scale>35)continue;const aspect=(sides[0]+sides[2])/(sides[1]+sides[3]);if(!((aspect>.48&&aspect<.92)||(aspect>1/.92&&aspect<1/.48)))continue;const crosses=q.map((p,z)=>{const a=q[(z+1)%4],b=q[(z+2)%4];return (a[0]-p[0])*(b[1]-a[1])-(a[1]-p[1])*(b[0]-a[0])});if(!(crosses.every(x=>x>0)||crosses.every(x=>x<0)))continue;
    const area=Math.abs(q.reduce((s,p,z)=>s+p[0]*q[(z+1)%4][1]-p[1]*q[(z+1)%4][0],0))/2;if(area<700)continue;
+   // An intermediate L on a rectangle edge indicates a cross-sheet grouping.
+   const crossesSheet=c.some((candidate,index)=>!ids.includes(index)&&q.some((a,z)=>{const b=q[(z+1)%4],dx=b[0]-a[0],dy=b[1]-a[1],length=Math.hypot(dx,dy),px=candidate.point[0]-a[0],py=candidate.point[1]-a[1],t=(px*dx+py*dy)/(length*length);return t>.12&&t<.88&&Math.abs(px*dy-py*dx)/length<Math.min(candidate.extent*1.5,length*.04)}));
+   if(crossesSheet)continue;
    seen.add(key);found.push({ids,q,area,score});
   }
  }
