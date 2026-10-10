@@ -13,7 +13,7 @@ An actual Quest 3 passthrough Camera2 exposure captures an animated four-L targe
 | Horizontal translation | 44 | 45 |
 | Displayed shear | 46 | 46 |
 
-The camera itself remained fixed at an oblique angle. Motion and shear were displayed on the screen; this is not a physically moved paper or headset. The screen is curved and a system dialog was visible in the center. No independent corner ground truth or tracking jitter accuracy is established. The L contour reflex vertex is not necessarily its drawn centerline intersection.
+The camera itself remained fixed at an oblique angle. Motion and shear were displayed on the screen; this is not a physically moved paper or headset. The screen is curved and a system dialog was visible in the center. No independent corner ground truth or tracking jitter accuracy is established. Raw JPEG and status metadata were polled in separate HTTP requests, so their exact exposure pairing is not guaranteed; timestamps establish ongoing optical capture, not calibrated synchronization. The L contour reflex vertex is not necessarily its drawn centerline intersection.
 
 ## Detector changes
 
