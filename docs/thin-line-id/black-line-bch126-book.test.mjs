@@ -1,7 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import {BLACK_BCH126_BOOK as book,BLACK_BCH126_OPTIONS as options} from './black-line-bch126-book.mjs';
-import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-e';
-import {decodeBlackBits} from './black-line-code.mjs?v=black-20261010-e';
+import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-f';
+import {decodeBlackBits} from './black-line-code.mjs?v=black-20261010-f';
 test('126 unique nonconstant words, distance six, and existing30 IDs unchanged',()=>{assert.equal(book.length,126);assert.equal(new Set(book.map(w=>w.bits.join(''))).size,126);assert.deepEqual(book.slice(0,30).map(w=>({id:w.id,bits:w.bits})),BLACK_ROBUST_BOOK);let minimum=16;for(let i=0;i<book.length;i++){const weight=book[i].bits.reduce((a,b)=>a+b);assert.ok([6,8,10].includes(weight));for(let j=i+1;j<book.length;j++)minimum=Math.min(minimum,book[i].bits.reduce((n,v,k)=>n+(v!==book[j].bits[k]),0));}assert.equal(minimum,6);});
 test('blank rejects, every exact and one-bit error corrects, two-bit errors never other ID',()=>{assert.equal(decodeBlackBits(Array(16).fill(0),options),null);assert.equal(decodeBlackBits(Array(16).fill(1),options),null);assert.equal(decodeBlackBits(Array(16).fill(null),options),null);for(const w of book){assert.equal(decodeBlackBits(w.bits,options)?.id,w.id);for(let a=0;a<16;a++){const bits=w.bits.slice();bits[a]^=1;assert.equal(decodeBlackBits(bits,options)?.id,w.id);for(let b=a+1;b<16;b++){const two=bits.slice();two[b]^=1;assert.equal(decodeBlackBits(two,options),null);}}}});
 test('strict1error plus3erasures recovers; excess erasures reject',()=>{for(const w of book){const bits=w.bits.slice();bits[0]=bits[1]=bits[2]=null;bits[3]^=1;assert.equal(decodeBlackBits(bits,options)?.id,w.id);bits[3]=null;assert.equal(decodeBlackBits(bits,options),null);}});

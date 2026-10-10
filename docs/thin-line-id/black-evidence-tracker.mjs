@@ -1,4 +1,4 @@
-import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-e';
+import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-f';
 
 // Standalone experiment: caller supplies ONLY this frame's detector geometry and
 // uncorrected, orientation-normalized bits, never display/held tracks. A detector
