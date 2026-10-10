@@ -1,6 +1,6 @@
-import {inspectBlackLine} from './black-line-detector.mjs?v=black-20261010-a';
-import {BLACK_ROBUST_OPTIONS} from './black-line-robust-book.mjs?v=black-20261010-a';
-import {BLACK_LINE_BOOK} from './black-line-code.mjs?v=black-20261010-a';
+import {inspectBlackLine} from './black-line-detector.mjs?v=black-20261010-b';
+import {BLACK_ROBUST_OPTIONS} from './black-line-robust-book.mjs?v=black-20261010-b';
+import {BLACK_LINE_BOOK} from './black-line-code.mjs?v=black-20261010-b';
 const query=new URLSearchParams(location.search),readerOptions=query.get('book')==='870'?undefined:BLACK_ROBUST_OPTIONS;document.querySelector('h1').textContent=readerOptions?'Black L + black lines: robust 30 ID prototype':'Black L + black lines: experimental 870 ID capacity';document.querySelector('h1+p').textContent=readerOptions?'16 slots / 30 IDs / distance 8. Maximum 1 bit correction and 3 erasures. With no erasures, 2–6 bit flips cannot become another ID. Green geometry even for unknown IDs. No temporal carry or held display. Normal camera 2D; device performance unverified.':'16 slots / 870 IDs / distance 4. One-bit correction, two-bit rejection without erasures. Three or more bit errors can misdecode. No temporal carry or held display. Normal camera 2D; device performance unverified.';document.title=document.querySelector('h1').textContent;document.querySelector('a').href='black-line-targets.html?book='+ (readerOptions?'robust30':'870');
 const $=s=>document.querySelector(s),video=$('#video'),view=$('#view'),raw=document.createElement('canvas');
 let running=false,stream=null,lastFrame=0,raf=null,recording=null,startGeneration=0;

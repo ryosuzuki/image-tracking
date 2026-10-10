@@ -1,5 +1,5 @@
-import {BLACK_LINE_BOOK,drawBlackLineCard} from './black-line-code.mjs?v=black-20261010-a';
-import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-a';
+import {BLACK_LINE_BOOK,drawBlackLineCard} from './black-line-code.mjs?v=black-20261010-b';
+import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-b';
 const mode=document.querySelector('#mode'),id=document.querySelector('#id'),cards=document.querySelector('#cards'),q=new URLSearchParams(location.search);
 const book=q.get('book')==='870'?BLACK_LINE_BOOK:BLACK_ROBUST_BOOK;document.querySelector('h1').textContent=book===BLACK_ROBUST_BOOK?'Black L + black lines: robust 30 ID prototype':'Black L + black lines: experimental 870 ID capacity';document.querySelector('header p').textContent=book===BLACK_ROBUST_BOOK?'16 slots / eight black dashes / distance 8. Maximum 1 bit correction and 3 erasures. With no erasures, 2–6 bit flips cannot become another ID. Device performance unverified.':'870 IDs / distance 4 capacity experiment. One-bit correction, two-bit rejection without erasures; three or more errors can misdecode. Device performance unverified.';document.title=document.querySelector('h1').textContent;document.querySelector('a').href='black-line-camera.html?book='+ (book===BLACK_ROBUST_BOOK?'robust30':'870');
 book.forEach((word,i)=>id.add(new Option(word.id,i)));const count=Number(q.get('count')||10);mode.value=['1','10','30'].includes(String(count))?String(count):'10';id.value=String(Math.max(0,Math.min(book.length-1,Number(q.get('id')||0))));

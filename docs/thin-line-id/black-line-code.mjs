@@ -1,4 +1,4 @@
-// Standalone opt-in prototype; not connected to any live recognition page.
+// Standalone opt-in black-line camera prototype, separate from the color reader.
 // Extended Hamming [16,11,4], restricted to constant weight 8. Every ID has
 // eight black dashes. Blank/all-white is therefore never a valid ID.
 export function generateBlackLineBook(){
@@ -29,13 +29,11 @@ export function drawBlackLineCard(canvas,index=0,{dual=true,lineHeight=8,lineLen
  if(content){c.font='30px sans-serif';c.textAlign='center';c.fillText(word.id,320,175);c.font='20px sans-serif';c.fillText('BLACK LINE ID — prototype',320,230);}
  return canvas;
 }
+function medianExact(input){const a=input.slice(),k=Math.floor(a.length/2);let lo=0,hi=a.length-1;while(lo<hi){const pivot=a[(lo+hi)>>1];let i=lo,j=hi;while(i<=j){while(a[i]<pivot)i++;while(a[j]>pivot)j--;if(i<=j){[a[i],a[j]]=[a[j],a[i]];i++;j--;}}if(k<=j)hi=j;else if(k>=i)lo=i;else break;}return a[k];}
 export function observeBlackLine(canvas,{useBottom=true,minOne=.055,maxZero=.025}={}){
- const c=canvas.getContext('2d'),luma=data=>{const a=[];for(let k=0;k<data.length;k+=4)a.push(.2126*data[k]+.7152*data[k+1]+.0722*data[k+2]);return a;};
- const median=a=>a.slice().sort((x,y)=>x-y)[Math.floor(a.length/2)];
- const marked=base=>{const white=median(luma(c.getImageData(100,42+base,430,48).data));if(white<25)return false;const dark=(x0,x1)=>{for(let x=x0;x<=x1;x+=2)for(let y=49+base;y<=76+base;y+=2){const ink=luma(c.getImageData(x,y,3,3).data);if(ink.reduce((a,b)=>a+b,0)/ink.length<white*.5)return true;}return false;};return dark(72,88)&&dark(528,542);};
- const edge=base=>Array.from({length:16},(_,i)=>{const values=luma(c.getImageData(Math.round(130+i*348/15-9),42+base,18,48).data),paper=median(values);if(paper<25)return null;const mass=values.reduce((s,v)=>s+Math.max(0,Math.min(1,(paper-v)/paper)),0)/values.length;return mass>=minOne?1:mass<=maxZero?0:null;});
- const top=marked(0)?edge(0):null,bottom=useBottom&&marked(750)?edge(750):null;if(!top&&!bottom)return null;let conflict=false;
- const bits=Array.from({length:16},(_,i)=>{const a=top?.[i]??null,b=bottom?.[i]??null;if(a!==null&&b!==null&&a!==b){conflict=true;return null;}return a??b;});
- return {bits,top,bottom,conflict};
+ const c=canvas.getContext('2d');
+ const cached=base=>{const data=c.getImageData(70,42+base,480,48).data;return (x,y,w,h)=>{const a=[];for(let row=0;row<h;row++)for(let col=0;col<w;col++){const k=((y-42-base+row)*480+x-70+col)*4;a.push(.2126*data[k]+.7152*data[k+1]+.0722*data[k+2]);}return a;};};
+ const inspect=base=>{const luma=cached(base),white=medianExact(luma(100,42+base,430,48));if(white<25)return null;const dark=(x0,x1)=>{for(let x=x0;x<=x1;x+=2)for(let y=49+base;y<=76+base;y+=2){const ink=luma(x,y,3,3);if(ink.reduce((a,b)=>a+b,0)/ink.length<white*.5)return true;}return false;};if(!dark(72,88)||!dark(528,542))return null;return Array.from({length:16},(_,i)=>{const values=luma(Math.round(130+i*348/15-9),42+base,18,48),paper=medianExact(values);if(paper<25)return null;const mass=values.reduce((s,v)=>s+Math.max(0,Math.min(1,(paper-v)/paper)),0)/values.length;return mass>=minOne?1:mass<=maxZero?0:null;});};
+ const top=inspect(0),bottom=useBottom?inspect(750):null;if(!top&&!bottom)return null;let conflict=false;const bits=Array.from({length:16},(_,i)=>{const a=top?.[i]??null,b=bottom?.[i]??null;if(a!==null&&b!==null&&a!==b){conflict=true;return null;}return a??b;});return {bits,top,bottom,conflict};
 }
 export function readBlackLine(canvas,options){const observation=observeBlackLine(canvas,options);if(!observation||observation.conflict)return null;const word=decodeBlackBits(observation.bits,options);return word?{...word,...observation}:null;}
