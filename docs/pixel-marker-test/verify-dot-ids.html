@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Four distinct dot ID fixture verification</title><pre id="results">Running…</pre><script type="module">
+import {ColoredDotsTracker} from './colored-dots.mjs';
+const contract=await(await fetch('./contract.json')).json();const tracker=new ColoredDotsTracker(contract),results=[];
+for(const count of [2,4])for(const size of ['large','medium','small'])for(const angle of [0,-5,5]){
+ const image=new Image();image.src=`dots-${count}-${size}.svg`;await image.decode();const canvas=document.createElement('canvas');canvas.width=960;canvas.height=640;const ctx=canvas.getContext('2d');ctx.fillStyle='#777';ctx.fillRect(0,0,960,640);ctx.translate(480,320);ctx.rotate(angle*Math.PI/180);ctx.scale(angle?.85:1,angle?.85:1);ctx.drawImage(image,-480,-320,960,640);
+ const ids=tracker.detect(ctx.getImageData(0,0,960,640)).map(x=>x.id).sort((a,b)=>a-b),expected=contract.markers.slice(0,count).map(x=>x.id);results.push({count,size,angle,ids,expected,pass:JSON.stringify(ids)===JSON.stringify(expected)});
+}
+const canvas=document.createElement('canvas');canvas.width=960;canvas.height=640;const ctx=canvas.getContext('2d');ctx.fillStyle='white';ctx.fillRect(0,0,960,640);results.push({name:'blank',pass:tracker.detect(ctx.getImageData(0,0,960,640)).length===0});window.dotVerification=results;document.querySelector('#results').textContent=JSON.stringify(results,null,2);
+</script></html>

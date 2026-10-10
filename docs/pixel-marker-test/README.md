@@ -7,7 +7,7 @@ The camera must be served from HTTPS or localhost. No backend or image uploads a
 ## Detector boundaries
 
 - Four-L: dark concave L candidates grouped inside separate white regions; four candidates are required. Detection has no ID or persistent association. This is a JavaScript/OpenCV port of the optical experiment, not a native Quest detector.
-- Colored dots: existing independently implemented Dynamicland-inspired seven-dot corner code, IDs 7 and 8. For four-sheet examples each ID is repeated. White-region splitting allows spatial copies to be counted separately; this is **not four unique persistent IDs** and overlapping/joined pages can fail.
+- Colored dots: independently implemented Dynamicland-inspired seven-dot corner codes. Two-sheet targets use IDs 7 and 8; four-sheet targets use distinct IDs 7, 8, 9 and 10. Each ID has four unique corner words; all 16 words are separated by at least three color positions. Duplicate IDs remain unsupported for persistent identity.
 - Green outlines show current-frame planar corner estimates. No metric 3D pose, calibrated accuracy, independent ground truth, or robustness guarantee is claimed.
 - Processing downsizes input to at most 960 pixels wide and runs at approximately 8 Hz or slower on slower devices. The camera may have higher native resolution.
 - Camera processing and memory are released with **Stop camera**. Reload if camera permission was denied, and allow access through browser site settings.
@@ -17,3 +17,7 @@ The camera must be served from HTTPS or localhost. No backend or image uploads a
 Headless Chrome with the actual OpenCV.js build detects the expected count for all 12 SVG targets (2 methods × 2 counts × 3 sizes). A simulated browser media device verifies start, processing and stop. Zero page JavaScript errors were observed. This verifies browser plumbing and rendered fixtures, **not physical Pixel camera tracking**. Physical-phone testing remains the user's on-device test.
 
 Serve locally for development: `python3 -m http.server 8000 --directory docs`, then open `http://localhost:8000/pixel-marker-test/`.
+
+## Four distinct IDs update
+
+Four-sheet downloads now encode IDs **7, 8, 9, 10**, not repeated 7/8. The display selector reports the active IDs. The shared `contract.json` is used by both fixtures and camera detector. Open [fixture verification](./verify-dot-ids.html) to run 18 rendered cases (2/4 sheets, three sizes, 0/±5 degrees and 0.85 scale for rotated cases) plus a blank rejection at the camera processing width of 960 pixels. These pass with exact expected IDs. This is synthetic browser validation, not new optical Pixel accuracy evidence. Reload both pages to replace previously cached targets. Duplicate IDs and persistent identity across occlusion remain outside this update.
