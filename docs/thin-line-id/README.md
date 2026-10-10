@@ -1,2 +1,5 @@
 # Thin top-edge line IDs
 Black four L corners locate the sheet; seven thin 4-color top-edge segments encode one of 30 codes (six data symbols + checksum, codebook minimum Hamming distance 3). No interior matching. Line thickness 8/640 paper width = 1.25% (2.625mm at A4 width); segment length 40/640, gap 18/640. First 10 are test cards. Camera-space 2D only. Real-device counts recorded separately; do not infer robustness from synthetic tests.
+
+Black L strokes use 20/640 width and 60/640 arms to improve low-resolution geometry; color ID lines remain 8/640. Per-symbol vertical sampling searches y51–75 after rectification. HSV hue classification uses minimum contrast/saturation and margin guards; checksum/exact codebook acceptance remain.
+Overlay-only EMA alpha 0.4, hold cap300ms; fresh detections green, held tracks amber. Raw ID metrics are separate. Scene mean color difference >0.08 clears tracks; incompatible IDs replace overlapping old tracks; large movement resets smoothing. Camera stop/new input clears. No guarantee of spatial tracking from these 2D heuristics.
