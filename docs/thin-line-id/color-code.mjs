@@ -1,3 +1,4 @@
+import {BALANCED_CODEBOOK} from './balanced-codebook.mjs';
 export const PALETTE=['#d52d36','#166bd0','#e0ae09','#168e56'];
 export const READER_OPTIONS={useBottom:true,minVote:8,dominance:2,minSaturation:.12};
 export const NAMES=['赤','青','黄','緑'];
@@ -5,6 +6,8 @@ const distance=(a,b)=>a.reduce((s,x,i)=>s+(x!==b[i]),0);
 export const CODEBOOK=[];
 for(let n=0;n<4096&&CODEBOOK.length<30;n++){const a=Array.from({length:6},(_,k)=>(n>>(2*k))&3);a.push(a.reduce((s,x,k)=>s+x*(k%2?3:1),0)%4);if(CODEBOOK.every(c=>distance(a,c.symbols)>=3))CODEBOOK.push({id:`paper-${String(CODEBOOK.length+1).padStart(3,'0')}`,symbols:a});}
 if(CODEBOOK.length!==30)throw Error('Codebook incomplete');
+const ORIGINAL_CODEBOOK=CODEBOOK.slice();
+export function setCodebook(kind='original'){CODEBOOK.splice(0,CODEBOOK.length,...(kind==='balanced'?BALANCED_CODEBOOK:ORIGINAL_CODEBOOK));}
 export function decodeSymbols(a){if(a.length!==7||a.some(x=>!Number.isInteger(x)||x<0||x>3))return null;const sum=a.slice(0,6).reduce((s,x,k)=>s+x*(k%2?3:1),0)%4;if(sum!==a[6])return null;return CODEBOOK.find(c=>distance(a,c.symbols)===0)||null;}
 // Minimum code distance 3 makes up to two *known missing* symbols recoverable.
 // Never change an observed color; reject if more than one registered code fits.
