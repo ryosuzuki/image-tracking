@@ -11,7 +11,7 @@ export function groupCorners(candidates){
    const key=[...ids].sort((a,b)=>a-b).join(',');if(seen.has(key))continue;
    let score=0,valid=true;
    for(let z=0;z<4;z++){const here=c[ids[z]],prev=c[ids[(z+3)%4]],next=c[ids[(z+1)%4]],a=unit(prev.point.map((v,n)=>v-here.point[n])),b=unit(next.point.map((v,n)=>v-here.point[n]));const fit=Math.max(Math.min(alignment(a,here.arms[0]),alignment(b,here.arms[1])),Math.min(alignment(a,here.arms[1]),alignment(b,here.arms[0])));if(fit<.90||here.extent/prev.extent>2.3||here.extent/prev.extent<.45){valid=false;break}score+=fit}
-   if(!valid)continue;const q=ids.map(id=>c[id].point);const sides=q.map((p,z)=>Math.hypot(p[0]-q[(z+1)%4][0],p[1]-q[(z+1)%4][1]));if(Math.max(sides[0]/sides[2],sides[2]/sides[0],sides[1]/sides[3],sides[3]/sides[1])>1.45)continue;const crosses=q.map((p,z)=>{const a=q[(z+1)%4],b=q[(z+2)%4];return (a[0]-p[0])*(b[1]-a[1])-(a[1]-p[1])*(b[0]-a[0])});if(!(crosses.every(x=>x>0)||crosses.every(x=>x<0)))continue;
+   if(!valid)continue;const q=ids.map(id=>c[id].point);const sides=q.map((p,z)=>Math.hypot(p[0]-q[(z+1)%4][0],p[1]-q[(z+1)%4][1]));if(Math.max(sides[0]/sides[2],sides[2]/sides[0],sides[1]/sides[3],sides[3]/sides[1])>1.25)continue;const crosses=q.map((p,z)=>{const a=q[(z+1)%4],b=q[(z+2)%4];return (a[0]-p[0])*(b[1]-a[1])-(a[1]-p[1])*(b[0]-a[0])});if(!(crosses.every(x=>x>0)||crosses.every(x=>x<0)))continue;
    const area=Math.abs(q.reduce((s,p,z)=>s+p[0]*q[(z+1)%4][1]-p[1]*q[(z+1)%4][0],0))/2;if(area<700)continue;
    seen.add(key);found.push({ids,q,area,score});
   }
