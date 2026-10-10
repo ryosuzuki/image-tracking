@@ -1,0 +1,27 @@
+{
+  "samples": 189,
+  "uniqueSensorTimestamps": 189,
+  "uniqueJpegHashes": 189,
+  "durationSeconds": 32.996421167,
+  "baselineFullFrameDetections": 123,
+  "adaptedFullFrameDetections": 185,
+  "phases": {
+    "STATIONARY": {
+      "detections": 51,
+      "samples": 52
+    },
+    "ROTATION": {
+      "detections": 44,
+      "samples": 46
+    },
+    "TRANSLATION": {
+      "detections": 44,
+      "samples": 45
+    },
+    "SHEAR": {
+      "detections": 46,
+      "samples": 46
+    }
+  },
+  "limitation": "single oblique optical screen recapture; offline full-frame host detection; not live Quest detector or physical paper robustness; no ground-truth corner error"
+}
