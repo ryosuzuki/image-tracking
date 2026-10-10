@@ -3247,7 +3247,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/Assets/Editor/VuforiaBuild.cs",
-      "sha256": "05efe780868e00964cbc9705e0e952b920152c86bf0cf2b8b32313784c955a87"
+      "sha256": "425ed1d3f4a344448a31cbf984b060a6aae334102da9aa27f44e996c3a7edb21"
     },
     {
       "path": "image/quest-unity-vuforia/Assets/Editor/VuforiaBuild.cs.meta",
@@ -3351,7 +3351,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/Assets/QuestVuforia/QuestVuforiaDriverInit.cs",
-      "sha256": "a10a5d06aba3f22e17ef73adccbe3a1833d3c0db136922a1ba77e4e2ffad7924"
+      "sha256": "7efbe90d12217d3a25d3c09e95ee77d1aedfcd9ccde2565bd3e38ef653f2a69c"
     },
     {
       "path": "image/quest-unity-vuforia/Assets/QuestVuforia/QuestVuforiaDriverInit.cs.meta",
@@ -3571,7 +3571,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/DEVICE-ACCEPTANCE.md",
-      "sha256": "561ccd9449b1c086d0d78c9cb773f6448e710d5828ddb1fba9471f1dcc0819dd"
+      "sha256": "bd8eaa7c50498937c0e7fbaad9775e617926a522686ec7635bdd841b15adb1a5"
     },
     {
       "path": "image/quest-unity-vuforia/LICENSE.upstream",
@@ -3727,7 +3727,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/README.md",
-      "sha256": "9e74be4501f1d9a89f2b0a117c9fe83088b0b969e03439204731da53617bf0df"
+      "sha256": "e87c6a1c9980fdb1933d4ab4b2272f4b4c3f5f4198bb4b17248f3f6be03a9bb5"
     },
     {
       "path": "image/quest-unity-vuforia/Tools/build-native.sh",
@@ -3743,7 +3743,7 @@
     },
     {
       "path": "image/quest-unity-vuforia/repair-checkpoint.json",
-      "sha256": "b7cc22504bdb48d2ccfddd0de3089d9b444e116aed53e8ff6f27be577ee785a1"
+      "sha256": "071a8d6aa5b4c22d3352e1dac2c9891fe5996ba10e66f365862289a3d4b052d9"
     },
     {
       "path": "markers/arkit-swift/.gitignore",

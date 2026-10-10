@@ -6,15 +6,25 @@ are separate from camera ingestion, target recognition and binocular alignment.
 ## Current observations (2026-10-09)
 
 - The home Mac can reach the authorized Quest 3 through ADB.
-- A read-only continuation check found the headset asleep, with proximity false.
-- The earlier launch attempt stopped in the system controller-required dialog,
-  before the application process started.
-- A coordinated native-only safe update and brief launch attempt again stopped
-  at the same system dialog, with no application process. The independent
-  PaperLab rendering/demo lane regained device priority immediately afterward.
-- The installed APK digest matches the repaired artifact exactly. Existing
-  private license bytes were also provisioned at Unity's Android external
-  persistent-data destination; their equality was checked without emitting them.
+- The 18:29 cold launch exposed a shell-owned external license-file access
+  error and missing SDK agreement metadata. Both are fixed in the rebuilt player.
+- The original build script edited only an in-memory Vuforia configuration.
+  It now persists `Resources/VuforiaConfiguration.asset` with SDK 11.4 agreement
+  state, checks that both license fields are empty, and never packages a key.
+- The first rebuilt player then failed to load the custom driver because the
+  code passed a bare library stem. SDK 11.4 requires the complete packaged
+  filename; it now passes `libquforia.so`.
+- The final full Unity/Android IL2CPP build succeeded. Same-signature
+  `adb install -r` succeeded; the installed APK hash matches the built artifact
+  (`e03a403956d43b725ebe9ff1df8b21a9b2233f6e6efebc8988252c4067846051`).
+- At 19:11, a real Quest cold launch logged `Vuforia Initialized`,
+  `VUFORIA INIT NONE`, and `VUFORIA CAMERA calibrated (1280, 960)`.
+  The app-private license file remained present and readable after the update.
+- The authored target was presented on the home monitor at the specified 20 cm
+  width and was visible in a Quest compositor screenshot. No
+  `VUFORIA TARGET TRACKED NORMAL` occurred. The screenshot showed the Quest's
+  **Finding position in room** overlay; the headset did not maintain a valid
+  physical tracking session. No cube alignment/video acceptance is claimed.
 - No SDK archive, license value or private logs belong in this public repository.
 
 ## Driver repair and remaining registration audit
@@ -29,18 +39,15 @@ are separate from camera ingestion, target recognition and binocular alignment.
 3. `VuforiaCameraPoseDriver` uses the latest successfully submitted camera pose.
    That is not evidence that a Vuforia result belongs to that same exposure.
    Measure result/capture timing before accepting moving-head registration.
+4. The active native driver advertises image-only tracking. Its external pose
+   tracker is disabled due a known coordinate-convention offset; source code
+   for pose delivery must not be mistaken for an active runtime path.
 
-The driver was rebuilt successfully against the official Vuforia 11.4.4 Android
-headers and the Unity Android NDK. A native-only development APK update was
-assembled from the installed prototype: the only changed non-signature entry
-is `lib/arm64-v8a/libquforia.so`. Its signature verifies and its signing
-certificate matches the installed application. This method preserves the C#
-player, package identity and existing private runtime license provision without
-requiring a second large Unity import during the parallel demo build.
-
-This is a repair/build checkpoint, not a successful physical acceptance test.
-Rebuilding requires the private official SDK and Android toolchain; do not
-replace them with unofficial binaries.
+The native driver was rebuilt against official Vuforia 11.4.4 Android headers
+and tested. The full C# player was subsequently rebuilt with Unity 6000.4.5f1
+and Android IL2CPP, then installed under the unchanged package identity and
+signer. Rebuilding requires the private official SDK and Android toolchain;
+do not replace them with unofficial binaries.
 
 ## Acceptance sequence
 

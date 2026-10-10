@@ -33,7 +33,7 @@ Unity -batchmode -nographics -quit -projectPath "$PWD" \
 
 `Prepare` compiles scripts and generates the independent scene and shader-referenced material. `Android` creates `Builds/paperlab-vuforia.apk`; package ID `org.openclaw.paperlabvuforia` does not replace the existing marker app. Install with `adb install -r`. The native plugin and SDK are generated/installed dependencies, not public source assets.
 
-Privately provision `vuforia-license.txt` into this development app's Unity Android persistent-data directory (`/sdcard/Android/data/org.openclaw.paperlabvuforia/files`) using a secure local 1Password workflow. An ADB `run-as` file in the internal `files` directory alone is **not** Unity's `Application.persistentDataPath`. Transfer concealed bytes to the actual destination and verify equality without printing them. Never put a key in a shell argument, committed Unity config, StreamingAssets, screenshot or log. Missing keys cause explicit initialization failure without silently using an upstream developer's key.
+Privately provision `vuforia-license.txt` in this development app's **internal** Android files directory (`/data/user/0/org.openclaw.paperlabvuforia/files`) through `adb shell run-as org.openclaw.paperlabvuforia`, then verify access and byte equality without printing the key. The app obtains this path from Android `Context.getFilesDir()`. Do not use Unity's external `Application.persistentDataPath`: a shell-owned file under `/sdcard/Android/data/...` produced a real permission-denied failure on Quest. Never put a key in a shell argument, committed Unity config, StreamingAssets, screenshot or log. Missing keys cause explicit initialization failure without silently using an upstream developer's key.
 
 ## What to open
 
@@ -65,10 +65,10 @@ Native driver and bridge derived from [Quforia](https://github.com/danieloquelis
 Native build, Unity scene preparation, APK build and safe device install/update passed on 2026-10-09. A private runtime license file was provisioned and retained across the update. The manifest supports optional hands/controllers, and developer-agent settings are disabled for the player and excluded from public source.
 
 The continuation repaired duplicate native frame delivery and the advertised
-camera-rate mismatch. The rebuilt native-only APK update passed signature,
-package, archive-entry and installed-digest checks; the private license was
-verified at Unity's actual Android persistent-data destination. See
-[DEVICE-ACCEPTANCE.md](DEVICE-ACCEPTANCE.md). No Vuforia initialization or target
-tracking acceptance is implied by these repairs.
-
-The headset is currently asleep. Launch requests stop in the Quest system controller-required dialog before an app process starts; Vuforia initialization and camera/target ingestion are therefore not verified. Wake/wear the headset and make a controller or configured hand navigation available, then perform the acceptance gates above. Do not interpret installation as a working tracker.
+camera-rate mismatch. A full rebuilt APK now reads its private license from
+Android internal files, persists the accepted 11.4 agreement metadata without
+embedding a key, and loads the custom driver by its complete filename. A real
+Quest cold launch on 2026-10-09 passed Vuforia initialization and calibrated
+1280 × 960 camera startup. [DEVICE-ACCEPTANCE.md](DEVICE-ACCEPTANCE.md)
+records the exact evidence and remaining physical gates. No target tracking,
+binocular cube alignment, or successful demo video is claimed yet.
