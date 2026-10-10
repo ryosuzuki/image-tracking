@@ -1,1 +1,27 @@
-<!doctype html><html lang="en"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paper tracking display targets</title><style>body{margin:0;background:#777;color:white;font:16px system-ui}#controls{padding:8px;background:#222}select,button,a{font:inherit;margin:4px;padding:8px}a{color:#7df}img{display:block;width:100vw;height:calc(100vh - 90px);object-fit:contain}body.move img{animation:move 5s infinite ease-in-out}@keyframes move{0%,100%{transform:rotate(-5deg) scale(.95) translateX(-2%)}50%{transform:rotate(5deg) scale(.85) translateX(2%)}}</style><div id="controls"><select id="method"><option value="l">Four L</option><option value="dots">Colored dots</option></select><select id="count"><option>2</option><option>4</option></select><select id="size"><option>large</option><option>medium</option><option>small</option></select><button id="motion">Motion on/off</button><button id="full">Fullscreen</button><a id="download" download>Download SVG</a><a id="png" download>Download PNG</a></div><span id="ids"></span><img id="target"><script>function update(){const name=`${method.value}-${count.value}-${size.value}.svg`;target.src=name;ids.textContent=method.value==='dots'?(count.value==='4'?'Paper IDs: 7, 8, 9, 10':'Paper IDs: 7, 8'):'No paper IDs';download.href=name;png.href=name.replace(".svg",".png")}for(const x of [method,count,size])x.onchange=update;motion.onclick=()=>document.body.classList.toggle('move');full.onclick=()=>document.documentElement.requestFullscreen();update();</script></html>
+<!doctype html><html lang="en"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paper tracking display targets</title><style>body{margin:0;background:#777;color:white;font:16px system-ui}#controls{padding:8px;background:#222}select,button,a{font:inherit;margin:4px;padding:8px}a{color:#7df}img{display:block;width:100vw;height:calc(100vh - 90px);object-fit:contain}body.move img{animation:move 5s infinite ease-in-out}@keyframes move{0%,100%{transform:rotate(-5deg) scale(.95) translateX(-2%)}50%{transform:rotate(5deg) scale(.85) translateX(2%)}}</style><div id="controls"><select id="method"><option value="l">Four L</option><option value="dots">Colored dots</option></select><select id="count"><option>2</option><option>4</option></select><select id="size"><option>large</option><option>medium</option><option>small</option></select><select id="design"><option value="original">Original L</option><option value="thin">Thin L</option><option value="medium">Medium L</option><option value="bold">Bold L</option><option value="rounded">Rounded L</option><option value="double">Double-line L (experimental)</option></select><button id="motion">Motion on/off</button><button id="full">Fullscreen</button><a id="download" download>Download SVG</a><a id="png" download>Download PNG</a></div><span id="ids"></span><span id="note"> Black design variants are experimental; detection is not guaranteed.</span><img id="target"><script>
+let request=0,svgURL,pngURL;
+async function update(){
+ const token=++request,name=`${method.value}-${count.value}-${size.value}.svg`;
+ design.disabled=method.value!=='l';
+ let source=await (await fetch(name)).text();
+ if(token!==request)return;
+ if(method.value==='l'&&design.value!=='original'){
+  const doc=new DOMParser().parseFromString(source,'image/svg+xml');
+  for(const path of [...doc.querySelectorAll('path')]){
+   const width=Number(path.getAttribute('stroke-width'));
+   const factor={thin:.4,medium:.7,bold:1.25,rounded:.7,double:1}[design.value];
+   path.setAttribute('stroke-width',width*factor);
+   if(design.value==='rounded'){path.setAttribute('stroke-linejoin','round');path.setAttribute('stroke-linecap','round');}
+   if(design.value==='double'){const inner=path.cloneNode(true);inner.setAttribute('stroke','white');inner.setAttribute('stroke-width',width*.45);path.after(inner);}
+  }
+  source=new XMLSerializer().serializeToString(doc);
+ }
+ if(svgURL)URL.revokeObjectURL(svgURL);
+ svgURL=URL.createObjectURL(new Blob([source],{type:'image/svg+xml'}));
+ target.src=svgURL;download.href=svgURL;download.download=`${name.slice(0,-4)}-${design.value}.svg`;
+ ids.textContent=method.value==='dots'?(count.value==='4'?'Paper IDs: 7, 8, 9, 10':'Paper IDs: 7, 8'):`Design: ${design.selectedOptions[0].textContent}. No paper IDs.`;
+ const img=new Image();img.onload=()=>{if(token!==request)return;const c=document.createElement('canvas');c.width=1200;c.height=800;c.getContext('2d').drawImage(img,0,0);c.toBlob(blob=>{if(token!==request)return;if(pngURL)URL.revokeObjectURL(pngURL);pngURL=URL.createObjectURL(blob);png.href=pngURL;png.download=download.download.replace('.svg','.png');});};img.src=svgURL;
+}
+for(const x of [method,count,size,design])x.onchange=update;
+motion.onclick=()=>document.body.classList.toggle('move');full.onclick=()=>document.documentElement.requestFullscreen();update();
+</script></html>
