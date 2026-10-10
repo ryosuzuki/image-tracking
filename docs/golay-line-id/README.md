@@ -9,3 +9,5 @@ At unchanged640×880 target coordinates: height8, length14, cell pitch15.13. Fou
 Private verification before publication: all2576 ideal rendered codes for two lengths5152/5152; rotated/reflected synthetic2400 positive reads correct and2400 negative opportunities rejected; actual blank-camera12 frames emitted no IDs. These are not positive real-camera validation. Fresh Quest optical trials are required before recommending capacity.
 
 The L backend is frozen for repeatable experimental comparison. See `camera.html` and `targets.html?count=10&length=14&thickness=8`.
+
+Optional guarded low-mass reading: `?lowMassFallback=1&lowMassCascade=1`. Default OFF. Valid primary decoding and known bits are preserved; failed erasures may be filled using lower mass thresholds .045/.040 only when unique checked decoding succeeds. Fresh supplemental reads are labeled 補助読取 and counted separately, never held/temporal. Private paired RAW gains are not an independent optical robustness guarantee.

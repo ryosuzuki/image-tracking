@@ -1,7 +1,7 @@
-import {GOLAY24_BOOK,decodeGolay24} from './golay24.mjs?v=golay24-20261010-a';
+import {GOLAY24_BOOK,decodeGolay24} from './golay24.mjs?v=golay24-20261010-b';
 export {GOLAY24_BOOK,decodeGolay24};
 export const GOLAY24_LAYOUTS={dense14:{lineHeight:8,lineLength:14,sampleWidth:12},subtle8:{lineHeight:8,lineLength:8,sampleWidth:12},middle10:{lineHeight:8,lineLength:10,sampleWidth:12}};
-export const GOLAY24_OPTIONS={maxErrors:1,maxErasures:3,orientationRatio:.7,minOne:.055,maxZero:.025,sampleWidth:12,rankSkew:.6};
+export const GOLAY24_OPTIONS={maxErrors:1,maxErasures:3,orientationRatio:.7,minOne:.055,maxZero:.025,sampleWidth:12,rankSkew:.6,lowMassFallback:false,lowMassCascade:false};
 export function drawGolay24Card(canvas,index=0,{dual=true,lineHeight=8,lineLength=14,content=true,book=GOLAY24_BOOK}={}){
  canvas.width=640;canvas.height=880;const c=canvas.getContext('2d'),word=book[index];c.fillStyle='white';c.fillRect(0,0,640,880);c.strokeStyle='black';c.lineWidth=20;
  for(const [x,y,s,t] of [[25,25,1,1],[615,25,-1,1],[615,855,-1,-1],[25,855,1,-1]]){c.beginPath();c.moveTo(x+s*60,y);c.lineTo(x,y);c.lineTo(x,y+t*60);c.stroke();}
@@ -20,3 +20,23 @@ export function observeGolay24(canvas,{useBottom=true,minOne=.055,maxZero=.025,o
 }
 
 export function readGolay24(canvas,options){const o=observeGolay24(canvas,options);if(!o||o.conflict)return null;const word=decodeGolay24(o.bits,options);return word?{...word,...o}:null;}
+
+// Supplemental evidence never replaces an already-valid observation or its known bits.
+export function mergeGolayLowMass(primary,candidate,options=GOLAY24_OPTIONS){
+ if(!primary||primary.conflict||decodeGolay24(primary.bits,options)||!candidate||candidate.conflict)return null;
+ if(primary.bits.some((v,i)=>v!==null&&v!==candidate.bits[i]))return null;
+ if(!primary.bits.some((v,i)=>v===null&&candidate.bits[i]!==null))return null;
+ if(!decodeGolay24(candidate.bits,options))return null;
+ return candidate;
+}
+export function observeGolay24WithFallback(canvas,options=GOLAY24_OPTIONS){
+ const primary=observeGolay24(canvas,options);
+ if(!options.lowMassFallback||!primary||primary.conflict||decodeGolay24(primary.bits,options))return primary;
+ const thresholds=options.lowMassCascade?[.045,.040]:[.045];
+ for(let i=0;i<thresholds.length;i++){
+  const candidate=observeGolay24(canvas,{...options,minOne:thresholds[i]});
+  const merged=mergeGolayLowMass(primary,candidate,options);
+  if(merged)return {...merged,lowMassFallbackUsed:true,fallbackPass:i+1,fallbackThreshold:thresholds[i]};
+ }
+ return primary;
+}
