@@ -73,3 +73,13 @@ export function observeBlackLineWithFallback(canvas,options){
  return second!==primary?{...second,fallbackPass:2,fallbackThreshold:.040}:primary;
 }
 export function readBlackLine(canvas,options){const observation=observeBlackLine(canvas,options);if(!observation||observation.conflict)return null;const word=decodeBlackBits(observation.bits,options);return word?{...word,...observation}:null;}
+
+// Conservative real-wall mode: merged/one-strip evidence alone is insufficient.
+export function decodeBlackObservation(observation,options={}){
+ if(!observation||observation.conflict)return null;
+ if(!options.requireStripAgreement)return decodeBlackBits(observation.bits,options);
+ const strict={...options,maxErrors:0,maxErasures:2};
+ const top=decodeBlackBits(observation.top,strict),bottom=decodeBlackBits(observation.bottom,strict);
+ if(!top||!bottom||top.id!==bottom.id)return null;
+ return {...top,errors:0,erasures:Math.max(top.erasures,bottom.erasures),independentStripAgreement:true};
+}

@@ -8,3 +8,9 @@ Low-resolution L grouping uses tolerant arm orientation (.65 dot product) with a
 Groups are ranked by arm alignment before area, with corner-extent scale guards, so text-shaped local loops cannot steal true paper corners.
 
 Experimental opt-in local white-reference calibration: `?whiteFallback=1`. Default OFF. Only a failed, non-conflicting primary code is independently reread using adjacent-paper channel gains. Successful primary IDs and primary observations remain unchanged. Supplemental reads are labeled 色補正 and counted as Calibrated, never held or temporal. Horizontal upper/lower strips only; sides=true disables this lane. Independent140 saved RAW holdout:1284→1287 correct /1400 opportunities, zero lost/new observed wrong;804 synthetic positive/blank/gray/corrupted/nonmember cases passed. This small offline gain is not a new optical live-camera validation.
+
+## Conservative printed-wall black reader
+
+`black-line-camera.html?wallStrict=1&cascade=1` is an opt-in conservative mode prompted by a real printed-wall take. Both upper/lower strips must independently decode the same ID with zero bit correction and at most two erasures each. Merged partial-only, one-strip-only and temporal reads cannot establish an ID in this mode. Geometry still displays for rejected IDs. This does not guarantee zero false IDs from correlated sampling errors.
+
+On 139 identical 1-Hz samples of Spatial Capture take20261010_072517, it rejected all three manually confirmed paper012→004 errors (t28/39/130s); total ID outputs fell76→36. The take mixes color-coded, black-coded, unmarked and monitor pages, so these are output counts, not overall recall/precision. No change to legacy default decoding. Independent-strip tests and existing regression suites pass. Source clips remain private and are not committed.
