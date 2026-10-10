@@ -32,7 +32,8 @@ export function drawBlackLineCard(canvas,index=0,{dual=true,lineHeight=8,lineLen
 // Exact-arithmetic reader: bounded scratch reuse, no pixel quantization.
 const readerScratchPool=[];
 function medianInPlace(a,n){const k=Math.floor(n/2);let lo=0,hi=n-1;while(lo<hi){const pivot=a[(lo+hi)>>1];let i=lo,j=hi;while(i<=j){while(a[i]<pivot)i++;while(a[j]>pivot)j--;if(i<=j){const temporary=a[i];a[i]=a[j];a[j]=temporary;i++;j--;}}if(k<=j)hi=j;else if(k>=i)lo=i;else break;}return a[k];}
-export function observeBlackLine(canvas,{useBottom=true,minOne=.055,maxZero=.025,orientationRatio=.5}={}){
+function measureBlackLine(canvas,{useBottom=true,orientationRatio=.5}={},shape=null){
+ const width=shape?.width??18,height=shape?.height??48;if(!Number.isInteger(width)||width<1||width>120||!Number.isInteger(height)||height<1||height>48)throw new RangeError('invalid internal sample dimensions');
  if(!Number.isFinite(orientationRatio)||orientationRatio<.3||orientationRatio>.85)throw new RangeError('orientationRatio must be finite and between .3 and .85');
  const c=canvas.getContext('2d'),scratch=readerScratchPool.pop()??{luma:new Float64Array(480*48),select:new Float64Array(430*48)},luma=scratch.luma,select=scratch.select;
  try{
@@ -44,18 +45,29 @@ export function observeBlackLine(canvas,{useBottom=true,minOne=.055,maxZero=.025
    const dark=(x0,x1)=>{for(let x=x0;x<=x1;x+=2)for(let y=49;y<=76;y+=2){let sum=0;for(let row=0;row<3;row++)for(let col=0;col<3;col++)sum+=luma[(y-42+row)*480+x-70+col];if(sum/9<white*orientationRatio)return true;}return false;};
    if(!dark(72,88)||!dark(528,542))return null;
    return Array.from({length:16},(_,i)=>{
-    const left=Math.round(130+i*348/15-9)-70;let count=0;
-    for(let row=0;row<48;row++)for(let col=0;col<18;col++)select[count++]=luma[row*480+left+col];
+    const left=Math.round(130+i*348/15-width/2)-70,start=Math.floor((48-height)/2);let count=0;
+    for(let row=start;row<start+height;row++)for(let col=0;col<width;col++)select[count++]=luma[row*480+left+col];
     const paper=medianInPlace(select,count);if(paper<25)return null;
     // Read original row-major luma, NOT the partitioned median scratch: floating
     // summation order exactly matches the old values.reduce operation.
-    let sum=0;for(let row=0;row<48;row++)for(let col=0;col<18;col++){const value=luma[row*480+left+col];sum+=Math.max(0,Math.min(1,(paper-value)/paper));}
-    const mass=sum/count;return mass>=minOne?1:mass<=maxZero?0:null;
+    let sum=0;for(let row=start;row<start+height;row++)for(let col=0;col<width;col++){const value=luma[row*480+left+col];sum+=Math.max(0,Math.min(1,(paper-value)/paper));}
+    return sum/count;
    });
   };
-  const top=inspect(0),bottom=useBottom?inspect(750):null;if(!top&&!bottom)return null;let conflict=false;const bits=Array.from({length:16},(_,i)=>{const a=top?.[i]??null,b=bottom?.[i]??null;if(a!==null&&b!==null&&a!==b){conflict=true;return null;}return a??b;});return {bits,top,bottom,conflict};
+  const top=inspect(0),bottom=useBottom?inspect(750):null;return top||bottom?{top,bottom}:null;
  }finally{if(readerScratchPool.length<2)readerScratchPool.push(scratch);}
 }
+function classifyBlackMasses(measured,{minOne=.055,maxZero=.025}={}){
+ if(!measured)return null;
+ const classify=values=>values?.map(mass=>mass===null?null:mass>=minOne?1:mass<=maxZero?0:null)??null;
+ const top=classify(measured.top),bottom=classify(measured.bottom);let conflict=false;
+ const bits=Array.from({length:16},(_,i)=>{const a=top?.[i]??null,b=bottom?.[i]??null;if(a!==null&&b!==null&&a!==b){conflict=true;return null;}return a??b;});return {bits,top,bottom,conflict};
+}
+function measureObservation(canvas,{useBottom=true,minOne=.055,maxZero=.025,orientationRatio=.5}={},reuse=null,shape=null){
+ const masses=reuse&&reuse.useBottom===useBottom&&reuse.orientationRatio===orientationRatio&&reuse.shape===shape?reuse.masses:measureBlackLine(canvas,{useBottom,orientationRatio},shape);
+ return {masses,useBottom,orientationRatio,shape,observation:classifyBlackMasses(masses,{minOne,maxZero})};
+}
+export function observeBlackLine(canvas,options={}){return measureObservation(canvas,options).observation;}
 // Opt-in same-crop recovery: retain primary evidence and never replace a valid ID.
 export function mergeLowMassFallback(primary,candidate,options){
  if(!primary||primary.conflict||decodeBlackBits(primary.bits,options))return primary;
@@ -64,15 +76,32 @@ export function mergeLowMassFallback(primary,candidate,options){
  return {...candidate,lowMassFallbackUsed:true};
 }
 export function observeBlackLineWithFallback(canvas,options){
- const primary=observeBlackLine(canvas,options);
+ const measured=measureObservation(canvas,options),primary=measured.observation;
  if(!primary||primary.conflict||decodeBlackBits(primary.bits,options))return primary;
- const first=mergeLowMassFallback(primary,observeBlackLine(canvas,{...options,minOne:.045}),options);
+ const first=mergeLowMassFallback(primary,measureObservation(canvas,{...options,minOne:.045},measured).observation,options);
  if(!options?.lowMassCascade)return first;
  if(first!==primary)return {...first,fallbackPass:1,fallbackThreshold:.045};
- const second=mergeLowMassFallback(primary,observeBlackLine(canvas,{...options,minOne:.040}),options);
+ const second=mergeLowMassFallback(primary,measureObservation(canvas,{...options,minOne:.040},measured).observation,options);
  return second!==primary?{...second,fallbackPass:2,fallbackThreshold:.040}:primary;
 }
 export function readBlackLine(canvas,options){const observation=observeBlackLine(canvas,options);if(!observation||observation.conflict)return null;const word=decodeBlackBits(observation.bits,options);return word?{...word,...observation}:null;}
+
+function observeROICascade(canvas,options){
+ const shape={width:18,height:32};
+ const measured=measureObservation(canvas,options,null,shape),primary=measured.observation;
+ if(!primary||primary.conflict||decodeBlackBits(primary.bits,options))return primary;
+ const first=mergeLowMassFallback(primary,measureObservation(canvas,{...options,minOne:.045},measured,shape).observation,options);
+ if(!options?.lowMassCascade)return first;
+ if(first!==primary)return {...first,fallbackPass:1,fallbackThreshold:.045};
+ const second=mergeLowMassFallback(primary,measureObservation(canvas,{...options,minOne:.040},measured,shape).observation,options);
+ return second!==primary?{...second,fallbackPass:2,fallbackThreshold:.040}:primary;
+}
+export function observeBlackLineWithROIFallback(canvas,options){
+ const primary=(options?.lowMassFallback||options?.lowMassCascade?observeBlackLineWithFallback:observeBlackLine)(canvas,options);
+ if(!options?.roiFallback||!primary||primary.conflict||decodeBlackBits(primary.bits,options))return primary;
+ const candidate=observeROICascade(canvas,options),merged=mergeLowMassFallback(primary,candidate,options);
+ return merged===primary?primary:{...merged,roiFallbackUsed:true,roiSampleWidth:18,roiSampleHeight:32};
+}
 
 // Conservative real-wall mode: merged/one-strip evidence alone is insufficient.
 export function decodeBlackObservation(observation,options={}){

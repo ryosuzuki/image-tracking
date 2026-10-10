@@ -45,7 +45,17 @@ Blank-code tests retain geometry but emit no ID; do not confuse detected paper c
 
 `whiteFallback=1` uses adjacent white-paper patches to independently reclassify color after a failed primary read; successful primary IDs and primary observations are preserved. Default OFF, horizontal upper/lower only, displayed as 色補正 and counted separately. Independent140 saved RAW holdout:1284→1287/1400correct, no lost primary or new observed wrong IDs.804 synthetic positive/blank/gray/corrupted/nonmember optical cases and1050 structural/ambiguity assertions passed. This is a small offline gain, not live deployment reliability evidence.
 
-## Recording interruption
+## Experimental black-region supplemental reading
+
+`roi=1` is default OFF. A fixed centered18×32 region supplements a failed original18×48 read/cascade; valid primary IDs and primary-known bits are unchanged, contradictory evidence rejects, and the existing codebook/error limits remain. The UI labels **領域補助**, and ROI counts are a subset of current-frame Fresh, not temporal or held. Independent-strip printed-wall mode remains enforced.
+
+The region was frozen on20 training images before holdout:100 positive heldout RAW images improved935→984/1000 IDs; four separate clips alone improved756→788/800.200 actual RAW including blank, deliberate damage and strict126 controls had no new observed wrong/lost-primary IDs or known-bit rewrites.1206 synthetic cases and200 RAW parser integration parity passed. This is an offline gain, **not new live optical evidence or printed-paper validation**. A saved-camera replay video compares the same20 article images174→198/200 at artificial1second/frame, explicitly labeled as replay.
+
+Final integrated60 RAW ×4-policy parity passed. The conservative independent-strip policy on these same20 article frames yields only11→14/200 IDs with ROI, not198/200; its false-read protection has a substantial recall cost. Blank/damage controls remain unchanged.43 scoped Node regression tests,5 actual-CV/mock-lifecycle UI checks and3411 default-reader boundary/API/reentrancy comparisons passed.
+
+An exact once-mass implementation preserves numeric pixel accumulation order and computes original immutable-crop mass only once across threshold retries.140 actual-CV RAW images matched original observations and decoded results. Desktop randomized timings were mixed and mostly lower; no Quest CPU speedup is claimed.
+
+## Recording interruption and recovery
 
 At approximately13:17 UTC the physical Quest USB/ADB bridge disappeared while the Mac and monitor browser remained reachable. Cycle169 includes a changed non-target scene and is excluded from algorithm comparisons and media delivery. USB later returned after a device reboot, with a Guardian tracking modal blocking browser access and no Browser DevTools socket. The experiment worker did not initiate that reboot or disable Guardian persistently. Remaining time continues offline regression/negative/holdout QA; stop/restore cleanup is scheduled for14:50 UTC and will report actual device access and restoration results.
 
