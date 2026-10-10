@@ -37,4 +37,16 @@ export function observeBlackLine(canvas,{useBottom=true,minOne=.055,maxZero=.025
  const inspect=base=>{const luma=cached(base),white=medianExact(luma(100,42+base,430,48));if(white<25)return null;const dark=(x0,x1)=>{for(let x=x0;x<=x1;x+=2)for(let y=49+base;y<=76+base;y+=2){const ink=luma(x,y,3,3);if(ink.reduce((a,b)=>a+b,0)/ink.length<white*orientationRatio)return true;}return false;};if(!dark(72,88)||!dark(528,542))return null;return Array.from({length:16},(_,i)=>{const values=luma(Math.round(130+i*348/15-9),42+base,18,48),paper=medianExact(values);if(paper<25)return null;const mass=values.reduce((s,v)=>s+Math.max(0,Math.min(1,(paper-v)/paper)),0)/values.length;return mass>=minOne?1:mass<=maxZero?0:null;});};
  const top=inspect(0),bottom=useBottom?inspect(750):null;if(!top&&!bottom)return null;let conflict=false;const bits=Array.from({length:16},(_,i)=>{const a=top?.[i]??null,b=bottom?.[i]??null;if(a!==null&&b!==null&&a!==b){conflict=true;return null;}return a??b;});return {bits,top,bottom,conflict};
 }
+// Opt-in same-crop recovery: retain primary evidence and never replace a valid ID.
+export function mergeLowMassFallback(primary,candidate,options){
+ if(!primary||primary.conflict||decodeBlackBits(primary.bits,options))return primary;
+ if(!candidate||candidate.conflict||primary.bits.some((v,i)=>v!==null&&candidate.bits[i]!==v))return primary;
+ if(candidate.bits.filter(v=>v!==null).length<=primary.bits.filter(v=>v!==null).length||!decodeBlackBits(candidate.bits,options))return primary;
+ return {...candidate,lowMassFallbackUsed:true};
+}
+export function observeBlackLineWithFallback(canvas,options){
+ const primary=observeBlackLine(canvas,options);
+ if(!primary||primary.conflict||decodeBlackBits(primary.bits,options))return primary;
+ return mergeLowMassFallback(primary,observeBlackLine(canvas,{...options,minOne:.045}),options);
+}
 export function readBlackLine(canvas,options){const observation=observeBlackLine(canvas,options);if(!observation||observation.conflict)return null;const word=decodeBlackBits(observation.bits,options);return word?{...word,...observation}:null;}
