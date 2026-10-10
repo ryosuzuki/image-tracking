@@ -5982,12 +5982,16 @@
       "sha256": "ada659b4ded9983a53e1fbe6a38e573cca16c894e76abfdd31d9726043e331bd"
     },
     {
+      "path": "markers/unity-quest-ios/DIM-LCD-REPAIR.md",
+      "sha256": "e024027f9843722c422f0cbc30779525cff1f476d57da4993838f8a05680ebf8"
+    },
+    {
       "path": "markers/unity-quest-ios/LICENSE",
       "sha256": "28537309aecf1d10931232c7b45c0b0a333552ef35ed699c978ed8434a67fe5b"
     },
     {
       "path": "markers/unity-quest-ios/Native/marker_core.cpp",
-      "sha256": "85e5cef3d77441f822625d2a04e127d77e50df8142f70e9e039ef70dee9ab6d3"
+      "sha256": "e53ad31b8f8a720e098be493ae4a0813c6553723216ac1bc53753398cc9bb2ed"
     },
     {
       "path": "markers/unity-quest-ios/Native/marker_driver.cpp",
@@ -6115,7 +6119,7 @@
     },
     {
       "path": "markers/unity-quest-ios/README.md",
-      "sha256": "0f6ccdd76acfd7dfd6d0f4fb39b9d732d233fe543f577acd7719254589c4cf3a"
+      "sha256": "f0102b14ffb6edb0f25e08d3399946936030052a0586a8a4ea51801752e4110d"
     },
     {
       "path": "markers/unity-quest-ios/SOURCE-LICENSE.md",
@@ -6180,6 +6184,10 @@
     {
       "path": "markers/unity-quest-ios/Tools/sync-marker-ios.sh",
       "sha256": "7f484755b125a7f8035213b72bfc930177b4a9c32c31672b095c2761da3716ca"
+    },
+    {
+      "path": "markers/unity-quest-ios/Tools/test-dim-lcd-classifier.py",
+      "sha256": "aa734d4fbcb70065ce97bf04c6951e93d4cdcf51ae924bfd482d93ebf92b06b9"
     },
     {
       "path": "markers/unity-quest-ios/Tools/validate-paper-learning.py",

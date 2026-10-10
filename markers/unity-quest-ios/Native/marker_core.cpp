@@ -17,7 +17,9 @@ static std::vector<Blob> blobs(const cv::Mat& rgba){
 }
 // Quest dim-LCD preset calibrated from actual Camera2 exposures. Mode2 only;
 // original mode1 classifier stays unchanged for other captures/devices.
-static int classifyDimLCD(int r,int g,int b){int hi=std::max(r,std::max(g,b)),lo=std::min(r,std::min(g,b));if(hi>=40&&hi-lo>=hi*.06){if(r>g*1.20&&r>b*1.16)return 0;if(g>r*1.035&&g>b*1.015&&hi<130)return 1;if(b>r*1.15&&b>g*1.09)return 2;}if(hi>=55&&hi<=120&&g+3>=r&&g+3>=b)return 1;if(hi<55)return 3;return -1;}
+// Near-black camera noise has unreliable hue. Resolve the existing black threshold
+// before weak chroma ratios, otherwise black code dots flicker blue/green.
+static int classifyDimLCD(int r,int g,int b){int hi=std::max(r,std::max(g,b)),lo=std::min(r,std::min(g,b));if(hi<55)return 3;if(hi>=40&&hi-lo>=hi*.06){if(r>g*1.20&&r>b*1.16)return 0;if(g>r*1.035&&g>b*1.015&&hi<130)return 1;if(b>r*1.15&&b>g*1.09)return 2;}if(hi>=55&&hi<=120&&g+3>=r&&g+3>=b)return 1;if(hi<55)return 3;return -1;}
 static std::vector<Blob> blobsDimLCD(const cv::Mat& rgba){
  // Detect complete silhouettes first; classifying individual dark pixels fragmented
  // real LCD dots under Quest camera white balance and lost their measured centers.

@@ -42,3 +42,5 @@ APK11 uses the native package `org.openclaw.markertrackinglab` and keeps its exi
 - 3D materials: `Resources.Load<Shader>("MarkerQuestSurface")` keeps the shader in the player. The shader uses URP transforms and single-pass stereo macros; missing or unsupported shaders fail explicitly.
 - Real authored meshes: solar spheres/orbit/rotating cube, hinged cube net, function tube, inclined plane, pendulum, circuit, vectors and probability bars. Y changes application; stick click changes its action. They are not automatic semantic recognition of the worksheet diagram.
 - Tracking validity, freshness, focus/pause and origin-change gates remain enabled. A screen recording is not a calibrated sensor/pose capture.
+
+The subsequent native black-dot classifier repair and recorded-input replay are documented in [DIM-LCD-REPAIR.md](DIM-LCD-REPAIR.md). Build/install verification is separate from live stereo acceptance.
