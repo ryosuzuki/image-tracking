@@ -55,9 +55,50 @@ Final integrated60 RAW ×4-policy parity passed. The conservative independent-st
 
 An exact once-mass implementation preserves numeric pixel accumulation order and computes original immutable-crop mass only once across threshold retries.140 actual-CV RAW images matched original observations and decoded results. Desktop randomized timings were mixed and mostly lower; no Quest CPU speedup is claimed.
 
-## Recording interruption and recovery
+## Private independent-strip tradeoff experiment
 
-At approximately13:17 UTC the physical Quest USB/ADB bridge disappeared while the Mac and monitor browser remained reachable. Cycle169 includes a changed non-target scene and is excluded from algorithm comparisons and media delivery. USB later returned after a device reboot, with a Guardian tracking modal blocking browser access and no Browser DevTools socket. The experiment worker did not initiate that reboot or disable Guardian persistently. Remaining time continues offline regression/negative/holdout QA; stop/restore cleanup is scheduled for14:50 UTC and will report actual device access and restoration results.
+The published independent-strip guard remains at at most2 erasures per strip. A descriptive replay of the same120 positive monitor RAW images (including20 training images, not a new independent/live trial) compared exact upper/lower same-ID decoding with larger erasure limits:
+
+| Erasures allowed per strip | Primary correct /1200 | Fixed-region supplemental correct /1200 |
+|---:|---:|---:|
+| 2 | 142 | 152 |
+| 3 | 312 | 326 |
+| 4 | 554 | 577 |
+| 5 | 825 | 867 |
+| 6 | 984 | 1040 |
+| 7 | 1052 | 1109 |
+
+All200 saved RAW including controls had no observed new wrong/unassigned/duplicate IDs; all3 existing wall false004 fixtures rejected. But a deliberate correlated **one wrong known bit +7 erasures on both strips** maps true001→002 under limit7. Limit4 instead requires at least4 wrong known bits plus4 erasures for this constructed false decode. With a true distance8 codeword, exact decoding cannot produce another ID when actual known substitutions + erasures <8. This does not protect arbitrary background patterns or establish camera-error distributions. No actual wall RAW holdout was available for this study, so the looser policy was **not published or promoted**.
+
+## Recording interruption and recovery status
+
+At approximately13:17 UTC the physical Quest USB/ADB bridge disappeared while the Mac and monitor browser remained reachable. Cycle169 includes a changed non-target scene and is excluded from algorithm comparisons and media delivery. USB later returned after a device reboot, with a Guardian tracking modal blocking browser access and no Browser DevTools socket. The experiment worker did not initiate that reboot or disable Guardian persistently. Browser/camera access returned at14:31 UTC; final live paired and control trials followed. Stop/restore cleanup is scheduled for14:50 UTC and will report actual restoration results.
+
+## Post-reboot live ROI paired test
+
+Quest browser/camera access recovered at14:31 UTC. The current view is a different perspective after device reboot, not a comparable continuation of the best overnight view. Target content,4px×22px marks,30-ID book and display size were held fixed within the OFF/ON/ON/OFF sequence. Each phase uses20 distinct RAW images with advancing acquisition times and a continuous10fps overlay video; the detector cadence is variable. Correctness uses physically ordered fixed optical slots confirmed against the reference image.
+
+| ROI setting | Correct IDs /200 | All ten /20 | Correct ROI-assisted IDs | Geometry ten /20 |
+|---|---:|---:|---:|---:|
+| roi-live-a1 | 173 | 2 | 0 | 17 |
+| roi-live-b1 | 188 | 9 | 9 | 20 |
+| roi-live-b2 | 187 | 10 | 7 | 18 |
+| roi-live-a2 | 179 | 4 | 0 | 19 |
+
+OFF totaled352/400 vs ON375/400. No wrong/unassigned IDs were observed in the80 sampled images; this is not a guarantee for unsampled frames or arbitrary scenes. All fresh counts exclude temporal/held display (both zero). ROI remains opt-in, and the stricter independent-strip wall guard remains unchanged. This short ABBA experiment does not establish statistical significance or printed-paper robustness. Median detector processing was465/438ms in the two OFF phases and478/473ms in the ON phases; these are descriptive per-phase values, not an isolated CPU benchmark.
+
+## Final post-reboot capacity and negative controls
+
+Same fixed-size4px×22px marks with ROI opt-in:
+
+| Trial | Correct IDs | All ten | Geometry ten |
+|---|---:|---:|---:|
+| roi-live-offset10 | 97/100 | 7/10 | 10/10 |
+| roi-live-offset20 | 98/100 | 8/10 | 9/10 |
+| roi-live-blank (negative control) | 0 outputs | no expected IDs | 0/10 |
+| roi-live-motion | 90/100 | 4/10 | 6/10 |
+
+Blank trial has no expected IDs: zero outputs is a negative-control result, not0%accuracy. All30 IDs were observed in new optical cohorts; this does not guarantee every layout. The motion is monitor target translation±20px and±1.5°rotation, not head movement. Wrong/unassigned lists and original RAW images are retained; no observed sampled false ID is not a guarantee for unsampled frames.
 
 ## Reproducibility
 
@@ -71,4 +112,4 @@ No private camera scenes, Slack content, credentials or raw session transcripts 
 
 ## Integration record
 
-Terminal integration target: origin/main. Completion owner: ten_hour_id_improvement native worker (parent owns user delivery). Source default behavior preserved; calibration feature is explicit opt-in. Validated integrated source:84 scoped Node tests (32 color/49 black-Golay/3 calibration), integrated actual-CV and mock camera UI checks,140×2 saved-RAW calibration parity,350 saved-RAW Golay fallback holdout. Existing unrelated untracked hex64 and geometry-display-smoother files remain untouched. Final camera/proximity cleanup remains pending; a deadline cleanup receipt will record actual result. This is an interim source checkpoint, not closure of the authorized ten-hour work.
+Terminal integration target: origin/main. Completion owner: ten_hour_id_improvement native worker (parent owns user delivery). Source default behavior preserved; calibration feature is explicit opt-in. Earlier integrated checkpoints passed84 scoped Node tests (32 color/49 black-Golay/3 calibration), actual-CV and mock camera UI checks,140×2 saved-RAW calibration parity and350 saved-RAW Golay fallback holdout. Source9b7c65a then passed43 scoped black/codebook/temporal/ROI/wall tests plus5 actual-CV/mock-lifecycle checks,3411 arithmetic/API parity comparisons,60RAW×4-policy integrated parity and1206 synthetic ROI comparisons. Eleven raw source paths and ten Pages paths matched published bytes; the actual public reader loaded OpenCV with the ROI API. Existing unrelated untracked hex64 and geometry-display-smoother files remain untouched. Final camera/proximity cleanup remains pending; a deadline cleanup receipt will record actual result. This is an interim source checkpoint, not closure of the authorized ten-hour work.
