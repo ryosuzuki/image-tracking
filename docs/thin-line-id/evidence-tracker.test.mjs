@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {EvidenceTracker} from './evidence-tracker.mjs?v=iter-20261010-c';
-import {CODEBOOK} from './color-code.mjs?v=iter-20261010-c';
+import {EvidenceTracker} from './evidence-tracker.mjs?v=iter-20261010-d';
+import {CODEBOOK,setCodebook} from './color-code.mjs?v=iter-20261010-d';
+setCodebook('balanced');
 const q=(x=0,size=100)=>[[x,0],[x+size,0],[x+size,140],[x,140]];
 const obs=(item,indices,x=0)=>({q:q(x),symbols:item.symbols.map((v,i)=>indices.includes(i)?v:null),conflict:false});
 const a=CODEBOOK[0],b=CODEBOOK.find(c=>c.symbols[0]!==a.symbols[0]);
@@ -50,7 +51,7 @@ test('backwards time, explicit ID change and duplicate detections reset associat
 });
 
 test('eight-slot temporal fusion, color conflict and book switching are bounded',async()=>{
- const {setCodebook}=await import('./color-code.mjs?v=iter-20261010-c');
+ const {setCodebook}=await import('./color-code.mjs?v=iter-20261010-d');
  setCodebook('eight');const item=CODEBOOK[0],t=new EvidenceTracker();
  assert.equal(t.update([obs(item,[0,1,2,3])],0)[0].temporalId,null);
  assert.equal(t.update([obs(item,[4,5,6,7])],100)[0].temporalId,item.id);
@@ -60,4 +61,10 @@ test('eight-slot temporal fusion, color conflict and book switching are bounded'
  assert.equal(t.update([obs(item,[4,5,6,7])],50)[0].temporalId,null);
  setCodebook('original');assert.equal(t.update([obs(CODEBOOK[0],[3,4,5,6])],100)[0].temporalId,null);
  setCodebook('eight');assert.equal(t.update([obs(item,[4,5,6,7])],200)[0].temporalId,null);setCodebook();
+});
+
+test('weak current colors cannot keep an old ID after an indistinguishable partial swap',async()=>{
+ const {setCodebook}=await import('./color-code.mjs?v=iter-20261010-d');
+ for(const kind of ['original','balanced','eight']){setCodebook(kind);const first=CODEBOOK[0],second=CODEBOOK.find(c=>c.id!==first.id),common=second.symbols.flatMap((v,i)=>v===first.symbols[i]?[i]:[]),t=new EvidenceTracker();t.update([obs(first,first.symbols.map((_,i)=>i))],0);assert.equal(t.update([obs(second,common)],100)[0].temporalId,null,kind);}
+ setCodebook();
 });

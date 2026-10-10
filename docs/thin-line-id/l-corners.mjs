@@ -22,15 +22,47 @@ export function groupCorners(candidates){
  // Prefer local sheets over large cross-sheet combinations. A corner belongs to one sheet.
  found.sort((a,b)=>b.score-a.score||a.area-b.area);const used=new Set(),out=[];for(const f of found)if(f.ids.every(i=>!used.has(i))){f.ids.forEach(i=>used.add(i));out.push(f.q)}return out;
 }
-export function detectLCandidates(gray){
- const mask=new cv.Mat(),cs=new cv.MatVector(),hier=new cv.Mat();cv.threshold(gray,mask,0,255,cv.THRESH_BINARY_INV|cv.THRESH_OTSU);cv.findContours(mask,cs,hier,cv.RETR_LIST,cv.CHAIN_APPROX_SIMPLE);const candidates=[];
- for(let i=0;i<cs.size();i++){const contour=cs.get(i),area=cv.contourArea(contour);if(area<15||area>gray.rows*gray.cols*.025){contour.delete();continue}const hull=new cv.Mat(),poly=new cv.Mat();cv.convexHull(contour,hull);const solidity=area/cv.contourArea(hull);const perimeter=cv.arcLength(contour,true);
- // Preserve thin arms: a perimeter-only epsilon can erase the inner notch.
- const epsilon=solidity>=.25 ? .025*perimeter : Math.min(.025*perimeter,Math.max(1.2,area/perimeter*.65));
- cv.approxPolyDP(contour,poly,epsilon,true);
- if(poly.rows>=5&&poly.rows<=9&&solidity>.07&&solidity<.92){const p=Array.from({length:poly.rows},(_,j)=>[poly.data32S[2*j],poly.data32S[2*j+1]]),signed=p.reduce((s,v,j)=>s+v[0]*p[(j+1)%p.length][1]-v[1]*p[(j+1)%p.length][0],0);let best=null,bc=-4;
- for(let j=0;j<p.length;j++){const a=p[(j+p.length-1)%p.length],b=p[j],d=p[(j+1)%p.length],cr=((b[0]-a[0])*(d[1]-b[1])-(b[1]-a[1])*(d[0]-b[0]))*Math.sign(signed);if(cr<bc){bc=cr;best={point:b,arms:[unit(a.map((v,n)=>v-b[n])),unit(d.map((v,n)=>v-b[n]))],extent:Math.sqrt(area)}}}if(best)candidates.push(best)}hull.delete();poly.delete();contour.delete();}
- mask.delete();cs.delete();hier.delete();return candidates;
+export function detectLCandidates(gray,{block=0,bias=2}={}){
+ const allocated=[],own=mat=>{allocated.push(mat);return mat};
+ try{
+ const mask=own(new cv.Mat()),cs=own(new cv.MatVector()),hier=own(new cv.Mat());
+ if(block)cv.adaptiveThreshold(gray,mask,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,cv.THRESH_BINARY_INV,block,bias);
+ else cv.threshold(gray,mask,0,255,cv.THRESH_BINARY_INV|cv.THRESH_OTSU);
+ cv.findContours(mask,cs,hier,cv.RETR_LIST,cv.CHAIN_APPROX_SIMPLE);const candidates=[];
+ for(let i=0;i<cs.size();i++){
+  const local=[],keep=mat=>{local.push(mat);return mat};
+  try{
+   const contour=keep(cs.get(i)),area=cv.contourArea(contour);if(area<15||area>gray.rows*gray.cols*.025)continue;
+   const hull=keep(new cv.Mat()),poly=keep(new cv.Mat());cv.convexHull(contour,hull);const solidity=area/cv.contourArea(hull),perimeter=cv.arcLength(contour,true);
+   // Preserve thin arms: a perimeter-only epsilon can erase the inner notch.
+   const epsilon=solidity>=.25 ? .025*perimeter : Math.min(.025*perimeter,Math.max(1.2,area/perimeter*.65));
+   cv.approxPolyDP(contour,poly,epsilon,true);
+   if(poly.rows>=5&&poly.rows<=9&&solidity>.07&&solidity<.92){const p=Array.from({length:poly.rows},(_,j)=>[poly.data32S[2*j],poly.data32S[2*j+1]]),signed=p.reduce((s,v,j)=>s+v[0]*p[(j+1)%p.length][1]-v[1]*p[(j+1)%p.length][0],0);let best=null,bc=-4;
+    for(let j=0;j<p.length;j++){const a=p[(j+p.length-1)%p.length],b=p[j],d=p[(j+1)%p.length],cr=((b[0]-a[0])*(d[1]-b[1])-(b[1]-a[1])*(d[0]-b[0]))*Math.sign(signed);if(cr<bc){bc=cr;best={point:b,arms:[unit(a.map((v,n)=>v-b[n])),unit(d.map((v,n)=>v-b[n]))],extent:Math.sqrt(area)}}}if(best)candidates.push(best);
+   }
+  }finally{for(const mat of local.reverse())mat.delete();}
+ }
+ return candidates;
+ }finally{for(const mat of allocated.reverse())mat.delete();}
 }
 
 export function detectLCorners(gray){return groupCorners(detectLCandidates(gray));}
+
+// Opt-in only. Never mix threshold candidates before grouping: that can invent
+// cross-paper rectangles. Require the same four corners in >=2 distinct passes.
+export function detectLCornersConsensus(gray){
+ const passes=[{block:0},{block:11,bias:2},{block:21,bias:2}];
+ return consensusCorners(passes.map(options=>groupCorners(detectLCandidates(gray,options))));
+}
+export function consensusCorners(groupsByPass,{tolerance=6}={}){
+ if(!Number.isFinite(tolerance)||tolerance<=0||tolerance>6)throw new RangeError('tolerance must be in (0,6]');
+ const distance=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
+ const valid=q=>Array.isArray(q)&&q.length===4&&q.every(p=>Array.isArray(p)&&p.length===2&&p.every(Number.isFinite))&&new Set(q.map(p=>p.join(','))).size===4;
+ const matches=(a,b)=>{const mapped=a.map(p=>b.map((r,i)=>({i,d:distance(p,r)})).sort((x,y)=>x.d-y.d)[0]);return mapped.every(m=>m.d<=tolerance)&&new Set(mapped.map(m=>m.i)).size===4;};
+ const clusters=[];
+ groupsByPass.forEach((groups,pass)=>{for(const q of groups){if(!valid(q))continue;const cluster=clusters.find(c=>matches(q,c.q));if(cluster)cluster.votes.add(pass);else clusters.push({q:q.map(p=>p.slice()),votes:new Set([pass])});}});
+ const area=q=>Math.abs(q.reduce((sum,p,i)=>sum+p[0]*q[(i+1)%4][1]-p[1]*q[(i+1)%4][0],0))/2;
+ const confirmed=clusters.filter(c=>c.votes.size>=2).sort((a,b)=>b.votes.size-a.votes.size||area(a.q)-area(b.q));
+ const accepted=[];for(const c of confirmed)if(!accepted.some(q=>c.q.some(p=>q.some(r=>distance(p,r)<=tolerance))))accepted.push(c.q);
+ return accepted;
+}

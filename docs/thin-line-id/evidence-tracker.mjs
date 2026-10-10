@@ -1,4 +1,4 @@
-import { CODEBOOK, CODEBOOK_REVISION, decodeObserved } from './color-code.mjs?v=iter-20261010-c';
+import { CODEBOOK, CODEBOOK_REVISION, decodeObserved } from './color-code.mjs?v=iter-20261010-d';
 
 // Inputs must be fresh detector observations, never held/display tracks. Geometry
 // alone cannot prove identity: blank frames and contradictory colors break history.
@@ -13,6 +13,8 @@ export class EvidenceTracker {
  update(observations,now,{sceneChanged=false}={}){
   if(!Number.isFinite(now))throw new TypeError('now must be finite milliseconds');
   if(sceneChanged||now<this.lastTime||this.book!==CODEBOOK_REVISION)this.reset();this.lastTime=now;
+  const count=CODEBOOK[0].symbols.length;// Current evidence must distinguish this dictionary even after a position swap.
+  let minimumDistance=count;for(let i=0;i<CODEBOOK.length;i++)for(let j=i+1;j<CODEBOOK.length;j++){let d=0;for(let k=0;k<count;k++)d+=CODEBOOK[i].symbols[k]!==CODEBOOK[j].symbols[k];minimumDistance=Math.min(minimumDistance,d);}const minimumCurrent=count-minimumDistance+1;
   const prior=this.tracks.filter(t=>now-t.last<=this.windowMs);
   const shapes=observations.map(o=>shape(o.q));
   const candidates=shapes.map(s=>s?prior.filter(t=>associated(s,t.shape,this)):[]);
@@ -32,7 +34,7 @@ export class EvidenceTracker {
    const id=matches.length===1&&decoded?.id===matches[0].id?decoded.id:null;
    // A supplied detector ID is a consistency check, not extra color evidence.
    if(o.id&&id&&o.id!==id)return output;
-   next.push({shape:s,last:now,samples,id});output.temporalId=id;return output;
+   next.push({shape:s,last:now,samples,id});output.temporalId=o.symbols.filter(x=>x!==null).length>=minimumCurrent?id:null;return output;
   });
   // No held geometry or colors survive a frame without a fresh observation.
   this.tracks=next;return result;

@@ -1,7 +1,7 @@
-import {setCodebook} from './color-code.mjs?v=iter-20261010-c';
-import {EvidenceTracker} from './evidence-tracker.mjs?v=iter-20261010-c';
-import {OverlayTracker} from './tracker.mjs?v=iter-20261010-c';
-import {recognize,inspect} from './color-detector.mjs?v=iter-20261010-c';
+import {setCodebook} from './color-code.mjs?v=iter-20261010-d';
+import {EvidenceTracker} from './evidence-tracker.mjs?v=iter-20261010-d';
+import {OverlayTracker} from './tracker.mjs?v=iter-20261010-d';
+import {recognize,inspect} from './color-detector.mjs?v=iter-20261010-d';
 const query=new URLSearchParams(location.search);setCodebook(query.get('book'));if(query.get('book')==='eight')document.querySelector('h1+p').textContent='四隅L字→台形補正→8本の色線。登録辞書30 ID、最大3本の欠落のみ復元。観測色は変更しません。';document.querySelector('a[href="color-targets.html"]').href='color-targets.html?'+query.toString();
 const $=s=>document.querySelector(s),video=$('#video'),view=$('#view'),raw=document.createElement('canvas');let running=false,stream,last=0;const evidence=new EvidenceTracker({windowMs:2500}),tracker=new OverlayTracker(),small=document.createElement('canvas');small.width=32;small.height=18;let previous=null;
 function stop(){evidence.reset();tracker.reset();previous=null;running=false;stream?.getTracks().forEach(t=>t.stop());stream=null;video.srcObject=null;if(view.width&&raw.width)view.getContext('2d').drawImage(raw,0,0);if(window.colorCamera)window.colorCamera.last={time:video.currentTime,geometry:[],matches:[],tracks:[]};$('#status').textContent='Camera stopped';}
