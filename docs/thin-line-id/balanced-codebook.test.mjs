@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {BALANCED_CODEBOOK as book} from './balanced-codebook.mjs?v=iter-20261010-e';
+import {BALANCED_CODEBOOK as book} from './balanced-codebook.mjs?v=iter-20261010-f';
 const matches=symbols=>book.filter(c=>symbols.every((x,i)=>x===null||x===c.symbols[i]));
 const distance=(a,b)=>a.reduce((s,x,i)=>s+(x!==b[i]),0);
 const masks=[[],...Array.from({length:7},(_,i)=>[i]),...Array.from({length:7},(_,i)=>Array.from({length:6-i},(_,j)=>[i,i+j+1])).flat()];

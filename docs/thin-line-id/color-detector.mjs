@@ -1,7 +1,9 @@
-import {detectLCorners,detectLCornersConsensus} from './l-corners.mjs?v=iter-20261010-e';
-import {observeRectified,decodeObserved,READER_OPTIONS} from './color-code.mjs?v=iter-20261010-e';
+import {selectCubicFallbackCandidates,mergeCubicFallback,readCubicFallback} from './cubic-fallback.mjs?v=iter-20261010-f';
+import {detectLCorners,detectLCornersConsensus} from './l-corners.mjs?v=iter-20261010-f';
+import {observeRectified,decodeObserved,READER_OPTIONS} from './color-code.mjs?v=iter-20261010-f';
 // Allocate transform copies: Embind Mat.clone() aliases the same native Mat.
 export const GEOMETRY_OPTIONS={strips:true,consensus:false};
+let fallbackFrame=0;
 export function inspect(canvas){
  const started=performance.now(),src=cv.imread(canvas),gray=new cv.Mat(),matches=[],geometry=[],observations=[];
  try{cv.cvtColor(src,gray,cv.COLOR_RGBA2GRAY);
@@ -19,7 +21,23 @@ export function inspect(canvas){
    if(observation)observations.push({...g,...observation});
    if(item)matches.push({...item,...observation,q,erasures:observation.symbols.filter(x=>x===null).length});
   }
-  return {matches,geometry,observations,processingMs:performance.now()-started};
+  let fallbackMetrics={};
+  if(READER_OPTIONS.useCubicFallback){
+   let fallbackAttempt=0,fallbackUsed=0,fallbackErrors=0;
+   for(const observation of observations)Object.assign(observation,{fallbackAttempt:false,fallbackUsed:false});
+   for(const match of matches)Object.assign(match,{fallbackAttempt:false,fallbackUsed:false});
+   for(const observation of selectCubicFallbackCandidates(observations,fallbackFrame++)){
+    observation.fallbackAttempt=true;fallbackAttempt++;
+    let cubic;try{cubic=readCubicFallback(src,observation.q);}catch{fallbackErrors++;continue;}
+    const merged=mergeCubicFallback(observation,cubic);if(!merged)continue;
+    Object.assign(observation,merged);fallbackUsed++;
+    const g=geometry.find(g=>g.q===observation.q);if(g)g.id=observation.id;
+    const item=decodeObserved(observation.symbols);
+    matches.push({...item,...observation,erasures:observation.symbols.filter(x=>x===null).length});
+   }
+   fallbackMetrics={fallbackAttempt,fallbackUsed,fallbackErrors};
+  }
+  return {matches,geometry,observations,...fallbackMetrics,processingMs:performance.now()-started};
  }finally{src.delete();gray.delete();}
 }
 export function recognize(canvas){return inspect(canvas).matches;}

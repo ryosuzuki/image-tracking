@@ -1,4 +1,4 @@
-import { CODEBOOK, CODEBOOK_REVISION, decodeObserved } from './color-code.mjs?v=iter-20261010-e';
+import { CODEBOOK, CODEBOOK_REVISION, decodeObserved } from './color-code.mjs?v=iter-20261010-f';
 
 // Inputs must be fresh detector observations, never held/display tracks. Geometry
 // alone cannot prove identity: blank frames and contradictory colors break history.

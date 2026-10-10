@@ -1,27 +1,32 @@
 // Uncoded four-bracket geometry. No white-paper segmentation or identity claims.
 const unit=v=>{const n=Math.hypot(...v);return v.map(x=>x/n)};
 const alignment=(a,b)=>a[0]*b[0]+a[1]*b[1];
+// Cache pair distances and arm alignments once; geometric acceptance is unchanged.
 export function groupCorners(candidates){
- const c=[...candidates].sort((a,b)=>b.extent-a.extent).slice(0,80),found=[],seen=new Set();
- const accepts=(i,j,arm)=>{const d=[c[j].point[0]-c[i].point[0],c[j].point[1]-c[i].point[1]];return c[j].extent/c[i].extent>.45&&c[j].extent/c[i].extent<2.3&&Math.hypot(...d)>c[i].extent*1.4&&alignment(unit(d),c[i].arms[arm])>.65};
- for(let i=0;i<c.length;i++){
-  const neighbors=[0,1].map(arm=>c.map((_,j)=>j).filter(j=>j!==i&&accepts(i,j,arm)).sort((a,b)=>Math.hypot(...c[a].point.map((v,k)=>v-c[i].point[k]))-Math.hypot(...c[b].point.map((v,k)=>v-c[i].point[k]))).slice(0,5));
-  for(const j of neighbors[0])for(const l of neighbors[1])for(let k=0;k<c.length;k++){
-   const ids=[i,j,k,l];if(new Set(ids).size!==4)continue;
-   const key=[...ids].sort((a,b)=>a-b).join(',');if(seen.has(key))continue;
+ const c=[...candidates].sort((a,b)=>b.extent-a.extent).slice(0,80),n=c.length,found=[],seen=new Set();
+ const distance=Array.from({length:n},()=>Array(n)),dirs=Array.from({length:n},()=>Array(n)),align=Array.from({length:n},()=>[Array(n),Array(n)]);
+ for(let i=0;i<n;i++)for(let j=0;j<n;j++)if(i!==j){const dx=c[j].point[0]-c[i].point[0],dy=c[j].point[1]-c[i].point[1],len=Math.hypot(dx,dy);distance[i][j]=len;dirs[i][j]=[dx/len,dy/len];for(let a=0;a<2;a++)align[i][a][j]=dirs[i][j][0]*c[i].arms[a][0]+dirs[i][j][1]*c[i].arms[a][1];}
+ const accepts=(i,j,a)=>c[j].extent/c[i].extent>.45&&c[j].extent/c[i].extent<2.3&&distance[i][j]>c[i].extent*1.4&&align[i][a][j]>.65;
+ const fit=(i,j,k)=>Math.max(Math.min(align[i][0][j],align[i][1][k]),Math.min(align[i][1][j],align[i][0][k]));
+ for(let i=0;i<n;i++){
+  const neighbors=[0,1].map(a=>c.map((_,j)=>j).filter(j=>j!==i&&accepts(i,j,a)).sort((a,b)=>distance[i][a]-distance[i][b]).slice(0,5));
+  for(const j of neighbors[0])for(const l of neighbors[1])for(let k=0;k<n;k++){
+   const ids=[i,j,k,l];if(new Set(ids).size!==4)continue;const key=[...ids].sort((a,b)=>a-b).join(',');if(seen.has(key))continue;
    let score=0,valid=true;
-   for(let z=0;z<4;z++){const here=c[ids[z]],prev=c[ids[(z+3)%4]],next=c[ids[(z+1)%4]],a=unit(prev.point.map((v,n)=>v-here.point[n])),b=unit(next.point.map((v,n)=>v-here.point[n]));const fit=Math.max(Math.min(alignment(a,here.arms[0]),alignment(b,here.arms[1])),Math.min(alignment(a,here.arms[1]),alignment(b,here.arms[0])));if(fit<.65||here.extent/prev.extent>2.3||here.extent/prev.extent<.45){valid=false;break}score+=fit}
-   if(!valid)continue;const q=ids.map(id=>c[id].point);const sides=q.map((p,z)=>Math.hypot(p[0]-q[(z+1)%4][0],p[1]-q[(z+1)%4][1]));if(Math.max(sides[0]/sides[2],sides[2]/sides[0],sides[1]/sides[3],sides[3]/sides[1])>1.25)continue;const scale=Math.min(...sides)/(ids.reduce((n,i)=>n+c[i].extent,0)/4);if(scale<9||scale>35)continue;const aspect=(sides[0]+sides[2])/(sides[1]+sides[3]);if(!((aspect>.48&&aspect<.92)||(aspect>1/.92&&aspect<1/.48)))continue;const crosses=q.map((p,z)=>{const a=q[(z+1)%4],b=q[(z+2)%4];return (a[0]-p[0])*(b[1]-a[1])-(a[1]-p[1])*(b[0]-a[0])});if(!(crosses.every(x=>x>0)||crosses.every(x=>x<0)))continue;
+   for(let z=0;z<4;z++){const here=ids[z],prev=ids[(z+3)%4],next=ids[(z+1)%4],f=fit(here,prev,next);if(f<.65||c[here].extent/c[prev].extent>2.3||c[here].extent/c[prev].extent<.45){valid=false;break;}score+=f;}
+   if(!valid)continue;const q=ids.map(id=>c[id].point),sides=ids.map((id,z)=>distance[id][ids[(z+1)%4]]);
+   if(Math.max(sides[0]/sides[2],sides[2]/sides[0],sides[1]/sides[3],sides[3]/sides[1])>1.25)continue;
+   const scale=Math.min(...sides)/(ids.reduce((s,id)=>s+c[id].extent,0)/4);if(scale<9||scale>35)continue;
+   const aspect=(sides[0]+sides[2])/(sides[1]+sides[3]);if(!((aspect>.48&&aspect<.92)||(aspect>1/.92&&aspect<1/.48)))continue;
+   const crosses=q.map((p,z)=>{const a=q[(z+1)%4],b=q[(z+2)%4];return(a[0]-p[0])*(b[1]-a[1])-(a[1]-p[1])*(b[0]-a[0]);});if(!(crosses.every(x=>x>0)||crosses.every(x=>x<0)))continue;
    const area=Math.abs(q.reduce((s,p,z)=>s+p[0]*q[(z+1)%4][1]-p[1]*q[(z+1)%4][0],0))/2;if(area<700)continue;
-   // An intermediate L on a rectangle edge indicates a cross-sheet grouping.
-   const crossesSheet=c.some((candidate,index)=>!ids.includes(index)&&q.some((a,z)=>{const b=q[(z+1)%4],dx=b[0]-a[0],dy=b[1]-a[1],length=Math.hypot(dx,dy),px=candidate.point[0]-a[0],py=candidate.point[1]-a[1],t=(px*dx+py*dy)/(length*length);return t>.12&&t<.88&&Math.abs(px*dy-py*dx)/length<Math.min(candidate.extent*1.5,length*.04)}));
-   if(crossesSheet)continue;
+   const crossesSheet=c.some((candidate,index)=>!ids.includes(index)&&q.some((a,z)=>{const b=q[(z+1)%4],dx=b[0]-a[0],dy=b[1]-a[1],length=Math.hypot(dx,dy),px=candidate.point[0]-a[0],py=candidate.point[1]-a[1],t=(px*dx+py*dy)/(length*length);return t>.12&&t<.88&&Math.abs(px*dy-py*dx)/length<Math.min(candidate.extent*1.5,length*.04);}));if(crossesSheet)continue;
    seen.add(key);found.push({ids,q,area,score});
   }
  }
- // Prefer local sheets over large cross-sheet combinations. A corner belongs to one sheet.
- found.sort((a,b)=>b.score-a.score||a.area-b.area);const used=new Set(),out=[];for(const f of found)if(f.ids.every(i=>!used.has(i))){f.ids.forEach(i=>used.add(i));out.push(f.q)}return out;
+ found.sort((a,b)=>b.score-a.score||a.area-b.area);const used=new Set(),out=[];for(const f of found)if(f.ids.every(i=>!used.has(i))){f.ids.forEach(i=>used.add(i));out.push(f.q);}return out;
 }
+
 export function detectLCandidates(gray,{block=0,bias=2}={}){
  const allocated=[],own=mat=>{allocated.push(mat);return mat};
  try{
