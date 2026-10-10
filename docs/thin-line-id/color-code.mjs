@@ -1,4 +1,5 @@
 export const PALETTE=['#d52d36','#166bd0','#e0ae09','#168e56'];
+export const READER_OPTIONS={useBottom:true,minVote:8,dominance:2,minSaturation:.12};
 export const NAMES=['赤','青','黄','緑'];
 const distance=(a,b)=>a.reduce((s,x,i)=>s+(x!==b[i]),0);
 export const CODEBOOK=[];
@@ -13,9 +14,9 @@ export function drawCard(canvas,index=0,{content=true,corrupt=false,dual=false}=
 export function observeRectified(canvas){
  const c=canvas.getContext('2d');
  const dark=(x0,x1,y0)=>{for(let x=x0;x<=x1;x+=2)for(let y=y0;y<=y0+27;y+=2){const a=c.getImageData(x,y,3,3).data;let sum=0;for(let k=0;k<a.length;k+=4)sum+=(a[k]+a[k+1]+a[k+2])/3;if(sum/9<110)return true;}return false;};
- const read=y=>Array.from({length:7},(_,i)=>{const votes=[0,0,0,0],pixels=c.getImageData(112+i*58,y,36,48).data;for(let k=0;k<pixels.length;k+=4){const rgb=[pixels[k],pixels[k+1],pixels[k+2]],mx=Math.max(...rgb),sat=(mx-Math.min(...rgb))/Math.max(mx,1),z=classify(rgb);if(z!==null&&sat>.12)votes[z]+=sat;}const ranked=votes.map((v,z)=>({v,z})).sort((a,b)=>b.v-a.v);return ranked[0].v>=8&&ranked[0].v>ranked[1].v*2?ranked[0].z:null;});
+ const read=y=>Array.from({length:7},(_,i)=>{const votes=[0,0,0,0],pixels=c.getImageData(112+i*58,y,36,48).data;for(let k=0;k<pixels.length;k+=4){const rgb=[pixels[k],pixels[k+1],pixels[k+2]],mx=Math.max(...rgb),sat=(mx-Math.min(...rgb))/Math.max(mx,1),z=classify(rgb);if(z!==null&&sat>READER_OPTIONS.minSaturation)votes[z]+=sat;}const ranked=votes.map((v,z)=>({v,z})).sort((a,b)=>b.v-a.v);return ranked[0].v>=READER_OPTIONS.minVote&&ranked[0].v>ranked[1].v*READER_OPTIONS.dominance?ranked[0].z:null;});
  const top=dark(72,88,49)&&dark(528,542,49)?read(42):null;
- const bottom=dark(72,88,799)&&dark(528,542,799)?read(792):null;
+ const bottom=READER_OPTIONS.useBottom&&dark(72,88,799)&&dark(528,542,799)?read(792):null;
  if(!top&&!bottom)return null;
  let conflict=false;
  const symbols=Array.from({length:7},(_,i)=>{const a=top?.[i]??null,b=bottom?.[i]??null;if(a!==null&&b!==null&&a!==b){conflict=true;return null;}return a??b;});
