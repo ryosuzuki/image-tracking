@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {CODEBOOK_EIGHT as book,EIGHT_CANDIDATE_COUNT,decodeObservedEight as decode} from './codebook-eight.mjs?v=iter-20261010-g';
+import {CODEBOOK_EIGHT as book,EIGHT_CANDIDATE_COUNT,decodeObservedEight as decode} from './codebook-eight.mjs?v=iter-20261010-h';
 const masks=[];for(let bits=0;bits<256;bits++){const mask=Array.from({length:8},(_,i)=>i).filter(i=>bits&(1<<i));if(mask.length<=3)masks.push(mask);}
 const distance=(a,b)=>a.reduce((sum,x,i)=>sum+(x!==b[i]),0);
 test('30 distinct eight-symbol all-color bounded-run dictionary words have distance5',()=>{

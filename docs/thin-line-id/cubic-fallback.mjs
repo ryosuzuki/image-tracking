@@ -1,4 +1,4 @@
-import {CODEBOOK,decodeObserved,observeRectified,stripeLayout,READER_OPTIONS} from './color-code.mjs?v=iter-20261010-g';
+import {CODEBOOK,decodeObserved,observeRectified,stripeLayout,READER_OPTIONS} from './color-code.mjs?v=iter-20261010-h';
 
 // A unique existing-color agreement is an ambiguity guard, never guessed ink.
 // The original dictionary has distance3; merely one-or-more candidates is unsafe.

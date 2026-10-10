@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {CODEBOOK,setCodebook,stripeLayout,READER_OPTIONS} from './color-code.mjs?v=iter-20261010-g';
+import {CODEBOOK,setCodebook,stripeLayout,READER_OPTIONS} from './color-code.mjs?v=iter-20261010-h';
 import {eligibleCubicFallback,selectCubicFallbackCandidates,mergeCubicFallback,cubicReaderPatches,readCubicFallback} from './cubic-fallback.mjs';
 const combinations=(n,k)=>{const out=[];function visit(a,start){if(a.length===k){out.push(a);return;}for(let i=start;i<n;i++)visit([...a,i],i+1);}visit([],0);return out;};
 test('all books preserve known colors/conflicts and reject substitution plus permitted erasures',()=>{
