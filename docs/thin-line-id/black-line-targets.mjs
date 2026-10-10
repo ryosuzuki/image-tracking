@@ -1,6 +1,6 @@
-import {BLACK_BCH126_BOOK} from './black-line-bch126-book.mjs?v=black-20261010-f';
-import {BLACK_LINE_BOOK,drawBlackLineCard} from './black-line-code.mjs?v=black-20261010-f';
-import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-f';
+import {BLACK_BCH126_BOOK} from './black-line-bch126-book.mjs?v=black-20261010-g';
+import {BLACK_LINE_BOOK,drawBlackLineCard} from './black-line-code.mjs?v=black-20261010-g';
+import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-g';
 const mode=document.querySelector('#mode'),id=document.querySelector('#id'),cards=document.querySelector('#cards'),q=new URLSearchParams(location.search);
 const bookKind=q.get('book')||'robust30',book=bookKind==='126'?BLACK_BCH126_BOOK:bookKind==='870'?BLACK_LINE_BOOK:BLACK_ROBUST_BOOK;document.querySelector('h1').textContent='Black L + black lines: '+book.length+' ID prototype';document.querySelector('header p').textContent=bookKind==='126'?'16 slots / 126 IDs / 6,8 or 10 black dashes / distance 6. Existing 30 IDs unchanged. Maximum 1 correction / 3 erasures. Five or more bit errors can misdecode. Device reliability unverified.':bookKind==='870'?'870 IDs / distance 4 experimental capacity. One-bit correction, two-bit rejection without erasures; three or more errors can misdecode.':'16 slots / eight black dashes / 30 IDs / distance 8. Maximum 1 correction / 3 erasures. With no erasures, 2–6 flips cannot become another ID.';document.title=document.querySelector('h1').textContent;document.querySelector('a').href='black-line-camera.html?book='+bookKind;
 book.forEach((word,i)=>id.add(new Option(word.id,i)));const count=Number(q.get('count')||10);mode.value=['1','10','30'].includes(String(count))?String(count):'10';id.value=String(Math.max(0,Math.min(book.length-1,Number(q.get('id')||0))));

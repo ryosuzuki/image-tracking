@@ -29,13 +29,32 @@ export function drawBlackLineCard(canvas,index=0,{dual=true,lineHeight=8,lineLen
  if(content){c.font='30px sans-serif';c.textAlign='center';c.fillText(word.id,320,175);c.font='20px sans-serif';c.fillText('BLACK LINE ID — prototype',320,230);}
  return canvas;
 }
-function medianExact(input){const a=input.slice(),k=Math.floor(a.length/2);let lo=0,hi=a.length-1;while(lo<hi){const pivot=a[(lo+hi)>>1];let i=lo,j=hi;while(i<=j){while(a[i]<pivot)i++;while(a[j]>pivot)j--;if(i<=j){[a[i],a[j]]=[a[j],a[i]];i++;j--;}}if(k<=j)hi=j;else if(k>=i)lo=i;else break;}return a[k];}
+// Exact-arithmetic reader: bounded scratch reuse, no pixel quantization.
+const readerScratchPool=[];
+function medianInPlace(a,n){const k=Math.floor(n/2);let lo=0,hi=n-1;while(lo<hi){const pivot=a[(lo+hi)>>1];let i=lo,j=hi;while(i<=j){while(a[i]<pivot)i++;while(a[j]>pivot)j--;if(i<=j){const temporary=a[i];a[i]=a[j];a[j]=temporary;i++;j--;}}if(k<=j)hi=j;else if(k>=i)lo=i;else break;}return a[k];}
 export function observeBlackLine(canvas,{useBottom=true,minOne=.055,maxZero=.025,orientationRatio=.5}={}){
  if(!Number.isFinite(orientationRatio)||orientationRatio<.3||orientationRatio>.85)throw new RangeError('orientationRatio must be finite and between .3 and .85');
- const c=canvas.getContext('2d');
- const cached=base=>{const data=c.getImageData(70,42+base,480,48).data;return (x,y,w,h)=>{const a=[];for(let row=0;row<h;row++)for(let col=0;col<w;col++){const k=((y-42-base+row)*480+x-70+col)*4;a.push(.2126*data[k]+.7152*data[k+1]+.0722*data[k+2]);}return a;};};
- const inspect=base=>{const luma=cached(base),white=medianExact(luma(100,42+base,430,48));if(white<25)return null;const dark=(x0,x1)=>{for(let x=x0;x<=x1;x+=2)for(let y=49+base;y<=76+base;y+=2){const ink=luma(x,y,3,3);if(ink.reduce((a,b)=>a+b,0)/ink.length<white*orientationRatio)return true;}return false;};if(!dark(72,88)||!dark(528,542))return null;return Array.from({length:16},(_,i)=>{const values=luma(Math.round(130+i*348/15-9),42+base,18,48),paper=medianExact(values);if(paper<25)return null;const mass=values.reduce((s,v)=>s+Math.max(0,Math.min(1,(paper-v)/paper)),0)/values.length;return mass>=minOne?1:mass<=maxZero?0:null;});};
- const top=inspect(0),bottom=useBottom?inspect(750):null;if(!top&&!bottom)return null;let conflict=false;const bits=Array.from({length:16},(_,i)=>{const a=top?.[i]??null,b=bottom?.[i]??null;if(a!==null&&b!==null&&a!==b){conflict=true;return null;}return a??b;});return {bits,top,bottom,conflict};
+ const c=canvas.getContext('2d'),scratch=readerScratchPool.pop()??{luma:new Float64Array(480*48),select:new Float64Array(430*48)},luma=scratch.luma,select=scratch.select;
+ try{
+  const inspect=base=>{
+   const data=c.getImageData(70,42+base,480,48).data;
+   for(let i=0,k=0;i<luma.length;i++,k+=4)luma[i]=.2126*data[k]+.7152*data[k+1]+.0722*data[k+2];
+   let n=0;for(let row=0;row<48;row++)for(let col=30;col<460;col++)select[n++]=luma[row*480+col];
+   const white=medianInPlace(select,n);if(white<25)return null;
+   const dark=(x0,x1)=>{for(let x=x0;x<=x1;x+=2)for(let y=49;y<=76;y+=2){let sum=0;for(let row=0;row<3;row++)for(let col=0;col<3;col++)sum+=luma[(y-42+row)*480+x-70+col];if(sum/9<white*orientationRatio)return true;}return false;};
+   if(!dark(72,88)||!dark(528,542))return null;
+   return Array.from({length:16},(_,i)=>{
+    const left=Math.round(130+i*348/15-9)-70;let count=0;
+    for(let row=0;row<48;row++)for(let col=0;col<18;col++)select[count++]=luma[row*480+left+col];
+    const paper=medianInPlace(select,count);if(paper<25)return null;
+    // Read original row-major luma, NOT the partitioned median scratch: floating
+    // summation order exactly matches the old values.reduce operation.
+    let sum=0;for(let row=0;row<48;row++)for(let col=0;col<18;col++){const value=luma[row*480+left+col];sum+=Math.max(0,Math.min(1,(paper-value)/paper));}
+    const mass=sum/count;return mass>=minOne?1:mass<=maxZero?0:null;
+   });
+  };
+  const top=inspect(0),bottom=useBottom?inspect(750):null;if(!top&&!bottom)return null;let conflict=false;const bits=Array.from({length:16},(_,i)=>{const a=top?.[i]??null,b=bottom?.[i]??null;if(a!==null&&b!==null&&a!==b){conflict=true;return null;}return a??b;});return {bits,top,bottom,conflict};
+ }finally{if(readerScratchPool.length<2)readerScratchPool.push(scratch);}
 }
 // Opt-in same-crop recovery: retain primary evidence and never replace a valid ID.
 export function mergeLowMassFallback(primary,candidate,options){

@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {BlackEvidenceTracker} from './black-evidence-tracker.mjs';
-import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-f';
-import {BLACK_BCH126_BOOK} from './black-line-bch126-book.mjs?v=black-20261010-f';
+import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-g';
+import {BLACK_BCH126_BOOK} from './black-line-bch126-book.mjs?v=black-20261010-g';
 
 const q=(x=0,size=100)=>[[x,0],[x+size,0],[x+size,140],[x,140]];
 const all=Array.from({length:16},(_,i)=>i);
