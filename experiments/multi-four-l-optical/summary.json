@@ -1,0 +1,50 @@
+{
+  "two-static": {
+    "samples": 33,
+    "exactCount": 33,
+    "countHistogram": {
+      "2": 33
+    }
+  },
+  "two-motion": {
+    "samples": 34,
+    "exactCount": 34,
+    "countHistogram": {
+      "2": 34
+    }
+  },
+  "four-static": {
+    "samples": 34,
+    "exactCount": 33,
+    "countHistogram": {
+      "2": 1,
+      "4": 33
+    }
+  },
+  "four-motion": {
+    "samples": 39,
+    "exactCount": 22,
+    "countHistogram": {
+      "0": 6,
+      "2": 11,
+      "4": 22
+    }
+  },
+  "overlap": {
+    "samples": 46,
+    "exactCount": 6,
+    "countHistogram": {
+      "0": 29,
+      "1": 11,
+      "2": 6
+    }
+  },
+  "capture": {
+    "uniqueSensorTimestamps": 186,
+    "uniqueJpegHashes": 186,
+    "samples": 186,
+    "lastHostElapsedSeconds": 32.994470291,
+    "camera": "Quest Camera2 source=0, camera50,1280x1280",
+    "limitations": "same-capture adaptation; offline per-frame grouping, no identity; curved monitor recapture; no physical paper/metric 3D"
+  }
+}
