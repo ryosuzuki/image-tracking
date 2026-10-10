@@ -1,6 +1,6 @@
 // Standalone opt-in black-line prototype, separate from the color pages.
 import {detectLCorners} from './l-corners.mjs?v=iter-20261010-f';
-import {observeBlackLine,decodeBlackBits} from './black-line-code.mjs?v=black-20261010-b';
+import {observeBlackLine,decodeBlackBits} from './black-line-code.mjs?v=black-20261010-c';
 export function inspectBlackLine(canvas,options){
  const started=performance.now(),src=cv.imread(canvas),gray=new cv.Mat(),geometry=[],matches=[];
  try{cv.cvtColor(src,gray,cv.COLOR_RGBA2GRAY);
