@@ -19,3 +19,15 @@ Completion owner: browser registered-paper task; target: origin/main; owned path
 Actual Quest 3 Browser 152.1 reports immersive-ar support and exposes raw-camera API prototypes. Requesting immersive-ar with required local and camera-access rejects with NotSupportedError: The specified session configuration is not supported. The compositor also showed Finding position in room. Therefore WebXR paper registration and stereo/world alignment are blocked/unaccepted on that device; no WebXR recognition demo is claimed. Ordinary browser-camera videos, if delivered, are explicitly separate.
 
 Optical photometric correction: actual captured Quest frames initially had valid corners but raw scores below threshold. Percentile black/white normalization with a near-white noise floor restores offline SUN and TREE matches without lowering the threshold. Default references are canonical authored PNGs so Mac and Android font/emoji rendering cannot change the registered pixels. Offline captured-frame recognition is not a live/WebXR demonstration.
+
+## Three authentic research-paper first pages
+
+Open `index.html?preset=papers` on Pixel or Quest for the same pre-registered catalog. Open `targets.html?preset=papers&target=all` on the display; choose each paper individually or all three. No JSON transfer is needed for this preset.
+
+The preset uses actual page 1, aspect-preserved inside four added black L brackets, from:
+
+- HoloTouch (CHI 2023): https://ryosuzuki.org/static/publications/chi-2023-holotouch.pdf
+- UltraBots (UIST 2022): https://ryosuzuki.org/static/publications/uist-2022-ultrabots.pdf
+- RealitySketch (SIGGRAPH Asia 2021): https://ryosuzuki.org/static/publications/siggraph-asia-2021-realitysketch.pdf
+
+These are not unmarked-paper targets. Registration uses the first-page pixels, not OCR or color-coded identity. `verify-papers.html` checks the actual images individually, rotated, and all three at 2020px and 1280px. All 9 checks pass; original symbol/import regression also passes 11/11. A 1px signature low-pass reduces dense-text resampling aliasing; confidence thresholds remain unchanged. Synthetic pass counts are not a physical recognition accuracy estimate. Actual Pixel/Quest optical measurements and WebXR anchoring are separate checks.
