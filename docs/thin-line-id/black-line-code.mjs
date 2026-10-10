@@ -66,6 +66,10 @@ export function mergeLowMassFallback(primary,candidate,options){
 export function observeBlackLineWithFallback(canvas,options){
  const primary=observeBlackLine(canvas,options);
  if(!primary||primary.conflict||decodeBlackBits(primary.bits,options))return primary;
- return mergeLowMassFallback(primary,observeBlackLine(canvas,{...options,minOne:.045}),options);
+ const first=mergeLowMassFallback(primary,observeBlackLine(canvas,{...options,minOne:.045}),options);
+ if(!options?.lowMassCascade)return first;
+ if(first!==primary)return {...first,fallbackPass:1,fallbackThreshold:.045};
+ const second=mergeLowMassFallback(primary,observeBlackLine(canvas,{...options,minOne:.040}),options);
+ return second!==primary?{...second,fallbackPass:2,fallbackThreshold:.040}:primary;
 }
 export function readBlackLine(canvas,options){const observation=observeBlackLine(canvas,options);if(!observation||observation.conflict)return null;const word=decodeBlackBits(observation.bits,options);return word?{...word,...observation}:null;}

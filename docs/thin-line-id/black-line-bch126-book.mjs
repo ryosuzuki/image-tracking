@@ -12,7 +12,7 @@ export const BCH126_BOOK=Array.from({length:128},(_,message)=>({message,bits:enc
 export const BCH126_WEIGHT8=BCH126_BOOK.filter(w=>w.bits.reduce((a,b)=>a+b)===8);
 
 const COLUMN_PERMUTATION=[5,2,15,8,0,4,10,6,3,9,11,7,12,13,14,1];
-import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-g';
+import {BLACK_ROBUST_BOOK} from './black-line-robust-book.mjs?v=black-20261010-h';
 const transformed=BCH126_BOOK.map(w=>({...w,bits:COLUMN_PERMUTATION.map(i=>w.bits[i])})),keys=new Set(BLACK_ROBUST_BOOK.map(w=>w.bits.join('')));
 const preserved=BLACK_ROBUST_BOOK.map(w=>{const found=transformed.find(x=>x.bits.join('')===w.bits.join(''));if(!found)throw Error('Existing robust30 pattern missing from BCH dictionary');return found;});
 export const BLACK_BCH126_BOOK=[...preserved,...transformed.filter(w=>!keys.has(w.bits.join('')))].map((w,i)=>({...w,id:`paper-${String(i+1).padStart(3,'0')}`}));
