@@ -1,6 +1,6 @@
 # Ten-hour paper-ID improvement experiment
 
-This is a measured prototype, not a claim of production reliability. Work began 2026-10-10 04:50 UTC; authorized experiment window ends 14:50 UTC. This interim record is updated as verification completes.
+This is a measured prototype, not a claim of production reliability. Work began 2026-10-10 04:50 UTC; the authorized experiment window ended at14:50 UTC after ten wall-clock hours. Final optical/source audits and deadline cleanup were verified.
 
 ## Recommended configurations from completed optical tests
 
@@ -72,7 +72,7 @@ All200 saved RAW including controls had no observed new wrong/unassigned/duplica
 
 ## Recording interruption and recovery status
 
-At approximately13:17 UTC the physical Quest USB/ADB bridge disappeared while the Mac and monitor browser remained reachable. Cycle169 includes a changed non-target scene and is excluded from algorithm comparisons and media delivery. USB later returned after a device reboot, with a Guardian tracking modal blocking browser access and no Browser DevTools socket. The experiment worker did not initiate that reboot or disable Guardian persistently. Browser/camera access returned at14:31 UTC; final live paired and control trials followed. Stop/restore cleanup is scheduled for14:50 UTC and will report actual restoration results.
+At approximately13:17 UTC the physical Quest USB/ADB bridge disappeared while the Mac and monitor browser remained reachable. Cycle169 includes a changed non-target scene and is excluded from algorithm comparisons and media delivery. USB later returned after a device reboot, with a Guardian tracking modal blocking browser access and no Browser DevTools socket. The experiment worker did not initiate that reboot or disable Guardian persistently. Browser/camera access returned at14:31 UTC; final live paired and control trials followed. At14:50:00UTC the cleanup guard verified the owned camera stopped/tracks empty, no active camera clients, and original virtual proximity DISABLED restored. No persistent Guardian changes were made.
 
 ## Post-reboot live ROI paired test
 
@@ -112,4 +112,4 @@ No private camera scenes, Slack content, credentials or raw session transcripts 
 
 ## Integration record
 
-Terminal integration target: origin/main. Completion owner: ten_hour_id_improvement native worker (parent owns user delivery). Source default behavior preserved; calibration feature is explicit opt-in. Earlier integrated checkpoints passed84 scoped Node tests (32 color/49 black-Golay/3 calibration), actual-CV and mock camera UI checks,140×2 saved-RAW calibration parity and350 saved-RAW Golay fallback holdout. Source9b7c65a then passed43 scoped black/codebook/temporal/ROI/wall tests plus5 actual-CV/mock-lifecycle checks,3411 arithmetic/API parity comparisons,60RAW×4-policy integrated parity and1206 synthetic ROI comparisons. Eleven raw source paths and ten Pages paths matched published bytes; the actual public reader loaded OpenCV with the ROI API. Existing unrelated untracked hex64 and geometry-display-smoother files remain untouched. Final camera/proximity cleanup remains pending; a deadline cleanup receipt will record actual result. This is an interim source checkpoint, not closure of the authorized ten-hour work.
+Terminal integration target: origin/main. Completion owner: ten_hour_id_improvement native worker (parent owns user delivery). Source default behavior preserved; calibration feature is explicit opt-in. Earlier integrated checkpoints passed84 scoped Node tests (32 color/49 black-Golay/3 calibration), actual-CV and mock camera UI checks,140×2 saved-RAW calibration parity and350 saved-RAW Golay fallback holdout. Source9b7c65a then passed43 scoped black/codebook/temporal/ROI/wall tests plus5 actual-CV/mock-lifecycle checks,3411 arithmetic/API parity comparisons,60RAW×4-policy integrated parity and1206 synthetic ROI comparisons. Eleven raw source paths and ten Pages paths matched published bytes; the actual public reader loaded OpenCV with the ROI API. Existing unrelated untracked hex64 and geometry-display-smoother files remain untouched. The ten-hour run ended at14:50UTC: camera stopped/tracks empty, camera service active clients empty, and prior virtual proximity DISABLED restored. A final addendum verifies eight more phases170-177,120 distinct new RAW samples and368.653seconds of fully strict-decoded video:164 total completed phases and approximately6.7841hours selected video. The prototype remains subject to the limitations and observed failure cases above.
