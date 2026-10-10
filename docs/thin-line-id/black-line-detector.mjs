@@ -1,10 +1,10 @@
 // Standalone opt-in black-line prototype, separate from the color pages.
-import {detectLCorners} from './l-corners.mjs?v=iter-20261010-f';
-import {observeBlackLine,decodeBlackBits} from './black-line-code.mjs?v=black-20261010-c';
+import {detectLCorners} from './l-corners.mjs?v=iter-20261010-g';
+import {observeBlackLine,decodeBlackBits} from './black-line-code.mjs?v=black-20261010-d';
 export function inspectBlackLine(canvas,options){
  const started=performance.now(),src=cv.imread(canvas),gray=new cv.Mat(),geometry=[],matches=[];
  try{cv.cvtColor(src,gray,cv.COLOR_RGBA2GRAY);
-  for(const raw of detectLCorners(gray)){
+  for(const raw of detectLCorners(gray,options)){
    const center=raw.reduce((sum,p)=>[sum[0]+p[0]/4,sum[1]+p[1]/4],[0,0]),ordered=raw.slice().sort((a,b)=>Math.atan2(a[1]-center[1],a[0]-center[0])-Math.atan2(b[1]-center[1],b[0]-center[0]));let observation=null,q=ordered;
    orientations:for(const rev of [ordered,[...ordered].reverse()])for(let shift=0;shift<4;shift++){
     const candidate=[...rev.slice(shift),...rev.slice(0,shift)],a=cv.matFromArray(4,1,cv.CV_32FC2,candidate.flat()),b=cv.matFromArray(4,1,cv.CV_32FC2,[35,35,605,35,605,845,35,845]),H=cv.getPerspectiveTransform(a,b),dst=new cv.Mat(),crop=document.createElement('canvas');

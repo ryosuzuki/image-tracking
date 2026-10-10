@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {CODEBOOK,setCodebook,stripeLayout,drawCard,observeRectified,readRectified,decodeObserved,READER_OPTIONS,PALETTE} from './color-code.mjs?v=iter-20261010-f';
+import {CODEBOOK,setCodebook,stripeLayout,drawCard,observeRectified,readRectified,decodeObserved,READER_OPTIONS,PALETTE} from './color-code.mjs?v=iter-20261010-g';
 // Minimal axis-aligned RGBA canvas fixture for actual renderer/reader sampling.
 // Not a geometry or perspective detector substitute.
 class Canvas {

@@ -2,7 +2,8 @@
 const unit=v=>{const n=Math.hypot(...v);return v.map(x=>x/n)};
 const alignment=(a,b)=>a[0]*b[0]+a[1]*b[1];
 // Cache pair distances and arm alignments once; geometric acceptance is unchanged.
-export function groupCorners(candidates){
+export function groupCorners(candidates,{rankSkew=0}={}){
+ if(!Number.isFinite(rankSkew)||rankSkew<0||rankSkew>1)throw new RangeError('rankSkew must be finite and between 0 and 1');
  const c=[...candidates].sort((a,b)=>b.extent-a.extent).slice(0,80),n=c.length,found=[],seen=new Set();
  const distance=Array.from({length:n},()=>Array(n)),dirs=Array.from({length:n},()=>Array(n)),align=Array.from({length:n},()=>[Array(n),Array(n)]);
  for(let i=0;i<n;i++)for(let j=0;j<n;j++)if(i!==j){const dx=c[j].point[0]-c[i].point[0],dy=c[j].point[1]-c[i].point[1],len=Math.hypot(dx,dy);distance[i][j]=len;dirs[i][j]=[dx/len,dy/len];for(let a=0;a<2;a++)align[i][a][j]=dirs[i][j][0]*c[i].arms[a][0]+dirs[i][j][1]*c[i].arms[a][1];}
@@ -21,7 +22,7 @@ export function groupCorners(candidates){
    const crosses=q.map((p,z)=>{const a=q[(z+1)%4],b=q[(z+2)%4];return(a[0]-p[0])*(b[1]-a[1])-(a[1]-p[1])*(b[0]-a[0]);});if(!(crosses.every(x=>x>0)||crosses.every(x=>x<0)))continue;
    const area=Math.abs(q.reduce((s,p,z)=>s+p[0]*q[(z+1)%4][1]-p[1]*q[(z+1)%4][0],0))/2;if(area<700)continue;
    const crossesSheet=c.some((candidate,index)=>!ids.includes(index)&&q.some((a,z)=>{const b=q[(z+1)%4],dx=b[0]-a[0],dy=b[1]-a[1],length=Math.hypot(dx,dy),px=candidate.point[0]-a[0],py=candidate.point[1]-a[1],t=(px*dx+py*dy)/(length*length);return t>.12&&t<.88&&Math.abs(px*dy-py*dx)/length<Math.min(candidate.extent*1.5,length*.04);}));if(crossesSheet)continue;
-   seen.add(key);found.push({ids,q,area,score});
+   if(rankSkew){const skew=Math.max(...q.map((p,z)=>{const a=q[(z+3)%4],b=q[(z+1)%4],u=[a[0]-p[0],a[1]-p[1]],v=[b[0]-p[0],b[1]-p[1]];return Math.abs((u[0]*v[0]+u[1]*v[1])/(Math.hypot(...u)*Math.hypot(...v)));}));score-=rankSkew*skew;}seen.add(key);found.push({ids,q,area,score});
   }
  }
  found.sort((a,b)=>b.score-a.score||a.area-b.area);const used=new Set(),out=[];for(const f of found)if(f.ids.every(i=>!used.has(i))){f.ids.forEach(i=>used.add(i));out.push(f.q);}return out;
@@ -51,7 +52,7 @@ export function detectLCandidates(gray,{block=0,bias=2}={}){
  }finally{for(const mat of allocated.reverse())mat.delete();}
 }
 
-export function detectLCorners(gray){return groupCorners(detectLCandidates(gray));}
+export function detectLCorners(gray,options){return groupCorners(detectLCandidates(gray),options);}
 
 // Opt-in only. Never mix threshold candidates before grouping: that can invent
 // cross-paper rectangles. Require the same four corners in >=2 distinct passes.

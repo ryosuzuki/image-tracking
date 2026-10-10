@@ -1,13 +1,13 @@
-import {selectCubicFallbackCandidates,mergeCubicFallback,readCubicFallback} from './cubic-fallback.mjs?v=iter-20261010-f';
-import {detectLCorners,detectLCornersConsensus} from './l-corners.mjs?v=iter-20261010-f';
-import {observeRectified,decodeObserved,READER_OPTIONS} from './color-code.mjs?v=iter-20261010-f';
+import {selectCubicFallbackCandidates,mergeCubicFallback,readCubicFallback} from './cubic-fallback.mjs?v=iter-20261010-g';
+import {detectLCorners,detectLCornersConsensus} from './l-corners.mjs?v=iter-20261010-g';
+import {observeRectified,decodeObserved,READER_OPTIONS} from './color-code.mjs?v=iter-20261010-g';
 // Allocate transform copies: Embind Mat.clone() aliases the same native Mat.
-export const GEOMETRY_OPTIONS={strips:true,consensus:false};
+export const GEOMETRY_OPTIONS={strips:true,consensus:false,rankSkew:0};
 let fallbackFrame=0;
 export function inspect(canvas){
  const started=performance.now(),src=cv.imread(canvas),gray=new cv.Mat(),matches=[],geometry=[],observations=[];
  try{cv.cvtColor(src,gray,cv.COLOR_RGBA2GRAY);
-  for(let raw of (GEOMETRY_OPTIONS.consensus?detectLCornersConsensus(gray):detectLCorners(gray))){
+  for(let raw of (GEOMETRY_OPTIONS.consensus?detectLCornersConsensus(gray):detectLCorners(gray,GEOMETRY_OPTIONS))){
    const center=raw.reduce((s,p)=>[s[0]+p[0]/4,s[1]+p[1]/4],[0,0]);
    const ordered=raw.slice().sort((a,b)=>Math.atan2(a[1]-center[1],a[0]-center[0])-Math.atan2(b[1]-center[1],b[0]-center[0]));
    let observation=null,q=ordered;

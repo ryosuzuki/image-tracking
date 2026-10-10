@@ -1,5 +1,5 @@
-import {CODEBOOK_EIGHT} from './codebook-eight.mjs?v=iter-20261010-f';
-import {BALANCED_CODEBOOK} from './balanced-codebook.mjs?v=iter-20261010-f';
+import {CODEBOOK_EIGHT} from './codebook-eight.mjs?v=iter-20261010-g';
+import {BALANCED_CODEBOOK} from './balanced-codebook.mjs?v=iter-20261010-g';
 export const PALETTE=['#d52d36','#166bd0','#e0ae09','#168e56'];
 export const READER_OPTIONS={useBottom:true,useSides:false,useCubicFallback:false,minVote:8,dominance:2,minSaturation:.12};
 export const NAMES=['赤','青','黄','緑'];
