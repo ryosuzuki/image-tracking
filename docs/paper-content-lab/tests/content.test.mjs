@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {responseFor} from '../content.mjs';
+assert.equal(responseFor('sun\n').kind,'sun');
+assert.equal(responseFor('TREE').kind,'tree');
+assert.equal(responseFor('MUSIC').kind,'music');
+assert.equal(responseFor('12 + 30').label,'12 + 30 = 42');
+assert.equal(responseFor('5 / 0').label,'Division by zero');
+assert.equal(responseFor('HELLO').label,'Read: HELLO');
+assert.equal(responseFor('SUNNY').kind,'text');
+console.log('7 content-response checks passed');
