@@ -3,3 +3,6 @@ Black four L corners locate the sheet; seven thin 4-color top-edge segments enco
 
 Black L strokes use 20/640 width and 60/640 arms to improve low-resolution geometry; color ID lines remain 8/640. Per-symbol vertical sampling searches y51–75 after rectification. HSV hue classification uses minimum contrast/saturation and margin guards; checksum/exact codebook acceptance remain.
 Overlay-only EMA alpha 0.4, hold cap300ms; fresh detections green, held tracks amber. Raw ID metrics are separate. Scene mean color difference >0.08 clears tracks; incompatible IDs replace overlapping old tracks; large movement resets smoothing. Camera stop/new input clears. No guarantee of spatial tracking from these 2D heuristics.
+
+Low-resolution L grouping uses tolerant arm orientation (.65 dot product) with an explicit portrait-sheet aspect guard (.48–.92, or inverse). This is an A4-like sheet assumption, not arbitrary aspect support.
+Groups are ranked by arm alignment before area, with corner-extent scale guards, so text-shaped local loops cannot steal true paper corners.
