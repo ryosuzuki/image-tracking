@@ -1,4 +1,4 @@
-import { CODEBOOK, decodeObserved } from './color-code.mjs?v=iter-20261010-a';
+import { CODEBOOK, CODEBOOK_REVISION, decodeObserved } from './color-code.mjs?v=iter-20261010-b';
 
 // Inputs must be fresh detector observations, never held/display tracks. Geometry
 // alone cannot prove identity: blank frames and contradictory colors break history.
@@ -7,12 +7,12 @@ export class EvidenceTracker {
   if(!Number.isFinite(windowMs)||windowMs<=0||windowMs>2500)throw new RangeError('windowMs must be in (0, 2500]');
   if(!Number.isFinite(maxDistanceRatio)||maxDistanceRatio<=0||maxDistanceRatio>.2)throw new RangeError('maxDistanceRatio must be in (0, .2]');
   if(!Number.isFinite(maxSizeRatio)||maxSizeRatio<1||maxSizeRatio>1.5)throw new RangeError('maxSizeRatio must be in [1, 1.5]');
-  Object.assign(this,{windowMs,maxDistanceRatio,maxSizeRatio});this.tracks=[];this.lastTime=-Infinity;
+  Object.assign(this,{windowMs,maxDistanceRatio,maxSizeRatio});this.tracks=[];this.lastTime=-Infinity;this.book=CODEBOOK_REVISION;
  }
- reset(){this.tracks=[];this.lastTime=-Infinity;}
+ reset(){this.tracks=[];this.lastTime=-Infinity;this.book=CODEBOOK_REVISION;}
  update(observations,now,{sceneChanged=false}={}){
   if(!Number.isFinite(now))throw new TypeError('now must be finite milliseconds');
-  if(sceneChanged||now<this.lastTime)this.reset();this.lastTime=now;
+  if(sceneChanged||now<this.lastTime||this.book!==CODEBOOK_REVISION)this.reset();this.lastTime=now;
   const prior=this.tracks.filter(t=>now-t.last<=this.windowMs);
   const shapes=observations.map(o=>shape(o.q));
   const candidates=shapes.map(s=>s?prior.filter(t=>associated(s,t.shape,this)):[]);
@@ -20,13 +20,13 @@ export class EvidenceTracker {
   const next=[];
   const result=observations.map((o,index)=>{
    const output={...o,temporalId:null};const s=shapes[index];
-   if(!s||o.conflict||!Array.isArray(o.symbols)||o.symbols.length!==7||o.symbols.some(x=>x!==null&&(!Number.isInteger(x)||x<0||x>3))||o.symbols.every(x=>x===null))return output;
+   if(!s||o.conflict||!Array.isArray(o.symbols)||o.symbols.length!==CODEBOOK[0].symbols.length||Array.from(o.symbols).some(x=>x!==null&&(!Number.isInteger(x)||x<0||x>3))||o.symbols.every(x=>x===null))return output;
    let old=candidates[index].length===1&&useCount.get(candidates[index][0])===1?candidates[index][0]:null;
    let samples=old?old.samples.filter(sample=>now-sample.time<=this.windowMs):[];
    const disagrees=samples.some(sample=>o.symbols.some((x,i)=>x!==null&&sample.symbols[i]!==null&&x!==sample.symbols[i]));
    if(disagrees||(o.id&&old?.id&&o.id!==old.id))samples=[];
    samples=[...samples,{time:now,symbols:o.symbols.slice()}];
-   const combined=Array.from({length:7},(_,i)=>samples.findLast(sample=>sample.symbols[i]!==null)?.symbols[i]??null);
+   const combined=Array.from({length:CODEBOOK[0].symbols.length},(_,i)=>samples.findLast(sample=>sample.symbols[i]!==null)?.symbols[i]??null);
    const matches=CODEBOOK.filter(c=>combined.every((x,i)=>x===null||x===c.symbols[i]));
    const decoded=decodeObserved(combined);
    const id=matches.length===1&&decoded?.id===matches[0].id?decoded.id:null;

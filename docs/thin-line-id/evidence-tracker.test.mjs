@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {EvidenceTracker} from './evidence-tracker.mjs?v=iter-20261010-a';
-import {CODEBOOK} from './color-code.mjs?v=iter-20261010-a';
+import {EvidenceTracker} from './evidence-tracker.mjs?v=iter-20261010-b';
+import {CODEBOOK} from './color-code.mjs?v=iter-20261010-b';
 const q=(x=0,size=100)=>[[x,0],[x+size,0],[x+size,140],[x,140]];
 const obs=(item,indices,x=0)=>({q:q(x),symbols:item.symbols.map((v,i)=>indices.includes(i)?v:null),conflict:false});
 const a=CODEBOOK[0],b=CODEBOOK.find(c=>c.symbols[0]!==a.symbols[0]);
@@ -47,4 +47,17 @@ test('backwards time, explicit ID change and duplicate detections reset associat
  t.reset();t.update([{...obs(a,[0,1,2,3,4,5,6]),id:a.id}],0);
  assert.equal(t.update([{...obs(a,[3,4,5,6]),id:b.id}],100)[0].temporalId,null);
  t.reset();t.update([obs(a,[0,1,2])],0);assert.deepEqual(t.update([obs(a,[3,4,5,6]),obs(a,[3,4,5,6])],100).map(o=>o.temporalId),[null,null]);
+});
+
+test('eight-slot temporal fusion, color conflict and book switching are bounded',async()=>{
+ const {setCodebook}=await import('./color-code.mjs?v=iter-20261010-b');
+ setCodebook('eight');const item=CODEBOOK[0],t=new EvidenceTracker();
+ assert.equal(t.update([obs(item,[0,1,2,3])],0)[0].temporalId,null);
+ assert.equal(t.update([obs(item,[4,5,6,7])],100)[0].temporalId,item.id);
+ const wrong={...obs(item,[0]),symbols:[(item.symbols[0]+1)%4,null,null,null,null,null,null,null]};
+ assert.equal(t.update([wrong],200)[0].temporalId,null);
+ t.reset();t.update([obs(item,[0,1,2,3])],0);setCodebook('balanced');setCodebook('eight');
+ assert.equal(t.update([obs(item,[4,5,6,7])],50)[0].temporalId,null);
+ setCodebook('original');assert.equal(t.update([obs(CODEBOOK[0],[3,4,5,6])],100)[0].temporalId,null);
+ setCodebook('eight');assert.equal(t.update([obs(item,[4,5,6,7])],200)[0].temporalId,null);setCodebook();
 });

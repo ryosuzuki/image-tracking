@@ -1,5 +1,5 @@
-import {detectLCorners} from './l-corners.mjs?v=iter-20261010-a';
-import {observeRectified,decodeObserved} from './color-code.mjs?v=iter-20261010-a';
+import {detectLCorners} from './l-corners.mjs?v=iter-20261010-b';
+import {observeRectified,decodeObserved} from './color-code.mjs?v=iter-20261010-b';
 export const GEOMETRY_OPTIONS={strips:true};
 export function inspect(canvas){
  const started=performance.now(),src=cv.imread(canvas),gray=new cv.Mat(),matches=[],geometry=[],observations=[];
