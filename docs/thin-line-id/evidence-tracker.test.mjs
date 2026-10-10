@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {EvidenceTracker} from './evidence-tracker.mjs';
-import {CODEBOOK} from './color-code.mjs';
+import {EvidenceTracker} from './evidence-tracker.mjs?v=iter-20261010-a';
+import {CODEBOOK} from './color-code.mjs?v=iter-20261010-a';
 const q=(x=0,size=100)=>[[x,0],[x+size,0],[x+size,140],[x,140]];
 const obs=(item,indices,x=0)=>({q:q(x),symbols:item.symbols.map((v,i)=>indices.includes(i)?v:null),conflict:false});
 const a=CODEBOOK[0],b=CODEBOOK.find(c=>c.symbols[0]!==a.symbols[0]);

@@ -1,4 +1,4 @@
-import {BALANCED_CODEBOOK} from './balanced-codebook.mjs';
+import {BALANCED_CODEBOOK} from './balanced-codebook.mjs?v=iter-20261010-a';
 export const PALETTE=['#d52d36','#166bd0','#e0ae09','#168e56'];
 export const READER_OPTIONS={useBottom:true,minVote:8,dominance:2,minSaturation:.12};
 export const NAMES=['赤','青','黄','緑'];
