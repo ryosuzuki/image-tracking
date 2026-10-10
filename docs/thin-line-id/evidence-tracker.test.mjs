@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {EvidenceTracker} from './evidence-tracker.mjs?v=iter-20261010-b';
-import {CODEBOOK} from './color-code.mjs?v=iter-20261010-b';
+import {EvidenceTracker} from './evidence-tracker.mjs?v=iter-20261010-c';
+import {CODEBOOK} from './color-code.mjs?v=iter-20261010-c';
 const q=(x=0,size=100)=>[[x,0],[x+size,0],[x+size,140],[x,140]];
 const obs=(item,indices,x=0)=>({q:q(x),symbols:item.symbols.map((v,i)=>indices.includes(i)?v:null),conflict:false});
 const a=CODEBOOK[0],b=CODEBOOK.find(c=>c.symbols[0]!==a.symbols[0]);
@@ -50,7 +50,7 @@ test('backwards time, explicit ID change and duplicate detections reset associat
 });
 
 test('eight-slot temporal fusion, color conflict and book switching are bounded',async()=>{
- const {setCodebook}=await import('./color-code.mjs?v=iter-20261010-b');
+ const {setCodebook}=await import('./color-code.mjs?v=iter-20261010-c');
  setCodebook('eight');const item=CODEBOOK[0],t=new EvidenceTracker();
  assert.equal(t.update([obs(item,[0,1,2,3])],0)[0].temporalId,null);
  assert.equal(t.update([obs(item,[4,5,6,7])],100)[0].temporalId,item.id);
