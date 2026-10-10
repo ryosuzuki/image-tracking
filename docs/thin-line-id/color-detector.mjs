@@ -1,5 +1,6 @@
-import {detectLCorners,detectLCornersConsensus} from './l-corners.mjs?v=iter-20261010-d';
-import {observeRectified,decodeObserved} from './color-code.mjs?v=iter-20261010-d';
+import {detectLCorners,detectLCornersConsensus} from './l-corners.mjs?v=iter-20261010-e';
+import {observeRectified,decodeObserved,READER_OPTIONS} from './color-code.mjs?v=iter-20261010-e';
+// Allocate transform copies: Embind Mat.clone() aliases the same native Mat.
 export const GEOMETRY_OPTIONS={strips:true,consensus:false};
 export function inspect(canvas){
  const started=performance.now(),src=cv.imread(canvas),gray=new cv.Mat(),matches=[],geometry=[],observations=[];
@@ -10,7 +11,7 @@ export function inspect(canvas){
    let observation=null,q=ordered;
    orientations:for(const rev of [ordered,[...ordered].reverse()])for(let shift=0;shift<4;shift++){
     const candidate=[...rev.slice(shift),...rev.slice(0,shift)],a=cv.matFromArray(4,1,cv.CV_32FC2,candidate.flat()),b=cv.matFromArray(4,1,cv.CV_32FC2,[35,35,605,35,605,845,35,845]),H=cv.getPerspectiveTransform(a,b),dst=new cv.Mat(),crop=document.createElement('canvas');
-    try{if(GEOMETRY_OPTIONS.strips){crop.width=640;crop.height=880;const ctx=crop.getContext('2d'),tile=document.createElement('canvas');ctx.fillStyle='white';ctx.fillRect(0,0,640,880);cv.warpPerspective(src,dst,H,new cv.Size(640,100));cv.imshow(tile,dst);ctx.drawImage(tile,0,0);const shifted=H.clone();try{const data=shifted.data64F;for(let i=0;i<3;i++)data[3+i]-=780*data[6+i];cv.warpPerspective(src,dst,shifted,new cv.Size(640,100));cv.imshow(tile,dst);ctx.drawImage(tile,0,780);}finally{shifted.delete();}}else{cv.warpPerspective(src,dst,H,new cv.Size(640,880));cv.imshow(crop,dst);}const observed=observeRectified(crop);if(observed){observation=observed;q=candidate;break orientations;}}
+    try{if(GEOMETRY_OPTIONS.strips){crop.width=640;crop.height=880;const ctx=crop.getContext('2d'),tile=document.createElement('canvas');ctx.fillStyle='white';ctx.fillRect(0,0,640,880);cv.warpPerspective(src,dst,H,new cv.Size(640,100));cv.imshow(tile,dst);ctx.drawImage(tile,0,0);const shifted=cv.matFromArray(3,3,cv.CV_64F,Array.from(H.data64F));try{const data=shifted.data64F;for(let i=0;i<3;i++)data[3+i]-=780*data[6+i];cv.warpPerspective(src,dst,shifted,new cv.Size(640,100));cv.imshow(tile,dst);ctx.drawImage(tile,0,780);}finally{shifted.delete();}if(READER_OPTIONS.useSides){cv.warpPerspective(src,dst,H,new cv.Size(100,880));tile.width=100;tile.height=880;cv.imshow(tile,dst);ctx.drawImage(tile,0,0);const right=cv.matFromArray(3,3,cv.CV_64F,Array.from(H.data64F));try{const data=right.data64F;for(let i=0;i<3;i++)data[i]-=530*data[6+i];cv.warpPerspective(src,dst,right,new cv.Size(110,880));tile.width=110;tile.height=880;cv.imshow(tile,dst);ctx.drawImage(tile,530,0);}finally{right.delete();}}}else{cv.warpPerspective(src,dst,H,new cv.Size(640,880));cv.imshow(crop,dst);}const observed=observeRectified(crop);if(observed){observation=observed;q=candidate;break orientations;}}
     finally{[a,b,H,dst].forEach(m=>m.delete());}
    }
    const item=observation&&!observation.conflict?decodeObserved(observation.symbols):null;
