@@ -6,3 +6,5 @@ Overlay-only EMA alpha 0.4, hold cap300ms; fresh detections green, held tracks a
 
 Low-resolution L grouping uses tolerant arm orientation (.65 dot product) with an explicit portrait-sheet aspect guard (.48–.92, or inverse). This is an A4-like sheet assumption, not arbitrary aspect support.
 Groups are ranked by arm alignment before area, with corner-extent scale guards, so text-shaped local loops cannot steal true paper corners.
+
+Experimental opt-in local white-reference calibration: `?whiteFallback=1`. Default OFF. Only a failed, non-conflicting primary code is independently reread using adjacent-paper channel gains. Successful primary IDs and primary observations remain unchanged. Supplemental reads are labeled 色補正 and counted as Calibrated, never held or temporal. Horizontal upper/lower strips only; sides=true disables this lane. Independent140 saved RAW holdout:1284→1287 correct /1400 opportunities, zero lost/new observed wrong;804 synthetic positive/blank/gray/corrupted/nonmember cases passed. This small offline gain is not a new optical live-camera validation.
