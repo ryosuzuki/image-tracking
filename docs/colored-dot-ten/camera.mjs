@@ -1,5 +1,5 @@
-import {ColoredDotsTracker} from './colored-dots.mjs';
-const contract=await(await fetch('./contract.json')).json(),tracker=new ColoredDotsTracker(contract),video=document.querySelector('#video'),view=document.querySelector('#view'),ctx=view.getContext('2d',{willReadFrequently:true}),status=document.querySelector('#status');let stream,running=false,last=0,epoch=0;
+import {ColoredDotsTracker} from './colored-dots.mjs?v=two-corners-v1';
+const contract=await(await fetch('./contract.json?v=two-corners-v1')).json(),tracker=new ColoredDotsTracker(contract),video=document.querySelector('#video'),view=document.querySelector('#view'),ctx=view.getContext('2d',{willReadFrequently:true}),status=document.querySelector('#status');let stream,running=false,last=0,epoch=0;
 window.detectImage=image=>tracker.detect(image);window.lastDetection={ids:[],cameraTime:0};
 document.querySelector('#start').onclick=async()=>{if(running)return;const token=++epoch;try{stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'},width:{ideal:1280},height:{ideal:960}},audio:false});if(token!==epoch){stream.getTracks().forEach(t=>t.stop());return}video.srcObject=stream;await video.play();running=true;requestAnimationFrame(loop)}catch(e){status.textContent=`${e.name}: ${e.message}`}};
 window.stopCamera=()=>{++epoch;running=false;stream?.getTracks().forEach(t=>t.stop());video.srcObject=null;status.textContent='Camera stopped'};document.querySelector('#stop').onclick=stopCamera;

@@ -4,7 +4,7 @@
   "cornerCenterExtentM": 0.12,
   "paperSizeM": 0.14,
   "dotSpacingM": 0.008,
-  "dotRadiusM": 0.003,
+  "dotRadiusM": 0.0034,
   "palette": [
     {
       "name": "red",
@@ -534,5 +534,6 @@
       "scale",
       "explode/reset"
     ]
-  }
+  },
+  "minimumDecodedCorners": 2
 }
