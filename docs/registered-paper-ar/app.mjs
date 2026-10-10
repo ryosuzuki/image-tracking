@@ -1,6 +1,6 @@
 import {detectLCorners} from './l-corners.mjs?v=1';
 import {registrationQuality} from '../paper-content-lab/quality.mjs';
-import {defaults,drawTarget,signature,chooseMatch} from './catalog.mjs';
+import {defaults,drawTarget,signature,chooseMatch} from './catalog.mjs?v=2';
 const $=s=>document.querySelector(s),raw=document.createElement('canvas'),view=$('#view'),video=$('#video');let catalog=defaults.map(x=>({...x})),registry=[],stream,running=false,last=0,matches=[],xrSession;
 export function ordered(q){const c=q.reduce((a,p)=>[a[0]+p[0]/4,a[1]+p[1]/4],[0,0]);const a=q.slice().sort((p,r)=>Math.atan2(p[1]-c[1],p[0]-c[0])-Math.atan2(r[1]-c[1],r[0]-c[0]));let i=a.reduce((b,p,j)=>p[0]+p[1]<a[b][0]+a[b][1]?j:b,0);return [...a.slice(i),...a.slice(0,i)];}
 export function rectify(canvas,q){const src=cv.imread(canvas),dst=new cv.Mat(),a=cv.matFromArray(4,1,cv.CV_32FC2,q.flat()),b=cv.matFromArray(4,1,cv.CV_32FC2,[0,0,575,0,575,375,0,375]),h=cv.getPerspectiveTransform(a,b),out=document.createElement('canvas');try{cv.warpPerspective(src,dst,h,new cv.Size(576,376));cv.imshow(out,dst);return out;}finally{[src,dst,a,b,h].forEach(x=>x.delete());}}
