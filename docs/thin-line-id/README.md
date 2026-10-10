@@ -1,0 +1,2 @@
+# Thin top-edge line IDs
+Black four L corners locate the sheet; seven thin 4-color top-edge segments encode one of 30 codes (six data symbols + checksum, codebook minimum Hamming distance 3). No interior matching. Line thickness 8/640 paper width = 1.25% (2.625mm at A4 width); segment length 40/640, gap 18/640. First 10 are test cards. Camera-space 2D only. Real-device counts recorded separately; do not infer robustness from synthetic tests.
