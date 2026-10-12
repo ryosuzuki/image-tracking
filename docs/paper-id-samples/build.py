@@ -1,8 +1,17 @@
+# -*- coding: utf-8 -*-
 from pathlib import Path
+import argparse
+
+parser = argparse.ArgumentParser(description="Build paper-ID gallery and preview artifacts.")
+parser.add_argument("--output-dir", required=True, type=Path,
+                    help="Explicit destination for the overview PNG and sample PDF.")
+args = parser.parse_args()
+
 import qrcode, html, json
 from PIL import Image,ImageDraw,ImageFont
-root=Path('/Users/ryosuzuki/Storage/projects/image-tracking/docs/paper-id-samples'); root.mkdir(parents=True,exist_ok=True)
-out=Path('/Users/ryosuzuki/.openclaw/workspace/stuff/2026/2026-10-09'); out.mkdir(parents=True,exist_ok=True)
+root = Path(__file__).resolve().parent
+out = args.output_dir.expanduser().resolve()
+out.mkdir(parents=True, exist_ok=True)
 colors=['#dc3030','#176ec6','#e6aa00','#20894e']
 families=[('余白QR','QR / margin'),('白黒固定セル','Mono / fixed cells'),('白黒点線','Mono / dashed'),('色の点線','Color / dashed'),('小型マス目','Custom / matrix'),('枠組み込み','Custom / border')]
 labels=['右上','下中央','左余白','左右に同じID','上下に同じID']

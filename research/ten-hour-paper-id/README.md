@@ -104,9 +104,9 @@ Blank trial has no expected IDs: zero outputs is a negative-control result, not0
 
 Source: this repository, `docs/thin-line-id/` and `docs/golay-line-id/`.
 
-Large RAW frames, continuous-state JSON, configuration receipts and source hashes: `/Users/ryosuzuki/Storage/outputs/image-tracking/ten-hour-2026-10-09/`.
+Large RAW frames, continuous-state JSON, configuration receipts and source hashes are retained in the owner-controlled, dated image-tracking experiment archive outside this public repository.
 
-Verified MP4s and flat task receipts: `/Users/ryosuzuki/.openclaw/workspace/stuff/2026/2026-10-09/` and `/Users/ryosuzuki/.openclaw/workspace/stuff/2026/2026-10-10/`.
+Verified MP4s and flat task receipts are retained in owner-controlled dated records for 2026-10-09 and 2026-10-10 outside this public repository. Authorized collaborators can request the matching source/hash receipts from the owner.
 
 No private camera scenes, Slack content, credentials or raw session transcripts are published in this report.
 
