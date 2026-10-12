@@ -2,7 +2,7 @@
 
 A visual companion to the separate paper library. This collection preserves 95 X references and ten video links from the complete 43-page original AR Research Showcase, adds 72 distinct saved-source posts and four historical Inspiration videos, and adapts ten historical idea themes into classroom exercises.
 
-- 191 cards; 180 authentic source previews; 43 lecture picks.
+- 223 cards; 212 authentic source previews; 56 lecture picks.
 - Eight themes; collection and text filters; source descriptions and discussion prompts.
 - `Present selection` follows the current filters, with arrow-key navigation and fullscreen.
 - `Watch` uses the original X video or original host embed, with an original-source fallback. No third-party videos are reuploaded.
@@ -24,3 +24,7 @@ Private provenance and exact source/hash receipts are retained under the existin
 Completion owner: task-agent. Integration target: origin/main. Owned paths: this directory and the parent `index.html` navigation/entry section only.
 
 Before publication, real-browser checks covered manifest counts, all 180 image loads, showcase coverage, search, collection filtering, idea labels, presentation keyboard navigation, Escape/close, original-host sample video playback, stopping media on close, mobile overflow, and JavaScript errors. The original course video thumbnails and 166 post previews were inspected visually. The final hosted page is checked again after publication; its immutable delivery receipt lives outside this commit.
+
+## RealityExtract expansion
+
+All 44 external inspiration files in the two existing reference-video folders were inventoried, hashed and probed. Eleven files were byte duplicates and one group had a second encoding, producing 32 title groups (33 hashes). Each clip was visually sampled at 20%, 50% and 80%; 32 authentic frame previews and teaching questions were added. Twenty-two public source videos have matching title/creator metadata. Ten exact uploads remain unresolved and retain explicit labels, with creator/product references where available. Unrelated Zappar and Cleveland Clinic search matches were excluded. One separate project recording was not treated as external inspiration. Full third-party clips and private local paths are not published.
