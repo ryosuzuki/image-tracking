@@ -11,15 +11,15 @@
     },
     {
       "path": "PROGRESS.md",
-      "sha256": "ded645961c009a1f4d32a13dfd50871f1615016b78c20f9b0a20e88c4873fb9e"
+      "sha256": "84b4bda46dd0f6f047eaaef6e100f984d3a36cc3833de5bbc0a18545d3e6165c"
     },
     {
       "path": "QUEST-QUICKSTART.md",
-      "sha256": "d8ded509977b49bfbd24153953dd7300822039dcb0f35034b920cd7b15e1e1fd"
+      "sha256": "2ac6a9c6e5e96c34175f0d4ff1bdc7a96cbd776db661e57c1db5451064f3d972"
     },
     {
       "path": "README.md",
-      "sha256": "077a976e95ecf3b35d969e7dab1eae8463c82ea37f794edd36fb7b69eec0b7ea"
+      "sha256": "600ae714e61a94d71d015711dccb2f3a07553adfedc9ecbbd1cead112ecfb457"
     },
     {
       "path": "TRACKING-IMAGES.md",
@@ -4531,7 +4531,7 @@
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Editor/MarkerBuild.cs",
-      "sha256": "195a1cf11bca8920d1d2d5aaf29ada5740f35f94fd74678ea0e48ca07e93b966"
+      "sha256": "5c1e9a7db9d6edfe86712be2b852fcd1cf72adf640d8966dfc0298490a9308ee"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Editor/MarkerBuild.cs.meta",
@@ -4635,7 +4635,7 @@
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/QuestMarkerTracker.cs",
-      "sha256": "445c79c92b69fb7d511a8552bb163866385303423886338294b7f0d1b63ffd02"
+      "sha256": "a662433397fb13d6a8680b266aaf27752fb53edd113ec411c93f0b92c0b8a5ee"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/QuestMarkerTracker.cs.meta",

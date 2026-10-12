@@ -4,7 +4,9 @@ Image and marker tracking implementations, organized by target type, engine and 
 
 ## Start here: Quest
 
-**Use the installed native Unity app, not the Quest browser.** Open **App Library → Unknown Sources → PaperLab / Interactive Paper Lab**. On the computer, display **dots-8.png**, then look at it through the headset.
+**Current teaching checkpoint (2026-10-12):** [v12 test-build instructions](markers/unity-quest-ios/TEACHING-BASELINE.md) and [calibrated A4/Letter print kit](https://ryosuzuki.github.io/image-tracking/lecture-hub/print-kit/). Version12 adds readiness telemetry and disables automatic raw-frame dumps / SDK developer-agent access. It is not an accepted live binocular paper demonstration. Historical installed-APK statements below are dated observations, not current installation/readiness checks. Preserve the active camera owner before launching a different app.
+
+**Use the native Unity app, not the Quest browser; check that the exact package is actually installed first.** Open **App Library → Unknown Sources → PaperLab / Interactive Paper Lab**. On the computer, display **dots-8.png**, then look at it through the headset.
 
 - **[Quest quick start: exactly what to open](QUEST-QUICKSTART.md)**
 - **[Tracking images: direct links and which app uses them](TRACKING-IMAGES.md)**

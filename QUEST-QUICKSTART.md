@@ -1,5 +1,7 @@
 # Quest quick start
 
+> **Current teaching baseline, 2026-10-12:** See [version12 test-build / safe handoff instructions](markers/unity-quest-ios/TEACHING-BASELINE.md) and the [calibrated printable kit](https://ryosuzuki.github.io/image-tracking/lecture-hub/print-kit/). The older APK10/version11 observations below do not establish current installed state or new physical acceptance. Another app currently owns both Quest cameras; it was preserved. Paper-locked binocular alignment remains unaccepted.
+
 ## What to open
 
 **Quest: native app. Computer: target image. You do not open the target image inside Quest.**
