@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MR Image Tracking / Printable Kit</title>
+<style>
+body{font:16px system-ui;margin:24px;background:#f5f6f8;color:#172033}nav{max-width:850px;margin:auto}h1{font-size:26px}label,button{margin-right:12px}select,button{font:inherit;padding:8px}article{margin:24px auto;width:210mm;height:297mm;background:white;box-shadow:0 3px 18px #0002}article img{display:block;width:100%;height:100%}p{line-height:1.5}.note{color:#6c3c00}a{color:#174cb3}
+@media screen{article{max-width:100%;height:auto!important}article img{height:auto}}
+@media print{body{margin:0;background:white}nav{display:none}article{margin:0;box-shadow:none;break-after:avoid}article img{max-width:none}}
+</style>
+<style id="paper-css">@page{size:A4;margin:0}</style>
+<nav><a href="../index.html">← Lecture hub</a><h1>Printable Kit v1</h1>
+<p>Six target sheets, A4 or US Letter. Print <strong>actual size / 100%</strong> and measure the100mm ruler. ArUco:120mm outer black square. Dots:120mm corner-center span (not card edge);140mm field.</p>
+<label>Paper <select id="paper"><option value="a4">A4</option><option value="letter">US Letter</option></select></label>
+<label>Sheet <select id="target"><option value="aruco-7">ArUco7</option><option value="aruco-8">ArUco8</option><option value="dots-7">Dots7</option><option value="dots-8" selected>Dots8</option><option value="natural-1">Natural-image exercise</option><option value="negative-0">Blank negative control</option></select></label>
+<button id="print">Print selected page</button>
+<p><a href="https://github.com/ryosuzuki/image-tracking/releases/download/print-kit-v1-2026-10-12/mr-image-tracking-kit-a4.pdf">Download A4 PDF</a> · <a href="https://github.com/ryosuzuki/image-tracking/releases/download/print-kit-v1-2026-10-12/mr-image-tracking-kit-letter.pdf">Download US Letter PDF</a></p>
+<p><a id="svg" href="a4-dots-8.svg" download>Download actual-size page SVG</a> · <a href="manifest.json">Target manifest</a> · <a href="README.md">Instructions and PDF generation</a></p>
+<p class="note">Existing marker mode by source contract; live stereo/printed-paper acceptance pending. Current lesson is selected manually. Natural-image exercise is not registered in the native app. Crop the white field for the negative control.</p>
+</nav><article id="sheet"><img id="page" src="a4-dots-8.svg" alt="Dots8 A4 actual-size print sheet"></article>
+<script>
+const paper=document.querySelector('#paper'),target=document.querySelector('#target');
+function update(){const f=`${paper.value}-${target.value}.svg`;document.querySelector('#page').src=f;document.querySelector('#page').alt=`${target.value} ${paper.value} actual-size print sheet`;document.querySelector('#svg').href=f;const letter=paper.value==='letter';document.querySelector('#sheet').style.width=letter?'215.9mm':'210mm';document.querySelector('#sheet').style.height=letter?'279.4mm':'297mm';document.querySelector('#paper-css').textContent=`@page{size:${letter?'Letter':'A4'};margin:0}`;}
+paper.addEventListener('change',update);target.addEventListener('change',update);document.querySelector('#print').addEventListener('click',()=>window.print());
+</script></html>

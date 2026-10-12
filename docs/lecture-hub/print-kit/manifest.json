@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "units": "mm",
+  "actualSize": true,
+  "physicalPrintingPerformed": false,
+  "sourceContractSha256": "d95c6e19970d501a1e22e7447f89b0911a7aa3ca869414df3f5de79d9c460929",
+  "paperSizes": {
+    "a4": [
+      210,
+      297
+    ],
+    "letter": [
+      215.9,
+      279.4
+    ]
+  },
+  "targets": [
+    {
+      "name": "aruco-7",
+      "kind": "aruco",
+      "id": 7,
+      "dictionary": "DICT_4X4_50",
+      "targetFieldMm": [
+        140,
+        140
+      ],
+      "metricExtentMm": 120,
+      "metricDefinition": "outer black square",
+      "quietZoneMm": 10,
+      "currentNativeMode": "existing marker mode; physical stereo acceptance pending",
+      "targetContentMapping": "Existing app: choose lesson manually. Proposed: molecule/card animation by unique ID."
+    },
+    {
+      "name": "aruco-8",
+      "kind": "aruco",
+      "id": 8,
+      "dictionary": "DICT_4X4_50",
+      "targetFieldMm": [
+        140,
+        140
+      ],
+      "metricExtentMm": 120,
+      "metricDefinition": "outer black square",
+      "quietZoneMm": 10,
+      "currentNativeMode": "existing marker mode; physical stereo acceptance pending",
+      "targetContentMapping": "Existing app: choose lesson manually. Proposed: molecule/card animation by unique ID."
+    },
+    {
+      "name": "dots-7",
+      "kind": "dots",
+      "id": 7,
+      "dictionary": "dot-aruco-20261009-v1",
+      "targetFieldMm": [
+        140,
+        140
+      ],
+      "metricExtentMm": 120,
+      "metricDefinition": "adjacent corner-center distance",
+      "quietZoneMm": null,
+      "currentNativeMode": "existing marker mode; physical stereo acceptance pending",
+      "targetContentMapping": "Existing app: choose lesson manually. Proposed: molecule/card animation by unique ID."
+    },
+    {
+      "name": "dots-8",
+      "kind": "dots",
+      "id": 8,
+      "dictionary": "dot-aruco-20261009-v1",
+      "targetFieldMm": [
+        140,
+        140
+      ],
+      "metricExtentMm": 120,
+      "metricDefinition": "adjacent corner-center distance",
+      "quietZoneMm": null,
+      "currentNativeMode": "existing marker mode; physical stereo acceptance pending",
+      "targetContentMapping": "Existing app: choose lesson manually. Proposed: molecule/card animation by unique ID."
+    },
+    {
+      "name": "natural-1",
+      "kind": "natural",
+      "id": null,
+      "dictionary": null,
+      "targetFieldMm": [
+        140,
+        140
+      ],
+      "metricExtentMm": null,
+      "metricDefinition": "no calibrated tracking size",
+      "quietZoneMm": null,
+      "currentNativeMode": "not registered in native app; exercise/negative control only",
+      "targetContentMapping": "Proposed natural-image training exercise"
+    },
+    {
+      "name": "negative-0",
+      "kind": "negative",
+      "id": null,
+      "dictionary": null,
+      "targetFieldMm": [
+        140,
+        140
+      ],
+      "metricExtentMm": null,
+      "metricDefinition": "no calibrated tracking size",
+      "quietZoneMm": null,
+      "currentNativeMode": "not registered in native app; exercise/negative control only",
+      "targetContentMapping": "Expect no marker in cropped target field"
+    }
+  ],
+  "pdfNames": [
+    "mr-image-tracking-kit-a4.pdf",
+    "mr-image-tracking-kit-letter.pdf"
+  ]
+}
