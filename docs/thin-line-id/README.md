@@ -7,7 +7,7 @@ Overlay-only EMA alpha 0.4, hold cap300ms; fresh detections green, held tracks a
 Low-resolution L grouping uses tolerant arm orientation (.65 dot product) with an explicit portrait-sheet aspect guard (.48–.92, or inverse). This is an A4-like sheet assumption, not arbitrary aspect support.
 Groups are ranked by arm alignment before area, with corner-extent scale guards, so text-shaped local loops cannot steal true paper corners.
 
-Experimental opt-in local white-reference calibration: `?whiteFallback=1`. Default OFF. Only a failed, non-conflicting primary code is independently reread using adjacent-paper channel gains. Successful primary IDs and primary observations remain unchanged. Supplemental reads are labeled 色補正 and counted as Calibrated, never held or temporal. Horizontal upper/lower strips only; sides=true disables this lane. Independent140 saved RAW holdout:1284→1287 correct /1400 opportunities, zero lost/new observed wrong;804 synthetic positive/blank/gray/corrupted/nonmember cases passed. This small offline gain is not a new optical live-camera validation.
+Experimental opt-in local white-reference calibration: `?whiteFallback=1`. Default OFF. Only a failed, non-conflicting primary code is independently reread using adjacent-paper channel gains. Successful primary IDs and primary observations remain unchanged. Supplemental reads are labeled Calibrated and counted as Calibrated, never held or temporal. Horizontal upper/lower strips only; sides=true disables this lane. Independent140 saved RAW holdout:1284→1287 correct /1400 opportunities, zero lost/new observed wrong;804 synthetic positive/blank/gray/corrupted/nonmember cases passed. This small offline gain is not a new optical live-camera validation.
 
 ## Conservative printed-wall black reader
 
@@ -17,7 +17,7 @@ On 139 identical 1-Hz samples of Spatial Capture take20261010_072517, it rejecte
 
 ## Optional fixed-region supplemental reading
 
-The black reader supports `roi=1`, default OFF. After a failed primary/cascade read, it tries a fixed centered18×32 sampling region instead of18×48. Successful primary IDs, contradictory edge rejection and all already-known primary bits are preserved. A result is accepted only when it adds evidence and uniquely passes the existing decoder. It is displayed as **領域補助** and counted separately as ROI, a subset of same-frame Fresh—not temporal or held recognition. `wallStrict=1` still requires independent upper/lower agreement.
+The black reader supports `roi=1`, default OFF. After a failed primary/cascade read, it tries a fixed centered18×32 sampling region instead of18×48. Successful primary IDs, contradictory edge rejection and all already-known primary bits are preserved. A result is accepted only when it adds evidence and uniquely passes the existing decoder. It is displayed as **ROI-assisted** and counted separately as ROI, a subset of same-frame Fresh—not temporal or held recognition. `wallStrict=1` still requires independent upper/lower agreement.
 
 On a frozen saved-RAW holdout,100 positive images improved935→984/1000 IDs (four separate clips alone:756→788/800). No new wrong or lost primary IDs were observed in200 images including blank/damage controls;1206 synthetic cases retained default/ROI parity. This is **offline replay, not a new live optical trial**; no printed-wall reliability improvement is established. The once-mass optimization computes identical immutable-crop pixel masses once and reclassifies thresholds, without pixel quantization.
 

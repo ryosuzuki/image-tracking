@@ -10,6 +10,6 @@ Private verification before publication: all2576 ideal rendered codes for two le
 
 The L backend is frozen for repeatable experimental comparison. See `camera.html` and `targets.html?count=10&length=14&thickness=8`.
 
-Optional guarded low-mass reading: `?lowMassFallback=1&lowMassCascade=1`. Default OFF. Valid primary decoding and known bits are preserved; failed erasures may be filled using lower mass thresholds .045/.040 only when unique checked decoding succeeds. Fresh supplemental reads are labeled 補助読取 and counted separately, never held/temporal. Private paired RAW gains are not an independent optical robustness guarantee.
+Optional guarded low-mass reading: `?lowMassFallback=1&lowMassCascade=1`. Default OFF. Valid primary decoding and known bits are preserved; failed erasures may be filled using lower mass thresholds .045/.040 only when unique checked decoding succeeds. Fresh supplemental reads are labeled Supplemental and counted separately, never held/temporal. Private paired RAW gains are not an independent optical robustness guarantee.
 
 Saved-RAW independent holdout (350 frames; no new live trial): guarded fallback+cascade improves length8 591→858/1000 correct, length10 891→921/1000, dim584→592/600; motion588/600 unchanged, blank30 remains0IDs. Successful primary IDs and known bits unchanged, zero new observed wrong. Existing length10 wrong ID remains. The stricter `maxErrors=0&maxErasures=2` query rejects the three previously observed dense misreads in offline evidence, but drops other accepted outputs and is not a universal error guarantee.

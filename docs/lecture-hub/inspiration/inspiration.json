@@ -134,10 +134,10 @@
       "theme": "Archive & critical discussion",
       "collection": "Research Showcase",
       "origin": "Research Showcase · slide 4",
-      "author": "川田十夢",
+      "author": "Tom Kawada",
       "handle": "cmrr_xxx",
       "source_url": "https://x.com/cmrr_xxx/status/1783102935070806262",
-      "source_caption": "勝手に商品開発もしたけれど、私はげんきです。",
+      "source_caption": "[English translation] I went ahead and developed a product on my own, but I am doing fine.",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/showcase-1783102935070806262.jpg",
       "video_url": "https://video.twimg.com/amplify_video/1783102823468879872/vid/avc1/720x1560/TgLWOFM-xqAn9M7K.mp4?tag=14",
@@ -147,7 +147,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 4,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1623369575328006145",
@@ -155,10 +156,10 @@
       "theme": "Archive & critical discussion",
       "collection": "Research Showcase",
       "origin": "Research Showcase · slide 4",
-      "author": "川田十夢",
+      "author": "Tom Kawada",
       "handle": "cmrr_xxx",
       "source_url": "https://x.com/cmrr_xxx/status/1623369575328006145",
-      "source_caption": "推しのアクリルスタンドは健康に良いと聞いたので、本人が飛び出すタイプを独自開発しました。",
+      "source_caption": "[English translation] I heard acrylic stands of your favorite performers are good for your health, so I developed one in which the actual person pops out.",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/showcase-1623369575328006145.jpg",
       "video_url": "https://video.twimg.com/amplify_video/1623369466154467328/vid/720x1560/6HzLRy-v1DKZg0K1.mp4?tag=16",
@@ -168,7 +169,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 4,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1510576211486920704",
@@ -179,7 +181,7 @@
       "author": "ritar",
       "handle": "rtr_dnd",
       "source_url": "https://x.com/rtr_dnd/status/1510576211486920704",
-      "source_caption": "「開ける前にわかる」AR",
+      "source_caption": "[English translation] AR that lets you know what is inside before opening it.",
       "teaching_prompt": "What makes the reveal attach to this box, not a nearby similar one?",
       "image_url": "previews/showcase-1510576211486920704.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1510576156579295234/pu/vid/720x1280/MorEQtrHaZvDE-fe.mp4?tag=12",
@@ -189,7 +191,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 5,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1648276899838275585",
@@ -239,10 +242,10 @@
       "theme": "Archive & critical discussion",
       "collection": "Research Showcase",
       "origin": "Research Showcase · slide 6",
-      "author": "上田慎一郎",
+      "author": "Shinichiro Ueda",
       "handle": "shin0407",
       "source_url": "https://x.com/shin0407/status/1781246801154388055",
-      "source_caption": "みらいの婚活 1/3🎬",
+      "source_caption": "[English translation] Matchmaking in the future, 1/3 🎬",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/showcase-1781246801154388055.jpg",
       "video_url": "https://video.twimg.com/amplify_video/1781246691280293888/vid/avc1/720x1280/9ENtcDhsCPkqCRXM.mp4?tag=14",
@@ -252,7 +255,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 6,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1767782345804071018",
@@ -389,7 +393,7 @@
       "author": "Tetsuro Miyatake",
       "handle": "tmiyatake1",
       "source_url": "https://x.com/tmiyatake1/status/1745961355700572303",
-      "source_caption": "Vision Pro用のアプリが徐々に承認され始めている。\n\n例えばイマーシブな天気予報アプリ「Seasons」。",
+      "source_caption": "[English translation] Vision Pro apps are gradually starting to receive approval. For example, the immersive weather app Seasons.",
       "teaching_prompt": "How does the experience use the actual room rather than an arbitrary virtual background?",
       "image_url": "previews/showcase-1745961355700572303.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1745712409933922304/pu/vid/avc1/1280x720/W18WHyYQylAbxb6r.mp4?tag=12",
@@ -399,7 +403,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 8,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1727028667816267797",
@@ -431,7 +436,7 @@
       "author": "Gaku Shimizu / oji_chang",
       "handle": "oji_chang",
       "source_url": "https://x.com/oji_chang/status/1716799142247473287",
-      "source_caption": "「電子書籍がXRアプリになったら」をテーマに、エンジニアの@Ando_O7さんとデモを作ってみました。本を読む以前の「所有する」「本を選ぶ」体験に焦点を当て、本を飾ったりや机に平積みできるフィジカル本の良さを取り入れつつ、バーチャル特有の配置にも瞬時に切り替えられる体験をイメージしました。",
+      "source_caption": "[English translation] I made a demo with engineer @Ando_O7 exploring what would happen if e-books became XR apps. We focused on owning and choosing books before reading them: keeping the pleasure of physical books displayed on shelves or stacked on a desk, while instantly switching to arrangements only possible virtually.",
       "teaching_prompt": "Keep the physical affordance of choosing and arranging books, not only the page content.",
       "image_url": "previews/showcase-1716799142247473287.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1716796496446967808/pu/vid/avc1/1280x720/yym00x7_DFe5zXhr.mp4?tag=12",
@@ -441,7 +446,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 9,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1714630699704086702",
@@ -470,7 +476,7 @@
       "theme": "AI, memory & reality editing",
       "collection": "Research Showcase",
       "origin": "Research Showcase · slide 9",
-      "author": "深津 貴之 / THE GUILD, note",
+      "author": "Takayuki Fukatsu / THE GUILD, note",
       "handle": "fladdict",
       "source_url": "https://x.com/fladdict/status/1712042485445521504",
       "source_caption": "Just made a prototype of AI Presentation agent.  \n\n#GenerativeAI #UnrealEngine",
@@ -722,10 +728,10 @@
       "theme": "Archive & critical discussion",
       "collection": "Research Showcase",
       "origin": "Research Showcase · slide 13",
-      "author": "ないすれっど",
+      "author": "NiceRed",
       "handle": "Taka_Yoshinaga",
       "source_url": "https://x.com/Taka_Yoshinaga/status/1660571423440797696",
-      "source_caption": "ARCoreのScene  Semanticsで背景を差し替えるサンプルが一応できたのであとで公開します。apkもシェアするのでテストしてくれる人を募集中。\n#ARCore #AR_Fukuoka",
+      "source_caption": "[English translation] I have a working sample that replaces the background using ARCore Scene Semantics and will release it later. I will also share the APK and am looking for testers. #ARCore #AR_Fukuoka",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/showcase-1660571423440797696.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1660571254590697478/pu/vid/720x1600/neXcQHN_YCCJ0RmW.mp4?tag=12",
@@ -735,7 +741,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 13,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1659011250850877440",
@@ -911,10 +918,10 @@
       "theme": "Rooms, portals & spatial stories",
       "collection": "Research Showcase",
       "origin": "Research Showcase · slide 16",
-      "author": "ないすれっど",
+      "author": "NiceRed",
       "handle": "Taka_Yoshinaga",
       "source_url": "https://x.com/Taka_Yoshinaga/status/1601490437134372864",
-      "source_caption": "今日の趣味開発。実際のドアと仮想のポータルゲートを同期してみた。時間があればドアの追従精度をもう少し上げたいところだけど、とりあえず体験して面白かったので今日は終了。 #AR_Fukuoka #metaquestpro #questpro",
+      "source_caption": "[English translation] Today’s hobby development: I synchronized a real door with a virtual portal gate. I would like to improve door-tracking accuracy if I have time, but the experience was fun, so I am stopping here for today. #AR_Fukuoka #metaquestpro #questpro",
       "teaching_prompt": "Make opening a real door control a virtual boundary; then test drift and occlusion.",
       "image_url": "previews/showcase-1601490437134372864.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1601489137793925120/pu/vid/720x720/UC7-NHVhS3bAGpjh.mp4?tag=12",
@@ -924,7 +931,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 16,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1593006630056390658",
@@ -1016,10 +1024,10 @@
       "theme": "AI, memory & reality editing",
       "collection": "Research Showcase",
       "origin": "Research Showcase · slide 18",
-      "author": "株式会社INSPIREI",
+      "author": "INSPIREI Inc.",
       "handle": "INSPIREI_inc",
       "source_url": "https://x.com/INSPIREI_inc/status/1527197982952931329",
-      "source_caption": "「三次元音場スキャンAR/MR可視化システム」の計測を、iPad版アプリで撮影🎥\nホワイトノイズを出力したスピーカーを設置しています。\n\n3D sound intensity scanning and visualizing system with AR/MR\nVideo recording with iPad system\n\n#AR #AugmentedReality #ARKit\n#MR #mixedreality #HoloLens",
+      "source_caption": "[English translation] Measurement with a 3D sound-field scanning and AR/MR visualization system, recorded using the iPad app 🎥. A speaker emitting white noise is installed. 3D sound intensity scanning and visualizing system with AR/MR. Video recording with iPad system. #AR #AugmentedReality #ARKit #MR #mixedreality #HoloLens",
       "teaching_prompt": "What invisible measurement would you expose in the place it occurs?",
       "image_url": "previews/showcase-1527197982952931329.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1527197782171299841/pu/vid/1280x720/yLH04lQ8A9zkJj8X.mp4?tag=12",
@@ -1029,7 +1037,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 18,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1137581720130088960",
@@ -1040,7 +1049,7 @@
       "author": "kiyo | Interactive Engineer",
       "handle": "kiyossy0715",
       "source_url": "https://x.com/kiyossy0715/status/1137581720130088960",
-      "source_caption": "別世界が溶け込んだジュースから、あちらの世界を覗き込むAR表現作りました。ちょっとした魔法感。\n#AR #unity #ARKit #shader",
+      "source_caption": "[English translation] I made an AR effect that lets you peek into another world through a glass of juice into which that world has blended. A little touch of magic. #AR #unity #ARKit #shader",
       "teaching_prompt": "Use the inside of an everyday object as a window into another scene.",
       "image_url": "previews/showcase-1137581720130088960.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1137579988603899906/pu/vid/1280x720/oHFre7scQFy6hihv.mp4?tag=10",
@@ -1050,7 +1059,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 18,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1201481558517014529",
@@ -1145,7 +1155,7 @@
       "author": "ritar",
       "handle": "rtr_dnd",
       "source_url": "https://x.com/rtr_dnd/status/1245422596914462721",
-      "source_caption": "コロナで本屋に行けなくても大丈夫、リアル電子書籍",
+      "source_caption": "[English translation] Even if you cannot visit a bookstore during COVID, no problem: physical e-books.",
       "teaching_prompt": "How does the experience use the actual room rather than an arbitrary virtual background?",
       "image_url": "previews/showcase-1245422596914462721.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1245422543692955648/pu/vid/720x1280/tLgQCcWMXxYpkhSq.mp4?tag=10",
@@ -1155,7 +1165,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 20,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1268891698693681152",
@@ -1187,7 +1198,7 @@
       "author": "ritar",
       "handle": "rtr_dnd",
       "source_url": "https://x.com/rtr_dnd/status/1393588000437587969",
-      "source_caption": "さわれる（かもしれない）AR",
+      "source_caption": "[English translation] AR you can (perhaps) touch.",
       "teaching_prompt": "Compare what is visibly colliding with what the hand can physically feel.",
       "image_url": "previews/showcase-1393588000437587969.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1393587860264030215/pu/vid/720x1280/2Tams6aaZhzUIa3G.mp4?tag=12",
@@ -1197,7 +1208,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 21,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1241130028017963009",
@@ -1226,10 +1238,10 @@
       "theme": "Guidance, learning & accessibility",
       "collection": "Research Showcase",
       "origin": "Research Showcase · slide 21",
-      "author": "やのせん@AI/VR/メタバース教育",
+      "author": "Yanosen — AI/VR/metaverse education",
       "handle": "yanosen_jp",
       "source_url": "https://x.com/yanosen_jp/status/1326484156138713095",
-      "source_caption": "今日、大学で肺の解剖の授業をしていたら、ふと「自分を標本にしちゃえば良くね？」と思いついたので、アセットストアで買った骨モデルをVRMにして、Virtual Presentation Spaceに読み込んでサンプル講義つくってみた。思ったより難しい！",
+      "source_caption": "[English translation] While teaching lung anatomy at university today, I wondered: why not use myself as the specimen? I converted a bone model bought from the Asset Store to VRM, loaded it into Virtual Presentation Space and made a sample lecture. Harder than I expected!",
       "teaching_prompt": "Which instruction belongs at the physical action, and what happens when the user deviates?",
       "image_url": "previews/showcase-1326484156138713095.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1326483801166409729/pu/vid/1280x720/vxXXMAEauyRBpYdx.mp4?tag=10",
@@ -1239,7 +1251,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 21,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1232602137554771968",
@@ -1352,10 +1365,10 @@
       "theme": "Rooms, portals & spatial stories",
       "collection": "Research Showcase",
       "origin": "Research Showcase · slide 23",
-      "author": "イマ",
+      "author": "Ima",
       "handle": "IMA8MAI",
       "source_url": "https://x.com/IMA8MAI/status/1571354203125350400",
-      "source_caption": "外で撮ると良い感じにgood（本線に関係ない要素を付け加えました）",
+      "source_caption": "[English translation] It looks good when filmed outdoors (I added something unrelated to the main concept).",
       "teaching_prompt": "How does the experience use the actual room rather than an arbitrary virtual background?",
       "image_url": "previews/showcase-1571354203125350400.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1571354079657598976/pu/vid/592x1280/8AKpLuUvXZZwBq8S.mp4?tag=12",
@@ -1365,7 +1378,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 23,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1845253718293324126",
@@ -1502,7 +1516,7 @@
       "author": "Gaku Shimizu / oji_chang",
       "handle": "oji_chang",
       "source_url": "https://x.com/oji_chang/status/1846315112531161241",
-      "source_caption": "「こんな電子書籍があったらいいな」という体験をApple Vision Proでプロトタイプしてみました。スマホの電子書籍では感じられない、本の大きさや厚み、本棚にレイアウトするフィジカル本の楽しさを活かしながら、場所を取らず、どこでも持ち運べる。そんな理想の電子書籍をイメージしています。",
+      "source_caption": "[English translation] I prototyped my ideal e-book experience on Apple Vision Pro. It preserves the pleasure of physical books—their size and thickness and arranging them on shelves—which phone e-books cannot provide, while taking no physical space and being portable anywhere.",
       "teaching_prompt": "Which familiar physical workflow gains something from a spatial interface?",
       "image_url": "previews/showcase-1846315112531161241.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1846169486795460608/pu/vid/avc1/1280x720/451PCqfIpR5I7CSE.mp4?tag=12",
@@ -1512,7 +1526,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 26,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1843087939863195774",
@@ -1523,7 +1538,7 @@
       "author": "Seamless",
       "handle": "shiropen2",
       "source_url": "https://x.com/shiropen2/status/1843087939863195774",
-      "source_caption": "スマートグラスで個人情報を「透視」。見ている相手のプライバシーデータをリアルタイムで表示する技術「I-XRAY」  一見普通の眼鏡に見えるMetaグラスに映る他人の顔から逆顔検索エンジンやLLM等でこっそり名前や住所などの個人情報を瞬時に特定→それを見ながら話せる",
+      "source_caption": "[English translation] Smart glasses that see through to personal information: I-XRAY displays private data about the person you are looking at in real time. Faces captured by ordinary-looking Meta glasses are used with reverse face search and LLMs to discreetly identify names, addresses and other personal information instantly, which the wearer can view while talking.",
       "teaching_prompt": "What is sensed, inferred or generated? Which behavior is demonstrated, and which is a vision?",
       "image_url": "previews/showcase-1843087939863195774.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1843087796304809984/pu/vid/avc1/1280x720/hWiLe8Sp3uNIE_nC.mp4?tag=12",
@@ -1533,7 +1548,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 26,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1808461529806942718",
@@ -1544,7 +1560,7 @@
       "author": "kiyo | Interactive Engineer",
       "handle": "kiyossy0715",
       "source_url": "https://x.com/kiyossy0715/status/1808461529806942718",
-      "source_caption": "以前作った“AR x AIで魔法の妖精を呼べるアプリ“「宿題ナビィ」\nGPT4oに対応させてアップデートさせてみました。\n\n図解問題にも対応して答えてくれるようになったので、使いやすく。\nより学びを楽しくしてくれる相棒感が増した気がする。\n#AR #AI #GPT4o #unity",
+      "source_caption": "[English translation] I updated Homework Navi, my AR × AI app that summons a magical fairy, to support GPT-4o. It can now answer diagram-based questions, making it easier to use and more like a companion that makes learning fun. #AR #AI #GPT4o #unity",
       "teaching_prompt": "How does an embodied character change the experience of asking for help?",
       "image_url": "previews/showcase-1808461529806942718.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1808461454364008448/pu/vid/avc1/1280x592/l8BfqKYfiJB5iv7-.mp4?tag=12",
@@ -1554,7 +1570,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 26,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1493277178968309761",
@@ -1628,7 +1645,7 @@
       "author": "IVAN@AR × Marketing",
       "handle": "van_eng622",
       "source_url": "https://x.com/van_eng622/status/1803255585560989760",
-      "source_caption": "徐々にVRの世界に入るMR作品が面白い\n世界観も好き",
+      "source_caption": "[English translation] An interesting MR experience that gradually takes you into a VR world. I also like its setting.",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/showcase-1803255585560989760.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1803025174918524928/pu/vid/avc1/592x1280/-ZXBlTwuex0FjuCa.mp4?tag=12",
@@ -1638,7 +1655,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 28,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1802726081134264372",
@@ -1940,10 +1958,10 @@
       "theme": "AI, memory & reality editing",
       "collection": "Research Showcase",
       "origin": "Research Showcase · slide 34",
-      "author": "Takahiro Poly Horikawa 堀川隆弘",
+      "author": "Takahiro Poly Horikawa",
       "handle": "thorikawa",
       "source_url": "https://x.com/thorikawa/status/1901545245944455409",
-      "source_caption": "Meta QuestのPassthrough Camera APIが公開されたので、以前作った現実の物体を3Dで複製するアプリも更新してみた。ワールド座標<->スクリーン座標の計算とかがやりやすくなったので、指カメラの領域クロップを地味に実装したので3Dモデルの品質がちょっとだけ改善された。 Updated my \"Echo the",
+      "source_caption": "[English translation] With the release of Meta Quest’s Passthrough Camera API, I updated my app that duplicates real objects in 3D. World-to-screen coordinate calculations became easier, so I added region cropping for the finger camera, slightly improving 3D model quality. Updated my \"Echo the [archived excerpt ends here].",
       "teaching_prompt": "Compare an object photograph, a reconstructed mesh and a stable in-place copy.",
       "image_url": "previews/showcase-1901545245944455409.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1901543570030616576/pu/vid/avc1/720x720/LmlDJrxutDFJtRTA.mp4?tag=12",
@@ -1953,7 +1971,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": 34,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1692075721257283782",
@@ -2608,14 +2627,14 @@
     },
     {
       "id": "x-1316705505780277250",
-      "title": "バスケのドリブルにプロジェクター投影でエフェクト演出（マイクで検知）",
+      "title": "Projected basketball-dribbling effects detected by microphone",
       "theme": "Archive & critical discussion",
       "collection": "Saved inspiration",
       "origin": "Saved-source selection",
-      "author": "pook ほんだ",
+      "author": "pook Honda",
       "handle": "pook_ym",
       "source_url": "https://x.com/pook_ym/status/1316705505780277250",
-      "source_caption": "バスケのドリブルにプロジェクター投影でエフェクト演出（マイクで検知）\n#不思議のプロトタイプ",
+      "source_caption": "[English translation] Projected effects for basketball dribbling, detected with a microphone. #MysteriousPrototypes",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/post-1316705505780277250.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1316705481855967233/pu/vid/1006x720/L3srpo9OYegip_Ro.mp4?tag=10",
@@ -2625,18 +2644,19 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": null,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1239060554196512768",
-      "title": "ゲーム伝統トラップ “床ビュン!” を体験できるAR表現作りました。",
+      "title": "An AR flying-floor dungeon trap",
       "theme": "Archive & critical discussion",
       "collection": "Saved inspiration",
       "origin": "Saved-source selection",
       "author": "kiyo | Interactive Engineer",
       "handle": "kiyossy0715",
       "source_url": "https://x.com/kiyossy0715/status/1239060554196512768",
-      "source_caption": "ゲーム伝統トラップ “床ビュン!” を体験できるAR表現作りました。\n床が飛び上がって襲ってきます。\n好きな場所でダンジョン探索気分。\n#AR #Unity #ARKit #Shader",
+      "source_caption": "[English translation] I created an AR version of the classic game trap: a floor that flies up to attack you. Feel like you are exploring a dungeon anywhere. #AR #Unity #ARKit #Shader",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/post-1239060554196512768.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1239059287571222528/pu/vid/1280x720/0kOaxy3-pamfaK_R.mp4?tag=10",
@@ -2646,18 +2666,19 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": null,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1398948139281764352",
-      "title": "不思議な魔法感のあるおもちゃを",
+      "title": "A toy with a mysterious touch of magic",
       "theme": "Archive & critical discussion",
       "collection": "Saved inspiration",
       "origin": "Saved-source selection",
       "author": "kiyo | Interactive Engineer",
       "handle": "kiyossy0715",
       "source_url": "https://x.com/kiyossy0715/status/1398948139281764352",
-      "source_caption": "不思議な魔法感のあるおもちゃを \nAR x アナログフィギュアで作りました。\n\n周りの風景に擬態する、\n恥ずかしがり屋のカメレオン。\n#madewithunity #AR #Vuforia",
+      "source_caption": "[English translation] I made a magical-feeling toy by combining AR with a physical figurine: a shy chameleon that camouflages itself against the surrounding scenery. #madewithunity #AR #Vuforia",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/post-1398948139281764352.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1398948071560552448/pu/vid/1280x592/Ql-LYheqhJtFFe-t.mp4?tag=12",
@@ -2667,18 +2688,19 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": null,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1396290790301736960",
-      "title": "ある道の達人が使いそうな技を会得できるARアプリ作りました。",
+      "title": "An AR app for mastering a martial-arts energy move",
       "theme": "Archive & critical discussion",
       "collection": "Saved inspiration",
       "origin": "Saved-source selection",
       "author": "kiyo | Interactive Engineer",
       "handle": "kiyossy0715",
       "source_url": "https://x.com/kiyossy0715/status/1396290790301736960",
-      "source_caption": "ある道の達人が使いそうな技を会得できるARアプリ作りました。\n\n掌の形に壁を凹ますほどの″気”を放つ、必殺技。\n#madewithunity #AR #ARKit",
+      "source_caption": "[English translation] I made an AR app that gives you a move a master might use: a finishing attack that emits enough energy to dent a wall in the shape of your palm. #madewithunity #AR #ARKit",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/post-1396290790301736960.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1396290742641856514/pu/vid/1280x592/KOb_UwlHgDqj9MS8.mp4?tag=12",
@@ -2688,7 +2710,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": null,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1318955158768844800",
@@ -2741,7 +2764,7 @@
       "author": "Kitasenju Design",
       "handle": "kitasenjudesign",
       "source_url": "https://x.com/kitasenjudesign/status/1282665402812608513",
-      "source_caption": "Voxelization with ARKit4 and LiDAR\nデプスマップでリアルタイムボクセル化\n#arkit #ar #madewithunity",
+      "source_caption": "[English translation] Voxelization with ARKit 4 and LiDAR. Real-time voxelization using a depth map. #arkit #ar #madewithunity",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/post-1282665402812608513.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1282664008445657089/pu/vid/1030x720/SEkpAo0He2zlpAZq.mp4?tag=10",
@@ -2751,7 +2774,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": null,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1266013124290703360",
@@ -2818,14 +2842,14 @@
     },
     {
       "id": "x-1247463466081742849",
-      "title": "「物体が断裂して浮き出す空間」を作りました。",
+      "title": "A space where objects split apart and float out",
       "theme": "Archive & critical discussion",
       "collection": "Saved inspiration",
       "origin": "Saved-source selection",
       "author": "kiyo | Interactive Engineer",
       "handle": "kiyossy0715",
       "source_url": "https://x.com/kiyossy0715/status/1247463466081742849",
-      "source_caption": "「物体が断裂して浮き出す空間」を作りました。\n浮き出すKindle。世界が少しバグって見える。\n#AR #unity #ARKit #shader",
+      "source_caption": "[English translation] I created a space where objects split apart and float out. A floating Kindle makes the world look slightly glitched. #AR #unity #ARKit #shader",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/post-1247463466081742849.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1247463177379409920/pu/vid/960x540/MfNKmbm0X8givAIs.mp4?tag=10",
@@ -2835,18 +2859,19 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": null,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1160447306354720770",
-      "title": "ミニ四駆にカメラ搭載 x プロジェクションで投影 = 自分の家レース会場化（天才）",
+      "title": "A camera-equipped Mini 4WD car and projection turn a home into a racetrack",
       "theme": "Archive & critical discussion",
       "collection": "Saved inspiration",
       "origin": "Saved-source selection",
-      "author": "栗林@映画KILLTUBE開発中",
+      "author": "Kuribayashi — developing the film KILLTUBE",
       "handle": "kri1226",
       "source_url": "https://x.com/kri1226/status/1160447306354720770",
-      "source_caption": "ミニ四駆にカメラ搭載 x プロジェクションで投影 = 自分の家レース会場化（天才）",
+      "source_caption": "[English translation] A camera on a Mini 4WD car plus projection turns your home into a racetrack. Genius.",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/post-1160447306354720770.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1057712070207004672/pu/vid/640x358/WERMFoWh4Fp40xqn.mp4?tag=5",
@@ -2856,7 +2881,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": null,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-2103614588499775820",
@@ -3091,14 +3117,14 @@
     },
     {
       "id": "x-1622341068594511872",
-      "title": "経験のトレーディングカード、それは身体と動作を入れ替えることができるネクストレベルのカード遊び。",
+      "title": "Experience trading cards that exchange bodies and movements",
       "theme": "Objects, toys & tangible play",
       "collection": "Saved inspiration",
       "origin": "Saved-source selection",
-      "author": "川田十夢",
+      "author": "Tom Kawada",
       "handle": "cmrr_xxx",
       "source_url": "https://x.com/cmrr_xxx/status/1622341068594511872",
-      "source_caption": "経験のトレーディングカード、それは身体と動作を入れ替えることができるネクストレベルのカード遊び。\n\n#AR #トレーディングカード #ヨネダ2000 #鎮座DOPENESS #AR三兄弟 #unity #unity3d #madewithunity #gamedev #indiedev",
+      "source_caption": "[English translation] Experience trading cards: next-level card play that lets you swap bodies and movements. #AR #TradingCards #Yoneda2000 #ChinzaDOPENESS #ARBrothers #unity #unity3d #madewithunity #gamedev #indiedev",
       "teaching_prompt": "What is the object’s role: identity, coordinate frame, input, or physical feedback?",
       "image_url": "previews/post-1622341068594511872.jpg",
       "video_url": "https://video.twimg.com/amplify_video/1622332854821847040/vid/720x1560/zpkuPyunY_sK8WtC.mp4?tag=16",
@@ -3108,7 +3134,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": null,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "x-1622315052492537857",
@@ -3490,14 +3517,14 @@
     },
     {
       "id": "x-1286604740478943232",
-      "title": "リアルマイクラ化計画 #AR #madewithunity",
+      "title": "Real-world Minecraft project #AR #madewithunity",
       "theme": "Archive & critical discussion",
       "collection": "Saved inspiration",
       "origin": "Saved-source selection",
       "author": "kidachi",
       "handle": "kidach1",
       "source_url": "https://x.com/kidach1/status/1286604740478943232",
-      "source_caption": "リアルマイクラ化計画 #AR #madewithunity",
+      "source_caption": "[English translation] Real-world Minecraft project #AR #madewithunity",
       "teaching_prompt": "What does this example suggest? Do not infer sensing or implementation from a finished clip.",
       "image_url": "previews/post-1286604740478943232.jpg",
       "video_url": "https://video.twimg.com/ext_tw_video/1286603277736349696/pu/vid/1280x720/oijveb0Bhxp-2OWO.mp4?tag=10",
@@ -3507,7 +3534,8 @@
       "evidence_note": "Creator / shared-post description, not independent validation. Videos are linked to original hosting, not reuploaded.",
       "slide_page": null,
       "credit": "Preview © original creator; attributed excerpt from existing lecture/source.",
-      "kind": "Source example"
+      "kind": "Source example",
+      "source_caption_language": "en (translated from Japanese)"
     },
     {
       "id": "video-0",
@@ -3720,7 +3748,7 @@
     },
     {
       "id": "video-11",
-      "title": "20150827安川電機3DMotionProjectionMapping",
+      "title": "2015-08-27 Yaskawa Electric 3D Motion Projection Mapping",
       "theme": "Archive & critical discussion",
       "collection": "Ideas / Inspiration references",
       "origin": "Historical inspiration reference",

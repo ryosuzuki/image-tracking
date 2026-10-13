@@ -43,11 +43,11 @@ Blank-code tests retain geometry but emit no ID; do not confuse detected paper c
 
 ## Experimental color calibration
 
-`whiteFallback=1` uses adjacent white-paper patches to independently reclassify color after a failed primary read; successful primary IDs and primary observations are preserved. Default OFF, horizontal upper/lower only, displayed as 色補正 and counted separately. Independent140 saved RAW holdout:1284→1287/1400correct, no lost primary or new observed wrong IDs.804 synthetic positive/blank/gray/corrupted/nonmember optical cases and1050 structural/ambiguity assertions passed. This is a small offline gain, not live deployment reliability evidence.
+`whiteFallback=1` uses adjacent white-paper patches to independently reclassify color after a failed primary read; successful primary IDs and primary observations are preserved. Default OFF, horizontal upper/lower only, displayed as Calibrated and counted separately. Independent140 saved RAW holdout:1284→1287/1400correct, no lost primary or new observed wrong IDs.804 synthetic positive/blank/gray/corrupted/nonmember optical cases and1050 structural/ambiguity assertions passed. This is a small offline gain, not live deployment reliability evidence.
 
 ## Experimental black-region supplemental reading
 
-`roi=1` is default OFF. A fixed centered18×32 region supplements a failed original18×48 read/cascade; valid primary IDs and primary-known bits are unchanged, contradictory evidence rejects, and the existing codebook/error limits remain. The UI labels **領域補助**, and ROI counts are a subset of current-frame Fresh, not temporal or held. Independent-strip printed-wall mode remains enforced.
+`roi=1` is default OFF. A fixed centered18×32 region supplements a failed original18×48 read/cascade; valid primary IDs and primary-known bits are unchanged, contradictory evidence rejects, and the existing codebook/error limits remain. The UI labels **ROI-assisted**, and ROI counts are a subset of current-frame Fresh, not temporal or held. Independent-strip printed-wall mode remains enforced.
 
 The region was frozen on20 training images before holdout:100 positive heldout RAW images improved935→984/1000 IDs; four separate clips alone improved756→788/800.200 actual RAW including blank, deliberate damage and strict126 controls had no new observed wrong/lost-primary IDs or known-bit rewrites.1206 synthetic cases and200 RAW parser integration parity passed. This is an offline gain, **not new live optical evidence or printed-paper validation**. A saved-camera replay video compares the same20 article images174→198/200 at artificial1second/frame, explicitly labeled as replay.
 

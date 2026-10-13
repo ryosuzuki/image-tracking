@@ -195,7 +195,7 @@
     },
     {
       "path": "image/8thwall-web/README.md",
-      "sha256": "c2e631de380cd64e2ec6350a73a80960c902148efcc4df01e0281a5f1b474c7f"
+      "sha256": "bb010e9aa8793826cf280e8fc257a4d033df498ac4ce5399335942bfdcae2a54"
     },
     {
       "path": "image/8thwall-web/SOURCE-LICENSE.md",
@@ -999,7 +999,7 @@
     },
     {
       "path": "image/arkit-swift/README.md",
-      "sha256": "d6f7aad4c033d13d01b95b0db0b759763d62cc27c2d8848c6cc93ba23f7d0689"
+      "sha256": "866b4bc39d627d2405e07724ffb4b9be6e30197fd7a1ce76b373dfe1b224c252"
     },
     {
       "path": "image/arkit-swift/SOURCE-LICENSE.md",
@@ -1415,7 +1415,7 @@
     },
     {
       "path": "image/quest-native-opencv/README.md",
-      "sha256": "e8370f6cba24cee0085541d55f6138809e2793c4ad9fd96a1806a34473edd0b3"
+      "sha256": "d2593e63eb55d381c21dfda3fff6862756d35c8b4797c9facf02005ee620a400"
     },
     {
       "path": "image/quest-native-opencv/SOURCE-LICENSE.md",
@@ -3219,7 +3219,7 @@
     },
     {
       "path": "image/quest-unity-artoolkit/README.md",
-      "sha256": "3af2ce36d52bc38a2a2a3e106c04ce6f2fbe10a0bad5374b8234fe0b48bec7d8"
+      "sha256": "5e2376c1c5933b0fb06d1048e99d865842001afd822ff06b5d043c525e58dba0"
     },
     {
       "path": "image/quest-unity-artoolkit/SOURCE-LICENSE.md",
@@ -3791,7 +3791,7 @@
     },
     {
       "path": "markers/arkit-swift/README.md",
-      "sha256": "fafe6d68f45ee3c3365d3f5bc14416f4ee50a647a383205f7516b3eace2175a0"
+      "sha256": "90eb31b60af89eaae8c7c0f93ffc22f66449e8108bd72950f78d616b988c7390"
     },
     {
       "path": "markers/arkit-swift/SOURCE-LICENSE.md",
@@ -6803,7 +6803,7 @@
     },
     {
       "path": "markers/web-webxr/README.md",
-      "sha256": "b5fe0531cb3aaa23ea6bf9c45ef63a147baf9d45f4cf9b45abe8d0e282989ec4"
+      "sha256": "f20dc8a8dc286b323a885a46519e5b73fe7610d154e4072d700f75bd9dc44e7f"
     },
     {
       "path": "markers/web-webxr/SOURCE-LICENSE.md",

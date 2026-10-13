@@ -1,154 +1,154 @@
-# 目立たない紙ID：細い枠線で多数・頑健な認識を実現する設計調査
+# Unobtrusive paper IDs: designing thin borders for many robust identifiers
 
-調査日：2026-10-09。対象：Quest／Pixelカメラ、黒い四隅L字、上辺の細い色線・白黒線。**実装や実機動画とは独立した文献調査**。網羅的文献サーベイ・特許クリアランスではない。
+Review date: 2026-10-09. Scope: Quest/Pixel cameras, four black L corners, and thin colored or monochrome top-edge lines. **A literature review independent of implementation and physical-device videos.** Not an exhaustive survey or patent clearance.
 
-## 最初に結論
+## Conclusions first
 
-- **今の希望には「黒L字＋細い高彩度の色線＋離れたコードブック」が最も合う試作候補。** ただし「カラーだから最も頑健」は未証明。黒L字＋白黒固定スロットを同条件の対照にする。これは設計判断であり実測順位ではない。[S1–S7]
-- **先行研究はある。** DynamiclandのFramecodes（2016）は「枠に識別子を符号化」、AprilTag Flexible Layouts（2019）は検出枠とデータ配置を分ける。発想をゼロから作る必要はないが、既存認識器が任意のL字＋細線をそのまま読めるわけでもない。信頼度：中（一次資料）。[S1,S4]
-- **種類数より先に、最も細い方向の画素数が制約になる。** 線の長さを伸ばしても、太さが1〜2pxに潰れると、色混合・ぼけ・位置ずれの影響を受ける。普遍的な最低mm／pxは文献から保証できない。信頼度：高（複数の独立システムが距離・小特徴の制限を報告）。[S3–S6,S9]
-- **数百〜数千IDを目指す設計は可能。ただし4色6桁＝4,096種類は、頑健な実用ID数ではない。** 1色誤りを必ず訂正するモデルでは、6桁の容量上限は215ID以下になる（下記の計算）。実際の数は生成した辞書とカメラ評価で決める。[S7,S8＋本稿の数学的導出]
-- **もっと目立たなくする別路線は画像透かし。** StegaStampは写真に56bitを埋めて印刷・撮影後に復号する研究。ただし白い紙の細い上辺へそのまま適用できず、Questブラウザで10枚同時に軽く動く保証もない。今すぐの第一候補にはしない。信頼度：中（原論文）。[S16,S17]
+- **Black L corners, thin saturated colored segments and a well-separated codebook are the closest prototype candidate to the current goal.** “Color is the most robust” is unproven. Compare black L corners with fixed monochrome slots under identical conditions. This is a design judgment, not a measured ranking. [S1–S7]
+- **Prior work exists.** Dynamicland's Framecodes (2016) encode identifiers in borders; AprilTag Flexible Layouts (2019) separate detection boundaries from data placement. The idea need not be invented from scratch, but existing readers do not automatically read arbitrary L corners and thin lines. Confidence: medium, based on primary sources. [S1,S4]
+- **Pixels across the thinnest dimension constrain the design before ID capacity does.** Lengthening a line does not prevent color mixing, blur and registration errors when its thickness collapses to 1–2 pixels. No universal minimum mm/pixel size can be guaranteed from the literature. Confidence: high; several independent systems report distance and small-feature limitations. [S3–S6,S9]
+- **Hundreds or thousands of IDs are conceivable, but four colors in six slots give 4,096 raw combinations, not robust usable IDs.** Guaranteed correction of one color substitution bounds a six-slot dictionary at no more than 215 IDs (derivation below). Actual capacity depends on the generated dictionary and camera evaluation. [S7,S8 and mathematical derivation]
+- **Watermarking is a separate route to lower visibility.** StegaStamp embeds 56 bits in photographs and decodes after printing/capture, but cannot be applied unchanged to a thin white-paper top edge. Lightweight ten-target Quest-browser operation is not guaranteed. It is not the immediate first choice. Confidence: medium, original paper. [S16,S17]
 
-## 1. 「目立たない」の二つを分ける
+## 1. Two meanings of “unobtrusive”
 
-**細くする**ことと、**薄い色にする**ことは違う。前者は撮像画素の不足、後者は背景との差の不足を生む。希望の意匠を守るなら、まず面積を減らし、線そのもののコントラスト・彩度は保つ。白い紙の淡いパステルや微妙な濃淡だけをIDにすると、影・露出・ホワイトバランスでクラスが重なる可能性がある。これは光学的な設計推論であり、本環境での比較結果ではない。[S5,S6]
+**Thinner** and **paler** are different. Thin features lose imaging pixels; pale features lose contrast against the background. To preserve the desired appearance, first reduce area while retaining line contrast and saturation. Pastel colors or subtle intensities on white paper may overlap under shadows, exposure and white-balance changes. This is optical design reasoning, not a comparison measured in this environment. [S5,S6]
 
-長い上辺を使うことで、文字・図を占有せず、各スロットの横方向サイズを稼げる。しかし線を連結すると隣色との境界推定が必要になる。最初は**薄い帯ではなく、細いが鮮明な短線を固定スロットに置き、小さな白い隙間を残す**。同色が隣接してもセル位置を幾何から読み出すなら、連続した色領域を無理に分割しないで済む。[S1,S4＋設計提案]
+Using the long top edge avoids occupying text/figures and gives slots more horizontal space. Connected segments, however, require estimating boundaries between adjacent colors. Start with **thin but vivid short lines in fixed slots, separated by small white gaps**, rather than a faint continuous band. With geometrically determined cells, adjacent identical colors need not be segmented as separate connected regions. [S1,S4 and design proposal]
 
-四隅L字は位置担当、線列はID担当、と分ける。四つのL字が完全に対称なら向きと紙の組み合わせが曖昧になるため、開始印／非対称配置／方向を含めて距離を確保した辞書が必要。紙が接触・重なる場合、「近いL字を四つ選ぶ」だけでは別紙の角を混ぜる危険がある。[S4,S7＋射影幾何上の設計推論]
+Assign geometry to the L corners and identity to the line sequence. Four fully symmetric corners leave orientation and sheet grouping ambiguous; use start marks, asymmetric placement or an orientation-aware separated dictionary. When sheets touch or overlap, choosing the four closest corners can mix corners from different sheets. [S4,S7 and projective-geometry reasoning]
 
-## 2. 近い先行例と、採用できる部分
+## 2. Closest precedents and transferable ideas
 
-|方式|検証した事実|希望への適合・持ち込むべき考え|注意|
+| Method | Verified facts | Fit and transferable ideas | Qualification |
 |---|---|---|---|
-|Dynamicland Framecodes, 2016|枠にIDを符号化して認識・追跡する、と公式アーカイブが記述|**最も直接近い先行例**。枠をデータキャリアにする|公式ページはstubで完全仕様・容量・最小幅はない。[S1]|
-|Dotframes / Tiny dotframes|角ごとに色ドット。4K導入後、半径0.25inch→0.1inchに小型化|分散配置、遮蔽への冗長性、画素増加で小型化する実例|直径5.08mmはDynamiclandの設備の事実。Questの最小読取寸法ではない。[S2,S3]|
-|AprilTag Flexible Layouts|データを検出境界外へ配置、円形／環状／再帰的レイアウトを示す|**検出と符号の分離**、低誤検出になるコード生成|論文仕様には四回対称と検出用黒白境界の条件がある。四つの開いたL字への自動適用は不可。[S4]|
-|ChromaTag|色差で候補を絞り、黒白境界で精密位置を取る|色と幾何を別役割にする設計の裏付け|著者は遠距離・急角度ではAprilTagを推奨。データでは70px以上のタグで類似recall。70pxを細線の限界に転用不可。[S5,S6]|
-|AprilTag / ArUco|ID辞書の距離を大きくして誤復号を減らす|独自枠コードにも**必要ID数だけの離れた辞書**を採用|tag36h11は36bitでも587コード。2^36個を使っていない。[S7,S8]|
-|CALTag|格子ごとのID＋CRC、コード距離と回転を考慮する公開生成コード|分散した校正点、チェックと距離、部分観測を使う設計参考|CALTagはカメラ校正用の格子。細い装飾線の完成デコーダではない。旧MATLAB等、移植が必要。[S11,S12]|
-|TopoTag|位相＋幾何でIDと姿勢。著者は数万〜百万規模への拡張を記述|見た目を変えられる別方式、容量設計の参考|形状の位相維持が条件。公開ライブラリは研究用途／Win32。細線への変形で性能維持とは言えない。[S13,S14]|
-|Pi-Tag|原論文の書誌・DOIとChromaTag参考文献を確認|projective invariantsという別のID／幾何表現の入口|今回原論文本体を取得・精読できず、容量・性能比較には使わない。[S15]|
-|StegaStamp|400×400の学習済み画像復号、56bitの訂正後ペイロード、印刷撮影実験|写真がある紙なら視覚的に目立たないID候補|中身の画像を加工する必要がある。「中身自由・上辺だけ」の希望とは異なる。[S16,S17]|
-|Digimarc|公式資料にdigital watermarks、SDK／API、物理商品とデジタルIDの説明|商用の低可視ID／透かしの実例|公式能力説明であって独立再現ではない。今回SDK価格／性能／特許請求項は未確認。[S18]|
-|Code128など1Dバーコード|バーと隙間の幅配列を復号し、checksumで検査する実装|長短の線でIDを表すこと自体は既存技術|細い短線の端点誤差に注意。既存Code128の縦バーを横向き短線へ置換して同じライブラリで読めるわけではない。[S10]|
+| Dynamicland Framecodes, 2016 | Official archive describes recognition/tracking with border-encoded IDs | **Closest direct precedent:** borders as data carriers | Stub page lacks full specification, capacity and minimum width. [S1] |
+| Dotframes / Tiny dotframes | Colored dots at each corner; radius reduced from 0.25 to 0.1 inches after 4K introduction | Distributed placement, occlusion redundancy and resolution-supported miniaturization | 5.08 mm diameter describes Dynamicland's setup, not Quest's minimum readable size. [S2,S3] |
+| AprilTag Flexible Layouts | Data outside detection boundaries; circular, annular and recursive layouts | **Separate detection from coding**, with low-false-positive code generation | Requires fourfold symmetry and detection black/white boundaries; not automatic support for four open L corners. [S4] |
+| ChromaTag | Color differences narrow candidates; black/white boundaries refine geometry | Separate roles for color and geometry | Authors recommend AprilTag for long distance or extreme angles. Similar recall for tags ≥70 px does not establish a thin-line limit. [S5,S6] |
+| AprilTag / ArUco | Larger dictionary distances reduce incorrect decoding | Use a **separated dictionary sized only to the required IDs** | tag36h11 uses 587 codes despite 36 bits, not all 2^36 combinations. [S7,S8] |
+| CALTag | Grid-cell IDs and CRC; public generation considers distance and rotation | Distributed calibration points, checks, distances and partial observations | A calibration grid, not a finished decorative-line decoder; legacy MATLAB and other code require porting. [S11,S12] |
+| TopoTag | Topology plus geometry for ID/pose; authors discuss tens of thousands to millions of IDs | Alternative appearance and capacity design | Requires preserved topology; public library targets research/Win32. Thin-line deformation is not proven to preserve performance. [S13,S14] |
+| Pi-Tag | Bibliography/DOI and ChromaTag references confirmed | An entry point to projective-invariant ID/geometry representations | Full original paper was not obtained/read; excluded from capacity/performance comparisons. [S15] |
+| StegaStamp | Trained 400×400 decoding, 56-bit payload after correction, print-camera experiments | Low-visibility candidate for photograph-containing paper | Modifies interior images, unlike free interior content and top-edge-only coding. [S16,S17] |
+| Digimarc | Official material describes watermarks, SDK/API and physical-product digital IDs | Commercial low-visibility ID/watermark example | Official capability description, not independent replication; SDK price, performance and patent claims unverified. [S18] |
+| Code128 and other 1D barcodes | Readers decode bar/space widths and verify checksums | Encoding IDs through line lengths is established | Endpoint errors matter. Replacing vertical bars with horizontal short segments is not readable by the same library automatically. [S10] |
 
-### 長短の黒線 vs 固定スロットの白黒
+### Variable-length black lines versus fixed monochrome slots
 
-**どちらも可能**だが、小さく撮られる紙では固定スロットを第一対照にする。長短方式は両端の位置誤差が長さ比の判断へ入り、斜視の補正誤差も影響する。一方、固定スロットならL字から期待位置を計算して中央を読み、黒／白または色を分類できる。長短を試すなら最短線を十分大きく、長線を明確に別長さにし、開始・終了・同期・チェックを入れる。比率や最小幅は未測定であり、モールスのように並べるだけでは頑健な紙ID規格にならない。[S10＋設計推論]
+**Both are possible**, but fixed slots are the first control for paper captured at small sizes. Length coding introduces endpoint-position errors and perspective-rectification errors into length ratios. Fixed slots let the L geometry predict cell centers for black/white or color classification. If testing lengths, make the shortest segment sufficiently large and longer segments distinctly different; include start, end, synchronization and checks. Ratios and minimum widths are unmeasured. A Morse-like sequence alone is not a robust paper-ID standard. [S10 and design reasoning]
 
-## 3. 容量を正しく見積もる
+## 3. Estimate capacity correctly
 
-q色、nデータスロットの生容量はq^n。**同期・校正・チェックを含めた総線数と、IDデータの桁数を混ぜない。** エラー検出と訂正も別：チェックで間違いと分かることは、元のIDを特定できることではない。[S7,S8,S12]
+Raw capacity is q^n for q colors and n data slots. **Do not confuse total segments including synchronization, calibration and checks with ID-data slots.** Detecting an error is not correcting it: a failed checksum need not identify the original ID. [S7,S8,S12]
 
-|表現|生の組合せ|1スロット置換を必ず訂正する場合の数学的上限*|
+| Representation | Raw combinations | Mathematical upper bound for guaranteed correction of one slot substitution* |
 |---|---:|---:|
-|4色・4桁|256|19以下|
-|4色・6桁|4,096|215以下|
-|4色・8桁|65,536|2,621以下|
-|白黒・8桁|256|28以下|
-|白黒・12桁|4,096|315以下|
-|白黒・16桁|65,536|3,855以下|
+| 4 colors, 4 slots | 256 | ≤19 |
+| 4 colors, 6 slots | 4,096 | ≤215 |
+| 4 colors, 8 slots | 65,536 | ≤2,621 |
+| Monochrome, 8 slots | 256 | ≤28 |
+| Monochrome, 12 slots | 4,096 | ≤315 |
+| Monochrome, 16 slots | 65,536 | ≤3,855 |
 
-\* 本稿の**Hamming球充填上限の導出**。向きが既知でセル位置が正しく、任意の1置換を一意訂正するなら、各コードを中心とした「0個または1個誤り」の集合は重なれない。一つの集合は1+n(q−1)通りなので、M≤floor(q^n/[1+n(q−1)])。これは**実現可能なコード数ではなく上限**。回転／逆順、色校正、連続同色制限、複数誤りは追加で容量を減らし得る。色2bit相当という算数と、白黒／カラーの必要物理長さが厳密に2倍という主張も同一ではない。
+* **Hamming sphere-packing bound derived here:** with known orientation and correctly positioned cells, unique correction of any single substitution requires disjoint sets of zero/one-error observations around every codeword. Each set has 1+n(q−1) members, so M≤floor(q^n/[1+n(q−1)]). This is an **upper bound, not an achievable code count**. Rotation/reversal, calibration, restrictions on repeated colors and multiple errors may reduce capacity further. “A color carries two bits” also does not imply exactly a 2× physical-length relationship between monochrome and color codes.
 
-最小距離dなら、離散誤りモデルでt個の置換訂正にはd≥2t+1。不明セルをerasureにすれば、s置換・e欠落に対し2s+e<dで一意復元できる。**曖昧な色を無理に確定せず不明として扱う**設計が有効。ただし位置ずれや角の誤対応はモデル外。[S7,S8,S12＋符号距離からの導出]
+For minimum distance d, correcting t substitutions requires d≥2t+1 in the discrete error model. Treating unknown cells as erasures permits unique recovery of s substitutions and e erasures when 2s+e<d. **Keep ambiguous colors unknown rather than forcing a class.** Misregistration and wrong corner associations lie outside this model. [S7,S8,S12 and distance derivation]
 
-したがって「まず30ID→100ID→1,000ID」は合理的な開発段階だが、1,000IDが同じ6色線で頑健に使えるという保証はない。まず必要容量を固定し、方向を含め最小距離を測った辞書を生成し、色混同行列で実測する。これは提案であって現行コードの容量／距離を検証した報告ではない。
+Thus, progressing from 30 to 100 to 1,000 IDs is reasonable, but does not guarantee that 1,000 IDs fit robustly in the same six colored segments. Fix the required capacity, generate an orientation-aware dictionary with measured minimum distance, and evaluate a camera color-confusion matrix. This is a proposal, not validation of the current code's capacity or distance.
 
-## 4. 細さと10枚同時：mmよりpx
+## 4. Thin lines and ten simultaneous sheets: pixels, not just millimeters
 
-紙幅Wpx、紙の物理横幅210mmなら、正面の線厚tmmはW×t/210px。以下は**幾何計算のみ**で、認識下限ではない。
+For a 210 mm-wide sheet captured at W pixels, a front-facing line t mm thick occupies W×t/210 pixels. The following is **geometry only, not a recognition threshold**.
 
-|紙の映像幅|1mm厚|2mm厚|2.6mm厚|4mm厚|
+| Captured sheet width | 1 mm thick | 2 mm thick | 2.6 mm thick | 4 mm thick |
 |---:|---:|---:|---:|---:|
-|150px|0.71px|1.43px|1.86px|2.86px|
-|300px|1.43px|2.86px|3.71px|5.71px|
-|600px|2.86px|5.71px|7.43px|11.43px|
+| 150 px | 0.71 px | 1.43 px | 1.86 px | 2.86 px |
+| 300 px | 1.43 px | 2.86 px | 3.71 px | 5.71 px |
+| 600 px | 2.86 px | 5.71 px | 7.43 px | 11.43 px |
 
-**一枚を近くで読めても、10枚を一画面に入れると太さが2px前後に落ちることがある。** 例えば横1920pxのフレームに横5枚なら、隙間なしでも平均紙幅は384px。2.6mmは約4.75px。実際は余白・画角・角度・撮像後の縮小でさらに減る。横960px処理なら約2.38pxになる。この例はQuestの実際の取得解像度を測った値ではない。
+**A nearby single sheet may read successfully while ten sheets in one view reduce line thickness to roughly 2 pixels.** For example, five sheets across a 1920 px frame average at most 384 px each even without gaps; a 2.6 mm line occupies about 4.75 px. Margins, field of view, angles and post-capture downsampling reduce this. Processing at 960 px yields about 2.38 px. This is not a measurement of actual Quest acquisition resolution.
 
-補正後に大きな画像へ拡大しても、撮影時に潰れた色は戻らない。ROIだけ原解像度から読み、全画面検出は小さくする分離が候補。動画の圧縮、色差の低解像度サンプリング、モニター撮影のモアレ、手ぶれも色線に影響し得る。映像の取得経路を含め評価し、ディスプレイ表示と印刷紙は別条件にする。[S3–S6＋撮像設計の推論]
+Upscaling after rectification cannot restore colors lost during capture. Consider full-resolution ROI reading separated from lower-resolution whole-frame detection. Compression, chroma subsampling, display moiré and motion blur can affect colored lines. Evaluate the acquisition path and treat monitor targets and printed sheets as separate conditions. [S3–S6 and imaging-design reasoning]
 
-### 推奨する最小サイズ評価
+### Proposed minimum-size evaluation
 
-太さ0.75／1／1.5／2／2.6／4mmを**同じコード・同じ配置**で比較。線の長さも短い／標準／長いの3条件を独立に変える。画像上の線厚と長さを必ず保存。距離と角度を変え、色分類の確信度、拒否、誤ID、初回読取遅延を測る。細くしたいが「短くする必要」はないので、上辺全長を使って長い細線にできるなら有利かを検証する。**提案条件であり推奨最低寸法ではない。**
+Compare thicknesses of 0.75/1/1.5/2/2.6/4 mm with **the same code and layout**. Independently vary segment length across short/standard/long conditions. Record image-space thickness and length. Vary distance and angle; measure color confidence, rejection, wrong IDs and first-read latency. Thin need not mean short: test whether longer thin segments across the top edge help. **These are proposed test conditions, not recommended minimum dimensions.**
 
-## 5. 実装優先順位
+## 5. Implementation priorities
 
-1. **現在の黒L＋上辺色線を完遂。** 原画素ROI、同フレームの白基準と色校正、固定セル、方向識別、距離付き30コード、未知拒否。中身を変えてもID不変。[S1,S4–S8＋提案]
-2. **同じ紙・同じ総面積で白黒固定セルを比較。** 色と形を同時に変えず、違いの原因を切り分ける。白黒が必ず優位とも、カラーが必ず優位とも置かない。[S4–S8＋提案]
-3. **上辺だけ失敗するなら、下辺にも同じIDを複製。** 見た目の面積は増えるが、指や部分遮蔽への耐性を得る。2辺とも読めた場合は整合性を確認。二つの観測を独立誤りと仮定しない。[S2,S11–S14＋提案]
-4. **必要ID数を段階的に増やす。** 30／100／1,000辞書の最小距離・回転逆順衝突・校正セル数を出す。大量登録は一画面大量検出と別課題。[S7,S8,S12＋提案]
-5. **透かしは別実験として扱う。** 写真を加工してもよい紙でL幾何＋StegaStamp ROI復号なら研究上面白いが、軽量ブラウザ版の移植・学習データ・白い論文表紙への適用は別開発。[S16,S17]
+1. **Complete the current black-L/top-edge color design:** original-pixel ROIs, same-frame white references and calibration, fixed cells, orientation, 30 separated codes and unknown rejection. Changing the interior must not change the ID. [S1,S4–S8 and proposal]
+2. **Compare fixed monochrome cells on identical paper with equal total area.** Do not change color and geometry simultaneously; neither color nor monochrome is assumed superior. [S4–S8 and proposal]
+3. **If top-edge-only reads fail, duplicate the ID at the bottom.** This increases visible area but adds tolerance to fingers/occlusion. Check agreement when both read; do not assume independent errors. [S2,S11–S14 and proposal]
+4. **Increase required capacity in stages.** Report minimum distance, rotation/reversal collisions and calibration-cell counts for 30/100/1,000 dictionaries. Registering many IDs differs from detecting many in one view. [S7,S8,S12 and proposal]
+5. **Keep watermarking a separate experiment.** L geometry plus StegaStamp ROI decoding is interesting when modifying photographs is acceptable, but lightweight-browser porting, training data and white-paper cover suitability are separate development tasks. [S16,S17]
 
-### Quest／Pixelで出すべき数字
+### Numbers to report on Quest / Pixel
 
-- 10枚連続：10IDの読取達成率、各IDの初回待ち時間、未知／誤ID、復号処理時間。
-- 10枚同時：全10枚を新規復号できたフレーム割合と、各紙のrecallを両方出す。過去IDの保持／補間とraw復号を分離。
-- 30ID以上：同じような色順列、逆向き、登録外、印刷誤差、照明遷移、手の遮蔽、斜視、移動。
-- 印刷紙とモニター、ブラウザ通常カメラとWebXR／ネイティブを混ぜない。ID表現を変えてもカメラAPIアクセス制約は解消しない。
-- 連続フレームは相関するため「90フレーム中60」を一般認識精度66.7%と呼ばない。異なる撮影試行で再現性を見る。[S4,S5の条件依存評価＋本プロジェクト向け提案]
+- Ten sequential sheets: completion rate for ten IDs, per-ID first-read delay, unknown/wrong IDs and decoding time.
+- Ten simultaneous sheets: fraction of frames freshly decoding all ten, plus per-sheet recall. Separate retained/interpolated IDs from raw decoding.
+- At least 30 IDs: similar color permutations, reversal, nonmembers, print errors, lighting transitions, hand occlusion, oblique views and movement.
+- Do not mix printed sheets with monitors or normal-browser cameras with WebXR/native cameras. Changing ID encoding does not remove camera-API access restrictions.
+- Consecutive frames are correlated; “60 of 90 frames” is not general recognition accuracy of 66.7%. Check reproducibility across distinct capture trials. [S4,S5 condition-dependent evaluation and project-specific proposal]
 
-## 6. 特許・先行技術：確認できた範囲
+## 6. Patents and prior art: verified scope
 
-|公報／一次資料|確認内容|この設計への意味|
+| Publication / primary source | Verified content | Implication |
 |---|---|---|
-|US7769236B2, Fiala|公報請求項：二階層コードを含むマーカー、edge／polygon／homography／二値復号・checksum等の独立方法請求項。GoogleレコードはActive、調整満了2029-05-03|「枠＋IDなら全部禁止」でも「L字だから無関係」でもない。具体的請求項対比が必要。**Google記録の状態で、公式法的確認ではない。**[S19]|
-|US5726435A, QR原特許|二値行列と三つ以上の位置検出記号等。GoogleはExpired–Lifetime|QRの古い一件が満了でも、別の読取手法・改良特許まで確認済みとはならない。[S20]|
-|DENSO日本公式|標準化QRについて特許第2938338号の権利不行使を明記|QR一般の利用文脈で重要だが、独自枠コード全般の許諾ではない。[S21]|
-|Dynamicland Framecodes|2016年公開の枠ID先行例|公知資料として重要。**特許取得・非取得の事実はこのページから判断しない。**[S1]|
-|Digimarc公式|透かし／識別技術と特許ポートフォリオに言及|不可視コードも既存の技術領域。今回特定請求項や製品利用権は未確認。[S18]|
+| US7769236B2, Fiala | Claims address markers with two-level codes; independent method claims include edges/polygons/homography/binary decoding/checksums. Google lists Active and adjusted expiry 2029-05-03 | Neither “all border IDs are prohibited” nor “L corners are unrelated” follows. Specific claim mapping is needed. **Aggregator status, not official legal verification.** [S19] |
+| US5726435A, original QR patent | Binary matrix and three or more position-detection symbols; Google lists Expired–Lifetime | Expiry of one early QR patent does not establish clearance for other reading methods/improvements. [S20] |
+| DENSO official Japanese website | Explicit non-exercise of patent 2938338 for standardized QR | Relevant to QR use, not a blanket license for custom border codes. [S21] |
+| Dynamicland Framecodes | Public border-ID precedent from 2016 | Important prior-art material; **the page does not establish whether patents were obtained.** [S1] |
+| Digimarc official website | Watermark/identification technology and patent portfolio | Invisible coding is an existing technical area; specific claims and product rights unverified. [S18] |
 
-特許は**国・出願family・請求項・現在状態・実装**の対応で判断する。今回の一般検索は利用不能で、Google検索APIも429となったため、直接の既知公報を再読した限定調査。満了日は公報集約サイトの表示を確認したにとどまり、USPTO／J-PlatPatで年金・経過・権利範囲を公式確認したものではない。FTO／「特許問題なし」は主張しない。
+Patent assessment depends on **jurisdiction, family, claims, current status and implementation**. General search was unavailable and the Google search API returned 429, so this was a limited rereading of known publications. Expiry dates were checked only on an aggregator; fees, prosecution history and scope were not officially verified through USPTO/J-PlatPat. No freedom-to-operate or “no patent issues” claim is made.
 
-## 7. 不確実性・未解決事項
+## 7. Uncertainties and open issues
 
-- 細線カラーの30コードの実際の最小距離、最適パレット、印刷紙の最小厚、Quest／Pixelの実取得画素と処理サイズは、この調査の対象外の実機担当が検証する。
-- 複数の黒L字が近接したときの紙対応付けと方向、角遮蔽の回復が弱点になり得る。IDだけ頑健でも紙枠が誤れば失敗する。
-- CALTag・Pi-Tagは関連性を確認したが、CALTag原論文とPi-Tag本文は今回取得できず、査読結果の性能数値は引用しない。
-- 原論文の「より頑健」「百万ID」は各著者の条件／設計についての主張。独自の細線方式やQuestの性能へ移せない。
-- 透かしは識別可能種類が非常に大きい一方、撮像面積・推論・印刷の制約が別にある。目立たなさ、ID容量、10枚同時の頑健さに単一の普遍的勝者は確認できなかった。
+- Actual minimum distance of the current 30 color codes, optimal palette, printed-sheet minimum thickness and Quest/Pixel acquisition/processing sizes require device evaluation outside this review.
+- Nearby L-corner groups, sheet association, orientation and occluded-corner recovery may be weaknesses. Robust IDs cannot compensate for incorrect paper geometry.
+- CALTag and Pi-Tag relevance was confirmed, but their original full papers were not obtained here; no peer-reviewed performance figures from those papers are quoted.
+- “More robust” or “a million IDs” describes the authors' conditions/designs, not the custom thin-line system or Quest performance.
+- Watermarks offer enormous ID spaces but have separate imaging-area, inference and printing constraints. No universal winner for visibility, capacity and ten-target robustness was established.
 
-## 8. 調査ログ／信頼度
+## 8. Research log and confidence
 
-|段階|行動|結果|
+| Stage | Action | Result |
 |---|---|---|
-|0 既存確認|memory_search、前のpaper-id-methods／paper-marker-designs報告を読んだ|memory検索ハンドラ未登録。既存一次資料・境界条件から開始し、同じ広域調査を繰り返さない|
-|1 直接近い例|Framecodes、Tiny dotframes、Flexible Layouts本文を再取得|枠ID、サイズと解像度、任意レイアウトの条件を確認|
-|2 反証|ChromaTag原論文の遠距離・急角度・70px評価を精読|色だから常に強い、という結論を棄却|
-|3 拡張|CALTag生成コード、Pi-Tag DOI、TopoTag原文、StegaStamp論文・実装、Digimarc公式|CRC／回転距離、本文未取得の限界、透かしの別路線を整理|
-|4 数学|q^n、距離、1誤り球充填、紙幅／厚のpx換算|理論容量と実用容量、mmとcamera pxを区別|
-|5 特許|Fiala／QR公報本文・掲載状態を再確認、DENSO日本一次資料|限定調査。法的状態／実施可否の保証なし|
-|6 検証|出典到達、取得本文、書誌と主張を確認|21出典記録、英日。方法と限界の比較を完了。完全サーベイ／飽和は主張しない|
+| 0 Existing work | Memory search and prior paper-ID-method / marker-design reports | Memory handler unregistered; started from existing primary sources and boundaries, without repeating the broad survey |
+| 1 Closest examples | Retrieved Framecodes, Tiny dotframes and Flexible Layouts | Confirmed border IDs, size/resolution and arbitrary-layout conditions |
+| 2 Counterevidence | Read ChromaTag distance, angle and 70 px evaluation | Rejected the claim that color is always stronger |
+| 3 Extensions | CALTag generator, Pi-Tag DOI, TopoTag, StegaStamp paper/code and Digimarc | Organized CRC/rotation distance, unavailable-paper limits and watermark alternatives |
+| 4 Mathematics | q^n, distances, one-error sphere packing and pixel conversion | Distinguished theoretical/practical capacity and mm/camera pixels |
+| 5 Patents | Fiala/QR publications and listed status; DENSO primary source | Limited review; no guarantee of legal status or permitted implementation |
+| 6 Verification | Source reachability, retrieved text, bibliography and claims | 21 source records in English/Japanese; compared methods/limits, without claiming exhaustive coverage or saturation |
 
-信頼度：**高**＝独立系統3件以上で原理を支持（小特徴の画素制約）。**中**＝権威ある一次資料1件または2件（各方式・容量・仕様）。**提案**＝本プロジェクトへの設計推論。**未確認**＝実機性能／公式特許状態。論文とその同じ著者のリポジトリは独立実証として数えない。
+Confidence: **High** = at least three independent lines support the principle (small-feature pixel limitations). **Medium** = one or two authoritative primary sources (method, capacity, specification). **Proposal** = project-specific design reasoning. **Unverified** = device performance or official patent status. A paper and its authors' repository are not independent demonstrations.
 
-## 出典（2026-10-09確認）
+## Sources (checked 2026-10-09)
 
-主な種別は原論文、公式実装／アーカイブ、商用技術一次資料、特許公報。既存報告で本文確認済みのS2/S7の原論文/S9は再利用、他は今回直接取得。英語と日本語。これは21個の独立実験を意味しない。
+Sources include original papers, official implementations/archives, commercial primary sources and patent publications. Previously verified full texts for S2, the original S7 paper and S9 are reused; the others were retrieved directly in this review. Sources are English and Japanese. This does not mean 21 independent experiments.
 
-- **S1** [Dynamicland Framecodes, 2016](https://dynamicland.org/archive/2016/Framecodes), 公式アーカイブ本文。
-- **S2** [Dynamicland Dotframes, 2017](https://dynamicland.org/archive/2017/Dotframes), 既存報告で確認済み一次資料。
-- **S3** [Dynamicland Tiny dotframes, 2022](https://dynamicland.org/archive/2022/Tiny_dotframes), 公式アーカイブ本文。
-- **S4** [Krogius et al., Flexible Layouts for Fiducial Tags, IROS 2019](https://april.eecs.umich.edu/media/pdfs/krogius2019iros.pdf), 原論文全本文、特に§IIIA／IIID／IV。
-- **S5** [DeGol et al., ChromaTag, ICCV 2017](https://openaccess.thecvf.com/content_ICCV_2017/papers/DeGol_ChromaTag_A_Colored_ICCV_2017_paper.pdf), 原論文、§5／6。
-- **S6** [ChromaTag公開実装](https://github.com/CogChameleon/ChromaTag), 既存報告で確認済みREADME／校正課題。
-- **S7** [Olson, AprilTag, 2011](https://april.eecs.umich.edu/media/pdfs/olson2011tags.pdf)／[tag36h11生成コード](https://github.com/AprilRobotics/apriltag/blob/master/tag36h11.c), 36bit／距離11／587をコードで再確認。
-- **S8** [OpenCV ArUco公式チュートリアル原文](https://github.com/opencv/opencv/blob/4.x/doc/tutorials/objdetect/aruco_detection/aruco_detection.markdown), 辞書の容量／距離、四隅・姿勢。
-- **S9** [STag: A Stable Fiducial Marker System](https://arxiv.org/abs/1707.06292), 既存調査の本文確認を再利用。細い特徴の遠距離制約。
-- **S10** [ZXing Code128Reader](https://github.com/zxing/zxing/blob/master/core/src/main/java/com/google/zxing/oned/Code128Reader.java), 幅配列とchecksum。
-- **S11** [CALTag公開実装](https://github.com/brada/caltag), README／生成と検出の入出力／保守制限。
-- **S12** [CALTag generate_pattern.py](https://github.com/brada/caltag/blob/master/GeneratePattern/generate_pattern.py), CRC・回転・距離・ビット数の実装。
-- **S13** [TopoTag, arXiv:1908.01450](https://arxiv.org/abs/1908.01450), 原文abstract、DOI 10.1109/TVCG.2020.2988466。
-- **S14** [TopoTagライブラリ](https://github.com/herohuyongtao/topotag), 既存報告の研究用途／Win32確認。
-- **S15** [Pi-Tag, DOI 10.1007/s00138-012-0469-6](https://doi.org/10.1007/s00138-012-0469-6), Crossref書誌とS5参考文献の一致。本文未取得。
-- **S16** [Tancik et al., StegaStamp, CVPR 2020](https://openaccess.thecvf.com/content_CVPR_2020/papers/Tancik_StegaStamp_Invisible_Hyperlinks_in_Physical_Photographs_CVPR_2020_paper.pdf), 原論文本文、§4／5。
-- **S17** [StegaStamp公開実装](https://github.com/tancik/StegaStamp), 100bit→ECC後56bit、推奨1920×1080動画、旧TensorFlow、検出器訓練の制限。
-- **S18** [Digimarc Technology Overview](https://www.digimarc.com/technology-overview), 公式技術・digital identifiers／watermark／SDK説明。営業資料の性能主張を独立検証としない。
-- **S19** [US7769236B2](https://patents.google.com/patent/US7769236B2/en), 公報本文・請求項・掲載状態。
-- **S20** [US5726435A](https://patents.google.com/patent/US5726435A/en), QR原特許公報本文・掲載状態。
-- **S21** [DENSO QRの規格化・権利不行使（日本語）](https://www.qrcode.com/about/standards.html), 日本語公式一次資料。
+- **S1** [Dynamicland Framecodes, 2016](https://dynamicland.org/archive/2016/Framecodes), Official archive text.
+- **S2** [Dynamicland Dotframes, 2017](https://dynamicland.org/archive/2017/Dotframes), Primary source verified in a prior report.
+- **S3** [Dynamicland Tiny dotframes, 2022](https://dynamicland.org/archive/2022/Tiny_dotframes), Official archive text.
+- **S4** [Krogius et al., Flexible Layouts for Fiducial Tags, IROS 2019](https://april.eecs.umich.edu/media/pdfs/krogius2019iros.pdf), Full original paper, particularly §IIIA/IIID/IV.
+- **S5** [DeGol et al., ChromaTag, ICCV 2017](https://openaccess.thecvf.com/content_ICCV_2017/papers/DeGol_ChromaTag_A_Colored_ICCV_2017_paper.pdf), Original paper, §5/6.
+- **S6** [ChromaTag public implementation](https://github.com/CogChameleon/ChromaTag), README/calibration issues verified in a prior report.
+- **S7** [Olson, AprilTag, 2011](https://april.eecs.umich.edu/media/pdfs/olson2011tags.pdf) / [tag36h11 generator](https://github.com/AprilRobotics/apriltag/blob/master/tag36h11.c), 36 bits, distance 11 and 587 codes rechecked in source.
+- **S8** [OpenCV ArUco official tutorial source](https://github.com/opencv/opencv/blob/4.x/doc/tutorials/objdetect/aruco_detection/aruco_detection.markdown), Dictionary capacity/distance, corners and pose.
+- **S9** [STag: A Stable Fiducial Marker System](https://arxiv.org/abs/1707.06292), Reuses full-text verification from the earlier review; long-distance limits of thin features.
+- **S10** [ZXing Code128Reader](https://github.com/zxing/zxing/blob/master/core/src/main/java/com/google/zxing/oned/Code128Reader.java), Width sequences and checksum.
+- **S11** [CALTag public implementation](https://github.com/brada/caltag), README, generation/detection I/O and maintenance limits.
+- **S12** [CALTag generate_pattern.py](https://github.com/brada/caltag/blob/master/GeneratePattern/generate_pattern.py), CRC, rotation, distance and bit-count implementation.
+- **S13** [TopoTag, arXiv:1908.01450](https://arxiv.org/abs/1908.01450), Original abstract, DOI 10.1109/TVCG.2020.2988466.
+- **S14** [TopoTag library](https://github.com/herohuyongtao/topotag), Research-use/Win32 scope verified in the earlier report.
+- **S15** [Pi-Tag, DOI 10.1007/s00138-012-0469-6](https://doi.org/10.1007/s00138-012-0469-6), Crossref metadata matches S5 references; full text not obtained.
+- **S16** [Tancik et al., StegaStamp, CVPR 2020](https://openaccess.thecvf.com/content_CVPR_2020/papers/Tancik_StegaStamp_Invisible_Hyperlinks_in_Physical_Photographs_CVPR_2020_paper.pdf), Original full paper, §4/5.
+- **S17** [StegaStamp public implementation](https://github.com/tancik/StegaStamp), 100 bits → 56 after ECC; recommended 1920×1080 video, legacy TensorFlow and detector-training limitations.
+- **S18** [Digimarc Technology Overview](https://www.digimarc.com/technology-overview), Official technology/digital identifier/watermark/SDK description; marketing performance claims are not independent validation.
+- **S19** [US7769236B2](https://patents.google.com/patent/US7769236B2/en), Publication text, claims and listed status.
+- **S20** [US5726435A](https://patents.google.com/patent/US5726435A/en), Original QR patent publication and listed status.
+- **S21** [DENSO QR standardization and non-exercise of rights (Japanese source)](https://www.qrcode.com/about/standards.html), Official Japanese primary source.
 
-既存の公開報告：[実在マーカー意匠比較](https://github.com/ryosuzuki/image-tracking/blob/main/research/paper-marker-designs/README.md)。
+Previously published report: [Comparison of existing marker designs](https://github.com/ryosuzuki/image-tracking/blob/main/research/paper-marker-designs/README.md).
