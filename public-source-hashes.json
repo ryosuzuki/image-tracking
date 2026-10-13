@@ -15,11 +15,11 @@
     },
     {
       "path": "QUEST-QUICKSTART.md",
-      "sha256": "fa843e08978b3a969485eb133fe6427a72a9b2ac25d9995cceb8ee5a64046d85"
+      "sha256": "72a9d677ead8e9791be03ab7f16d01378420f3eadda9a4cd8d58ae1d71b4a344"
     },
     {
       "path": "README.md",
-      "sha256": "575e3dd25d2223f3d3d530811585dd5f97b8e01390704f4920a2f8c69d738cd7"
+      "sha256": "0962dc5418f0baf9bac47c232609b80ffe2605e25f0837cd3e420829ed58e030"
     },
     {
       "path": "TRACKING-IMAGES.md",
@@ -170,12 +170,20 @@
       "sha256": "23cdd62e83103fab6f85c580be0740f5475dc9f41c4201fd971012f3967c9db7"
     },
     {
+      "path": "docs/figures/teaching-menu-editor.png",
+      "sha256": "100f7eaec888712ccdf4fd407f4f988c08a7fd2788650801fc2a64a88d9c7719"
+    },
+    {
       "path": "docs/lecture-hub/index.html",
       "sha256": "e37c8fdeac053bebe72a52a2aa07ecfd9cfcab28336a9852165c2ca4d5188a13"
     },
     {
       "path": "docs/teaching-capture-status.md",
-      "sha256": "6a5d16f979d20eff74cb18c463eb13ed08c39e9783461ddb54242a9791db6c89"
+      "sha256": "2205774fcadcebf70a8f2481cd5773cf48fbae883c2a0c872639aeebd2e0e7ba"
+    },
+    {
+      "path": "docs/teaching-menu-status.md",
+      "sha256": "1aa58e8d7ceb84eab65d83b0c1fb49535a74c5bce1049a6d41dc75f65304feac"
     },
     {
       "path": "image/8thwall-web/.gitignore",
@@ -4563,7 +4571,7 @@
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Editor/MarkerBuild.cs",
-      "sha256": "916d16a8590bdb263686480704aaca5035b207d1d9e8466cf63150b697a735bb"
+      "sha256": "2914d7cbd7f4b4dc43bed0831f5ec03c225e01de7f42369f832f760da7de959f"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Editor/MarkerBuild.cs.meta",
@@ -4576,6 +4584,14 @@
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Editor/MarkerIOSPostprocess.cs.meta",
       "sha256": "6ab39873cc1bdbf48f1cb575d84c4d04487f795f12a417f4c64dda0cb9900090"
+    },
+    {
+      "path": "markers/unity-quest-ios/Assets/MarkerLab/Editor/TeachingMenuPreview.cs",
+      "sha256": "caed836d4ad8a18e92925f633509ec8bc2e7af3e2573198b33e6277d2aea8167"
+    },
+    {
+      "path": "markers/unity-quest-ios/Assets/MarkerLab/Editor/TeachingMenuPreview.cs.meta",
+      "sha256": "d571502aadfed49ee5c4c1d64dcace2e927645bcfb1cfcd3c34d2a9c89a0f670"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/IOSMarkerScene.unity",
@@ -4611,7 +4627,7 @@
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/MarkerInteraction.cs",
-      "sha256": "2da567e3b581a0ba1ae5b40b3232a1055cbce520c091f1a22275aa05bf598188"
+      "sha256": "98f4ccc69f7fc716e9e3a21504071fad11877c404ba9565f2f76f1ba684eaf59"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/MarkerInteraction.cs.meta",
@@ -4667,7 +4683,7 @@
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/QuestMarkerTracker.cs",
-      "sha256": "1120acc868aa409e31cd55c9d46e12d1b6f637d1d5240d16d6814fcc59f4bf77"
+      "sha256": "101b3edcf92089c8e6a5239bd29947034a5c617b9929daeba83a937d1d1148d7"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/QuestMarkerTracker.cs.meta",
@@ -4700,6 +4716,14 @@
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/TeachingCapture.cs.meta",
       "sha256": "b6118310e921ceb91c1fbef09057e65309d2158fcf53984f61f12c358893a0d7"
+    },
+    {
+      "path": "markers/unity-quest-ios/Assets/MarkerLab/TeachingMenu.cs",
+      "sha256": "cd5eadf54e7e0f4b6e2e9c888829531be8c3ec189c7e4c55c29b678a21c51205"
+    },
+    {
+      "path": "markers/unity-quest-ios/Assets/MarkerLab/TeachingMenu.cs.meta",
+      "sha256": "9fa80cf58cc3b9b721b0f97a06f4035e2bca8f238e07be9ab1d8b3e0b46ce6be"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Tests.meta",
@@ -6167,7 +6191,7 @@
     },
     {
       "path": "markers/unity-quest-ios/TEACHING-BASELINE.md",
-      "sha256": "c60a5ec1288ec26db1b649787b740de841d955636a9ac5b66e99f7dd378e7564"
+      "sha256": "608a21c7a5a718a657f592466311067d42dfa638732cf8fbde7b1f48f919cfec"
     },
     {
       "path": "markers/unity-quest-ios/ThirdParty/ARToolKitX-LICENSE.txt",
@@ -7023,7 +7047,7 @@
     },
     {
       "path": "tools/teaching-capture/README.md",
-      "sha256": "ed26393198eff4b709a024f6953cdb8a32b774cffaad269bb02edc92e1a5711d"
+      "sha256": "fa6329c8c4fff44a14327601b87acdbc3c2b4b194064cbceede48a8f573d6de5"
     },
     {
       "path": "tools/teaching-capture/export_take.py",

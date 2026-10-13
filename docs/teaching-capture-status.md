@@ -1,5 +1,7 @@
 # Teaching capture delivery — 2026-10-12
 
+> Superseded by the [v14 one-app lesson-menu continuation](teaching-menu-status.md). The v13 build/install evidence below remains historical.
+
 ## Delivered source and distribution
 
 - Completion owner: this lecture/student-kit task; target `origin/main`.
@@ -28,4 +30,4 @@ Once actual positional tracking is recovered, the installed app and public print
 
 ## Repository and artifact boundaries
 
-Authoritative source paths: `markers/unity-quest-ios/Assets/MarkerLab/{TeachingCapture.cs,QuestMarkerTracker.cs,Editor/MarkerBuild.cs}`, `docs/capture-viewer/`, `tools/teaching-capture/`, entry links and the source hash manifest. APK is a Release asset. Build caches, private device logs, room screenshots and original takes stay outside Git. Separate Spatial Capture app/editor is linked, not overwritten. Temporary browser QA tabs are closed; the managed profile remains running. Canonical main is reconciled to the verified remote endpoint after publication.
+Authoritative source paths: `markers/unity-quest-ios/Assets/MarkerLab/{TeachingCapture.cs,QuestMarkerTracker.cs,Editor/MarkerBuild.cs}`, `docs/capture-viewer/`, `tools/teaching-capture/`, entry links and the source hash manifest. APK is a Release asset. Build caches, private device logs, room screenshots and original takes stay outside Git. Separate Spatial Capture app/editor is linked, not overwritten. Temporary browser QA tabs are closed; the managed profile remains running. The initial v13 canonical main matched remote. During the v14 continuation the external checkout became read-only; see the v14 synchronization handoff.

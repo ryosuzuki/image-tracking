@@ -1,6 +1,6 @@
 # Quest quick start
 
-> **Current student kit: v13** — [APK](https://github.com/ryosuzuki/image-tracking/releases/tag/teaching-capture-v13-2026-10-12), [installation + explicit native capture](tools/teaching-capture/README.md), [local-file replay viewer](https://ryosuzuki.github.io/image-tracking/capture-viewer/). All eight teaching models are included. Older install/camera observations below are historical, not live alignment acceptance.
+> **Current student kit: v14** — [APK](https://github.com/ryosuzuki/image-tracking/releases/tag/teaching-menu-v14-2026-10-12), [installation + explicit native capture](tools/teaching-capture/README.md), [local-file replay viewer](https://ryosuzuki.github.io/image-tracking/capture-viewer/). All eight teaching models are included. Older install/camera observations below are historical, not live alignment acceptance.
 
 > **Current teaching baseline, 2026-10-12:** See [version12 test-build / safe handoff instructions](markers/unity-quest-ios/TEACHING-BASELINE.md) and the [calibrated printable kit](https://ryosuzuki.github.io/image-tracking/lecture-hub/print-kit/). The older APK10/version11 observations below do not establish current installed state or new physical acceptance. Another app currently owns both Quest cameras; it was preserved. Paper-locked binocular alignment remains unaccepted.
 

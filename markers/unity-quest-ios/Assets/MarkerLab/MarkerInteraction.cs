@@ -157,7 +157,7 @@ public sealed class MarkerInteraction : MonoBehaviour
         if (!active || !Enum.IsDefined(typeof(PaperApplication), kind)) return false;
         SetApplicationForSelection(kind); return true;
     }
-    // Trusted selection hook for tracker/page binding; call only on a verified page-ID selection.
+    // Explicit selection hook for verified page binding or the lesson menu; tracker must invalidate stale observations.
     public void SetApplicationForSelection(PaperApplication kind)
     {
         if (!Enum.IsDefined(typeof(PaperApplication), kind)) throw new ArgumentOutOfRangeException("kind");

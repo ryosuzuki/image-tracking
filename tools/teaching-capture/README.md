@@ -1,6 +1,6 @@
 # Native capture → JavaScript replay → a reproducible student demo
 
-The v13 **Interactive Paper Lab** APK contains all eight authored teaching models and an explicit sensor-capture feature. [Release download](https://github.com/ryosuzuki/image-tracking/releases/tag/teaching-capture-v13-2026-10-12) · [Viewer and editable JavaScript](../../docs/capture-viewer/) · [Open hosted viewer](https://ryosuzuki.github.io/image-tracking/capture-viewer/)
+The v14 **Interactive Paper Lab** APK contains all eight authored teaching models and an explicit sensor-capture feature. [Release download](https://github.com/ryosuzuki/image-tracking/releases/tag/teaching-menu-v14-2026-10-12) · [Viewer and editable JavaScript](../../docs/capture-viewer/) · [Open hosted viewer](https://ryosuzuki.github.io/image-tracking/capture-viewer/)
 
 ## 1. Install without Unity
 
@@ -8,16 +8,18 @@ Enable Quest developer mode and authorize USB debugging. Use Quest 3; Quest 3S h
 
 ```sh
 adb devices -l
-adb -s YOUR_SERIAL install -r interactive-paper-lab-v13.apk
+adb -s YOUR_SERIAL install -r interactive-paper-lab-v14.apk
 ```
 
 Never uninstall to bypass a signing mismatch: it can erase existing recordings. Start **Interactive Paper Lab** from Unknown Sources and allow camera permission. Finish normal headset tracking/boundary setup. Camera access, device wake and spatial tracking are independent.
 
 Print [dots-8](../../markers/web-webxr/public/markers/dots-8.png) or the [calibrated print kit](../../docs/lecture-hub/print-kit/) at 100%. Measure **120 mm between opposite dot-corner centers**. A monitor image is not a printed-paper test.
 
-## 2. All eight lessons
+## 2. One app with an eight-lesson menu
 
-Y selects Solar, Geometry, FunctionGraph, InclinedPlane, Pendulum, Circuit, Vectors and Binomial. X changes tracker, A pauses, B resets, left stick click invokes the lesson action, sticks change parameters, and left grip enables measured paper-dial input. Lesson controls require a fresh reliable marker observation. No arbitrary worksheet recognition is inferred.
+The single **Interactive Paper Lab** APK opens a head-relative lesson menu containing all eight demonstrations. The left controller Menu button shows/hides it. Move the left stick up/down (or press Y) to highlight; press A to select. Selection clears stale marker observations; the AR lesson stays hidden until a fresh, reliable target is acquired. Menu navigation is not a paper interaction and does not claim registration.
+
+Outside the menu, Y selects Solar, Geometry, FunctionGraph, InclinedPlane, Pendulum, Circuit, Vectors and Binomial. X changes tracker, A pauses, B resets, left stick click invokes the lesson action, sticks change parameters, and left grip enables measured paper-dial input. Lesson controls require a fresh reliable marker observation. No arbitrary worksheet recognition is inferred.
 
 ## 3. Record an explicit take
 
