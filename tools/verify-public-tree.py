@@ -14,7 +14,8 @@ for rel in files:
  if p.suffix.lower() in {'.mp4','.mov','.webm','.p12','.pem','.key','.keystore','.jks','.mobileprovision','.task','.obj','.geom','.bytes','.so','.aar','.a','.usdz','.glb','.gltf'}:fail.append((rel,'excluded asset/credential/binary'))
  try:t=data.decode()
  except UnicodeDecodeError:
-  if p.suffix.lower() not in {'.png'}:fail.append((rel,'unreviewed binary'))
+  if p.suffix.lower() == '.jpg' and data.startswith(b'\xff\xd8') and data.endswith(b'\xff\xd9'):pass
+  elif p.suffix.lower() not in {'.png'}:fail.append((rel,'unreviewed binary'))
   continue
  for label,pattern in [('home','/'+'Users/|/'+'Volumes/|'+r'\.ts\.net'),('credential',r'gh[pousr]_[A-Za-z0-9]{20,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\bsk-[A-Za-z0-9_-]{30,}'),('serialized-secret',r'(?im)^\s*(?:accessToken|apiKey|vuforiaLicenseKey|ufoLicenseKey):[ \t]*[^\s\r\n][^\r\n]*$'),('private-network',r'\b(?:192\.168|100\.[0-9]{1,3}|10\.[0-9]{1,3})\.[0-9]{1,3}\.[0-9]{1,3}\b'),('device-id',r'\b0000[0-9A-Fa-f]{4}-[0-9A-Fa-f]{16}\b')]:
   if re.search(pattern,t):fail.append((rel,label))

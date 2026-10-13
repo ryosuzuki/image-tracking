@@ -15,11 +15,11 @@
     },
     {
       "path": "QUEST-QUICKSTART.md",
-      "sha256": "2ac6a9c6e5e96c34175f0d4ff1bdc7a96cbd776db661e57c1db5451064f3d972"
+      "sha256": "fa843e08978b3a969485eb133fe6427a72a9b2ac25d9995cceb8ee5a64046d85"
     },
     {
       "path": "README.md",
-      "sha256": "600ae714e61a94d71d015711dccb2f3a07553adfedc9ecbbd1cead112ecfb457"
+      "sha256": "575e3dd25d2223f3d3d530811585dd5f97b8e01390704f4920a2f8c69d738cd7"
     },
     {
       "path": "TRACKING-IMAGES.md",
@@ -144,6 +144,38 @@
     {
       "path": "design/recognition-patterns/recognition-patterns-20.svg",
       "sha256": "abeecf66133d98905794363078a3cf739edd2f07f822dff746365d243b28b038"
+    },
+    {
+      "path": "docs/capture-viewer/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "path": "docs/capture-viewer/index.html",
+      "sha256": "20884e4c8d8fc321b1dc790953556e23105c36abec9c6bc339fb5a9177316a0d"
+    },
+    {
+      "path": "docs/capture-viewer/replay-math.mjs",
+      "sha256": "2b83a5e0cee6c9ee4d0d2325007402ec83dbb0045a0831c4e51026a5ae279592"
+    },
+    {
+      "path": "docs/capture-viewer/replay-math.test.mjs",
+      "sha256": "73428101406f4ed20d4e5575a69c838b2b9972487f5335d9577e12cca0138dd2"
+    },
+    {
+      "path": "docs/capture-viewer/three.module.js",
+      "sha256": "a97ec6852978949b7941c070b81292b842473a37549222353fa0a70c18d7285a"
+    },
+    {
+      "path": "docs/capture-viewer/viewer.mjs",
+      "sha256": "23cdd62e83103fab6f85c580be0740f5475dc9f41c4201fd971012f3967c9db7"
+    },
+    {
+      "path": "docs/lecture-hub/index.html",
+      "sha256": "e37c8fdeac053bebe72a52a2aa07ecfd9cfcab28336a9852165c2ca4d5188a13"
+    },
+    {
+      "path": "docs/teaching-capture-status.md",
+      "sha256": "6a5d16f979d20eff74cb18c463eb13ed08c39e9783461ddb54242a9791db6c89"
     },
     {
       "path": "image/8thwall-web/.gitignore",
@@ -4531,7 +4563,7 @@
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Editor/MarkerBuild.cs",
-      "sha256": "5c1e9a7db9d6edfe86712be2b852fcd1cf72adf640d8966dfc0298490a9308ee"
+      "sha256": "916d16a8590bdb263686480704aaca5035b207d1d9e8466cf63150b697a735bb"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Editor/MarkerBuild.cs.meta",
@@ -4635,7 +4667,7 @@
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/QuestMarkerTracker.cs",
-      "sha256": "a662433397fb13d6a8680b266aaf27752fb53edd113ec411c93f0b92c0b8a5ee"
+      "sha256": "1120acc868aa409e31cd55c9d46e12d1b6f637d1d5240d16d6814fcc59f4bf77"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/QuestMarkerTracker.cs.meta",
@@ -4660,6 +4692,14 @@
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Resources/marker-board.json.meta",
       "sha256": "dc82ed9949a7f62cb5cf363e96749ec076e1941d8370eb0ec6a2a73aace397cf"
+    },
+    {
+      "path": "markers/unity-quest-ios/Assets/MarkerLab/TeachingCapture.cs",
+      "sha256": "da54178b73a1fb7ea8f654a6ac486fa96b77cfd76b95ef0062ad092af0f89e76"
+    },
+    {
+      "path": "markers/unity-quest-ios/Assets/MarkerLab/TeachingCapture.cs.meta",
+      "sha256": "b6118310e921ceb91c1fbef09057e65309d2158fcf53984f61f12c358893a0d7"
     },
     {
       "path": "markers/unity-quest-ios/Assets/MarkerLab/Tests.meta",
@@ -6126,6 +6166,10 @@
       "sha256": "87942d39f8b114de3d83c189f307d5611594ae1d21b39489ebe4b90a91b39d17"
     },
     {
+      "path": "markers/unity-quest-ios/TEACHING-BASELINE.md",
+      "sha256": "c60a5ec1288ec26db1b649787b740de841d955636a9ac5b66e99f7dd378e7564"
+    },
+    {
       "path": "markers/unity-quest-ios/ThirdParty/ARToolKitX-LICENSE.txt",
       "sha256": "f65ed73c26546d27caacf6542cb7f21799e3ccaae2deef31cc07bc147a22e3ae"
     },
@@ -6978,8 +7022,24 @@
       "sha256": "645619d397c66f421828d2bf58e6fb47e54d04c971a4d4ef2627399d8d5953fc"
     },
     {
+      "path": "tools/teaching-capture/README.md",
+      "sha256": "ed26393198eff4b709a024f6953cdb8a32b774cffaad269bb02edc92e1a5711d"
+    },
+    {
+      "path": "tools/teaching-capture/export_take.py",
+      "sha256": "18fbb969970470b7086eea33149b518d17d6b2297aa547dcb933763b499436b0"
+    },
+    {
+      "path": "tools/teaching-capture/pull.sh",
+      "sha256": "e9fc4cd4e95820957f83a7edbf62e175829a50bb3db4e0d7187963a9e53f7ae7"
+    },
+    {
+      "path": "tools/teaching-capture/test_export_take.py",
+      "sha256": "40be09c4c198af91f65b3aafc5831f80c50d37c60cf81712f6a13d63a76b750e"
+    },
+    {
       "path": "tools/verify-public-tree.py",
-      "sha256": "b9863130fccbc9f7dabd66e36359b8e142da83d7d916d57f52005e269660073c"
+      "sha256": "5c1a40b64e977c5a81866db06fa80656674bbc264a0ffbc432defaaee26f32fa"
     }
   ]
 }

@@ -1,5 +1,7 @@
 # Native Quest teaching baseline
 
+> Newer v13 adds explicit native capture. See [the student capture/replay guide](../../tools/teaching-capture/README.md) and [v13 release](https://github.com/ryosuzuki/image-tracking/releases/tag/teaching-capture-v13-2026-10-12). The v12 record below is historical; it is not the v13 device result.
+
 This is a **test build**, not an accepted paper-locked binocular demonstration. Use the native **Interactive Paper Lab** application, not Vuforia, the paper viewer or Quest Browser. Package identity is `org.openclaw.markertrackinglab`; version 0.12-teaching-baseline / code 12.
 
 ## Build the same slice

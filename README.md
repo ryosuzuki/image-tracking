@@ -1,5 +1,16 @@
 # Image Tracking
 
+## Lecture and student capture/replay kit (2026-10-12)
+
+- [Google Slides: Image Tracking & Interactive Paper](https://docs.google.com/presentation/d/1-Uv_qqImctIzZ2j2qQ-B5Tv8L6B-dFP48GfJeJqr548/edit): 56 slides in the Mixed Reality course template, with 14 native YouTube embeds.
+- [Interactive Paper Lab v13 APK](https://github.com/ryosuzuki/image-tracking/releases/tag/teaching-capture-v13-2026-10-12): all eight authored lessons plus explicitly started, bounded native sensor capture.
+- [Student installation, capture, export and reproduction guide](tools/teaching-capture/README.md).
+- [Capture viewer](https://ryosuzuki.github.io/image-tracking/capture-viewer/): local-folder replay, eight editable JavaScript examples, calibrated camera projection and derivative WebM export. No recordings are uploaded.
+- [Calibrated printable targets](https://ryosuzuki.github.io/image-tracking/lecture-hub/print-kit/) and [research / inspiration hub](https://ryosuzuki.github.io/image-tracking/lecture-hub/).
+
+A build, installation, recorded prototype and live binocular paper-locked interaction are distinct verification states. See the capture guide and current release notes; historical observations below are not current device acceptance.
+
+
 Image and marker tracking implementations, organized by target type, engine and platform. Each folder is an independent source snapshot, not one shared application.
 
 ## Start here: Quest
