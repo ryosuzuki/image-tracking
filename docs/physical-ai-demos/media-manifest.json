@@ -1,0 +1,42 @@
+[
+  {
+    "video": "robot",
+    "bytes": 918801,
+    "sha256": "0b54b074b3f45d543713830817e7c0379bf453d317c9053b73d9738208000731"
+  },
+  {
+    "video": "failure",
+    "bytes": 6894833,
+    "sha256": "152e2ce4f2f412ff3af79a7c24d9200f85558285e27521347011e08646686496"
+  },
+  {
+    "video": "vla",
+    "bytes": 355955,
+    "sha256": "97b9579e4651c0105ae30c43ad5038608a3a15431fd2516e0d92eb09d34f6afb"
+  },
+  {
+    "video": "road",
+    "bytes": 3122710,
+    "sha256": "a8afcd7329246fbdcef2aaa7a929e0be50b2f1895ad309c21ffc2a475b314c3f"
+  },
+  {
+    "video": "detect",
+    "bytes": 1587020,
+    "sha256": "0fb76be7d1d0fec7eb4721e382c92109435dc7d0eb6695985a6e1f8f98520067"
+  },
+  {
+    "video": "segment",
+    "bytes": 1560962,
+    "sha256": "7c6e576b4402bd12b3c27c79eeb67f590d22e5e2a851466fa04f2da41b4eb872"
+  },
+  {
+    "video": "openpilot",
+    "bytes": 31373420,
+    "sha256": "5a353fb65b3064ff086d29e8b30077777ff9d5ca86dab76f6373b7aff29abcdb"
+  },
+  {
+    "video": "stretch",
+    "bytes": 1383010,
+    "sha256": "adc74bdb550ef9a8e80ba2a7246ad8beafe11945d1e9a3bfa8ecceb63c4eccec"
+  }
+]

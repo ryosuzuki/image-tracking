@@ -1,0 +1,1 @@
+Public English lecture hub. All eight completed videos, five recorded-output interfaces. No paid API endpoints, credentials, raw room assets, or private source repository are published. Raw duplicate rehearsal videos remain private. Canonical videos are copied byte-for-byte.
