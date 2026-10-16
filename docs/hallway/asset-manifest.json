@@ -1,6 +1,6 @@
 {
   "schema": "spatial.hallway.public-assets.v1",
-  "purpose": "User-requested public visitor paper AR; reviewed original public-paper derivatives, source demo assets and authorized Ryo daily-demo avatar. No room recordings or credentials.",
+  "purpose": "User-requested public shared-origin visitor AR; original paper/demo/avatar media and unmodified licensed XR engine distribution. No room capture or invented hallway measurements.",
   "files": [
     {
       "path": "content/avatar/1.mp3",
@@ -2136,6 +2136,36 @@
       "path": "content/pages/9-9.webp",
       "sha256": "da57474735e11205fc668b76e5e5925194644d6d3933c7abee6c3affab6dfb6b",
       "bytes": 29266
+    },
+    {
+      "path": "engine/resources/dom-tablet-button.glb",
+      "sha256": "69bb197329b5382906360a58e8a00995dae958667dbe93b002cb51068bfefda6",
+      "bytes": 38236
+    },
+    {
+      "path": "engine/resources/dom-tablet-frame.glb",
+      "sha256": "ceb73d8655c544b8fe0c60fdf7de9a6c5e20ed9410e5c412f325b183360ed9ed",
+      "bytes": 43028
+    },
+    {
+      "path": "engine/resources/face-ear-model.tflite",
+      "sha256": "4cd07c3ecc4ac3a19097ad5d8e2920113e8786d29302e48064b5e21b9f828552",
+      "bytes": 1173520
+    },
+    {
+      "path": "engine/resources/face-mesh-model.tflite",
+      "sha256": "97cd5b1d16d1d205445134d0d8882a619068c1a49277652c468049d0fc7f2756",
+      "bytes": 2495920
+    },
+    {
+      "path": "engine/resources/face-model.tflite",
+      "sha256": "0d800dd37230bb0503e2bc84ce547a1328dc0e2d8c54a5a92df953710decc4ed",
+      "bytes": 423340
+    },
+    {
+      "path": "engine/resources/semantics-model.tflite",
+      "sha256": "b25bebe3ec1b7390feec937d1e4eafb3d6f2104d584a738c0bdf6486030b70a0",
+      "bytes": 2526160
     }
   ]
 }

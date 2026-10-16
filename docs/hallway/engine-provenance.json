@@ -1,0 +1,19 @@
+{
+  "package": "@8thwall/engine-binary",
+  "version": "1.0.0",
+  "unmodified": true,
+  "files": [
+    {
+      "file": "xr.js",
+      "sha256": "b3973936862f4cb77ae32d24f253d8a0e8b1de4fa2a0cf688833742889ee829d"
+    },
+    {
+      "file": "xr-slam.js",
+      "sha256": "398f675c920892afd4521d5196df2b6b8a1b8a90b6a5c749cf5ad1a6e0a85270"
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "ed166ff1e5002cd7557f2c595a2398b092e76481070e6bc3b253e51517f3ae61"
+    }
+  ]
+}

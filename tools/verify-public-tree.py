@@ -13,7 +13,7 @@ if release.exists():
  if manifest.get('schema')!='spatial.hallway.public-assets.v1':raise SystemExit('Invalid hallway public asset schema')
  for row in manifest['files']:
   rel=Path(row['path'])
-  if rel.is_absolute() or '..' in rel.parts or not rel.parts or rel.parts[0]!='content' or rel.suffix.lower() not in {'.webp','.png','.bin','.fbx','.mp3','.mp4'}:raise SystemExit('Unreviewed hallway asset path')
+  if rel.is_absolute() or '..' in rel.parts or not rel.parts or not ((rel.parts[0]=='content' and rel.suffix.lower() in {'.webp','.png','.bin','.fbx','.mp3','.mp4'}) or (rel.parts[0]=='engine' and rel.suffix.lower() in {'.glb','.tflite'})):raise SystemExit('Unreviewed hallway asset path')
   name='docs/hallway/'+rel.as_posix()
   if name in reviewed or not re.fullmatch('[a-f0-9]{64}',row['sha256']):raise SystemExit('Invalid public asset digest')
   reviewed[name]=row

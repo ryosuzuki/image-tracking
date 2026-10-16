@@ -1,0 +1,1 @@
+{"schema":"spatial.venue.v1","name":"ATLAS hallway","units":"meters","registration":{"markerId":0,"sizeM":0.08},"papers":[],"status":"awaiting-on-site-registration","note":"No invented hallway coordinates. Staff registers physical paper centers once using ?setup=1, then publishes that venue layout."}
