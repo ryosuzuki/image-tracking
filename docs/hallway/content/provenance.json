@@ -1,0 +1,138 @@
+{
+  "sources": [
+    {
+      "source": "native-media/ryo-motion.bin",
+      "file": "avatar/motion.bin",
+      "sha256": "74bca478300167da181ec178aa03dcd261bc3719291a1b7c1365e1e7bfb4299d"
+    },
+    {
+      "source": "native-media/1-voice.mp3",
+      "file": "avatar/1.mp3",
+      "sha256": "767f82a707da3787a52ec9ff46ffaf67e4f3d4131d7243988af2d4b203ce9808"
+    },
+    {
+      "source": "native-media/2-voice.mp3",
+      "file": "avatar/2.mp3",
+      "sha256": "bf538d1a518c0a5ecf4fe199dba6b0916217f3467d519ecda2811069b404673b"
+    },
+    {
+      "source": "native-media/3-voice.mp3",
+      "file": "avatar/3.mp3",
+      "sha256": "4a67b60098145cab77a9c1ec6d3eeb2ece83330233c81e9673b8563bd08d8940"
+    },
+    {
+      "source": "native-media/4-voice.mp3",
+      "file": "avatar/4.mp3",
+      "sha256": "3c1deeabc965236540f6c51412f8d91622388c1f2b6da243dc76b0faec3302ca"
+    },
+    {
+      "source": "native-media/5-voice.mp3",
+      "file": "avatar/5.mp3",
+      "sha256": "baaeebbef0122017561029823a07e6bf1e19821a1480790c59385113d2f4c719"
+    },
+    {
+      "source": "native-media/6-voice.mp3",
+      "file": "avatar/6.mp3",
+      "sha256": "9a647cfb3467e7b1825cea29769c620fcb67841fc7ca97e67812f1c221ea91c5"
+    },
+    {
+      "source": "native-media/7-voice.mp3",
+      "file": "avatar/7.mp3",
+      "sha256": "e16b1a0ca4247f4d524380eaad8e005d0d94d31b747bfb7c33507e3781671bbd"
+    },
+    {
+      "source": "native-media/8-voice.mp3",
+      "file": "avatar/8.mp3",
+      "sha256": "13e6bc1198c3d899e41e0a92103171f63c6dd88e744562db0dd1b95ab251bea3"
+    },
+    {
+      "source": "native-media/9-voice.mp3",
+      "file": "avatar/9.mp3",
+      "sha256": "4d9cdcdf076ece3acf8ae50240daf2edb60de2e5d9219735f27aac8588a7fc99"
+    },
+    {
+      "source": "native-media/10-voice.mp3",
+      "file": "avatar/10.mp3",
+      "sha256": "c47c274610cd437a7da7850edf491366bfb7402447b44f95dd6a8d7e8631ab43"
+    },
+    {
+      "source": "native-media/11-voice.mp3",
+      "file": "avatar/11.mp3",
+      "sha256": "2f590a4ae66710e88cac07c0728c3aca9a3f7c4cea9a6d5299d7aabfebf7820c"
+    },
+    {
+      "source": "native-media/12-voice.mp3",
+      "file": "avatar/12.mp3",
+      "sha256": "0b4259f4af0a34540ba32b2831a486dd83da5ee145756ec46165a85213740bda"
+    },
+    {
+      "source": "native-media/13-voice.mp3",
+      "file": "avatar/13.mp3",
+      "sha256": "ef353381ff1b786cd72572c1d2f9aab5cf32cef65a7c908b560b3b6aa19dd1bf"
+    },
+    {
+      "source": "native-media/14-voice.mp3",
+      "file": "avatar/14.mp3",
+      "sha256": "5afd469559c839da96b226b3abe3e27a49a4e78491cd88c371fd3ab0835dd3c6"
+    },
+    {
+      "source": "native-media/15-voice.mp3",
+      "file": "avatar/15.mp3",
+      "sha256": "74f74685d413163c1793f4c2477d34adfb312ddff76e036ca20acc54a08d24ff"
+    },
+    {
+      "source": "native-media/16-voice.mp3",
+      "file": "avatar/16.mp3",
+      "sha256": "e378f237b8b772cdc957268bbc9883d875bf3a6d8f944bce4a55adb1d68c148f"
+    },
+    {
+      "source": "native-media/17-voice.mp3",
+      "file": "avatar/17.mp3",
+      "sha256": "16b564fa361a822a9ff3475ce3fb878ad5ecf63ff1fb8cacd485c5e3b8c7497b"
+    },
+    {
+      "source": "native-media/18-voice.mp3",
+      "file": "avatar/18.mp3",
+      "sha256": "b9b48161a9951bd6c331924b3f75d513674664e3fdb7362e8c488f6958ce1a61"
+    },
+    {
+      "source": "native-media/19-voice.mp3",
+      "file": "avatar/19.mp3",
+      "sha256": "76f02bec8b329fc32f06a62a8e56b2940b4d0c6eeb4bc08b52ed1fd086aa410f"
+    },
+    {
+      "source": "native-media/20-voice.mp3",
+      "file": "avatar/20.mp3",
+      "sha256": "13d95f493ce7701231e11a14703d442f64a44ba324c546cebdb4dab77cac1115"
+    },
+    {
+      "source": "paper-demos/video2mr/video2mr-tennis.fbx",
+      "file": "demos/video2mr/video2mr-tennis.fbx",
+      "sha256": "97b872261a3b9563928656760006bf2cf0bb08320486c41604278ed18ab028d8"
+    },
+    {
+      "source": "paper-demos/video2mr/video2mr-tennis.mp4",
+      "file": "demos/video2mr/video2mr-tennis.mp4",
+      "sha256": "09ce14935a481ac04a75479a404aaabbc7740c24501546c4f502b46f94f3084f"
+    },
+    {
+      "source": "paper-demos/cinema/envelopes.json",
+      "file": "demos/cinema/envelopes.json",
+      "sha256": "9b9402c08ddb7733e799de7afbcdd6471478dde8b254fc56a0f6a629ac0b9d10"
+    },
+    {
+      "source": "paper-demos/cinema/envelope.png",
+      "file": "demos/cinema/envelope.png",
+      "sha256": "3180c5bc8ecc0e94bf3ef36d560029de5ea40468f9f123e6d60ef08bf91b3aee"
+    }
+  ],
+  "avatar": {
+    "originalCount": 160000,
+    "mobileCount": 40000,
+    "sampling": "every fourth original splat; original covariance/color/rig/motion",
+    "sourceGaussianSha256": "e3b45778083d70e089e0ab1cc47499e796734383d26cfd41f8d9eb62448bd929",
+    "sourceBindingSha256": "1156381ecec359809748650be5b9bdf07f833b8b058969a5fe3b17b9537fac49"
+  },
+  "diorama": "Original Unity scene export from existing Spatial prototype; no terrain streaming",
+  "paperImages": "Original PDF thumbnails from existing native-media manifest, not camera cutouts"
+}

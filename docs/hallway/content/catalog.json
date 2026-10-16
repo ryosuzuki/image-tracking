@@ -1,0 +1,1953 @@
+{
+  "schema": 1,
+  "papers": [
+    {
+      "id": 1,
+      "title": "CinemaWorld",
+      "marker": 1,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/arxiv-2026-cinemaworld.pdf",
+      "pdfSha256": "7edca32baef963a4bbd981d1dba4d550845ba800c835b8e5fdd0cfb44eabf29e",
+      "pages": [
+        {
+          "thumb": "pages/1-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-15.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-16.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-17.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/1-18.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/cinemaworld.mp4",
+      "project": "https://ryosuzuki.org/cinemaworld",
+      "demos": [
+        "cinema"
+      ],
+      "avatar": true,
+      "narration": "avatar/1.mp3"
+    },
+    {
+      "id": 2,
+      "title": "Map2Video",
+      "marker": 2,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/uist-2026-map2video.pdf",
+      "pdfSha256": "2f74a70551fdf5c2e5074bf180542008a26483b830f6614e83ea78088502841d",
+      "pages": [
+        {
+          "thumb": "pages/2-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/2-15.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/map2video.mp4",
+      "project": "https://ryosuzuki.org/map2video",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/2.mp3"
+    },
+    {
+      "id": 3,
+      "title": "CARVid",
+      "marker": 3,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/uist-2026-carvid.pdf",
+      "pdfSha256": "21bdb4dd4ec4e933c011029b2c598f68e4d0fa2d773b18ec413c2ddaf4b40a75",
+      "pages": [
+        {
+          "thumb": "pages/3-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/3-13.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": null,
+      "project": "https://ryosuzuki.org/carvid",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/3.mp3"
+    },
+    {
+      "id": 4,
+      "title": "TingleTouch",
+      "marker": 4,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/chi-2026-tingletouch.pdf",
+      "pdfSha256": "2536aa340fd8d53c117c3a654315f4536dfc47472c245a3d87342156753c2c99",
+      "pages": [
+        {
+          "thumb": "pages/4-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-15.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-16.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-17.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-18.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-19.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-20.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-21.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-22.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-23.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/4-24.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/tingletouch.mp4",
+      "project": "https://ryosuzuki.org/tingletouch",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/4.mp3"
+    },
+    {
+      "id": 5,
+      "title": "HumanoidTurk",
+      "marker": 5,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/chi-2026-humanoidturk.pdf",
+      "pdfSha256": "04f37e34a54dff58fc98410e62a5900f1c703cdc3e5e427ba6adacac8b77d936",
+      "pages": [
+        {
+          "thumb": "pages/5-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/5-14.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/humanoidturk.mp4",
+      "project": "https://ryosuzuki.org/humanoidturk",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/5.mp3"
+    },
+    {
+      "id": 6,
+      "title": "Visualization Collaboration Challenges",
+      "marker": 6,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/chi-2026-collaboration-challenges.pdf",
+      "pdfSha256": "c1d4499ead550550f616647bf6b9b6652f56b3bbf30cc95d30275272c41e8ace",
+      "pages": [
+        {
+          "thumb": "pages/6-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-15.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-16.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/6-17.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": null,
+      "project": "https://ryosuzuki.org/visualization-collaboration-challenges",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/6.mp3"
+    },
+    {
+      "id": 7,
+      "title": "InSituTale",
+      "marker": 7,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/uist-2025-insitutale.pdf",
+      "pdfSha256": "2b329518b31ca2aa7bf9dbd2e5cfb3f2ed64ff8291e69f1ab1180c595a1d6fc7",
+      "pages": [
+        {
+          "thumb": "pages/7-1.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-2.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-3.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-4.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-5.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-6.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-7.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-8.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-9.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-10.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-11.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-12.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-13.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-14.webp",
+          "aspect": 0.7070757687338248
+        },
+        {
+          "thumb": "pages/7-15.webp",
+          "aspect": 0.7070757687338248
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/insitutale.mp4",
+      "project": "https://ryosuzuki.org/insitutale",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/7.mp3"
+    },
+    {
+      "id": 8,
+      "title": "From Following to Understanding",
+      "marker": 8,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/chi-2025-from-following.pdf",
+      "pdfSha256": "d8a136c0964b2df454480440a1b527df76d9c0de3fe71b1bf42906401262c115",
+      "pages": [
+        {
+          "thumb": "pages/8-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-15.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-16.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-17.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/8-18.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/from-following.mp4",
+      "project": "https://ryosuzuki.org/from-following-to-understanding",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/8.mp3"
+    },
+    {
+      "id": 9,
+      "title": "DesignMemo",
+      "marker": 9,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/cscw-2025-designmemo.pdf",
+      "pdfSha256": "50515d05f0bdfb16e088c4b19d50e93d442947e4b008db117012063d2052d1ad",
+      "pages": [
+        {
+          "thumb": "pages/9-1.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-2.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-3.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-4.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-5.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-6.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-7.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-8.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-9.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-10.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-11.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-12.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-13.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-14.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-15.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-16.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-17.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-18.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-19.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-20.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-21.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-22.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-23.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-24.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-25.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-26.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-27.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-28.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-29.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-30.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-31.webp",
+          "aspect": 0.675
+        },
+        {
+          "thumb": "pages/9-32.webp",
+          "aspect": 0.675
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/designmemo.mp4",
+      "project": "https://ryosuzuki.org/designmemo",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/9.mp3"
+    },
+    {
+      "id": 10,
+      "title": "Programmable Reality",
+      "marker": 10,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/frontiers-2025-programmable-reality.pdf",
+      "pdfSha256": "bdd130e9da0a65bbdad1f985608144239ed5a7e6536832bad3f6303770fb3fd4",
+      "pages": [
+        {
+          "thumb": "pages/10-1.webp",
+          "aspect": 0.7070709838804088
+        },
+        {
+          "thumb": "pages/10-2.webp",
+          "aspect": 0.7070709838804088
+        },
+        {
+          "thumb": "pages/10-3.webp",
+          "aspect": 0.7070709838804088
+        },
+        {
+          "thumb": "pages/10-4.webp",
+          "aspect": 0.7070709838804088
+        },
+        {
+          "thumb": "pages/10-5.webp",
+          "aspect": 0.7070709838804088
+        },
+        {
+          "thumb": "pages/10-6.webp",
+          "aspect": 0.7070709838804088
+        }
+      ],
+      "video": null,
+      "project": "https://ryosuzuki.org/programmable-reality",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/10.mp3"
+    },
+    {
+      "id": 11,
+      "title": "MapStory",
+      "marker": 11,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/uist-2025-mapstory.pdf",
+      "pdfSha256": "1b814907ec8833963f585508dfa3a1cb976b65e52120a14bee4d7e0c09f28b2e",
+      "pages": [
+        {
+          "thumb": "pages/11-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-15.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-16.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-17.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-18.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/11-19.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/mapstory.mp4",
+      "project": "https://ryosuzuki.org/mapstory",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/11.mp3"
+    },
+    {
+      "id": 12,
+      "title": "Guided Reality",
+      "marker": 12,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/uist-2025-guided-reality.pdf",
+      "pdfSha256": "5f18a5a934c3d93c39639ed106a6dd2e2fd4341e3d61f5d6c29797b1fdc21d6c",
+      "pages": [
+        {
+          "thumb": "pages/12-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/12-15.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/guided-reality.mp4",
+      "project": "https://ryosuzuki.org/guided-reality",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/12.mp3"
+    },
+    {
+      "id": 13,
+      "title": "RealitySummary",
+      "marker": 13,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/sui-2025-realitysummary.pdf",
+      "pdfSha256": "65dae9527488c08aa83f7710170d1c6fb922a2e0a4bf952d3ed4dbef9e5812f8",
+      "pages": [
+        {
+          "thumb": "pages/13-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/13-13.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/realitysummary.mp4",
+      "project": "https://ryosuzuki.org/realitysummary",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/13.mp3"
+    },
+    {
+      "id": 14,
+      "title": "Video2MR",
+      "marker": 14,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/iui-2025-video2mr.pdf",
+      "pdfSha256": "87ed845aef4aa5b2451ad8c808325b9ed625f5e56f49fe070b2dfb15b4db8ff1",
+      "pages": [
+        {
+          "thumb": "pages/14-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/14-15.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/video2mr.mp4",
+      "project": "https://ryosuzuki.org/video2mr",
+      "demos": [
+        "video2mr"
+      ],
+      "avatar": true,
+      "narration": "avatar/14.mp3"
+    },
+    {
+      "id": 15,
+      "title": "Augmented Physics",
+      "marker": 15,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/uist-2024-augmented-physics.pdf",
+      "pdfSha256": "b0c6ed504ba142544286ccba85e52c1bac20a51bb77745c6986046a78b96de6d",
+      "pages": [
+        {
+          "thumb": "pages/15-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/15-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/15-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/15-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/15-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/15-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/15-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/15-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/15-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/15-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/15-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/15-12.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/augmented-physics.mp4",
+      "project": "https://ryosuzuki.org/augmented-physics",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/15.mp3"
+    },
+    {
+      "id": 16,
+      "title": "InflatableBots",
+      "marker": 16,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/chi-2024-infltablebots.pdf",
+      "pdfSha256": "c2a408e9f71f220802b5aabae2d3afe1fdb36d3d52dd1306faf8632fb7ea187a",
+      "pages": [
+        {
+          "thumb": "pages/16-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/16-14.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": null,
+      "project": "https://ryosuzuki.org/inflatablebots",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/16.mp3"
+    },
+    {
+      "id": 17,
+      "title": "SHAPE-IT",
+      "marker": 17,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/uist-2024-shape-it.pdf",
+      "pdfSha256": "07a2beeec2bee02cb7028fe5392befa85b5919d4096d1b953195e71cab467be9",
+      "pages": [
+        {
+          "thumb": "pages/17-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-15.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-16.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-17.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-18.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-19.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-20.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-21.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-22.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-23.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-24.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-25.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-26.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-27.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-28.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/17-29.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://www.youtube.com/watch?v=2NxzOBc7AdQ",
+      "project": "https://ryosuzuki.org/shape-it",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/17.mp3"
+    },
+    {
+      "id": 18,
+      "title": "RealityEffects",
+      "marker": 18,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/dis-2024-realityeffects.pdf",
+      "pdfSha256": "1c4bf60c04e428b11cd17813fc3b38ba461450943b8aeecc03043a3d7a90c249",
+      "pages": [
+        {
+          "thumb": "pages/18-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/18-14.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/realityeffects.mp4",
+      "project": "https://ryosuzuki.org/realityeffects",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/18.mp3"
+    },
+    {
+      "id": 19,
+      "title": "CollageVis",
+      "marker": 19,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/chi-2024-collagevis.pdf",
+      "pdfSha256": "e681190b9a98ed9d7d258141b1c0c6da778e486bd2eb4da62b2b6bc1119795fb",
+      "pages": [
+        {
+          "thumb": "pages/19-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-15.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/19-16.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": "https://ryosuzuki.org/static/video/collagevis.mp4",
+      "project": "https://ryosuzuki.org/collagevis",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/19.mp3"
+    },
+    {
+      "id": 20,
+      "title": "ThermoPixels",
+      "marker": 20,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/chi-2024-thermopixels.pdf",
+      "pdfSha256": "15fa3b307a158648414ec855e3bf23bdf941b3f432c54ad01be2e5c2a3ed1c5e",
+      "pages": [
+        {
+          "thumb": "pages/20-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/20-15.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": null,
+      "project": "https://ryosuzuki.org/thermopixels",
+      "demos": [],
+      "avatar": true,
+      "narration": "avatar/20.mp3"
+    },
+    {
+      "id": 21,
+      "title": "MemoryDiorama",
+      "marker": 21,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://arxiv.org/pdf/2604.07737",
+      "pdfSha256": "b6461d7745ede2efe80e3107e3eff133d1979a419c40e09780c2836294fee65a",
+      "pages": [
+        {
+          "thumb": "pages/21-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/21-15.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": null,
+      "project": "https://ryosuzuki.org/memorydiorama",
+      "demos": [
+        "sakura",
+        "balloons"
+      ],
+      "avatar": true
+    },
+    {
+      "id": 22,
+      "title": "Augmented Math",
+      "marker": 22,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/uist-2023-augmented-math.pdf",
+      "pdfSha256": "3dabbbb915a66aed5749c369dab3fad04934908d2ffa9f27d9bc3859f3993f29",
+      "pages": [
+        {
+          "thumb": "pages/22-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-15.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/22-16.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": null,
+      "project": "https://ryosuzuki.org/augmented-math",
+      "demos": [],
+      "avatar": true
+    },
+    {
+      "id": 23,
+      "title": "RealitySketch",
+      "marker": 23,
+      "markerSize": 0.08,
+      "paperWidth": 0.21,
+      "paperHeight": 0.297,
+      "paperGap": 0.018,
+      "pdf": "https://ryosuzuki.org/static/publications/uist-2020-realitysketch.pdf",
+      "pdfSha256": "398ab538316a83fac3b7236f4826262a1a59a56ae1b531c91680ec3f0ecdb36b",
+      "pages": [
+        {
+          "thumb": "pages/23-1.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-2.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-3.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-4.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-5.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-6.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-7.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-8.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-9.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-10.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-11.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-12.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-13.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-14.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-15.webp",
+          "aspect": 0.7727272727272727
+        },
+        {
+          "thumb": "pages/23-16.webp",
+          "aspect": 0.7727272727272727
+        }
+      ],
+      "video": null,
+      "project": "https://ryosuzuki.org/realitysketch",
+      "demos": [],
+      "avatar": true
+    }
+  ],
+  "tracking": {
+    "dictionary": "DICT_4X4_50",
+    "markerSizeM": 0.08,
+    "mount": "marker centered 18mm below A4 portrait paper",
+    "persistence": "visible marker only; no cross-session SLAM"
+  }
+}
