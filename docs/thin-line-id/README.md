@@ -22,3 +22,20 @@ The black reader supports `roi=1`, default OFF. After a failed primary/cascade r
 On a frozen saved-RAW holdout,100 positive images improved935→984/1000 IDs (four separate clips alone:756→788/800). No new wrong or lost primary IDs were observed in200 images including blank/damage controls;1206 synthetic cases retained default/ROI parity. This is **offline replay, not a new live optical trial**; no printed-wall reliability improvement is established. The once-mass optimization computes identical immutable-crop pixel masses once and reclassifies thresholds, without pixel quantization.
 
 The independent-strip guard is deliberately more conservative: on20 thin article RAW frames the ROI comparison is11→14/200 accepted IDs, versus174→198/200 without that guard. Do not combine those two policies' recall figures. Integrated60 RAW ×4-policy parity,43 Node regression checks and5 actual-CV/mock-lifecycle UI checks passed.
+
+## Retained standalone experiments
+
+`codebook-hex64.mjs` preserves an opt-in 64-word GF(4) hexacode dictionary
+with seven symbols and minimum Hamming distance four. It is not wired into the
+current reader or printable cards. Its full capacity includes monochrome words;
+blank-page rejection remains necessary. The four-color/no-three-consecutive
+appearance subset contains only 42 words. Algebraic erasure/error tests do not
+establish optical readability.
+
+`geometry-display-smoother.mjs` preserves a display-only geometry smoother.
+It does not propagate IDs, retain missing detections or change raw geometry;
+ambiguous association, jumps and timing/scene discontinuities reject smoothing.
+It is a standalone experiment, not a new SLAM or world-anchor implementation.
+
+Run these and the existing reader regressions with
+`node --test docs/thin-line-id/*.test.mjs`.
