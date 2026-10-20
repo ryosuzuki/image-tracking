@@ -1,5 +1,13 @@
 # Image Tracking
 
+## Open a demo or lesson
+
+- **[Run: QR camera demo](https://ryosuzuki.github.io/image-tracking/qr-camera/)** — browser camera recognition; requires camera permission.
+- **[Run: CPU mini-lab](https://ryosuzuki.github.io/image-tracking/reality-to-digital/mr-cpu-mini-lab.html)** — synthetic room-layout and outline-to-mesh exercises; not a live scan or Quest device test.
+- **[Open: capture/replay viewer](https://ryosuzuki.github.io/image-tracking/capture-viewer/)** — load your own local recording; no personal captures are bundled or uploaded.
+- **[Watch: HCI research demos](https://ryosuzuki.github.io/image-tracking/reality-to-digital/)** — source-linked research videos, organized as Object Tracking, Avatar, Digital Twin and 3D Generation.
+- **[Today's lecture slides](https://docs.google.com/presentation/d/1cSDat0MuJk7qmj2TtbPbHt5IGeLQUsle8kemzN639hY/edit)** — research examples and practical implementation walkthroughs.
+
 ## Lecture and student capture/replay kit (2026-10-12)
 
 - [Google Slides: Image Tracking & Interactive Paper](https://docs.google.com/presentation/d/1-Uv_qqImctIzZ2j2qQ-B5Tv8L6B-dFP48GfJeJqr548/edit): 56 slides in the Mixed Reality course template, with 14 native YouTube embeds.
