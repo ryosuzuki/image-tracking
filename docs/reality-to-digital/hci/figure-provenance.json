@@ -240,6 +240,27 @@
       "path": "assets/mixfab.png",
       "bytes": 890903,
       "sha256": "e91c7cf36243f31929476a0daffe605b6da52cf38d9809da7e1112b587bb687e"
+    },
+    {
+      "path": "assets/caring-ai.png",
+      "bytes": 1253591,
+      "sha256": "2510470bab614186fe705421b6a42ca267c327526b7667713f9eaa34be04ab68",
+      "source": "https://doi.org/10.1145/3706598.3713348",
+      "figure": "1"
+    },
+    {
+      "path": "assets/editing-reality.jpg",
+      "bytes": 59920,
+      "sha256": "9313725fa1a03dbd03b55847d5a500a02b38b3a32856b593319ff27c5bb2726f",
+      "source": "https://images.squarespace-cdn.com/content/v1/5de01ff62625a4608a0a2216/ab060069-6941-4a87-8470-8bcce9efc62c/dis26-271-fig1.jpg",
+      "figure": "1 (author page); alternative university walkthrough Figure5"
+    },
+    {
+      "path": "assets/cinemaworld.png",
+      "bytes": 1272368,
+      "sha256": "794e1f055b75ab728788e2d8bd61282f5e428afdfecc688bdc4b3e33729a19bf",
+      "source": "https://doi.org/10.1145/3830398.3830520",
+      "figure": "1"
     }
   ]
 }
