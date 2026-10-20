@@ -1,13 +1,15 @@
 # HCI-first MR lecture research atlas
 
-49 public-source research/history records, 22 suggested core papers, 49 source images (48 authentic paper-figure excerpts and one official MIT project image).
+Four categories only, in lecture order: Object Tracking, Avatar, Digital Twin, 3D Generation. 37 slides, 30 research/history examples; no miscellaneous appendix. NaviCam, Urp and Teddy are integrated historical anchors. The already-taught RealitySketch, AniCraft, RealityCanvas and Teachable Reality are not repeated as research slides.
 
-Editable Google Slides: https://docs.google.com/presentation/d/1cSDat0MuJk7qmj2TtbPbHt5IGeLQUsle8kemzN639hY/edit
+Editable slides: https://docs.google.com/presentation/d/1cSDat0MuJk7qmj2TtbPbHt5IGeLQUsle8kemzN639hY/edit
 
-The original course template is inherited natively: Maven Pro headings, native gray content styling and orange section masters. Main lecture ends before optional atlas; already-taught paper/image examples are excluded from main selection.
+Atlas: https://ryosuzuki.github.io/image-tracking/reality-to-digital/
 
-All main-paper bodies reviewed; optional records retain honest reading-depth states. Source-PDF hashes, page/crop coordinates and figure hashes and project-image provenance are retained in research-manifest.json and image bytes in figure-provenance.json. No original PDFs, private captures, credentials or administrative material. Original source figures retain their visual language and rights.
+Original course template retained natively; first three slide visuals preserved, Maven Pro headings, gray content styling and orange section masters. CARING-AI is contextual avatar instruction authoring; Editing Reality and CinemaWorld are generative authoring/experiences.
 
-Coverage status: partial-corpus (exploratory teaching selection), not a saturation claim. Source families: local PDF index, ACM program JSON, previous course slide/video archive, author/publisher/project sources and independent missing-paper queries.
+Source limits: Editing Reality uses final DIS 2026 author/university project and demo, not the obsolete anonymous local draft. Final PDF unavailable; no final evaluation/latency claims. CinemaWorld uses the author-linked public preprint for the system, with UIST 2026 metadata verified separately. Reading depths, limitations and media provenance are explicit per record. Source-limited is not full-paper-reviewed.
 
-Owner: parent MR lecture task. Integration target: origin/main. Authoritative paths: this hci directory plus parent index.html and technical-board.html. Existing CPU mini-lab and previous lecture-hub preserved.
+Selective teaching corpus (partial-corpus), not a saturation claim. Public source excerpts only: no original PDFs, private captures, credentials or administrative material. The asset ledger also retains previously published source figures not selected in this narrowed lecture.
+
+Owner: parent MR lecture task. Integration target: origin/main. Authoritative paths for this revision: parent index.html, this README.md and research-manifest.json, plus the three added source images and figure-provenance.json. Existing mini-lab and technical-board are preserved. Scoped checks cover four-category schema, required examples, source-limited labeling, all 30 figures, browser search/filter/select/media, first-three preservation, inherited title layouts, speaker notes, 37-page PDF and 37-slide PPTX.
