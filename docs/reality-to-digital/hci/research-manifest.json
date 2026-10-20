@@ -9,7 +9,7 @@
     "url": "https://www.sonycsl.co.jp/person/rekimoto/navi.html",
     "project_url": "https://www.sonycsl.co.jp/person/rekimoto/navi.html",
     "video_url": "https://www.youtube.com/watch?v=S6XKPEexRbU",
-    "video_label": null,
+    "video_label": "Historical NaviCam demonstration",
     "takeaway": "Look at a physical object through a handheld display to reveal contextual information.",
     "bullets": [
       "Recognize a printed colour-code ID and overlay its associated information.",
@@ -35,7 +35,7 @@
       "source_url": "https://www.sonycsl.co.jp/person/rekimoto/navi.html",
       "title": "NaviCam hand held AR system (1994-1995)",
       "uploader": "rkmt1",
-      "provenance": "Author Jun Rekimoto archive upload (rkmt1); title dates 1994-1995. Historical system demonstration.",
+      "provenance": "Exact historical1994–1995 NaviCam demonstration; channel rkmt1 and description reference exact UIST1995 paper. Uploader personal identity not independently certified.",
       "oembed": {
         "title": "NaviCam hand held AR system (1994-1995)",
         "author_name": "rkmt1",
@@ -51,7 +51,7 @@
         "thumbnail_url": "https://i.ytimg.com/vi/S6XKPEexRbU/hqdefault.jpg",
         "html": "<iframe width=\"200\" height=\"150\" src=\"https://www.youtube.com/embed/S6XKPEexRbU?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"NaviCam hand held AR system (1994-1995)\"></iframe>"
       },
-      "status": "verified-author-or-conference-youtube"
+      "status": "verified-system-video-uploader-identity-unconfirmed"
     },
     "image_source_url": null,
     "source_pdf_sha256": "c71e5238c18184a6a95b231ccac060dc5a346526b582ba7ad39231c2190f3389",
@@ -74,8 +74,8 @@
     "category": "Object Tracking",
     "url": "https://doi.org/10.1145/2494091.2494185",
     "project_url": "https://www.media.mit.edu/projects/reality-editor-programming-smarter-objects/overview/",
-    "video_url": "https://www.youtube.com/watch?v=JUl015meCaw",
-    "video_label": "Demo: later CHI 2016 version",
+    "video_url": "https://www.youtube.com/watch?v=6FPgbAI-HO8",
+    "video_label": "YouTube demonstration",
     "takeaway": "Rewire the behavior of connected physical devices through an AR interface.",
     "bullets": [
       "Map virtual controls directly onto physical controls.",
@@ -87,16 +87,16 @@
     "image_credit": "Official MIT project image — Reality Editor: Programming Smarter Objects (image date not independently established)",
     "video_provenance": {
       "paper_id": "reality-editor",
-      "video_id": "JUl015meCaw",
-      "video_url": "https://www.youtube.com/watch?v=JUl015meCaw",
-      "source_url": "https://www.youtube.com/watch?v=JUl015meCaw",
-      "title": "CHI16 VS: Reality Editor",
-      "uploader": "ACM SIGCHI",
-      "provenance": "ACM SIGCHI CHI2016 Video Showcase: later Reality Editor demonstration, not original 2013 paper video. Explicitly label later2016 version.",
+      "video_id": "6FPgbAI-HO8",
+      "video_url": "https://www.youtube.com/watch?v=6FPgbAI-HO8",
+      "source_url": "https://www.feedingedge.co.uk/blog/2015/12/15/reality-editor-seeing-iot/",
+      "title": "Reality Editor: Programming Smarter Objects",
+      "uploader": "Fluid Interfaces",
+      "provenance": "Exact original2013 paper demonstration, Fluid Interfaces upload. Contemporary2015 article embeds this ID and labels it original2013 demo.",
       "oembed": {
-        "title": "CHI16 VS: Reality Editor",
-        "author_name": "ACM SIGCHI",
-        "author_url": "https://www.youtube.com/@sigchi",
+        "title": "Reality Editor: Programming Smarter Objects",
+        "author_name": "Fluid Interfaces",
+        "author_url": "https://www.youtube.com/@fluidinterfaces8626",
         "type": "video",
         "height": 113,
         "width": 200,
@@ -105,10 +105,10 @@
         "provider_url": "https://www.youtube.com/",
         "thumbnail_height": 360,
         "thumbnail_width": 480,
-        "thumbnail_url": "https://i.ytimg.com/vi/JUl015meCaw/hqdefault.jpg",
-        "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/JUl015meCaw?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"CHI16 VS: Reality Editor\"></iframe>"
+        "thumbnail_url": "https://i.ytimg.com/vi/6FPgbAI-HO8/hqdefault.jpg",
+        "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/6FPgbAI-HO8?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"Reality Editor: Programming Smarter Objects\"></iframe>"
       },
-      "status": "verified-author-or-conference-youtube"
+      "status": "verified-lab-youtube"
     },
     "image_source_url": "https://dam-prod.media.mit.edu/thumb/files/Display/image3.jpg.1400x1400.jpg",
     "source_pdf_sha256": "6a525cb519160bddc70b3f1aa51251480e606555adcbeadaff2e49549e836cd4",
@@ -127,7 +127,7 @@
     "url": "https://doi.org/10.1145/3332165.3347884",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=435OSV8Hudw",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Use an object's status light as both an AR anchor and a data channel.",
     "bullets": [
       "Blink an LED to communicate object-specific information.",
@@ -184,7 +184,7 @@
     "url": "https://doi.org/10.1145/3313831.3376479",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=kjACtQK3D-k",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Ground a voice assistant's “this” and “that” in the physical world.",
     "bullets": [
       "Front and rear phone cameras connect head gaze to scene objects.",
@@ -230,7 +230,7 @@
     "url": "https://doi.org/10.1145/3654777.3676379",
     "project_url": "https://xr-objects.github.io/",
     "video_url": "https://www.youtube.com/watch?v=4DjPuf-oyq8",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Give everyday objects a right-click menu for contextual information and digital actions.",
     "bullets": [
       "Detect an object and anchor its menu in the scene.",
@@ -263,7 +263,7 @@
     "url": "https://doi.org/10.1145/3746059.3747709",
     "project_url": "https://github.com/sseanliu/RealityProxy",
     "video_url": "https://www.youtube.com/watch?v=sV_gMB2Nqps",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Bring distant or crowded objects into reach through manipulable proxies.",
     "bullets": [
       "Gaze and pinch to generate nearby representations.",
@@ -309,7 +309,7 @@
     "url": "https://doi.org/10.1145/2984511.2984517",
     "project_url": "https://www.microsoft.com/en-us/research/project/holoportation-3/",
     "video_url": "https://www.youtube.com/watch?v=7d59O6cfaM0",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Bring a remote person and their surroundings into your space.",
     "bullets": [
       "Capture and transmit people, objects and motion as live 3D.",
@@ -350,7 +350,7 @@
     "url": "https://doi.org/10.1145/2818048.2819965",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=2o6krhxpUGk",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Project a remote person into an existing seat at life size.",
     "bullets": [
       "RGB-D capture and perspective-correct projection integrate person, task and reference spaces.",
@@ -402,7 +402,7 @@
     "url": "https://doi.org/10.1145/3173574.3173620",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=6aRYSsDJmEk",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Keep a remote collaborator’s pointing and head-gaze cues visible through a small adaptive avatar.",
     "bullets": [
       "Keep the remote VR collaborator visible in the local AR user’s field of view.",
@@ -454,7 +454,7 @@
     "url": "https://doi.org/10.1145/3332165.3347872",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=cBN1XZXZw3Y",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Switch between demonstrating, practising and replaying a physical skill together.",
     "bullets": [
       "Bidirectional MR capture lets instructor and learner enter each other’s workspaces.",
@@ -495,7 +495,7 @@
     "url": "https://doi.org/10.1145/3544548.3581277",
     "project_url": "https://programs.sigchi.org/chi/2023/program/content/95736",
     "video_url": "https://www.youtube.com/watch?v=oM2rvjARFHw",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Put local, AR and VR participants into one collaborative training space.",
     "bullets": [
       "Live volumetric capture carries people and their environment into remote views.",
@@ -557,7 +557,7 @@
     "url": "https://doi.org/10.1145/3613904.3642814",
     "project_url": "https://doi.org/10.1145/3613904.3642814",
     "video_url": "https://www.youtube.com/watch?v=lhKZmpnFU9c",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "A shared-looking object is not always a shared-controllable object.",
     "bullets": [
       "Align two captured rooms around a common workspace for local and remote collaboration.",
@@ -608,7 +608,7 @@
     "url": "https://doi.org/10.1145/3706598.3713348",
     "project_url": "https://engineering.purdue.edu/cdesign/wp/caring-ai/",
     "video_url": "https://www.youtube.com/watch?v=b52nmztZ9dg",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Generate an instructional avatar that acts in the right place.",
     "bullets": [
       "Describe a task and refine its step-by-step instructions.",
@@ -680,7 +680,7 @@
     "url": "https://doi.org/10.1145/3706598.3714328",
     "project_url": "https://github.com/Aki-7/minimates",
     "video_url": "https://www.youtube.com/watch?v=fukfCSvmo44",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Fit a spatial group conversation onto a real desk.",
     "bullets": [
       "Miniature avatars automatically form a consistent meeting arrangement.",
@@ -733,7 +733,7 @@
     "url": "https://doi.org/10.1145/302979.303114",
     "project_url": "https://dl.acm.org/doi/10.1145/302979.303114",
     "video_url": "https://www.youtube.com/watch?v=lVLdG1xRfgA",
-    "video_label": "Demo: author archive compilation",
+    "video_label": "Author demo compilation — includes Urp",
     "takeaway": "Move physical buildings; immediately see simulated shadows and wind.",
     "bullets": [
       "Architectural models are both representations and tangible controls.",
@@ -797,7 +797,7 @@
     "url": "https://doi.org/10.1145/3126594.3126601",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=eNVmxVG1vkY",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Edit a captured real scene with familiar delete, move and copy operations.",
     "bullets": [
       "Select physical objects by hand in mixed reality.",
@@ -830,7 +830,7 @@
     "url": "https://doi.org/10.1145/3173574.3173703",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=GoSQTPfrdCc",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Treat a live reconstruction of reality as an editable digital world.",
     "bullets": [
       "Erase, move, copy and recolor live captured geometry.",
@@ -863,7 +863,7 @@
     "url": "https://doi.org/10.1145/3290605.3300577",
     "project_url": "https://www.microsoft.com/en-us/research/publication/realitycheck-blending-virtual-environments-with-situated-physical-reality/",
     "video_url": "https://www.youtube.com/watch?v=jPrLQPfk9LA",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Blend live physical surroundings into existing VR experiences.",
     "bullets": [
       "Reconstruct people, furniture and objects in real time.",
@@ -896,7 +896,7 @@
     "url": "https://doi.org/10.1109/ISMAR52148.2021.00021",
     "project_url": "https://github.com/MohamedKari/transformr",
     "video_url": "https://www.youtube.com/watch?v=RsxdGwRvvEU",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Replace people and vehicles with virtual counterparts that inherit their pose and motion.",
     "bullets": [
       "Segment and remove the observed real object.",
@@ -929,7 +929,7 @@
     "url": "https://doi.org/10.1109/ISMAR55827.2022.00048",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=lvf0ga4Dztc",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Record one physical demonstration and reuse it as AR, VR and video instructions.",
     "bullets": [
       "Capture tools and the demonstrator's actions as a digital twin.",
@@ -986,7 +986,7 @@
     "url": "https://doi.org/10.1145/3586183.3606825",
     "project_url": "https://mkari.de/scene-responsiveness/",
     "video_url": "https://www.youtube.com/watch?v=-GwLu82QLCw",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Make virtual actions appear to change physical objects.",
     "bullets": [
       "Replace a real object with its aligned digital twin just in time.",
@@ -1018,8 +1018,8 @@
     "category": "3D Generation",
     "url": "https://doi.org/10.1145/311535.311602",
     "project_url": "https://www-ui.is.s.u-tokyo.ac.jp/~takeo/teddy/teddy.htm",
-    "video_url": "https://www-ui.is.s.u-tokyo.ac.jp/~takeo/video/teddy.mp4",
-    "video_label": "Demo: original author MP4",
+    "video_url": "https://www.youtube.com/watch?v=adfdtUn2r4U",
+    "video_label": "Archival YouTube mirror",
     "takeaway": "Draw a silhouette; inflate it into a 3D toy.",
     "bullets": [
       "Wide parts become fat and narrow parts thin.",
@@ -1039,14 +1039,28 @@
     "video_provenance": {
       "paper_id": "teddy",
       "id": "teddy",
-      "video_url": "https://www-ui.is.s.u-tokyo.ac.jp/~takeo/video/teddy.mp4",
-      "video_id": null,
+      "video_url": "https://www.youtube.com/watch?v=adfdtUn2r4U",
+      "video_id": "adfdtUn2r4U",
       "source_url": "https://www-ui.is.s.u-tokyo.ac.jp/~takeo/teddy/teddy.htm",
-      "title": "Teddy: A Sketching Interface for 3D Freeform Design",
-      "uploader": "Takeo Igarashi (author website)",
-      "oembed": null,
-      "provenance": "Original author project directly links demonstration video clip44MB5min. Official author/conference YouTube demo not located after web and native YouTube searches. Keep original author MP4 as authoritative fallback.",
-      "status": "official-mp4-fallback-no-official-youtube-found",
+      "title": "The original Teddy 3D by Takeo Igarashi, 1999",
+      "uploader": "nb1",
+      "oembed": {
+        "title": "The original Teddy 3D by Takeo Igarashi, 1999",
+        "author_name": "nb1",
+        "author_url": "https://www.youtube.com/@MJawohl",
+        "type": "video",
+        "height": 150,
+        "width": 200,
+        "version": "1.0",
+        "provider_name": "YouTube",
+        "provider_url": "https://www.youtube.com/",
+        "thumbnail_height": 360,
+        "thumbnail_width": 480,
+        "thumbnail_url": "https://i.ytimg.com/vi/adfdtUn2r4U/hqdefault.jpg",
+        "html": "<iframe width=\"200\" height=\"150\" src=\"https://www.youtube.com/embed/adfdtUn2r4U?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"The original Teddy 3D by Takeo Igarashi, 1999\"></iframe>"
+      },
+      "provenance": "Third-party archival mirror of original Teddy demonstration, uploader nb1, not an author/conference upload. Original author MP4 retained as canonical alternative: https://www-ui.is.s.u-tokyo.ac.jp/~takeo/video/teddy.mp4",
+      "status": "third-party-archival-mirror-clearly-labeled",
       "youtube_candidate": {
         "video_id": "adfdtUn2r4U",
         "video_url": "https://www.youtube.com/watch?v=adfdtUn2r4U",
@@ -1070,7 +1084,8 @@
         "provenance": "Video description links original author project, but uploader nb1 is NOT established as author/conference. Third-party mirror, not approved as official.",
         "status": "third-party-mirror-do-not-label-official"
       },
-      "mutations": "None: no shared manifest or deck write"
+      "mutations": "None: no shared manifest or deck write",
+      "official_video_url": "https://www-ui.is.s.u-tokyo.ac.jp/~takeo/video/teddy.mp4"
     },
     "image_source_url": null,
     "source_pdf_sha256": "f53cb57df169511a2c112232e36798a53757a4c59996f7c555d25000606d6f83",
@@ -1094,7 +1109,7 @@
     "url": "https://doi.org/10.1145/1449715.1449740",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=hSxCZE6PG50",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Keep the feel of pen-and-paper sketching while building a 3D curve model.",
     "bullets": [
       "A virtual sketchbook and implicit mode changes ease the transition from 2D to 3D.",
@@ -1174,7 +1189,7 @@
     "url": "https://doi.org/10.1145/2556288.2557090",
     "project_url": "https://research.lancaster-university.uk/en/publications/mixfab-a-mixed-reality-environment-for-personal-fabrication/",
     "video_url": "https://www.youtube.com/watch?v=gwACEcm9Mhw",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Design a new object around something you already own.",
     "bullets": [
       "Scan or capture a physical object inside a mixed-reality workspace.",
@@ -1230,7 +1245,7 @@
     "url": "https://doi.org/10.1145/3126594.3126611",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=Xnp3_eMYXj0",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Two strokes can become a 3D surface that fits the photographed scene.",
     "bullets": [
       "Sketch a profile and sweep path on an RGB-D image.",
@@ -1282,7 +1297,7 @@
     "url": "https://doi.org/10.1145/3173574.3173759",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=CaHnh_q2EIw",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Combine the freedom of drawing in air with the precision of a tablet.",
     "bullets": [
       "Make 3D curves and surfaces directly beside physical objects.",
@@ -1333,7 +1348,7 @@
     "url": "https://doi.org/10.1145/3290605.3300406",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=Hlsg_jxVBz4",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Create a 3D concept drawing using only an AR-enabled mobile device.",
     "bullets": [
       "Combine touch and device movement for absolute and relative drawing.",
@@ -1423,7 +1438,7 @@
     "url": "https://doi.org/10.1145/3746059.3747621",
     "project_url": null,
     "video_url": "https://www.youtube.com/watch?v=FYfbPVxs67k",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Turn something on a screen into a shared 3D object during a conversation.",
     "bullets": [
       "Select content from cameras or shared digital screens.",
@@ -1477,7 +1492,7 @@
     "url": "https://doi.org/10.1145/3830398.3830520",
     "project_url": "https://hyeyoungjo.com/cinemaworld/",
     "video_url": "https://www.youtube.com/watch?v=HD1V7CWHo8w",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Let a movie’s world spill into the room around you.",
     "bullets": [
       "Analyze movie scenes and generate synchronized 3D effects.",
@@ -1521,7 +1536,7 @@
     "url": "https://doi.org/10.1145/3800645.3813087",
     "project_url": "https://suibi-studio.squarespace.com/editng-reality/",
     "video_url": "https://www.youtube.com/watch?v=PzxpJLmMLwk",
-    "video_label": null,
+    "video_label": "YouTube demonstration",
     "takeaway": "Edit a room through an iterative conversation with generative AI.",
     "bullets": [
       "Generate, reconstruct, erase and retexture scene elements in place.",
