@@ -1,0 +1,1971 @@
+[
+  {
+    "id": "navicam",
+    "title": "The World through the Computer: Computer Augmented Interaction with Real World Environments",
+    "year": 1995,
+    "venue": "UIST",
+    "authors": "Jun Rekimoto; Katashi Nagao",
+    "category": "History",
+    "url": "https://www.sonycsl.co.jp/person/rekimoto/navi.html",
+    "project_url": "https://www.sonycsl.co.jp/person/rekimoto/navi.html",
+    "video_url": "https://www.sonycsl.co.jp/person/rekimoto/movies/navi.mov",
+    "takeaway": "Look at a physical object through a handheld display to reveal contextual information.",
+    "bullets": [
+      "Recognize a printed colour-code ID and overlay its associated information.",
+      "Use real-world situations as implicit input rather than navigating desktop menus."
+    ],
+    "limitations": "Wired workstation prototype, limited 4-bit colour IDs and small display. ID recognition is not 6DoF object tracking or markerless scene understanding.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reading_depth": "full-text-read: complete8page author paper including system, applications, implementation, comparison, limitations and references",
+    "image_credit": "Figure 4, PDF page 3",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "c71e5238c18184a6a95b231ccac060dc5a346526b582ba7ad39231c2190f3389",
+    "image_sha256": "bcdc4bef0ea1e464558707a164b6427d556ebc5d75b5e0b16b5210147ce45b96",
+    "crop_pdf_points": [
+      334,
+      395,
+      541,
+      550
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "tangible-bits",
+    "title": "Tangible Bits: Towards Seamless Interfaces between People, Bits and Atoms",
+    "year": 1997,
+    "venue": "CHI",
+    "authors": "Hiroshi Ishii; Brygg Ullmer",
+    "category": "History",
+    "url": "https://doi.org/10.1145/258549.258715",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Make bits graspable by coupling them to physical objects and surfaces.",
+    "bullets": [
+      "metaDESK uses physical landmarks to control a digital geographic space.",
+      "Ambient media move background information beyond the desktop screen."
+    ],
+    "limitations": "A vision and prototype paper, not proof of a universal tangible-interface advantage.",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      5,
+      7
+    ],
+    "reading_depth": "complete-paper-body-read",
+    "image_credit": "Figure 10, PDF page 4",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "99fc4bb5fcdfe791fa718e06ff0b8fc8448ec7aee09f53f9c0f38fd288f510be",
+    "image_sha256": "1a9ff6f91d6496d8b9d700d44edad2ad43b2802d4c34347eb8fd2541de02d469",
+    "crop_pdf_points": [
+      318,
+      525,
+      558,
+      718
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "teddy",
+    "title": "Teddy: A Sketching Interface for 3D Freeform Design",
+    "year": 1999,
+    "venue": "SIGGRAPH",
+    "authors": "Takeo Igarashi; Satoshi Matsuoka; Hidehiko Tanaka",
+    "category": "History",
+    "url": "https://doi.org/10.1145/311535.311602",
+    "project_url": "https://www-ui.is.s.u-tokyo.ac.jp/~takeo/teddy/teddy.htm",
+    "video_url": "https://www-ui.is.s.u-tokyo.ac.jp/~takeo/video/teddy.mp4",
+    "takeaway": "Draw a silhouette; inflate it into a 3D toy.",
+    "bullets": [
+      "Wide parts become fat and narrow parts thin.",
+      "Extrude, cut and smooth using gestures rather than control points."
+    ],
+    "limitations": "Approximate rounded models, not precise CAD; original implementation produces sphere-topology surfaces.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      8
+    ],
+    "reading_depth": "full-text-read: complete body, figures/captions, evaluation, limitations and references",
+    "image_credit": "Figure 2, PDF page 1",
+    "video_provenance": {
+      "id": "teddy",
+      "video_url": "https://www-ui.is.s.u-tokyo.ac.jp/~takeo/video/teddy.mp4",
+      "youtube_id": null,
+      "title": "Teddy - author demonstration video",
+      "uploader": "Takeo Igarashi (author-hosted)",
+      "source_page": "https://www-ui.is.s.u-tokyo.ac.jp/~takeo/teddy/teddy.htm",
+      "verification": "OfficialTeddyproject page links ../video/teddy.mp4; HTTP200 video/mp4,content-length44269488. Actualplayback not tested. No author-boundYouTubeID found in boundedsearch.",
+      "oembed_verified": false,
+      "media_kind": "author-hosted direct MP4",
+      "native_google_slides_candidate": false
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "f53cb57df169511a2c112232e36798a53757a4c59996f7c555d25000606d6f83",
+    "image_sha256": "d38ccd121c8e5965615b0906877c8fcf7f296e0d1c8de38144aa15e3df8b26b6",
+    "crop_pdf_points": [
+      307,
+      387,
+      546,
+      553
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "urp",
+    "title": "Urp: A Luminous-Tangible Workbench for Urban Planning and Design",
+    "year": 1999,
+    "venue": "CHI",
+    "authors": "John Underkoffler; Hiroshi Ishii",
+    "category": "History",
+    "url": "https://doi.org/10.1145/302979.303114",
+    "project_url": "https://dl.acm.org/doi/10.1145/302979.303114",
+    "video_url": null,
+    "takeaway": "Move physical buildings; immediately see simulated shadows and wind.",
+    "bullets": [
+      "Architectural models are both representations and tangible controls.",
+      "Projected simulations stay registered to the objects as designers rearrange them."
+    ],
+    "limitations": "No formal user testing in the paper; professional reactions were informal.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "reading_depth": "complete-paper-body-read",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "12dc7d42063cfd0a28d295a4f447af3383879eceb883f7a475620605e6b50222",
+    "image_sha256": "518776cd2eb7ccaa4a3e0dee1803c9460dbf409807fdee276d2351c773394973",
+    "crop_pdf_points": [
+      317,
+      137,
+      523,
+      351
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "head-mounted-3d-display",
+    "title": "A head-mounted three dimensional display",
+    "year": 1968,
+    "venue": "AFIPS Fall Joint Computer Conference",
+    "authors": "Ivan E. Sutherland",
+    "category": "History",
+    "url": "https://doi.org/10.1145/1476589.1476686",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Make a virtual object appear stable as the viewer moves their head.",
+    "bullets": [
+      "Track the headset and recompute the perspective image.",
+      "Combine optical display and real-time geometry to surround the user with information."
+    ],
+    "limitations": "Early hardware supports limited wireframe geometry; not modern scene understanding or object capture.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "reading_depth": "section-read: identity, introduction, system/contribution and discussion/limitations; not a complete line-by-line reading",
+    "image_credit": "Figure 2, PDF page 3",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "043a99c3874e9d6115fb0a080bd7b775ab315383879a600c76a1de957dc4f0ce",
+    "image_sha256": "17ba584faeec9c7b9d95b2d3b8f8c88c974adf3fabd84b8bd4ed32ebedfd1f76",
+    "crop_pdf_points": [
+      323,
+      76,
+      570,
+      306
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "digitaldesk",
+    "title": "Interacting with paper on the DigitalDesk",
+    "year": 1993,
+    "venue": "Communications of the ACM",
+    "authors": "Pierre Wellner",
+    "category": "History",
+    "url": "https://doi.org/10.1145/159544.159630",
+    "project_url": "https://dl.acm.org/doi/10.1145/159544.159630",
+    "video_url": null,
+    "takeaway": "Give ordinary paper access to computation without replacing the paper.",
+    "bullets": [
+      "Point to printed numbers to enter them into a projected calculator.",
+      "Copy physical drawings and share a paper workspace remotely."
+    ],
+    "limitations": "Camera/projector resolution, calibration and finger tracking constrain interaction; this is the 1993 article, not UIST 1991.",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      5,
+      7
+    ],
+    "reading_depth": "section-read: identity, introduction, system/contribution and discussion/limitations; not a complete line-by-line reading",
+    "image_credit": "Figure 4, PDF page 5",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "98edc6806afa9b7d37c16236d01bf0073da4d03985a0fc87e7b73bd9ae217447",
+    "image_sha256": "56cc13cb8e5d8d486d923e26303316784fd6e54e39e31ff7398252d46cf71f6b",
+    "crop_pdf_points": [
+      0,
+      0,
+      612,
+      391
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "reality-editor",
+    "title": "Reality Editor: Programming Smarter Objects",
+    "year": 2013,
+    "venue": "UbiComp Adjunct",
+    "authors": "Valentin Heun, James Hobin, Pattie Maes",
+    "category": "Make physical objects actionable",
+    "url": "https://doi.org/10.1145/2494091.2494185",
+    "project_url": "https://www.media.mit.edu/projects/reality-editor-programming-smarter-objects/overview/",
+    "video_url": null,
+    "takeaway": "Rewire the behavior of connected physical devices through an AR interface.",
+    "bullets": [
+      "Map virtual controls directly onto physical controls.",
+      "Connect functional tags across devices to program relationships."
+    ],
+    "limitations": "Requires instrumented smarter objects with processors and communication. Short demonstration paper, not arbitrary-object AI.",
+    "evidence_pages": "1-4",
+    "reading_depth": "complete paper body read; references inspected for seed expansion",
+    "image_credit": "Official MIT project image — Reality Editor: Programming Smarter Objects (image date not independently established)",
+    "video_provenance": null,
+    "image_source_url": "https://dam-prod.media.mit.edu/thumb/files/Display/image3.jpg.1400x1400.jpg",
+    "source_pdf_sha256": "6a525cb519160bddc70b3f1aa51251480e606555adcbeadaff2e49549e836cd4",
+    "image_sha256": "e4b97ab663b9b4cae13ea76200f02670aec32be5bd5c2ffa4b6951c32395c5f8",
+    "crop_pdf_points": null,
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "worldgaze",
+    "title": "Enhancing Mobile Voice Assistants with WorldGaze",
+    "year": 2020,
+    "venue": "CHI",
+    "authors": "Sven Mayer, Gierad Laput, Chris Harrison",
+    "category": "Make physical objects actionable",
+    "url": "https://doi.org/10.1145/3313831.3376479",
+    "project_url": null,
+    "video_url": "https://www.youtube.com/watch?v=kjACtQK3D-k",
+    "takeaway": "Ground a voice assistant's “this” and “that” in the physical world.",
+    "bullets": [
+      "Front and rear phone cameras connect head gaze to scene objects.",
+      "Combine spatial reference with voice queries."
+    ],
+    "limitations": "Working prototype uses pre-registered Apple reference objects/images and query-reply lookup. Head direction, not eye gaze; mean targeting error ~0.71m across tested conditions (p6).",
+    "evidence_pages": "2-6,8",
+    "reading_depth": "complete paper body read; references inspected for seed expansion",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "worldgaze",
+      "video_url": "https://www.youtube.com/watch?v=kjACtQK3D-k",
+      "title": "Enhancing Mobile Voice Assistants with WorldGaze",
+      "source_page": "https://www.figlab.com/research/2020/worldgaze",
+      "verification": {
+        "method": "source HTML exact video link + YouTube oEmbed HTTP200",
+        "author_name": "Future Interfaces Group",
+        "author_url": "https://www.youtube.com/@FiglabCMU",
+        "checked": "2026-10-20",
+        "identity_note": "Official lab project embeds this video; exact title and lab uploader match CHI2020 paper.",
+        "playback_verified": false
+      }
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "c6f233c9dfbd62db82d9faf9227e4e8089b9fc37f3a4411d9fdf86a94d7a342c",
+    "image_sha256": "e85bb5e2d7b9cd128483412d8e131f6c2d14f09e4b74e30f62f0c77f107a6b42",
+    "crop_pdf_points": [
+      54.0,
+      165.0,
+      558.0,
+      272.0
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "xr-objects",
+    "title": "Augmented Object Intelligence with XR-Objects",
+    "year": 2024,
+    "venue": "UIST",
+    "authors": "Mustafa Doga Dogan, Eric J. Gonzalez, Karan Ahuja, Ruofei Du, Andrea Colaço, Johnny Lee, Mar Gonzalez-Franco, David Kim",
+    "category": "Make physical objects actionable",
+    "url": "https://doi.org/10.1145/3654777.3676379",
+    "project_url": "https://xr-objects.github.io/",
+    "video_url": "https://www.youtube.com/watch?v=4DjPuf-oyq8",
+    "takeaway": "Give everyday objects a right-click menu for contextual information and digital actions.",
+    "bullets": [
+      "Detect an object and anchor its menu in the scene.",
+      "Ask, compare, share, or attach notes and timers."
+    ],
+    "limitations": "Evaluated smartphone prototype; object detection is limited to COCO classes and reasoning uses a cloud MLLM. Not evidence of standalone Quest execution.",
+    "evidence_pages": "5-9",
+    "reading_depth": "complete paper body read; references inspected for seed expansion",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "6e734f619d6e0cdb735ee88289b15567110d38bb80b72694ddb1f824267e7737",
+    "image_sha256": "47b21f4e129ae97a508e17e25c9ea796801ab246caa3b5604c7c7872081ed48d",
+    "crop_pdf_points": [
+      54.0,
+      251.0,
+      558.0,
+      464.0
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "reality-proxy",
+    "title": "Reality Proxy: Fluid Interactions with Real-World Objects in MR via Abstract Representations",
+    "year": 2025,
+    "venue": "UIST",
+    "authors": "Xiaoan Liu, Difan Jia, Xianhao Carton Liu, Mar Gonzalez-Franco, Chen Zhu-Tian",
+    "category": "Make physical objects actionable",
+    "url": "https://doi.org/10.1145/3746059.3747709",
+    "project_url": "https://github.com/sseanliu/RealityProxy",
+    "video_url": "https://www.youtube.com/watch?v=sV_gMB2Nqps",
+    "takeaway": "Bring distant or crowded objects into reach through manipulable proxies.",
+    "bullets": [
+      "Gaze and pinch to generate nearby representations.",
+      "Filter, group, and select objects through semantic and spatial structure."
+    ],
+    "limitations": "A technology probe with qualitative expert evaluation, not a controlled speed comparison; abstract proxies can add mapping cost.",
+    "evidence_pages": "4-7,10,13",
+    "reading_depth": "complete paper body read; references inspected for seed expansion",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "reality-proxy",
+      "video_url": "https://www.youtube.com/watch?v=sV_gMB2Nqps",
+      "title": "UIST25 - Reality Proxy | Video Figure",
+      "source_page": "https://chenzhutian.org/",
+      "verification": {
+        "method": "source HTML exact video link + YouTube oEmbed HTTP200",
+        "author_name": "Zhu-Tian",
+        "author_url": "https://www.youtube.com/@ztchenumn",
+        "checked": "2026-10-20",
+        "identity_note": "Author portfolio explicitly associates full video with UIST2025 DOI 10.1145/3746059.3747709; not separate arXiv work.",
+        "playback_verified": false
+      }
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "e063283e56ccfb4c540fe5ca7b83bdca382cd4a5242f8360f53b44474d5b5a49",
+    "image_sha256": "2dec66717d37850c3ddbc9784f6fcc8e8384f330f1c915d895ad10449cdcc54e",
+    "crop_pdf_points": [
+      54.0,
+      251.0,
+      558.0,
+      447.0
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "annexing-reality",
+    "title": "Annexing Reality: Enabling Opportunistic Use of Everyday Objects as Tangible Proxies in Augmented Reality",
+    "year": 2016,
+    "venue": "CHI",
+    "authors": "Anuruddha Hettiarachchi, Daniel Wigdor",
+    "category": "Make physical objects actionable",
+    "url": "https://doi.org/10.1145/2858036.2858134",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Turn available everyday objects into touchable stand-ins for virtual objects.",
+    "bullets": [
+      "Developers define haptic models with shape primitives, matching priorities and scaling tolerances.",
+      "The system matches and rescales virtual content to suitable physical props in the user’s surroundings."
+    ],
+    "limitations": "Limited to objects on horizontal planes; transparent, glossy and small objects are problematic; eight-expert developer study did not establish general end-user immersion benefits.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reading_depth": "full-paper-body text reviewed (pp.1–9); references checked for discovery",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "2805aba93ea5d1f9fc4b45c70ae61f4a3b47adb2f112cdce372897ee89eb3de7",
+    "image_sha256": "7aac32e2f8f4f213b59197e595dc06cb5b6a281e805f83737e2e7ec52c2c8e2e",
+    "crop_pdf_points": [
+      54.0,
+      175.0,
+      560.0,
+      305.0
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "haptic-retargeting",
+    "title": "Haptic Retargeting: Dynamic Repurposing of Passive Haptics for Enhanced Virtual Reality Experiences",
+    "year": 2016,
+    "venue": "CHI",
+    "authors": "Mahdi Azmandian, Mark Hancock, Hrvoje Benko, Eyal Ofek, Andrew D. Wilson",
+    "category": "Make physical objects actionable",
+    "url": "https://doi.org/10.1145/2858036.2858226",
+    "project_url": "https://www.microsoft.com/en-us/research/publication/haptic-retargeting-dynamic-repurposing-passive-haptics-enhanced-virtual-reality-experiences/",
+    "video_url": null,
+    "takeaway": "One real cube can provide touch for many virtual cubes.",
+    "bullets": [
+      "Warp the represented body, the virtual world, or both to align virtual targets with a physical prop.",
+      "A hybrid approach balanced reported presence with fewer late reaching corrections."
+    ],
+    "limitations": "Evaluation used designated targets and identically sized cubes; remapping requires an unwarp/reset and does not support arbitrary consecutive grabs.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      9,
+      10
+    ],
+    "reading_depth": "section-read: identity, concept, implementation setting, findings, discussion and limitations; middle evaluation/procedure pages not completely read",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "76f97d3154ae2e638790199d42bd71824869aabd339fa40975c2b5688b434717",
+    "image_sha256": "2e7338740fbcd5f8d90cb2ff6bdcf9791661089f9c60f4c136cc0a5f3fa8bf82",
+    "crop_pdf_points": [
+      54.480220794677734,
+      187.20001220703125,
+      558.0001831054688,
+      352.32000732421875
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "lightanchors",
+    "title": "LightAnchors: Appropriating Point Lights for Spatially-Anchored Augmented Reality Interfaces",
+    "year": 2019,
+    "venue": "UIST",
+    "authors": "Karan Ahuja, Sujeath Pareddy, Robert Xiao, Mayank Goel, Chris Harrison",
+    "category": "Make physical objects actionable",
+    "url": "https://doi.org/10.1145/3332165.3347884",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Use an object's status light as both an AR anchor and a data channel.",
+    "bullets": [
+      "Blink an LED to communicate object-specific information.",
+      "Read and overlay it with an ordinary smartphone camera."
+    ],
+    "limitations": "Requires controllable blinking lights; limited bitrate; a single light does not provide full 6DoF orientation.",
+    "evidence_pages": "1,3-6",
+    "reading_depth": "complete paper body read; references inspected for seed expansion",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "b194ef8687564896f054ebc4c56c8c898642d52bf0c40a52ad3d536b86c214b1",
+    "image_sha256": "c6e0ce9d9886d775fb81ac1cf77d4a9a15b61d0d39d03e2c6678dc0b88e4b9ba",
+    "crop_pdf_points": [
+      318.0,
+      159.0,
+      558.0,
+      327.0
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "ad-hoc-ui",
+    "title": "Opportunistic Interfaces for Augmented Reality: Transforming Everyday Objects into Tangible 6DoF Interfaces Using Ad hoc UI",
+    "year": 2022,
+    "venue": "CHI Extended Abstracts / Interactivity",
+    "authors": "Ruofei Du, Alex Olwal, Mathieu Le Goc, Shengzhi Wu, Danhang Tang, Yinda Zhang, Jun Zhang, David Joseph Tan, Federico Tombari, David Kim",
+    "category": "Make physical objects actionable",
+    "url": "https://doi.org/10.1145/3491101.3519911",
+    "project_url": "https://duruofei.com/projects/adhocui/",
+    "video_url": "https://www.youtube.com/watch?v=r3TSYB41RMI",
+    "takeaway": "Summon a tangible interface on an object you already have.",
+    "bullets": [
+      "Register a card on the fly and attach a widget.",
+      "Use flipping, distance, pose and tapping as input."
+    ],
+    "limitations": "Primarily flat, rigid, textured targets; KLT template tracking plus planar pose estimation, not general 3D semantic tracking.",
+    "evidence_pages": "1-4",
+    "reading_depth": "complete paper text read (including method and limitations)",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "36e545d02713df25d83c2039ee9a8056fb069511e1e551186b37e29c16aa36c5",
+    "image_sha256": "5c0506aaeaf48d3761175ce8a47c87c5e148ce4587a4fbfe5a0849a320b1172e",
+    "crop_pdf_points": [
+      54.0,
+      362.0,
+      558.0,
+      568.0
+    ],
+    "core": false,
+    "previous_week": true
+  },
+  {
+    "id": "ubi-edge",
+    "title": "Ubi Edge: Authoring Edge-Based Opportunistic Tangible User Interfaces in Augmented Reality",
+    "year": 2023,
+    "venue": "CHI",
+    "authors": "Fengming He, Xiyun Hu, Jingyu Shi, Xun Qian, Tianyi Wang, Karthik Ramani",
+    "category": "Make physical objects actionable",
+    "url": "https://doi.org/10.1145/3544548.3580704",
+    "project_url": "https://engineering.purdue.edu/cdesign/wp/ubi-edge-authoring-edge-based-opportunistic-tangible-user-interfaces-in-augmented-reality/",
+    "video_url": "https://www.youtube.com/watch?v=2PGqkaRRSUA",
+    "takeaway": "Turn the edges of everyday objects into tangible controls.",
+    "bullets": [
+      "Slide a finger along a cup rim to select an input edge.",
+      "Connect that edge to a digital parameter such as light color."
+    ],
+    "limitations": "Transparent, symmetric and partially observed objects challenge detection and tracking; not an arbitrary-object recognition guarantee.",
+    "evidence_pages": "4-7,11",
+    "reading_depth": "selected full-text sections beyond abstract; method and limitations checked",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "5df68b3e0c9efaa3cba26599cc6cd3679d15e77b4e867e01f31d09ac7602220c",
+    "image_sha256": "03b48d21894d7dda5e029d32fc442da91023bd30c796b60316e7679e48a778ae",
+    "crop_pdf_points": [
+      54.0,
+      273.0,
+      558.0,
+      389.0
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "ubi-touch",
+    "title": "Ubi-TOUCH: Ubiquitous Tangible Object Utilization through Consistent Hand-object interaction in Augmented Reality",
+    "year": 2023,
+    "venue": "UIST",
+    "authors": "Rahul Jain, Jingyu Shi, Runlin Duan, Zhengzhe Zhu, Xun Qian, Karthik Ramani",
+    "category": "Make physical objects actionable",
+    "url": "https://doi.org/10.1145/3586183.3606793",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Choose tangible proxies by how the hand interacts with them, not shape alone.",
+    "bullets": [
+      "Recommend nearby objects for the desired hand-object interaction.",
+      "Map physical hand and object motion to consistent virtual interaction."
+    ],
+    "limitations": "Physical and virtual hands can appear simultaneously and distract; extreme proxy mappings and occlusion remain challenging.",
+    "evidence_pages": "4-8,14-15",
+    "reading_depth": "selected full-text sections beyond abstract; method and limitations checked",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "329fa04490f74ac03eb888694a53737d2d2d8169c0b95d95dec3128e9bcc378e",
+    "image_sha256": "e0b580ed37c999200442d057aca590a3213d85e7726ff58db663c3370e558b57",
+    "crop_pdf_points": [
+      54.0,
+      251.0,
+      558.0,
+      442.0
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "scenectrl",
+    "title": "SceneCtrl:  Mixed Reality Enhancement via Efficient Scene Editing",
+    "year": 2017,
+    "venue": "UIST",
+    "authors": "Ya-Ting Yue, Yong-Liang Yang, Gang Ren, Wenping Wang",
+    "category": "Capture and remix reality",
+    "url": "https://doi.org/10.1145/3126594.3126601",
+    "project_url": null,
+    "video_url": "https://www.youtube.com/watch?v=eNVmxVG1vkY",
+    "takeaway": "Edit a captured real scene with familiar delete, move and copy operations.",
+    "bullets": [
+      "Select physical objects by hand in mixed reality.",
+      "Reconstruct the hidden region to support apparent object removal."
+    ],
+    "limitations": "Optical see-through cannot fully hide the physical object; brighter reconstructed regions only partially mask it.",
+    "evidence_pages": "3-8",
+    "reading_depth": "complete paper body read; references inspected for seed expansion",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "04e82f2fe0efeaa0747e6890642f88112526e70236dd6c0b29a01d589d67ef75",
+    "image_sha256": "0dab48624c0e5e4bf0f63c6237ff1bc56bcbee1e325445357ce196337d19c3fb",
+    "crop_pdf_points": [
+      54.0,
+      202.0,
+      564.0,
+      312.0
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "remixed-reality",
+    "title": "Remixed Reality: Manipulating Space and Time in Augmented Reality",
+    "year": 2018,
+    "venue": "CHI",
+    "authors": "David Lindlbauer, Andrew D. Wilson",
+    "category": "Capture and remix reality",
+    "url": "https://doi.org/10.1145/3173574.3173703",
+    "project_url": null,
+    "video_url": "https://www.youtube.com/watch?v=GoSQTPfrdCc",
+    "takeaway": "Treat a live reconstruction of reality as an editable digital world.",
+    "bullets": [
+      "Erase, move, copy and recolor live captured geometry.",
+      "Pause time or change viewpoint without physically moving."
+    ],
+    "limitations": "Eight external Kinect v2 cameras plus PCs; live geometry has limited visual fidelity. Edited views can cease to match physical touch.",
+    "evidence_pages": "1-10",
+    "reading_depth": "complete paper body read; references inspected for seed expansion",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "4cbed86d761297e770d1b006f225c38671c1dd6acf0e309ff4a820d8cba56295",
+    "image_sha256": "4e14042c5a7e8c44483f9e6abc8a09950cc88aa1277262c15828ee1a481348c5",
+    "crop_pdf_points": [
+      54,
+      168,
+      558,
+      329
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "realitycheck",
+    "title": "RealityCheck: Blending Virtual Environments with Situated Physical Reality",
+    "year": 2019,
+    "venue": "CHI",
+    "authors": "Jeremy Hartmann, Christian Holz, Eyal Ofek, Andrew D. Wilson",
+    "category": "Capture and remix reality",
+    "url": "https://doi.org/10.1145/3290605.3300577",
+    "project_url": "https://www.microsoft.com/en-us/research/publication/realitycheck-blending-virtual-environments-with-situated-physical-reality/",
+    "video_url": "https://www.youtube.com/watch?v=jPrLQPfk9LA",
+    "takeaway": "Blend live physical surroundings into existing VR experiences.",
+    "bullets": [
+      "Reconstruct people, furniture and objects in real time.",
+      "Composite reality with VR depth for occlusion, interaction and awareness."
+    ],
+    "limitations": "Requires depth-camera reconstruction and rendering integration; multi-camera/projector configurations impose substantial GPU cost.",
+    "evidence_pages": "2,4-7,9-10",
+    "reading_depth": "complete paper body read; references inspected for seed expansion",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "ace243362d188fb6351b038a489a2bc20957bc159a21fcbad5cc5a6480e48dc5",
+    "image_sha256": "4e144ce8e6eafc38dfe37067f7863b1d9f229d0b6b2282f207ef0b8ef26bc119",
+    "crop_pdf_points": [
+      54.0,
+      214.0,
+      558.0,
+      356.0
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "transformr",
+    "title": "TransforMR: Pose-Aware Object Substitution for Composing Alternate Mixed Realities",
+    "year": 2021,
+    "venue": "ISMAR",
+    "authors": "Mohamed Kari, Tobias Grosse-Puppendahl, Luis Falconeri Coelho, Andreas Rene Fender, David Bethge, Reinhard Schütte, Christian Holz",
+    "category": "Capture and remix reality",
+    "url": "https://doi.org/10.1109/ISMAR52148.2021.00021",
+    "project_url": "https://github.com/MohamedKari/transformr",
+    "video_url": "https://www.youtube.com/watch?v=RsxdGwRvvEU",
+    "takeaway": "Replace people and vehicles with virtual counterparts that inherit their pose and motion.",
+    "bullets": [
+      "Segment and remove the observed real object.",
+      "Render a pose-aware replacement in the same scene."
+    ],
+    "limitations": "Inference runs on four cloud NVIDIA Tesla V100 GPUs (~15FPS backend); mobile client renders. Pose/inpainting errors and absent explicit occlusion handling break coherence.",
+    "evidence_pages": "1,3-6,8",
+    "reading_depth": "complete paper body read; references inspected for seed expansion",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "76baf58737367ee369165ae4e85bc46e3b8d6136e60ad3b28a0400c0606c392a",
+    "image_sha256": "4535312bc2f13f732ae9e1d4883186fcb8f9ae959e0739a571da1a0706e93d2f",
+    "crop_pdf_points": [
+      84.0,
+      205.0,
+      528.0,
+      403.0
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "scene-responsiveness",
+    "title": "Scene Responsiveness for Visuotactile Illusions in Mixed Reality",
+    "year": 2023,
+    "venue": "UIST",
+    "authors": "Mohamed Kari, Reinhard Schütte, Raj Sodhi",
+    "category": "Capture and remix reality",
+    "url": "https://doi.org/10.1145/3586183.3606825",
+    "project_url": "https://mkari.de/scene-responsiveness/",
+    "video_url": "https://www.youtube.com/watch?v=-GwLu82QLCw",
+    "takeaway": "Make virtual actions appear to change physical objects.",
+    "bullets": [
+      "Replace a real object with its aligned digital twin just in time.",
+      "Preserve shadows, occlusion, and collisions as the virtual copy moves."
+    ],
+    "limitations": "Physical objects do not actually move; spaces and objects must be scanned, aligned and semantically annotated in advance.",
+    "evidence_pages": "4-12",
+    "reading_depth": "complete paper body read; references inspected for seed expansion",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "bb21111f042a01642f69efcd7b997256c80006b477da33bbee7b491d0586efce",
+    "image_sha256": "a38e8e3e2beaa990ac0d62e5e90d25475115dfbe5d440fedb977bda64e4493e0",
+    "crop_pdf_points": [
+      54.0,
+      173.0,
+      558.0,
+      260.0
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "lightspace",
+    "title": "Combining Multiple Depth Cameras and Projectors for Interactions On, Above, and Between Surfaces",
+    "year": 2010,
+    "venue": "UIST",
+    "authors": "Andrew D. Wilson, Hrvoje Benko",
+    "category": "Capture and remix reality",
+    "url": "https://doi.org/10.1145/1866029.1866073",
+    "project_url": "https://www.microsoft.com/en-us/research/project/lightspace/",
+    "video_url": "https://www.youtube.com/watch?v=JMcmPX8oy94",
+    "takeaway": "Carry projected content from a table to a wall using your own body.",
+    "bullets": [
+      "Calibrated depth cameras and projectors connect ordinary surfaces into a shared interactive room.",
+      "Pick up a small projected object, pass it between people, or transfer it by touching two surfaces."
+    ],
+    "limitations": "Interactive display surfaces must be manually calibrated, flat and stationary; occlusion and >100 ms latency affect interaction.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reading_depth": "full-paper-body text reviewed (pp.1–9); references checked for discovery; author manuscript has copyright placeholder",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "lightspace",
+      "video_url": "https://www.youtube.com/watch?v=JMcmPX8oy94",
+      "title": "Combining Multiple Depth Cameras and Projectors for Interactions On, Above, and Between Surfaces",
+      "source_page": "https://www.microsoft.com/en-us/research/video/combining-multiple-depth-cameras-projectors-interactions-surfaces/",
+      "verification": {
+        "method": "source HTML exact video link + YouTube oEmbed HTTP200",
+        "author_name": "Microsoft Research",
+        "author_url": "https://www.youtube.com/@MicrosoftResearch",
+        "checked": "2026-10-20",
+        "identity_note": "Official Microsoft Research video page embeds this ID under exact UIST2010 paper title.",
+        "playback_verified": false
+      }
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "0450c46f213d77b0ffa3777b99c117b0c325a833f002a735116621e2c10ec0e2",
+    "image_sha256": "23924b03ca1489389f2b93dff8529519eb08f2e783ca93c4c71f284d671c2aa5",
+    "crop_pdf_points": [
+      54.95000076293945,
+      181.70001220703125,
+      557.9000244140625,
+      274.70001220703125
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "holodesk",
+    "title": "HoloDesk: Direct 3D Interactions with a Situated See-Through Display",
+    "year": 2012,
+    "venue": "CHI",
+    "authors": "Otmar Hilliges, David Kim, Shahram Izadi, Malte Weiss, Andrew D. Wilson",
+    "category": "Capture and remix reality",
+    "url": "https://doi.org/10.1145/2207676.2208405",
+    "project_url": "https://ait.ethz.ch/holodesk",
+    "video_url": "https://www.youtube.com/watch?v=JHL5tJ9ja_w",
+    "takeaway": "Reach into a 3D scene and move virtual objects with your hands and everyday objects.",
+    "bullets": [
+      "A see-through display spatially aligns virtual graphics with the physical interaction volume.",
+      "Kinect geometry and motion support scooping, grasping and interactions with bowls, books and paper."
+    ],
+    "limitations": "No force feedback; occluded physical geometry disappears from the simulation, and stereo still helped target acquisition.",
+    "evidence_pages": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reading_depth": "full-paper-body text reviewed (pp.1–9); references checked for discovery; not a line-by-line technical reproduction",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "holodesk",
+      "video_url": "https://www.youtube.com/watch?v=JHL5tJ9ja_w",
+      "title": "HoloDesk: Direct 3D Interactions with a Situated See-Through Display",
+      "source_page": "https://www.microsoft.com/en-us/research/video/holodesk-direct-3d-interactions-situated-see-display/",
+      "verification": {
+        "method": "source HTML exact video link + YouTube oEmbed HTTP200",
+        "author_name": "Microsoft Research",
+        "author_url": "https://www.youtube.com/@MicrosoftResearch",
+        "checked": "2026-10-20",
+        "identity_note": "Official Microsoft Research video page embeds this exact ID and exact paper title. Upload/display date is not paper year (CHI2012).",
+        "playback_verified": false
+      }
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "8d682d4566628fba03ffc6ea409a86bf9e1fe69fa0eab23432b590844c560ce1",
+    "image_sha256": "e536475890307b54181d73c2c3f8f596a8a49566e66b1817a788f8f37b5b4074",
+    "crop_pdf_points": [
+      59.0469970703125,
+      194.24607849121094,
+      553.5433349609375,
+      298.4620056152344
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "editar",
+    "title": "EditAR: A Digital Twin Authoring Environment for Creation of AR/VR and Video Instructions from a Single Demonstration",
+    "year": 2022,
+    "venue": "ISMAR",
+    "authors": "Subramanian Chidambaram, Sai Swarup Reddy, Matthew Rumple, Ananya Ipsita, Ana Villanueva, Thomas Redick, Wolfgang Stuerzlinger, Karthik Ramani",
+    "category": "Capture and remix reality",
+    "url": "https://doi.org/10.1109/ISMAR55827.2022.00048",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Record one physical demonstration and reuse it as AR, VR and video instructions.",
+    "bullets": [
+      "Capture tools and the demonstrator's actions as a digital twin.",
+      "Edit and export multiple instructional media from the same recording."
+    ],
+    "limitations": "Modified Quest 2 + ZED Mini external camera, Link-connected GTX1660 PC, Antilatency trackers and prealigned CAD models; not standalone markerless Quest capture. Gesture learning and accidental inputs remain.",
+    "evidence_pages": "3-5,8",
+    "reading_depth": "complete paper body read; references inspected for seed expansion",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "a851295e84da730f7add45e6fbfa3d2ff56a2776b90c3da147fcedb9a1cf66af",
+    "image_sha256": "999ee20cf4faa3137e042b2e67576b9c2dd140190c822465256d30fb8094695d",
+    "crop_pdf_points": [
+      150.0,
+      190.0,
+      465.0,
+      369.0
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "homeview",
+    "title": "HomeView: Automatically Building Smart Home Digital Twins With Augmented Reality Headsets",
+    "year": 2022,
+    "venue": "UIST Adjunct / Poster",
+    "authors": "Zhuoyue Lyu, Jackie (Junrui) Yang, Monica S. Lam, James A. Landay",
+    "category": "Capture and remix reality",
+    "url": "https://doi.org/10.1145/3526114.3558709",
+    "project_url": "https://github.com/StanfordHCI/HomeView",
+    "video_url": null,
+    "takeaway": "Use a home's captured appearance to understand and program its IoT state.",
+    "bullets": [
+      "Associate chunks of 3D capture with device states.",
+      "Assemble a digital twin that provides context for trigger-action rules."
+    ],
+    "limitations": "Evaluation uses a simulator and five participants; do not describe it as a deployed autonomous home-scale headset system.",
+    "evidence_pages": "2-4",
+    "reading_depth": "selected full-text sections beyond abstract; method and limitations checked",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "469ce263339b94dab9f7daf0e3af490af6d921256c5e50f9594b0fe69ac769b0",
+    "image_sha256": "efb672117edc2acc9b30264c808c7781e17220e2d32079be0873462be11e046f",
+    "crop_pdf_points": [
+      54.0,
+      248.0,
+      558.0,
+      465.0
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "augmented-photogrammetry",
+    "title": "Augmented Photogrammetry: 3D Object Scanning and Appearance Editing in Mobile Augmented Reality",
+    "year": 2023,
+    "venue": "UIST Adjunct",
+    "authors": "Daniel Lohn, Tobias Höllerer, Misha Sra",
+    "category": "Capture and remix reality",
+    "url": "https://doi.org/10.1145/3586182.3616638",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Scan an everyday object and restyle its appearance with a text prompt.",
+    "bullets": [
+      "Select the object in a video to reconstruct a textured mesh.",
+      "Use diffusion-guided texture editing and place the result in AR."
+    ],
+    "limitations": "A server performs reconstruction/restyling; not real-time on-device 3D generation. No geometry deformation editing.",
+    "evidence_pages": "1-3",
+    "reading_depth": "complete paper text read (including method and limitations)",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "43eef8e56065dfbfee52a60664c71ae7e3026148813b8af37785f0df243af274",
+    "image_sha256": "26620dcd8c01fb4920f7d792b757e82afc9ee56f20e65d9fd63f56f1ffbd0d9d",
+    "crop_pdf_points": [
+      54.0,
+      192.0,
+      558.0,
+      348.0
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "mixfab",
+    "title": "MixFab: A Mixed-Reality Environment for Personal Fabrication",
+    "year": 2014,
+    "venue": "CHI",
+    "authors": "Christian Weichel; Manfred Lau; David Kim; Nicolas Villar; Hans Gellersen",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/2556288.2557090",
+    "project_url": "https://research.lancaster-university.uk/en/publications/mixfab-a-mixed-reality-environment-for-personal-fabrication/",
+    "video_url": "https://www.youtube.com/watch?v=gwACEcm9Mhw",
+    "takeaway": "Design a new object around something you already own.",
+    "bullets": [
+      "Scan or capture a physical object inside a mixed-reality workspace.",
+      "Use hand gestures to shape, combine and subtract forms for 3D printing."
+    ],
+    "limitations": "Dedicated half-mirror/Kinect/turntable setup; crude outline capture trades fidelity for speed. Gesture precision is below CAD and the 10-person evaluation was qualitative, not a baseline speed comparison.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reading_depth": "full-text-read: complete10pagepaper including gesture study,interaction walkthrough,implementation,evaluation,discussion and references",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "mixfab",
+      "video_url": "https://www.youtube.com/watch?v=gwACEcm9Mhw",
+      "youtube_id": "gwACEcm9Mhw",
+      "title": "MixFab",
+      "uploader": "Christian Weichel",
+      "source_page": "https://csweichel.de/research",
+      "verification": "Author currentResearch archive explicitly links thisvideo in MixFab CHI2014record; oEmbed title MixFab and Christian Weichel uploader match. YouTubeoEmbed HTTP200; actual playback in deliveredGoogleSlides not verified here.",
+      "oembed_verified": true,
+      "media_kind": "author system demo",
+      "native_google_slides_candidate": true,
+      "thumbnail_url": "https://i.ytimg.com/vi/gwACEcm9Mhw/hqdefault.jpg"
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "071e521f7fdde042dad7dfb282c07972f9cee94a77decfb4bf145d56635542ca",
+    "image_sha256": "e91c7cf36243f31929476a0daffe605b6da52cf38d9809da7e1112b587bb687e",
+    "crop_pdf_points": [
+      319,
+      178,
+      565,
+      455
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "sweepcanvas",
+    "title": "SweepCanvas: Sketch-based 3D Prototyping on an RGB-D Image",
+    "year": 2017,
+    "venue": "UIST",
+    "authors": "Yuwei Li; Xi Luo; Youyi Zheng; Pengfei Xu; Hongbo Fu",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/3126594.3126611",
+    "project_url": null,
+    "video_url": "https://www.youtube.com/watch?v=Xnp3_eMYXj0",
+    "takeaway": "Two strokes can become a 3D surface that fits the photographed scene.",
+    "bullets": [
+      "Sketch a profile and sweep path on an RGB-D image.",
+      "Use scene planes to ground the new model in its physical context."
+    ],
+    "limitations": "Desktop sketching on pre-captured RGB-D images; generates surface geometry and assembled parts, not arbitrary watertight solids from two strokes. Not a live standalone Quest authoring system.",
+    "evidence_pages": [
+      1,
+      2,
+      5,
+      9,
+      10,
+      11
+    ],
+    "reading_depth": "complete-paper-body-read",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "sweepcanvas",
+      "video_url": "https://www.youtube.com/watch?v=Xnp3_eMYXj0",
+      "youtube_id": "Xnp3_eMYXj0",
+      "title": "SweepCanvas - UIST 2017",
+      "uploader": "Hongbo Fu",
+      "source_page": "https://hongbofu.people.ust.hk/",
+      "verification": "Author homepage SweepCanvasUIST2017teaser links this exactvideo adjacent to paper; oEmbed title SweepCanvas-UIST2017 and HongboFu uploader match. YouTubeoEmbed HTTP200; actual playback in deliveredGoogleSlides not verified here.",
+      "oembed_verified": true,
+      "media_kind": "author system demo",
+      "native_google_slides_candidate": true,
+      "thumbnail_url": "https://i.ytimg.com/vi/Xnp3_eMYXj0/hqdefault.jpg"
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "105504c30cbf7ff4d9a50f28a9e6e45608feb9d77e48ac948be487626a5fe0a5",
+    "image_sha256": "efd01583e09521e02c6c3957418fc0cf7d89420aaf95aab00e0050780418806e",
+    "crop_pdf_points": [
+      54,
+      192,
+      564,
+      289
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "symbiosissketch",
+    "title": "SymbiosisSketch: Combining 2D & 3D Sketching for Designing Detailed 3D Objects in Situ",
+    "year": 2018,
+    "venue": "CHI",
+    "authors": "Rahul Arora; Rubaiat Habib Kazi; Tovi Grossman; George Fitzmaurice; Karan Singh",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/3173574.3173759",
+    "project_url": null,
+    "video_url": "https://www.youtube.com/watch?v=CaHnh_q2EIw",
+    "takeaway": "Combine the freedom of drawing in air with the precision of a tablet.",
+    "bullets": [
+      "Make 3D curves and surfaces directly beside physical objects.",
+      "Draw detail on a tablet and map it onto those surfaces."
+    ],
+    "limitations": "Six-person exploratory comparison: hybrid drawings took longer and contained more strokes, not a speed improvement(pp.8–9). Vicon-tracked stylus limits use outside the lab; limited surface topology and HoloLens FOV(pp.4,10).",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      11,
+      12
+    ],
+    "reading_depth": "full-text-read: complete15pagePDF including system,interaction algorithms,evaluation,limitations,references and appendices",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "symbiosissketch",
+      "video_url": "https://www.youtube.com/watch?v=CaHnh_q2EIw",
+      "youtube_id": "CaHnh_q2EIw",
+      "title": "SymbiosisSketch: Combining 2D and 3D Sketching for Designing Detailed 3D Objects in Situ",
+      "uploader": "Rahul Arora",
+      "source_page": "https://rubaiathabib.me/2018/02/24/symbiosissketch-chi-2018/",
+      "verification": "Coauthor Rubaiat Habib Kazi project page iframe embeds this exactvideo; oEmbed title and Rahul Arora uploader match. YouTubeoEmbed HTTP200; actual playback in deliveredGoogleSlides not verified here.",
+      "oembed_verified": true,
+      "media_kind": "author system demo",
+      "native_google_slides_candidate": true,
+      "thumbnail_url": "https://i.ytimg.com/vi/CaHnh_q2EIw/hqdefault.jpg"
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "e6504551608f1a58015a6614b4f3f64b3dac55a72a56a088c07b5e3a1bd87764",
+    "image_sha256": "543596c50a26a552de56f7185e835380810f2e43ad95e68eaf329d1bdb0cdeab",
+    "crop_pdf_points": [
+      54,
+      210,
+      564,
+      414
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "thing2reality",
+    "title": "Thing2Reality: Enabling Spontaneous Creation of 3D Objects from 2D Content using Generative AI in XR Meetings",
+    "year": 2025,
+    "venue": "UIST",
+    "authors": "Erzhen Hu; Mingyi Li; Jungtaek Hong; Xun Qian; Alex Olwal; David Kim; Seongkook Heo; Ruofei Du",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/3746059.3747621",
+    "project_url": null,
+    "video_url": "https://www.youtube.com/watch?v=FYfbPVxs67k",
+    "takeaway": "Turn something on a screen into a shared 3D object during a conversation.",
+    "bullets": [
+      "Select content from cameras or shared digital screens.",
+      "Generate and manipulate 3D Gaussian objects, then compare or present them together."
+    ],
+    "limitations": "Requires PC-side generation (RTX 4070 Ti in the prototype) and an external camera for physical capture; mean end-to-end latency 7.51 s. Generated geometry, scale and occluded surfaces remain approximate.",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      6,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reading_depth": "complete-paper-body-read; all system/evaluation/discussion/limitations and source figures/captions read; references inspected",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "thing2reality",
+      "video_url": "https://www.youtube.com/watch?v=FYfbPVxs67k",
+      "youtube_id": "FYfbPVxs67k",
+      "title": "Thing2Reality: Enabling Spontaneous Creation of 3D Objects from 2D Content using Generative AI in...",
+      "uploader": "ACM SIGCHI",
+      "source_page": "https://ruofeidu.com/",
+      "verification": "Coauthor RuofeiDu publications page links exactvideo alongside finalUIST2025DOI10.1145/3746059.3747621. oEmbed title matches and uploader ACM SIGCHI. Do not substitute older2024demo IDs without markingversion. YouTubeoEmbed HTTP200; actual playback in deliveredGoogleSlides not verified here.",
+      "oembed_verified": true,
+      "media_kind": "author-linked conference video; demo/talk split not timed",
+      "native_google_slides_candidate": true,
+      "thumbnail_url": "https://i.ytimg.com/vi/FYfbPVxs67k/hqdefault.jpg"
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "02c1f1e45186ad23de2839e40b11b06a501dc363fccb899d9dad68e9894c6335",
+    "image_sha256": "ece0dcf9a191832dc8bd9e4153cde983746c4ed87ca42303697772c638975d3e",
+    "crop_pdf_points": [
+      54,
+      321,
+      563,
+      491
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "ilovesketch",
+    "title": "ILoveSketch: As-Natural-As-Possible Sketching System for Creating 3D Curve Models",
+    "year": 2008,
+    "venue": "UIST",
+    "authors": "Seok-Hyung Bae; Ravin Balakrishnan; Karan Singh",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/1449715.1449740",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Keep the feel of pen-and-paper sketching while building a 3D curve model.",
+    "bullets": [
+      "A virtual sketchbook and implicit mode changes ease the transition from 2D to 3D.",
+      "View rotation and an axis widget support controllable perspective curves."
+    ],
+    "limitations": "Evaluation centres on one professional designer; not evidence that arbitrary novices can create complex models.",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      7,
+      8,
+      9
+    ],
+    "reading_depth": "section-read: identity, introduction, system/contribution and discussion/limitations; not a complete line-by-line reading",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "2e545f51f496d3a9025934f44a10cd5f27873a25a48d11cefb5efd4c267ab48e",
+    "image_sha256": "13d53ac27e01c0fc766c3c46c404161423f2cea1d8f68dc8f2670096058db79b",
+    "crop_pdf_points": [
+      318,
+      570,
+      558,
+      709
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "mobi3dsketch",
+    "title": "Mobi3DSketch: 3D Sketching in Mobile AR",
+    "year": 2019,
+    "venue": "CHI",
+    "authors": "Kin Chung Kwan; Hongbo Fu",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/3290605.3300406",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Create a 3D concept drawing using only an AR-enabled mobile device.",
+    "bullets": [
+      "Combine touch and device movement for absolute and relative drawing.",
+      "Snapping and planar or curved proxies help manage depth and precision."
+    ],
+    "limitations": "Depends on robust ARKit tracking; drawing skill, narrow FOV and non-stereo display remain relevant.",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      5,
+      8,
+      9,
+      10
+    ],
+    "reading_depth": "section-read: identity, introduction, system/contribution and discussion/limitations; not a complete line-by-line reading",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "8b6697f7da356ee69d836b7dce805cd85540d279bad058ff3d31f51627126058",
+    "image_sha256": "3af4d0d85a730500ca81c6e4cb0e8f153d5eff0650fdb1432eddaeb073d27749",
+    "crop_pdf_points": [
+      59,
+      177,
+      555,
+      305
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "flowmatic",
+    "title": "FlowMatic: An Immersive Authoring Tool for Creating Interactive Scenes in Virtual Reality",
+    "year": 2020,
+    "venue": "UIST",
+    "authors": "Lei Zhang; Steve Oney",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/3379337.3415824",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Build behaviours while standing inside the world you are programming.",
+    "bullets": [
+      "Connect reactive-programming primitives as spatial diagrams in VR.",
+      "Create objects, respond to events and immediately try the resulting scene."
+    ],
+    "limitations": "Short-term beginner comparison; complex algorithms and particle-system authoring remain outside its supported scope.",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      11
+    ],
+    "reading_depth": "section-read: identity, introduction, system/contribution and discussion/limitations; not a complete line-by-line reading",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "ce0a123e5497450cfdee188d527468806e9641ce19588a85bff2db1b5a357582",
+    "image_sha256": "caa663fb70b8ccc83a69efd60162960ff8c90dfd467d325588607ae3a4c889e8",
+    "crop_pdf_points": [
+      54,
+      211,
+      564,
+      405
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "xrdirector",
+    "title": "XRDirector: A Role-Based Collaborative Immersive Authoring System",
+    "year": 2020,
+    "venue": "CHI",
+    "authors": "Michael Nebeling; Katy Lewis; Yu-Cheng Chang; Lihan Zhu; Michelle Chung; Piaoyang Wang; Janet Nebeling",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/3313831.3376637",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Prototype an XR scene together by directing and performing it.",
+    "bullets": [
+      "Assign director, actor and camera roles across AR and VR devices.",
+      "Capture enacted animation and simulate interactions in a Wizard-of-Oz workflow."
+    ],
+    "limitations": "An early-stage collaborative prototyping tool, not a replacement for full production animation or game engines.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      6,
+      8,
+      10,
+      11
+    ],
+    "reading_depth": "section-read: identity, introduction, system/contribution and discussion/limitations; not a complete line-by-line reading",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "a14bbf9c02c541321c6f5c8859750e039d487edb6e348ad0f5716a4c55f1c15a",
+    "image_sha256": "44d182f161766bf0908146f12f850fa0ee43b17c710d025024ab4f8d7d05cb2d",
+    "crop_pdf_points": [
+      320,
+      201,
+      568,
+      325
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "cassie",
+    "title": "CASSIE: Curve and Surface Sketching in Immersive Environments",
+    "year": 2021,
+    "venue": "CHI",
+    "authors": "Emilie Yu; Rahul Arora; Tibor Stanko; J. Andreas Bærentzen; Karan Singh; Adrien Bousseau",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/3411764.3445158",
+    "project_url": "https://ns.inria.fr/d3/cassie/",
+    "video_url": null,
+    "takeaway": "Turn imprecise mid-air strokes into connected curves and surfaces.",
+    "bullets": [
+      "Automatically neaten strokes and detect closed curve cycles.",
+      "Add surface patches to make sketches usable beyond freehand ideation."
+    ],
+    "limitations": "Automatic neatening can feel intrusive; users need more control over ambiguous constraints and generated surfaces.",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      6,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reading_depth": "section-read: identity, introduction, system/contribution and discussion/limitations; not a complete line-by-line reading",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "07b218cbab8415a2efb1bbfeec1a735561b45476d8eaa7cc7118a3c64bed16ef",
+    "image_sha256": "eaec483ce90bb6ea2c7bdd50ba305112b5b8bf5a2eda0cf59ade8e3b0666c4ea",
+    "crop_pdf_points": [
+      54,
+      250,
+      559,
+      378
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "rapido",
+    "title": "Rapido: Prototyping Interactive AR Experiences through Programming by Demonstration",
+    "year": 2021,
+    "venue": "UIST",
+    "authors": "Germán Leiva, Cuong Nguyen, Rubaiat Habib Kazi, Jens Emil Grønbæk, Clemens Klokmose, Paul Asente",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/3472749.3474774",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Turn a recorded AR scenario into an interactive prototype by demonstration.",
+    "bullets": [
+      "Sketch assets and demonstrate inputs, animations and rules.",
+      "Infer and inspect a state machine from the recorded timeline."
+    ],
+    "limitations": "Early-stage prototyping rather than a finished production app; focuses on demonstrated interaction and sketch representations.",
+    "evidence_pages": "3-6,10",
+    "reading_depth": "selected full-text sections beyond abstract; method and limitations checked",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "a6dddec7df32baeb8b87be1d4c2f79e89d207a2dd1365b26707fcf6574b89d7d",
+    "image_sha256": "c5483500e7dea7a9fad2aed23e8579c1de96f5427d048afeee25e94ac8b95c3a",
+    "crop_pdf_points": [
+      54.0,
+      233.0,
+      558.0,
+      373.0
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "refar",
+    "title": "RefAR: 3D Sketch-Based Modeling with In-situ References",
+    "year": 2022,
+    "venue": "ISMAR Adjunct",
+    "authors": "Kai Wu; Zhanglin Cheng",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1109/ISMAR-Adjunct57072.2022.00108",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Use a real object as a mould for a new 3D model.",
+    "bullets": [
+      "Draw rough mid-air strokes around physical references.",
+      "Fit the generated model to incomplete in-situ point clouds."
+    ],
+    "limitations": "Adjunct paper; supported stroke and model families are limited and no large comparative study is established here.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reading_depth": "section-read: identity, introduction, system/contribution and discussion/limitations; not a complete line-by-line reading",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "03bdf0f41ad33c2da2a6b31b01c47d39af8a7ea6a6b741bbed410370e4cf7cac",
+    "image_sha256": "923df622da6efaec6c576d0fb9954386f39ec867a96afbbbc511ef20c3b379d7",
+    "crop_pdf_points": [
+      86,
+      170,
+      530,
+      270
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "realitycanvas",
+    "title": "RealityCanvas: Augmented Reality Sketching for Embedded and Responsive Scribble Animation Effects",
+    "year": 2023,
+    "venue": "UIST",
+    "authors": "Zhijie Xia, Kyzyl Monteiro, Kevin Van, Ryo Suzuki",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/3586183.3606716",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Sketch expressive animated effects that respond to real-world motion.",
+    "bullets": [
+      "Bind drawings to tracked objects or body points.",
+      "Author particles, action triggers and contour highlights."
+    ],
+    "limitations": "Freehand authoring can demand drawing skill; experts requested richer editing and undo capabilities.",
+    "evidence_pages": "3-7,12",
+    "reading_depth": "selected full-text sections beyond abstract; method and limitations checked",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "bbfe9e305cfe5ec989bfbec3df960bec823b263d8ffa9500f9199a9eeca6aca1",
+    "image_sha256": "82d9516121cc56ae4a77346d29c56b370e2377fb2f5cc9160a09b824170635c6",
+    "crop_pdf_points": [
+      54.0,
+      279.0,
+      558.0,
+      426.0
+    ],
+    "core": false,
+    "previous_week": true
+  },
+  {
+    "id": "thingshare",
+    "title": "ThingShare: Ad-Hoc Digital Copies of Physical Objects for Sharing Things in Video Meetings",
+    "year": 2023,
+    "venue": "CHI",
+    "authors": "Erzhen Hu; Jens Emil Grønbæk; Wen Ying; Ruofei Du; Seongkook Heo",
+    "category": "Create 3D content in context",
+    "url": "https://doi.org/10.1145/3544548.3581148",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Separate an object from the camera feed so everyone can inspect and discuss it.",
+    "bullets": [
+      "Capture an ad-hoc digital copy with ordinary video-meeting hardware.",
+      "Magnify, annotate, save and compare multiple object views."
+    ],
+    "limitations": "These are image copies, not reconstructed 3D twins; study tasks and segmentation quality bound generalization.",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      5,
+      14,
+      15,
+      16
+    ],
+    "reading_depth": "section-read: identity, introduction, system/contribution and discussion/limitations; not a complete line-by-line reading",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "5a6e6d2ff44c3d3134b67595b2e0774d6053be611ca0631568ecb4e094f352da",
+    "image_sha256": "d525953f44ecdbe37316b3b3bd134fed717a3685d62cf5d88816770b850693e2",
+    "crop_pdf_points": [
+      54,
+      250,
+      559,
+      373
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "holoportation",
+    "title": "Holoportation: Virtual 3D Teleportation in Real-time",
+    "year": 2016,
+    "venue": "UIST",
+    "authors": "Sergio Orts-Escolano et al.",
+    "category": "Bring people into shared space",
+    "url": "https://doi.org/10.1145/2984511.2984517",
+    "project_url": "https://www.microsoft.com/en-us/research/project/holoportation-3/",
+    "video_url": "https://www.youtube.com/watch?v=7d59O6cfaM0",
+    "takeaway": "Bring a remote person and their surroundings into your space.",
+    "bullets": [
+      "Capture and transmit people, objects and motion as live 3D.",
+      "Walk around a remote participant; record and replay living memories."
+    ],
+    "limitations": "Instrumented rooms, multiple GPU PCs and 10 GbE; fine geometry and eye contact remain difficult.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reading_depth": "full-text-read: complete body, figures/captions, evaluation, limitations and references",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "dcc6b733214a45cb700e7bac7fb53df1766f4c778bb19fb9720441beafeb304c",
+    "image_sha256": "9053aa950504e6b4ce780108bfb2289a55c7ee7155b5fe5c3b0f92aed7bc9518",
+    "crop_pdf_points": [
+      54,
+      194,
+      564,
+      270
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "room2room",
+    "title": "Room2Room: Enabling Life-Size Telepresence in a Projected Augmented Reality Environment",
+    "year": 2016,
+    "venue": "CSCW",
+    "authors": "Tomislav Pejsa; Julian Kantor; Hrvoje Benko; Eyal Ofek; Andrew Wilson",
+    "category": "Bring people into shared space",
+    "url": "https://doi.org/10.1145/2818048.2819965",
+    "project_url": null,
+    "video_url": "https://www.youtube.com/watch?v=2o6krhxpUGk",
+    "takeaway": "Project a remote person into an existing seat at life size.",
+    "bullets": [
+      "RGB-D capture and perspective-correct projection integrate person, task and reference spaces.",
+      "Placement strategies make the remote person appear to inhabit the local room."
+    ],
+    "limitations": "Projection surfaces and image quality constrain the illusion. Copies disappear during arbitrary walking; seating/standing affordances are manually labelled (pp.4–5). Evaluation used physically adjacent partitioned rooms with direct audio, not a geographically distributed deployment (p.7).",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      7,
+      8,
+      9
+    ],
+    "reading_depth": "full-text-read: complete body, figures/captions, evaluation, limitations and references",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "room2room",
+      "video_url": "https://www.youtube.com/watch?v=2o6krhxpUGk",
+      "youtube_id": "2o6krhxpUGk",
+      "title": "Room2Room: Life-Size Telepresence in a Projected Augmented Reality Environment",
+      "uploader": "Microsoft Research",
+      "source_page": "https://www.microsoft.com/en-us/research/video/room2room-life-size-telepresence-in-a-projected-augmented-reality-environment/",
+      "verification": "OfficialMicrosoftResearch video page iframe exactID; oEmbed title matches and uploaderMicrosoftResearch. YouTubeoEmbed HTTP200; actual playback in deliveredGoogleSlides not verified here.",
+      "oembed_verified": true,
+      "media_kind": "official system demo",
+      "native_google_slides_candidate": true,
+      "thumbnail_url": "https://i.ytimg.com/vi/2o6krhxpUGk/hqdefault.jpg"
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "c9dd2c19ba4fc3b326305c4bf790c8cdb2fc198d7eb4feca7fb012c0f1e151db",
+    "image_sha256": "21778b063e2d7e1a3fab4a8baf0be7e92f8101385d1db782a993db25f51008fa",
+    "crop_pdf_points": [
+      54,
+      174,
+      564,
+      270
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "mini-me",
+    "title": "Mini-Me: An Adaptive Avatar for Mixed Reality Remote Collaboration",
+    "year": 2018,
+    "venue": "CHI",
+    "authors": "Thammathip Piumsomboon; Gun A. Lee; Jonathon D. Hart; Barrett Ens; Robert W. Lindeman; Bruce H. Thomas; Mark Billinghurst",
+    "category": "Bring people into shared space",
+    "url": "https://doi.org/10.1145/3173574.3173620",
+    "project_url": null,
+    "video_url": "https://www.youtube.com/watch?v=6aRYSsDJmEk",
+    "takeaway": "Keep a remote collaborator’s pointing and head-gaze cues visible through a small adaptive avatar.",
+    "bullets": [
+      "Keep the remote VR collaborator visible in the local AR user’s field of view.",
+      "Redirect gaze and gestures toward the same physical target."
+    ],
+    "limitations": "Simplified tasks, novelty effects and an expert actor in the VR role limit the study; IK can appear uncanny.",
+    "evidence_pages": [
+      1,
+      4,
+      5,
+      7,
+      10,
+      11
+    ],
+    "reading_depth": "complete-paper-body-read; all system/evaluation/discussion/limitations and source figures/captions read; references inspected",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "mini-me",
+      "video_url": "https://www.youtube.com/watch?v=6aRYSsDJmEk",
+      "youtube_id": "6aRYSsDJmEk",
+      "title": "Mini-Me: An Adaptive Avatar for Mixed Reality Remote Collaboration",
+      "uploader": "ACM SIGCHI",
+      "source_page": "https://empathiccomputing.org/team/thammathip-piumsomboon/",
+      "verification": "Firstauthor lab bibliography explicitly names Mini-Me CHI2018 and links exactvideo; oEmbed title matches,ACM SIGCHI uploader. YouTubeoEmbed HTTP200; actual playback in deliveredGoogleSlides not verified here.",
+      "oembed_verified": true,
+      "media_kind": "author-linked conference video; duration not verified",
+      "native_google_slides_candidate": true,
+      "thumbnail_url": "https://i.ytimg.com/vi/6aRYSsDJmEk/hqdefault.jpg"
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "8e10ee1e4fa671c9ba2d0020bf8d5fe0496ca30638e7a1c928e495d94366123e",
+    "image_sha256": "c5c3c62cd5d5e7aad6cbdc96e3355dc5d25c645ca5cde19a2063da78d98cbb2a",
+    "crop_pdf_points": [
+      59,
+      201,
+      554,
+      408
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "loki",
+    "title": "Loki: Facilitating Remote Instruction of Physical Tasks Using Bi-Directional Mixed-Reality Telepresence",
+    "year": 2019,
+    "venue": "UIST",
+    "authors": "Balasaravanan Thoravi Kumaravel; Fraser Anderson; George Fitzmaurice; Björn Hartmann; Tovi Grossman",
+    "category": "Bring people into shared space",
+    "url": "https://doi.org/10.1145/3332165.3347872",
+    "project_url": null,
+    "video_url": "https://www.youtube.com/watch?v=cBN1XZXZw3Y",
+    "takeaway": "Switch between demonstrating, practising and replaying a physical skill together.",
+    "bullets": [
+      "Bidirectional MR capture lets instructor and learner enter each other’s workspaces.",
+      "Record and review performances with spatial annotations."
+    ],
+    "limitations": "Eight-person exploratory study, no learning-outcome comparison (p.10). Static annotations do not follow moving objects; headsets/controllers interfere with physical tasks (p.11).",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "reading_depth": "full-text-read: complete body, figures/captions, evaluation, limitations and references",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "8365ba01efe950962b4d6921592ddce69d9a9b3733db8d457acd4abbe52c8313",
+    "image_sha256": "b773f3a743b9b6e9430c0b4ebc49c1bc5954d98dd901d4622b5554dc1a753b38",
+    "crop_pdf_points": [
+      59,
+      204,
+      552,
+      409
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "minimates",
+    "title": "MiniMates: Miniature Avatars for AR Remote Meetings within Limited Physical Spaces",
+    "year": 2025,
+    "venue": "CHI",
+    "authors": "Akihiro Kiuchi; Jonathan Wieland; Takeo Igarashi; David Lindlbauer",
+    "category": "Bring people into shared space",
+    "url": "https://doi.org/10.1145/3706598.3714328",
+    "project_url": "https://github.com/Aki-7/minimates",
+    "video_url": "https://www.youtube.com/watch?v=fukfCSvmo44",
+    "takeaway": "Fit a spatial group conversation onto a real desk.",
+    "bullets": [
+      "Miniature avatars automatically form a consistent meeting arrangement.",
+      "Redirect head and body orientation to preserve who is addressing whom."
+    ],
+    "limitations": "Facial expressions are weaker than video; headset comfort and limited study tasks restrict applicability.",
+    "evidence_pages": [
+      1,
+      4,
+      5,
+      9,
+      11,
+      14,
+      15
+    ],
+    "reading_depth": "complete-paper-body-read; all system/evaluation/discussion/limitations and source figures/captions read; references inspected",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "minimates",
+      "video_url": "https://www.youtube.com/watch?v=fukfCSvmo44",
+      "youtube_id": "fukfCSvmo44",
+      "title": "MiniMates: Miniature Avatars for AR Remote Meetings within Limited Physical Spaces",
+      "uploader": "Augmented Perception Lab",
+      "source_page": "https://augmented-perception.org/publications/2025-minimates.html",
+      "verification": "Officialauthor lab project page labels exactID Full lengthvideo; alternate x2wLScb5OIo labelled Longpresentation. oEmbed title matches,AugmentedPerceptionLab uploader. YouTubeoEmbed HTTP200; actual playback in deliveredGoogleSlides not verified here.",
+      "oembed_verified": true,
+      "media_kind": "author system demo",
+      "native_google_slides_candidate": true,
+      "thumbnail_url": "https://i.ytimg.com/vi/fukfCSvmo44/hqdefault.jpg"
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "9373dddefddae849cae8f564f700453b8fc2261f53101e36db57f1d18a5274ec",
+    "image_sha256": "b146904191ffda5bdfabe67201224c2e4854865a72ffd8389ed10f9989a2f55a",
+    "crop_pdf_points": [
+      54,
+      268,
+      558,
+      430
+    ],
+    "core": true,
+    "previous_week": false
+  },
+  {
+    "id": "physical-telepresence",
+    "title": "Physical Telepresence: Shape Capture and Display for Embodied, Computer-mediated Remote Collaboration",
+    "year": 2014,
+    "venue": "UIST",
+    "authors": "Daniel Leithinger; Sean Follmer; Alex Olwal; Hiroshi Ishii",
+    "category": "Bring people into shared space",
+    "url": "https://doi.org/10.1145/2642918.2647377",
+    "project_url": null,
+    "video_url": "https://www.youtube.com/watch?v=QtyO-oFlzGg",
+    "takeaway": "A remote hand can become a physical shape that moves objects on your desk.",
+    "bullets": [
+      "Capture shapes and render them on actuated pin displays.",
+      "Transform remote body representations to amplify telemanipulation capabilities."
+    ],
+    "limitations": "2.5D pin displays cannot represent overhangs or grasp arbitrarily; resolution, collisions and latency constrain manipulation.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8
+    ],
+    "reading_depth": "section-read: identity, introduction, system/contribution and discussion/limitations; not a complete line-by-line reading",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "a41009e320bc0f6b17efc86f9c016ac93d821031d1cc1c63dfde7150f5a3f9d9",
+    "image_sha256": "0d74fdfcc57d4a9a4c9b91247610e5b8d209fa55323ae05fcebb1b56d01041ee",
+    "crop_pdf_points": [
+      326,
+      193,
+      559,
+      350
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "sharevr",
+    "title": "ShareVR: Enabling Co-Located Experiences for Virtual Reality between HMD and Non-HMD Users",
+    "year": 2017,
+    "venue": "CHI",
+    "authors": "Jan Gugenheimer, Evgeny Stemasov, Julian Frommel, Enrico Rukzio",
+    "category": "Bring people into shared space",
+    "url": "https://doi.org/10.1145/3025453.3025683",
+    "project_url": "https://gugenheimer.com/?portfolio=sharevr-enabling-co-located-experiences-for-virtual-reality-between-hmd-and-non-hmd-users",
+    "video_url": "https://www.youtube.com/watch?v=Uc5fkTFMHr4",
+    "takeaway": "Let the people outside a headset participate in the same physical and virtual game.",
+    "bullets": [
+      "Floor projection and a tracked handheld display expose the virtual environment to non-HMD participants.",
+      "Design for different but meaningful roles rather than giving everyone identical views."
+    ],
+    "limitations": "Small-group lab evidence; experiences must be designed for asymmetry and shared physical space; not a remote telepresence system.",
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      9,
+      10
+    ],
+    "reading_depth": "section-read: introduction, prior work, system and study, results, design guidance, limitations; some extracted text output truncated",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "sharevr",
+      "video_url": "https://www.youtube.com/watch?v=Uc5fkTFMHr4",
+      "title": "ShareVR: Enabling Co-Located Experiences for Virtual Reality between HMD and Non-HMD Users",
+      "source_page": "https://gugenheimer.com/?portfolio=sharevr-enabling-co-located-experiences-for-virtual-reality-between-hmd-and-non-hmd-users",
+      "verification": {
+        "method": "source HTML exact video link + YouTube oEmbed HTTP200",
+        "author_name": "Jan Gugenheimer",
+        "author_url": "https://www.youtube.com/@scruffermcscruff",
+        "checked": "2026-10-20",
+        "identity_note": "First-author project page directly links video, exact title and author uploader; separate ACM SIGCHI upload dRKa5pXU4Ro also verified.",
+        "playback_verified": false
+      }
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "ab382f5768ffc3a227fe91d1d9d5de0c175289a597267126c4b08e0c1e935377",
+    "image_sha256": "794abd41bb487c6ac7d739ccb565f527978e5efce26f92eadd9e132d50a40738",
+    "crop_pdf_points": [
+      53.92900085449219,
+      202.4694061279297,
+      564.341796875,
+      346.02301025390625
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "volumetric-mr",
+    "title": "Volumetric Mixed Reality Telepresence for Real-time Cross Modality Collaboration",
+    "year": 2023,
+    "venue": "CHI",
+    "authors": "Andrew Irlitti, Mesut Latifoglu, Qiushi Zhou, Martin Reinoso, Thuong Hoang, Eduardo Velloso, Frank Vetere",
+    "category": "Bring people into shared space",
+    "url": "https://doi.org/10.1145/3544548.3581277",
+    "project_url": "https://programs.sigchi.org/chi/2023/program/content/95736",
+    "video_url": null,
+    "takeaway": "Put local, AR and VR participants into one collaborative training space.",
+    "bullets": [
+      "Live volumetric capture carries people and their environment into remote views.",
+      "Cross-modal design supports multiple local and remote participants, not just a pair of holograms."
+    ],
+    "limitations": "AR field of view and missing awareness cues can leave remote participants unseen; local participants without AR cannot see the remote learners.",
+    "evidence_pages": [
+      1,
+      3,
+      4,
+      12
+    ],
+    "reading_depth": "section-read: identity, related work, platform and calibration, discussion/awareness limitations; not full-paper reviewed",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "1f8124fdaf19db6b2b3f61ab7e67fc32fdda293f9d908fa64717e971d3f792d0",
+    "image_sha256": "49062fb2f09a201813859cf96429d83c173b56562e93c8dca2f3fee44b2d08f9",
+    "crop_pdf_points": [
+      53.79800033569336,
+      271.7279968261719,
+      558.1939697265625,
+      430.906005859375
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "volumetric-hybrid",
+    "title": "Volumetric Hybrid Workspaces: Interactions with Objects in Remote and Co-located Telepresence",
+    "year": 2024,
+    "venue": "CHI",
+    "authors": "Andrew Irlitti, Mesut Latifoglu, Thuong Hoang, Brandon Victor Syiem, Frank Vetere",
+    "category": "Bring people into shared space",
+    "url": "https://doi.org/10.1145/3613904.3642814",
+    "project_url": "https://doi.org/10.1145/3613904.3642814",
+    "video_url": "https://www.youtube.com/watch?v=lhKZmpnFU9c",
+    "takeaway": "A shared-looking object is not always a shared-controllable object.",
+    "bullets": [
+      "Align two captured rooms around a common workspace for local and remote collaboration.",
+      "Compare physical, virtual and volumetric objects: each offers different visibility and control."
+    ],
+    "limitations": "Qualitative study of 18 people in six triads; one congruent workspace and card-sorting tasks; volumetric objects can suggest control they do not provide.",
+    "evidence_pages": [
+      1,
+      3,
+      4,
+      14
+    ],
+    "reading_depth": "section-read: identity, system and tasks plus discussion/limitations; not full-paper reviewed; clean derivative removes one ResearchGate cover page",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": {
+      "id": "volumetric-hybrid",
+      "video_url": "https://www.youtube.com/watch?v=lhKZmpnFU9c",
+      "title": "Volumetric Hybrid Workspaces: Interactions with Objects in Remote and Co-located Telepresence",
+      "source_page": "https://pgl.jp/papers/66415fcf825999002d96cf91",
+      "verification": {
+        "method": "source HTML exact video link + YouTube oEmbed HTTP200",
+        "author_name": "ACM SIGCHI",
+        "author_url": "https://www.youtube.com/@sigchi",
+        "checked": "2026-10-20",
+        "identity_note": "Paper Guilds CHI2024 record binds exact DOI 10.1145/3613904.3642814 to video; primary conference uploader/title independently verified below. Author page had no video, so no author-page binding claimed.",
+        "playback_verified": false
+      }
+    },
+    "image_source_url": null,
+    "source_pdf_sha256": "15e59328158ee98e8cfdb44212b5eb5eea9b58f6014b8e77212f7e25daec29f6",
+    "image_sha256": "ea1fcf9aad9a95f32f132f55bcb4e99281c1859cf2c293fb0b3e2916f6b27dea",
+    "crop_pdf_points": [
+      53.79800033569336,
+      226.32159423828125,
+      558.1956176757812,
+      434.48199462890625
+    ],
+    "core": false,
+    "previous_week": false
+  },
+  {
+    "id": "gaussiannexus",
+    "title": "GaussianNexus: Room-Scale Real-Time AR/VR Telepresence with Gaussian Splatting",
+    "year": 2025,
+    "venue": "UIST",
+    "authors": "Xincheng Huang; Dieter Frehlich; Ziyi Xia; Peyman Gholami; Robert Xiao",
+    "category": "Bring people into shared space",
+    "url": "https://doi.org/10.1145/3746059.3747693",
+    "project_url": null,
+    "video_url": null,
+    "takeaway": "Share a photorealistic room while selected objects keep moving.",
+    "bullets": [
+      "Combine a pre-trained Gaussian scene with live 360-degree video and object tracking.",
+      "Synchronize selected dynamic objects without continuously retraining the scene."
+    ],
+    "limitations": "Dynamic object updates average 2.33 fps with 0.95 s end-to-end latency; not general real-time reconstruction of every change.",
+    "evidence_pages": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      11,
+      14
+    ],
+    "reading_depth": "section-read: identity, introduction, system/contribution and discussion/limitations; not a complete line-by-line reading",
+    "image_credit": "Figure 1, PDF page 1",
+    "video_provenance": null,
+    "image_source_url": null,
+    "source_pdf_sha256": "8cfa823e6bf606675cf9df8b5bb4a05195eadcbdaf8082958fa9aea939a36f30",
+    "image_sha256": "e8a3b2bce5dd15e94540270b64500394983d0876280c38e0a6c4bdf09081ff32",
+    "crop_pdf_points": [
+      54,
+      273,
+      559,
+      521
+    ],
+    "core": false,
+    "previous_week": false
+  }
+]
