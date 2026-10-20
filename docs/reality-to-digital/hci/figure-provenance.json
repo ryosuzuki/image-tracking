@@ -235,6 +235,11 @@
       "path": "assets/xrdirector.png",
       "bytes": 319903,
       "sha256": "44d182f161766bf0908146f12f850fa0ee43b17c710d025024ab4f8d7d05cb2d"
+    },
+    {
+      "path": "assets/mixfab.png",
+      "bytes": 890903,
+      "sha256": "e91c7cf36243f31929476a0daffe605b6da52cf38d9809da7e1112b587bb687e"
     }
   ]
 }
