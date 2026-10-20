@@ -1,0 +1,240 @@
+{
+  "scope": "Authentic published-source educational figure excerpts, no PDFs/private captures",
+  "files": [
+    {
+      "path": "assets/ad-hoc-ui.png",
+      "bytes": 1252878,
+      "sha256": "5c0506aaeaf48d3761175ce8a47c87c5e148ce4587a4fbfe5a0849a320b1172e"
+    },
+    {
+      "path": "assets/annexing-reality.png",
+      "bytes": 820132,
+      "sha256": "7aac32e2f8f4f213b59197e595dc06cb5b6a281e805f83737e2e7ec52c2c8e2e"
+    },
+    {
+      "path": "assets/augmented-photogrammetry.png",
+      "bytes": 99327,
+      "sha256": "26620dcd8c01fb4920f7d792b757e82afc9ee56f20e65d9fd63f56f1ffbd0d9d"
+    },
+    {
+      "path": "assets/cassie.png",
+      "bytes": 346303,
+      "sha256": "eaec483ce90bb6ea2c7bdd50ba305112b5b8bf5a2eda0cf59ade8e3b0666c4ea"
+    },
+    {
+      "path": "assets/digitaldesk.png",
+      "bytes": 1268098,
+      "sha256": "56cc13cb8e5d8d486d923e26303316784fd6e54e39e31ff7398252d46cf71f6b"
+    },
+    {
+      "path": "assets/editar.png",
+      "bytes": 163411,
+      "sha256": "999ee20cf4faa3137e042b2e67576b9c2dd140190c822465256d30fb8094695d"
+    },
+    {
+      "path": "assets/flowmatic.png",
+      "bytes": 1178639,
+      "sha256": "caa663fb70b8ccc83a69efd60162960ff8c90dfd467d325588607ae3a4c889e8"
+    },
+    {
+      "path": "assets/gaussiannexus.png",
+      "bytes": 430266,
+      "sha256": "e8a3b2bce5dd15e94540270b64500394983d0876280c38e0a6c4bdf09081ff32"
+    },
+    {
+      "path": "assets/haptic-retargeting.png",
+      "bytes": 839733,
+      "sha256": "2e7338740fbcd5f8d90cb2ff6bdcf9791661089f9c60f4c136cc0a5f3fa8bf82"
+    },
+    {
+      "path": "assets/head-mounted-3d-display.png",
+      "bytes": 335969,
+      "sha256": "17ba584faeec9c7b9d95b2d3b8f8c88c974adf3fabd84b8bd4ed32ebedfd1f76"
+    },
+    {
+      "path": "assets/holodesk.png",
+      "bytes": 636282,
+      "sha256": "e536475890307b54181d73c2c3f8f596a8a49566e66b1817a788f8f37b5b4074"
+    },
+    {
+      "path": "assets/holoportation.png",
+      "bytes": 451953,
+      "sha256": "9053aa950504e6b4ce780108bfb2289a55c7ee7155b5fe5c3b0f92aed7bc9518"
+    },
+    {
+      "path": "assets/homeview.png",
+      "bytes": 366114,
+      "sha256": "efb672117edc2acc9b30264c808c7781e17220e2d32079be0873462be11e046f"
+    },
+    {
+      "path": "assets/ilovesketch.png",
+      "bytes": 237356,
+      "sha256": "13d53ac27e01c0fc766c3c46c404161423f2cea1d8f68dc8f2670096058db79b"
+    },
+    {
+      "path": "assets/lightanchors.png",
+      "bytes": 665180,
+      "sha256": "c6e0ce9d9886d775fb81ac1cf77d4a9a15b61d0d39d03e2c6678dc0b88e4b9ba"
+    },
+    {
+      "path": "assets/lightspace.png",
+      "bytes": 420592,
+      "sha256": "23924b03ca1489389f2b93dff8529519eb08f2e783ca93c4c71f284d671c2aa5"
+    },
+    {
+      "path": "assets/loki.png",
+      "bytes": 1168297,
+      "sha256": "b773f3a743b9b6e9430c0b4ebc49c1bc5954d98dd901d4622b5554dc1a753b38"
+    },
+    {
+      "path": "assets/mini-me.png",
+      "bytes": 1115305,
+      "sha256": "c5c3c62cd5d5e7aad6cbdc96e3355dc5d25c645ca5cde19a2063da78d98cbb2a"
+    },
+    {
+      "path": "assets/minimates.png",
+      "bytes": 773997,
+      "sha256": "b146904191ffda5bdfabe67201224c2e4854865a72ffd8389ed10f9989a2f55a"
+    },
+    {
+      "path": "assets/mobi3dsketch.png",
+      "bytes": 845364,
+      "sha256": "3af4d0d85a730500ca81c6e4cb0e8f153d5eff0650fdb1432eddaeb073d27749"
+    },
+    {
+      "path": "assets/navicam.png",
+      "bytes": 209245,
+      "sha256": "bcdc4bef0ea1e464558707a164b6427d556ebc5d75b5e0b16b5210147ce45b96"
+    },
+    {
+      "path": "assets/physical-telepresence.png",
+      "bytes": 470314,
+      "sha256": "0d74fdfcc57d4a9a4c9b91247610e5b8d209fa55323ae05fcebb1b56d01041ee"
+    },
+    {
+      "path": "assets/rapido.png",
+      "bytes": 969485,
+      "sha256": "c5483500e7dea7a9fad2aed23e8579c1de96f5427d048afeee25e94ac8b95c3a"
+    },
+    {
+      "path": "assets/reality-proxy.png",
+      "bytes": 747683,
+      "sha256": "2dec66717d37850c3ddbc9784f6fcc8e8384f330f1c915d895ad10449cdcc54e"
+    },
+    {
+      "path": "assets/realitycanvas.png",
+      "bytes": 452335,
+      "sha256": "82d9516121cc56ae4a77346d29c56b370e2377fb2f5cc9160a09b824170635c6"
+    },
+    {
+      "path": "assets/realitycheck.png",
+      "bytes": 1422091,
+      "sha256": "4e144ce8e6eafc38dfe37067f7863b1d9f229d0b6b2282f207ef0b8ef26bc119"
+    },
+    {
+      "path": "assets/refar.png",
+      "bytes": 194736,
+      "sha256": "923df622da6efaec6c576d0fb9954386f39ec867a96afbbbc511ef20c3b379d7"
+    },
+    {
+      "path": "assets/remixed-reality.png",
+      "bytes": 888311,
+      "sha256": "4e14042c5a7e8c44483f9e6abc8a09950cc88aa1277262c15828ee1a481348c5"
+    },
+    {
+      "path": "assets/room2room.png",
+      "bytes": 545014,
+      "sha256": "21778b063e2d7e1a3fab4a8baf0be7e92f8101385d1db782a993db25f51008fa"
+    },
+    {
+      "path": "assets/scene-responsiveness.png",
+      "bytes": 827068,
+      "sha256": "a38e8e3e2beaa990ac0d62e5e90d25475115dfbe5d440fedb977bda64e4493e0"
+    },
+    {
+      "path": "assets/scenectrl.png",
+      "bytes": 972328,
+      "sha256": "0dab48624c0e5e4bf0f63c6237ff1bc56bcbee1e325445357ce196337d19c3fb"
+    },
+    {
+      "path": "assets/sharevr.png",
+      "bytes": 987966,
+      "sha256": "794abd41bb487c6ac7d739ccb565f527978e5efce26f92eadd9e132d50a40738"
+    },
+    {
+      "path": "assets/sweepcanvas.png",
+      "bytes": 679936,
+      "sha256": "efd01583e09521e02c6c3957418fc0cf7d89420aaf95aab00e0050780418806e"
+    },
+    {
+      "path": "assets/symbiosissketch.png",
+      "bytes": 1011085,
+      "sha256": "543596c50a26a552de56f7185e835380810f2e43ad95e68eaf329d1bdb0cdeab"
+    },
+    {
+      "path": "assets/tangible-bits.png",
+      "bytes": 415103,
+      "sha256": "1a9ff6f91d6496d8b9d700d44edad2ad43b2802d4c34347eb8fd2541de02d469"
+    },
+    {
+      "path": "assets/teddy.png",
+      "bytes": 111411,
+      "sha256": "d38ccd121c8e5965615b0906877c8fcf7f296e0d1c8de38144aa15e3df8b26b6"
+    },
+    {
+      "path": "assets/thing2reality.png",
+      "bytes": 535329,
+      "sha256": "ece0dcf9a191832dc8bd9e4153cde983746c4ed87ca42303697772c638975d3e"
+    },
+    {
+      "path": "assets/thingshare.png",
+      "bytes": 460381,
+      "sha256": "d525953f44ecdbe37316b3b3bd134fed717a3685d62cf5d88816770b850693e2"
+    },
+    {
+      "path": "assets/transformr.png",
+      "bytes": 1494015,
+      "sha256": "4535312bc2f13f732ae9e1d4883186fcb8f9ae959e0739a571da1a0706e93d2f"
+    },
+    {
+      "path": "assets/ubi-edge.png",
+      "bytes": 666942,
+      "sha256": "03b48d21894d7dda5e029d32fc442da91023bd30c796b60316e7679e48a778ae"
+    },
+    {
+      "path": "assets/ubi-touch.png",
+      "bytes": 1500265,
+      "sha256": "e0b580ed37c999200442d057aca590a3213d85e7726ff58db663c3370e558b57"
+    },
+    {
+      "path": "assets/urp.png",
+      "bytes": 243304,
+      "sha256": "518776cd2eb7ccaa4a3e0dee1803c9460dbf409807fdee276d2351c773394973"
+    },
+    {
+      "path": "assets/volumetric-hybrid.png",
+      "bytes": 1039977,
+      "sha256": "ea1fcf9aad9a95f32f132f55bcb4e99281c1859cf2c293fb0b3e2916f6b27dea"
+    },
+    {
+      "path": "assets/volumetric-mr.png",
+      "bytes": 852816,
+      "sha256": "49062fb2f09a201813859cf96429d83c173b56562e93c8dca2f3fee44b2d08f9"
+    },
+    {
+      "path": "assets/worldgaze.png",
+      "bytes": 1123470,
+      "sha256": "e85bb5e2d7b9cd128483412d8e131f6c2d14f09e4b74e30f62f0c77f107a6b42"
+    },
+    {
+      "path": "assets/xr-objects.png",
+      "bytes": 1676963,
+      "sha256": "47b21f4e129ae97a508e17e25c9ea796801ab246caa3b5604c7c7872081ed48d"
+    },
+    {
+      "path": "assets/xrdirector.png",
+      "bytes": 319903,
+      "sha256": "44d182f161766bf0908146f12f850fa0ee43b17c710d025024ab4f8d7d05cb2d"
+    }
+  ]
+}
