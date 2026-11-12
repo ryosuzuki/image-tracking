@@ -6,3 +6,5 @@
 - **OpenCV 4.12.0**, official Android SDK, downloaded and SHA-256 checked by `build-native.sh`. Native bridge and pose/calibration sources are reused from this repository with an exact shared-source manifest.
 
 The teaching application does not relicense these dependencies. No full research system, private recording, photo, transcript, room scan or generated personal model is bundled.
+
+Redistributed engine/importer license copies: [OpenCV](third-party/opencv-license.txt), [glTFast](third-party/gltfast-license.md). The release also supplies these notices alongside the APK.

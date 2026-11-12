@@ -7059,7 +7059,7 @@
     },
     {
       "path": "tools/mr-class-lab/THIRD-PARTY.md",
-      "sha256": "c33d7a4933a91f09e061acf230b5c3df7887ca27c13a8578bfb94ee16e8d8041"
+      "sha256": "df7725d303f755ea9c6dfb315f4cda3bded801e1adec184170fd54664f40ffda"
     },
     {
       "path": "tools/mr-class-lab/build-native.sh",
@@ -7116,6 +7116,14 @@
     {
       "path": "tools/mr-class-lab/third-party/cesium-man-source.md",
       "sha256": "1bf7fa794013d2e0de8c244518936b04d95cba780f4510c8cceee4c23dbc04a8"
+    },
+    {
+      "path": "tools/mr-class-lab/third-party/gltfast-license.md",
+      "sha256": "cccf2d7a6c705ec991d5229a775e7fbd41fa6de57d4e3f33bbecb967c3055ef9"
+    },
+    {
+      "path": "tools/mr-class-lab/third-party/opencv-license.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
     },
     {
       "path": "tools/mr-class-lab/unity/.gitignore",
