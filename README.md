@@ -2,6 +2,8 @@
 
 ## Open a demo or lesson
 
+- **[Recorded Context → Unity lab](docs/recorded-context-lab/README.md)** — one capture, editable anchored behavior and the same data in a browser/Unity; explicit replay/live boundaries.
+
 - **[Run: QR camera demo](https://ryosuzuki.github.io/image-tracking/qr-camera/)** — browser camera recognition; requires camera permission.
 - **[Run: CPU mini-lab](https://ryosuzuki.github.io/image-tracking/reality-to-digital/mr-cpu-mini-lab.html)** — synthetic room-layout and outline-to-mesh exercises; not a live scan or Quest device test.
 - **[Open: capture/replay viewer](https://ryosuzuki.github.io/image-tracking/capture-viewer/)** — load your own local recording; no personal captures are bundled or uploaded.
