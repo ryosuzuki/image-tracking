@@ -19,7 +19,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "98653667b196fd14a0f3596d52819cc2dd7dffc20f302b3a4f5dc3379b1fe961"
+      "sha256": "7eb2a4938ccbc28d6595defb74b0a19a00a2c6b5fbc99e85f062722e0933f263"
     },
     {
       "path": "TRACKING-IMAGES.md",
@@ -176,6 +176,14 @@
     {
       "path": "docs/lecture-hub/index.html",
       "sha256": "e37c8fdeac053bebe72a52a2aa07ecfd9cfcab28336a9852165c2ca4d5188a13"
+    },
+    {
+      "path": "docs/mr-class-lab/README.md",
+      "sha256": "f37ff246bf140df2928ef7d4a68e099041e6d0c9d81c0f9a89a2189ab504e4ab"
+    },
+    {
+      "path": "docs/mr-class-lab/VERIFICATION.md",
+      "sha256": "cbd45bab3d76e55e6872aa4901b1dc0d4de28d47f680d06b69f9c9f81714690c"
     },
     {
       "path": "docs/teaching-capture-status.md",
@@ -7046,6 +7054,230 @@
       "sha256": "645619d397c66f421828d2bf58e6fb47e54d04c971a4d4ef2627399d8d5953fc"
     },
     {
+      "path": "tools/mr-class-lab/README.md",
+      "sha256": "ee0cc98e021fc88563f6aa9870a95d9d65d282191e5ee4bbb34ff7a768cb337d"
+    },
+    {
+      "path": "tools/mr-class-lab/THIRD-PARTY.md",
+      "sha256": "c33d7a4933a91f09e061acf230b5c3df7887ca27c13a8578bfb94ee16e8d8041"
+    },
+    {
+      "path": "tools/mr-class-lab/build-native.sh",
+      "sha256": "811c936406ba34e0831f6b0db2efb32e77e03e78f189e1345650d12bc202385c"
+    },
+    {
+      "path": "tools/mr-class-lab/companion/index.html",
+      "sha256": "3b8ead424d584c715e4101d734b00b0488cb1f40b459f8c7a1063e40d75457c2"
+    },
+    {
+      "path": "tools/mr-class-lab/companion/relay_fixture.py",
+      "sha256": "82366fa6407a9805579b83d299f61be2d605a8adf09923ce8a86aca9cb76e749"
+    },
+    {
+      "path": "tools/mr-class-lab/companion/server.py",
+      "sha256": "3830899eb2c618662fbc2f47fde599624ec62b2194a24731520240bc875da3f1"
+    },
+    {
+      "path": "tools/mr-class-lab/companion/test-ui.cjs",
+      "sha256": "593f1c39ca1165d5a700ad902803ce43434184df91048da48ad459c72c05e460"
+    },
+    {
+      "path": "tools/mr-class-lab/companion/test_relay.py",
+      "sha256": "0eca019c121477c279786c5fc27540c42fa1f2543c1d3202649ab3dfb868704b"
+    },
+    {
+      "path": "tools/mr-class-lab/package.py",
+      "sha256": "c601a56ae35a173e3b429116e6e0c7dbaf5acc0488c6715cb794b7a46c284b6f"
+    },
+    {
+      "path": "tools/mr-class-lab/prepare.py",
+      "sha256": "8382ed73853f71795d4b81847e1b20282cf38ccfeb413f9f6e4e5e1e851184c7"
+    },
+    {
+      "path": "tools/mr-class-lab/render-videos.py",
+      "sha256": "73070205068f548d1889f5dfed73fe1ae505b9ed802b740256eb2310a798084a"
+    },
+    {
+      "path": "tools/mr-class-lab/requirements-tools.txt",
+      "sha256": "028d039af4abb92693a07c97dee2fd3fe7c7f3e37437e35cdf63c4527b9ac532"
+    },
+    {
+      "path": "tools/mr-class-lab/shared-source-manifest.json",
+      "sha256": "ffcc9df854cea4c6b8aeccc01eafb714b213a563c4644f1842b800f2950c2558"
+    },
+    {
+      "path": "tools/mr-class-lab/third-party/asset-manifest.json",
+      "sha256": "2ca347242bf8f07ce2e8d52494b4154854eec779f26a3d76bc2e6ebc5d859d20"
+    },
+    {
+      "path": "tools/mr-class-lab/third-party/cesium-man-license.md",
+      "sha256": "709e02749c7c904c480d98f883cae63046f589031b5f22249544b13c159eedf6"
+    },
+    {
+      "path": "tools/mr-class-lab/third-party/cesium-man-source.md",
+      "sha256": "1bf7fa794013d2e0de8c244518936b04d95cba780f4510c8cceee4c23dbc04a8"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/.gitignore",
+      "sha256": "be1c6025daa9f243f655dbf596132d11426f97bf4a0286046d469f0013aee479"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Core.meta",
+      "sha256": "426adbcc8b2567643b483c1b1e4dbe7b5cbad2b95bb122fb9c20ef2deb0b2ad4"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Core/Geometry.cs",
+      "sha256": "99814ff5f1d1fd64fc05565696ba2a47a827f47569d515d3d3a8bc9f7ed32020"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Core/Geometry.cs.meta",
+      "sha256": "d0461f816b8b054de9b8a346d0d264af5ef9cb7a92d8d1fb3e29b5b77e6abab9"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Core/LabApp.cs",
+      "sha256": "f6d909f08f2e90cb1f92ab7891402f94a2de967866a4616484e66488772699a6"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Core/LabApp.cs.meta",
+      "sha256": "2a81ba4a238102668b02595a2e966d949f3d97e2e8e15aa93b26c29b1426d427"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Core/LabState.cs",
+      "sha256": "55448a8219ab8e853c4f495f87b066c6dae7915cc24d667a386e5ed2c28bd63d"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Core/LabState.cs.meta",
+      "sha256": "e597b5c134a76a26d10730460f446c0acf3f2215ee60f4f88c846f178b771092"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Editor.meta",
+      "sha256": "a240cb6cdc4462c990c0a00700f595e10be52213a42f80cd2523930080c57312"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Editor/ClassBuild.cs",
+      "sha256": "ecf206d907cbac9c6b45d9aaa469445fb3ccabe0206691fb3c9c6da9381e5911"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Editor/ClassBuild.cs.meta",
+      "sha256": "c88b86bb8f667e8fbb50c1f98ee896e397b0656023a3d91152c109dd4e13669e"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Editor/ClassBuildPrivacy.cs",
+      "sha256": "f2cb69b088f84cfacf65a9be48474f91feeaa37fae57c568bf99b7a0375ece91"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Editor/ClassBuildPrivacy.cs.meta",
+      "sha256": "25647c4dc283cbee5a78cb0b1421eda786764ff7ad4f395b231159ee91ab1f5a"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Editor/ClassManifest.cs",
+      "sha256": "25dd6cc7db805d86ad36d9e139378fd51c2d0e345e616b4ff6581f2c5b63d389"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Editor/ClassManifest.cs.meta",
+      "sha256": "2c55e4bc882a218682632e7078d3bd288ad348c9d8d69985208b018419e4318c"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Editor/ClassVerify.cs",
+      "sha256": "1489d48a4b7fc092a2ad6c4a21395d78d734d9e492f54224bafbe3c555ee2b24"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Editor/ClassVerify.cs.meta",
+      "sha256": "5fbae98720b32912664cea16e615d8bfeb187f36a0ee3caad1890543edd57c27"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Inputs.meta",
+      "sha256": "1eec0cbf84aeedd4d202b97f1f78dabe82a87ed1794a5e10068135fc9b412314"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Inputs/MarkerInput.cs",
+      "sha256": "2239a90cd2417bcc4b649ba831c154ed377bba3f1e6c7ace66b3c9a5ca5dee27"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Inputs/MarkerInput.cs.meta",
+      "sha256": "a5ddbca0029dc321c0a74a130bff8f05e1a7ea89c7b18db2e343aa23d49531e8"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Inputs/RelayInput.cs",
+      "sha256": "ff17eee7c617b806efcc5bdf6bef5873f9ba7d4e2ed436ee4a1a5fcde05bb819"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Inputs/RelayInput.cs.meta",
+      "sha256": "642d308751246fc44ee16392c47d6906559fa1a24f8575b2127dda1921b16af4"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Inputs/ReplayInput.cs",
+      "sha256": "d68f504a3509e6713767c85bbade29fabf09391f1088498bd7cb4ce39ac5a0f2"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Inputs/ReplayInput.cs.meta",
+      "sha256": "2aca08e87ca782217585f76e25ccf7dbc8d901b531e9d9cae0777a363581a252"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Mechanisms.meta",
+      "sha256": "a1f0f2c0040cdf1e924fa0e9c4fb0b314ae63c9b7c07043ccbc1e916f62c0a2c"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Mechanisms/Studies.cs",
+      "sha256": "240156b29ad6d60953e11550049489ce2d67061983f37ff96600edce47072c34"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Mechanisms/Studies.cs.meta",
+      "sha256": "23a15cc6040997613e3f37129d1b80fff10389355ced763da71aa53034b26c38"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Resources.meta",
+      "sha256": "e9cb5ce216c97e082e6487835f43cf44dba23daaa4a06b9ac2fe4d970d8653a2"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Resources/ClassAvatar.glb",
+      "sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Resources/ClassAvatar.glb.meta",
+      "sha256": "a5fcfb286a84e7fbd5f0992768ca89051d0e70d1d4d160101a7ceef55fff1dd3"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Resources/Flat.shader",
+      "sha256": "61660ff85c2133a0befeb18e3ac2fb666f579405c0dd0d37cce7fd9d2f6973ca"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Resources/Flat.shader.meta",
+      "sha256": "eedadf48a737e9e5f2f3f06b178e7cd490f906b7beed331bc31847f8f36b8335"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Resources/PortalMask.shader",
+      "sha256": "2c0d5c4c3e2ecc34c0e366ae4f57f09e8b39e73c8e2f1d9cba3f49b3e051144f"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Resources/PortalMask.shader.meta",
+      "sha256": "00e6db30b8244a5c1c4ea65505d21d548071ac2822827862024c5785dea88f9a"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Resources/PortalRoom.shader",
+      "sha256": "90031d283b5c6a5850f11933999243876870af4e1b05782fb32bc28f0457eb76"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Assets/MRClass/Resources/PortalRoom.shader.meta",
+      "sha256": "24dd4e22fc4fe4eea459da2cc9e781317bb6c9932927af4e5b970fa251d2d69a"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Packages/manifest.json",
+      "sha256": "dbeda9200a391ea8a49b7b17d7bddf94e719e6a4a415e3e5b815a42f8f8d90af"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/Packages/packages-lock.json",
+      "sha256": "d50ae59cf5d1aab938ace7bf6cab9b46eb7a9657505d57cfc8ea0411677ece75"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/ProjectSettings/ProjectSettings.asset",
+      "sha256": "3c570ed184693743007d734b3bb409fd081a6da42c2ac4eed7c6b1f5d165838e"
+    },
+    {
+      "path": "tools/mr-class-lab/unity/ProjectSettings/ProjectVersion.txt",
+      "sha256": "c88aca53996b7a2c9be5551cb82a59b405b91d5eb9ac511bdb83b16cfb0c4d96"
+    },
+    {
       "path": "tools/teaching-capture/README.md",
       "sha256": "fa6329c8c4fff44a14327601b87acdbc3c2b4b194064cbceede48a8f573d6de5"
     },
@@ -7063,7 +7295,7 @@
     },
     {
       "path": "tools/verify-public-tree.py",
-      "sha256": "de277a8febbd613a338e4fce98b356e1e99887f36d4b14a37b4b7d8d94bb0173"
+      "sha256": "b027b64ecffb8aa5e5305b5dc956b352198bfe161e360d265a8ebb28d22cf5e6"
     }
   ]
 }

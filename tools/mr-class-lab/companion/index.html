@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  /><title>MR Class · Companion</title>
+  <style>
+    body {
+      font: 16px system-ui;
+      margin: 0;
+      background: #0b1420;
+      color: #edf4f9;
+    }
+    main {
+      max-width: 850px;
+      margin: auto;
+      padding: 30px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    small,
+    p {
+      color: #a8bacb;
+    }
+    section {
+      background: #142337;
+      padding: 20px;
+      border-radius: 14px;
+      margin: 18px 0;
+    }
+    label {
+      display: block;
+      margin: 15px 0;
+    }
+    input,
+    select,
+    textarea,
+    button {
+      font: inherit;
+      background: #233a52;
+      color: white;
+      border: 1px solid #45627e;
+      padding: 9px;
+      border-radius: 6px;
+    }
+    input[type="range"] {
+      width: 65%;
+    }
+    textarea {
+      width: 95%;
+      min-height: 65px;
+    }
+    button {
+      cursor: pointer;
+      margin: 4px;
+    }
+    button.primary {
+      background: #1d6657;
+    }
+    output {
+      font-variant-numeric: tabular-nums;
+    }
+    #connection {
+      font-weight: 600;
+      color: #73dfb9;
+    }
+    .row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    canvas {
+      width: 200px;
+      height: 150px;
+      background: #0b1420;
+    }
+    code {
+      overflow-wrap: anywhere;
+    }
+    input[type="color"] {
+      height: 40px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  </style>
+  <main>
+    <h1>MR Class · Companion</h1>
+    <p>
+      One scene, across your computer / phone and the Unity app. Start with a
+      room code. No cloud account or API key.
+    </p>
+    <section>
+      <label
+        >Room code <input id="room" maxlength="32" autocomplete="off" /><button
+          id="connect"
+          class="primary"
+        >
+          Connect
+        </button></label
+      >
+      <div id="connection">Disconnected</div>
+      <p id="unity">Unity relay settings appear here after connecting.</p>
+    </section>
+    <section>
+      <h2>Choose a building block</h2>
+      <select id="study">
+        <option>Find a book</option>
+        <option>Physical tutorial</option>
+        <option>Speech / captions</option>
+        <option>Wipe a portal</option>
+        <option>Screen to AR</option>
+        <option>Avatar building block</option>
+      </select>
+      <div>
+        <button id="action" class="primary">Action / next step</button
+        ><button id="reset">Reset action</button
+        ><button id="save">Save scene JSON</button>
+      </div>
+      <p id="boundary"></p>
+    </section>
+    <section>
+      <h2>Screen → AR / CAD-style parameters</h2>
+      <canvas
+        id="preview"
+        width="400"
+        height="300"
+        aria-label="Model parameter preview (not a headset camera)"
+      ></canvas>
+      <div id="sliders"></div>
+      <label>Color <input id="color" type="color" value="#42d7b0" /></label
+      ><label
+        ><input id="animate" type="checkbox" /> Animate / avatar gesture</label
+      >
+    </section>
+    <section>
+      <h2>Speech and situated captions</h2>
+      <p>
+        Type or explicitly start your browser's speech recognition. Browser
+        speech service availability varies; no microphone starts automatically.
+        Translation is supplied by you, not an unconnected AI.
+      </p>
+      <label>Caption <textarea id="caption" maxlength="240"></textarea></label
+      ><label
+        >Supplied translation
+        <textarea id="translation" maxlength="240"></textarea>
+      </label>
+      <div>
+        <button id="captionSend" class="primary">Send caption</button
+        ><button id="speech">Start speech input</button
+        ><button id="stopSpeech">Stop speech input</button>
+      </div>
+      <small id="speechStatus">Speech stopped</small>
+    </section>
+    <section>
+      <h2>Portal texture</h2>
+      <p>
+        Choose an image you made or are permitted to use, including a generated
+        texture from the previous class. The texture is resized locally and sent
+        only to this LAN relay. This is a texture-input adapter, not live
+        generation.
+      </p>
+      <input
+        id="texture"
+        type="file"
+        accept="image/png,image/jpeg,image/webp"
+      />
+      <p id="textureStatus">No texture uploaded</p>
+    </section>
+  </main>
+  <script>
+    "use strict";
+    const $ = (id) => document.getElementById(id),
+      bounds = [
+        "Authored registry; not live book recognition.",
+        "Authored tutorial strokes; advance with a real input.",
+        "Actual typed / browser-speech input; translation is supplied.",
+        "Wipe controls a 3D stencil aperture; not door recognition.",
+        "Actual LAN state synchronization; origins are manually placed.",
+        "Skinned GLB character + supplied animation; not body tracking. Cesium / CC BY 4.0.",
+      ];
+    let state = null,
+      connected = false,
+      recognition = null,
+      pending = false,
+      queued = false,
+      intent = 0,
+      timer;
+    const specs = [
+      ["x", -0.6, 0.6, 0.01],
+      ["y", -0.3, 0.6, 0.01],
+      ["z", -0.4, 0.4, 0.01],
+      ["rotation", -180, 180, 1],
+      ["reveal", 0, 1, 0.01],
+    ];
+    for (const [key, min, max, step] of specs) {
+      const label = document.createElement("label");
+      label.innerHTML = `${key} <input type="range" id="${key}" min="${min}" max="${max}" step="${step}" value="0"> <output id="${key}Value">0</output>`;
+      $("sliders").append(label);
+      $(key).oninput = () => {
+        if (!state) return;
+        intent++;
+        state[key] = +$(key).value;
+        $(key + "Value").value = state[key];
+        draw();
+        if (pending) queued = true;
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          timer = null;
+          send();
+        }, 80);
+      };
+    }
+    const url = (path) =>
+      path + "?room=" + encodeURIComponent($("room").value.trim());
+    async function request(path, options) {
+      const r = await fetch(url(path), options);
+      const data = await r.json();
+      if (!r.ok) throw Error(data.error || r.status);
+      return data;
+    }
+    function apply(s) {
+      state = s;
+      $("study").selectedIndex = s.study;
+      $("boundary").textContent = bounds[s.study];
+      for (const [key] of specs) {
+        if (document.activeElement !== $(key)) $(key).value = s[key];
+        $(key + "Value").value = s[key];
+      }
+      $("animate").checked = s.animate;
+      $("color").value = s.color;
+      for (const k of ["caption", "translation"])
+        if (document.activeElement !== $(k)) $(k).value = s[k];
+      $("connection").textContent = "Connected · revision " + s.revision;
+      draw();
+    }
+    async function send() {
+      if (!state || !connected) return;
+      intent++;
+      if (pending) {
+        queued = true;
+        return;
+      }
+      pending = true;
+      try {
+        do {
+          queued = false;
+          clearTimeout(timer);
+          timer = null;
+          const s = await request("/state", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(state),
+          });
+          if (!queued) apply(s);
+          else {
+            state.revision = s.revision;
+            state.session = s.session;
+          }
+        } while (queued);
+      } catch (e) {
+        $("connection").textContent = e.message;
+      } finally {
+        pending = false;
+      }
+    }
+    async function connect() {
+      intent++;
+      try {
+        apply(await request("/state"));
+        connected = true;
+        $("unity").textContent =
+          "relay.json: " +
+          JSON.stringify({
+            url: location.origin,
+            room: $("room").value.trim(),
+          });
+      } catch (e) {
+        connected = false;
+        $("connection").textContent = e.message;
+      }
+    }
+    $("connect").onclick = connect;
+    $("room").value = new URLSearchParams(location.search).get("room") || "";
+    setInterval(async () => {
+      if (!connected || pending || timer) return;
+      const generation = intent;
+      try {
+        const s = await request("/state");
+        if (
+          generation !== intent ||
+          pending ||
+          timer ||
+          (s.session === state.session && s.revision < state.revision)
+        )
+          return;
+        if (s.session !== state.session || s.revision !== state.revision)
+          apply(s);
+        else $("connection").textContent = "Connected · revision " + s.revision;
+      } catch (e) {
+        $("connection").textContent = "Connection lost: " + e.message;
+      }
+    }, 700);
+    $("study").onchange = () => {
+      if (!state) return;
+      state.study = $("study").selectedIndex;
+      reset(false);
+      send();
+    };
+    function reset(publish = true) {
+      if (!state) return;
+      Object.assign(state, {
+        step: 0,
+        book: 0,
+        reveal: 0,
+        x: 0,
+        y: 0,
+        z: 0,
+        rotation: 0,
+        animate: false,
+        caption: "",
+        translation: "",
+        captionSource: "typed",
+        color: "#42d7b0",
+      });
+      if (publish) send();
+    }
+    $("reset").onclick = () => reset();
+    $("action").onclick = () => {
+      if (!state) return;
+      if (state.study === 0) state.book = (state.book + 1) % 5;
+      else if (state.study === 1) state.step = (state.step + 1) % 4;
+      else if (state.study === 3) state.reveal = state.reveal < 0.5 ? 1 : 0;
+      else state.animate = !state.animate;
+      send();
+    };
+    $("color").oninput = () => {
+      if (state) {
+        state.color = $("color").value;
+        send();
+      }
+    };
+    $("animate").onchange = () => {
+      if (state) {
+        state.animate = $("animate").checked;
+        send();
+      }
+    };
+    $("captionSend").onclick = () => {
+      if (!state) return;
+      state.caption = $("caption").value;
+      state.translation = $("translation").value;
+      state.captionSource = "typed";
+      send();
+    };
+    $("speech").onclick = () => {
+      const Speech = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!Speech) {
+        $("speechStatus").textContent =
+          "Speech recognition unavailable in this browser; use typed input";
+        return;
+      }
+      if (!connected) return;
+      recognition = new Speech();
+      recognition.lang = "en-US";
+      recognition.continuous = true;
+      recognition.interimResults = false;
+      recognition.onresult = (e) => {
+        state.caption = e.results[e.results.length - 1][0].transcript.slice(
+          0,
+          240,
+        );
+        state.captionSource = "browser-speech";
+        state.study = 2;
+        send();
+      };
+      recognition.onstart = () => {
+        $("speechStatus").textContent =
+          "Microphone active · browser speech recognition";
+      };
+      recognition.onend = () => {
+        $("speechStatus").textContent = "Speech stopped";
+      };
+      recognition.onerror = (e) => {
+        $("speechStatus").textContent = "Speech: " + e.error;
+      };
+      recognition.start();
+    };
+    $("stopSpeech").onclick = () => {
+      if (recognition) recognition.stop();
+    };
+    window.addEventListener("pagehide", () => {
+      if (recognition) recognition.stop();
+    });
+    $("texture").onchange = async () => {
+      if (!connected) return;
+      const f = $("texture").files[0];
+      if (!f || f.size > 8 * 1024 * 1024) {
+        $("textureStatus").textContent = "Choose an image under 8 MB";
+        return;
+      }
+      const bitmap = await createImageBitmap(f);
+      const scale = Math.min(1, 1024 / Math.max(bitmap.width, bitmap.height));
+      const canvas = document.createElement("canvas");
+      canvas.width = Math.round(bitmap.width * scale);
+      canvas.height = Math.round(bitmap.height * scale);
+      canvas
+        .getContext("2d")
+        .drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+      bitmap.close();
+      canvas.toBlob(async (blob) => {
+        try {
+          const generation = intent;
+          const s = await request("/texture.png", {
+            method: "POST",
+            headers: { "Content-Type": "image/png" },
+            body: blob,
+          });
+          if (generation !== intent || pending || timer) {
+            if (s.session === state.session) {
+              state.textureRevision = Math.max(
+                state.textureRevision,
+                s.textureRevision,
+              );
+              state.revision = Math.max(state.revision, s.revision);
+            }
+          } else if (
+            s.session !== state.session ||
+            s.revision >= state.revision
+          )
+            apply(s);
+          $("textureStatus").textContent =
+            "Texture synchronized · revision " + state.textureRevision;
+        } catch (e) {
+          $("textureStatus").textContent = e.message;
+        }
+      }, "image/png");
+    };
+    $("save").onclick = () => {
+      if (!state) return;
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(
+        new Blob([JSON.stringify(state, null, 2)], {
+          type: "application/json",
+        }),
+      );
+      a.download = "mr-class-scene.json";
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    };
+    function draw() {
+      const c = $("preview").getContext("2d");
+      c.fillStyle = "#0b1420";
+      c.fillRect(0, 0, 400, 300);
+      if (!state) return;
+      const x = 200 + state.x * 170,
+        y = 170 - state.y * 150;
+      c.save();
+      c.translate(x, y);
+      c.rotate((state.rotation * Math.PI) / 180);
+      c.fillStyle = state.color;
+      c.fillRect(-40, -45, 80, 90);
+      c.strokeStyle = "#e8bf6c";
+      c.lineWidth = 4;
+      c.strokeRect(-44, -49, 88, 98);
+      c.restore();
+      c.fillStyle = "#a8bacb";
+      c.font = "15px system-ui";
+      c.fillText("Parameter preview · not tracked imagery", 14, 278);
+    }
+    draw();
+  </script>
+</html>

@@ -1,0 +1,12 @@
+/Library/
+/Temp/
+/Logs/
+/Obj/
+/Builds/
+/UserSettings/
+*.csproj
+*.sln*
+Assets/SharedTracking/
+Native/
+Assets/Plugins/Android/
+Assets/Resources/DevAgentSettings.asset*

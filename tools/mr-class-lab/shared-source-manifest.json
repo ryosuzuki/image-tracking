@@ -1,0 +1,37 @@
+[
+  {
+    "source": "markers/unity-quest-ios/Assets/MarkerLab/MarkerBoard.cs",
+    "destination": "unity/Assets/SharedTracking/MarkerBoard.cs",
+    "sha256": "c6dd82b641f2dabcffc213638a92e5c43414719aee95ba9f8f0b222911e90beb"
+  },
+  {
+    "source": "markers/unity-quest-ios/Assets/MarkerLab/MarkerCameraCalibration.cs",
+    "destination": "unity/Assets/SharedTracking/MarkerCameraCalibration.cs",
+    "sha256": "59242402aac1ba070ebdbcd756405ed00b6bf2687d598e38e42edda4cd932a7e"
+  },
+  {
+    "source": "markers/unity-quest-ios/Assets/MarkerLab/MarkerPoseMath.cs",
+    "destination": "unity/Assets/SharedTracking/MarkerPoseMath.cs",
+    "sha256": "57364f607e49cc80e45209a691ad105e4e0f7d2fd0629ad6a96b3b6167c1f19a"
+  },
+  {
+    "source": "markers/unity-quest-ios/Assets/DedicatedTracker/MeasuredTrackingAccess.cs",
+    "destination": "unity/Assets/SharedTracking/MeasuredTrackingAccess.cs",
+    "sha256": "95bb66bbeed08bc3751f864fee4ba51abeddd01a8dbfa5fbc5f86ead65992b5e"
+  },
+  {
+    "source": "markers/unity-quest-ios/Assets/MarkerLab/Resources/marker-board.json",
+    "destination": "unity/Assets/SharedTracking/Resources/marker-board.json",
+    "sha256": "6c477766d13044fa795e8192e13a3d82c1fe36728831ab08a6eaac9a018cdeb1"
+  },
+  {
+    "source": "markers/unity-quest-ios/Native/marker_core.cpp",
+    "destination": "unity/Native/marker_core.cpp",
+    "sha256": "e53ad31b8f8a720e098be493ae4a0813c6553723216ac1bc53753398cc9bb2ed"
+  },
+  {
+    "source": "markers/unity-quest-ios/Native/marker_driver.cpp",
+    "destination": "unity/Native/marker_driver.cpp",
+    "sha256": "1df5fc620b3be16ef54daa709a28c698c08ad6531facdbf17327446fe17cefb4"
+  }
+]

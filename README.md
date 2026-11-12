@@ -2,6 +2,8 @@
 
 ## Open a demo or lesson
 
+- **[MR Class Lab — unified Unity / Quest app](docs/mr-class-lab/README.md)** — six editable components, gated native marker adapter, skinned avatar, LAN companion and calibrated recording replay. [APK + prepared Unity project](https://github.com/ryosuzuki/image-tracking/releases/tag/mr-class-lab-2026-11-12).
+
 - **[Recorded Context → Unity lab](docs/recorded-context-lab/README.md)** — one capture, editable anchored behavior and the same data in a browser/Unity; explicit replay/live boundaries.
 
 - **[Run: QR camera demo](https://ryosuzuki.github.io/image-tracking/qr-camera/)** — browser camera recognition; requires camera permission.

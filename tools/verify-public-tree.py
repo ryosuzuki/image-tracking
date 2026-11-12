@@ -17,6 +17,14 @@ if release.exists():
   name='docs/hallway/'+rel.as_posix()
   if name in reviewed or not re.fullmatch('[a-f0-9]{64}',row['sha256']):raise SystemExit('Invalid public asset digest')
   reviewed[name]=row
+# Exact redistributable classroom sample, CC BY 4.0; provenance/notice beside source.
+class_asset='tools/mr-class-lab/unity/Assets/MRClass/Resources/ClassAvatar.glb'
+class_manifest=root/'tools/mr-class-lab/third-party/asset-manifest.json'
+if class_manifest.exists():
+ rows=json.loads(class_manifest.read_text())
+ row=next((r for r in rows if r['destination']=='unity/Assets/MRClass/Resources/ClassAvatar.glb'),None)
+ if row is None or row['source']!='https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/8f492390ddc7a2ae221a1369ef560589cf8c70fb/Models/CesiumMan/glTF-Binary/CesiumMan.glb' or row['sha256']!='b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9' or row['bytes']!=438044:raise SystemExit('Unreviewed classroom model identity')
+ reviewed[class_asset]=row
 fail=[];parsed={'json':0,'python':0,'shell':0};size=0
 for rel in files:
  p=root/rel
